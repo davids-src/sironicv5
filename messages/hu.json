@@ -1,0 +1,334 @@
+{
+  "nav": {
+    "home": "Kezdőlap",
+    "services": "Szolgáltatások",
+    "partners": "Partnereink",
+    "references": "Referenciák",
+    "about": "Rólunk",
+    "smartForm": "Intelligens Űrlap",
+    "contact": "Kapcsolat"
+  },
+  "meta": {
+    "siteName": "SIRONIC – IT Megoldások és Technológiai Szolgáltatások",
+    "homeTitle": "SIRONIC | IT Üzemeltetés, Fejlesztés, Hálózatépítés",
+    "homeDescription": "A SIRONIC modern IT-megoldásokat, egyedi szoftver- és webfejlesztést, hálózatépítést, NIS2-kompatibilis rendszertervezést és biztonságtechnikai szolgáltatásokat nyújt vállalkozások számára.",
+    "servicesTitle": "Szolgáltatások | SIRONIC",
+    "servicesDescription": "Ismerje meg a SIRONIC teljes szolgáltatásportfólióját: IT üzemeltetés, hálózatépítés, webfejlesztés, NIS2-támogatás, szerviz és biztonságtechnika.",
+    "partnersTitle": "Partnereink | SIRONIC",
+    "partnersDescription": "A SIRONIC partnerei, beszállítói és technológiai szövetségesei.",
+    "referencesTitle": "Referenciák | SIRONIC",
+    "referencesDescription": "SIRONIC megvalósított projektjei: weboldalak, belső rendszerek, egyedi megoldások.",
+    "aboutTitle": "Rólunk | SIRONIC",
+    "aboutDescription": "A SIRONIC cégtörténete, értékei és csapata.",
+    "smartFormTitle": "Intelligens Űrlap | SIRONIC",
+    "smartFormDescription": "Töltse ki az intelligens igényfelmérő kérdőívet, és kapjon hozzávetőleges árajánlatot online.",
+    "contactTitle": "Kapcsolat | SIRONIC",
+    "contactDescription": "Vegye fel velünk a kapcsolatot! SIRONIC – IT és technológiai megoldások."
+  },
+  "hero": {
+    "slide1": {
+      "badge": "Megbízható IT-partner",
+      "title": "Technológia, amely dolgozik helyetted",
+      "subtitle": "IT-üzemeltetés, hálózatépítés, egyedi fejlesztés – háttérben, hatékonyan. Bízza ránk az infrastruktúráját, és koncentráljon a valódi munkájára.",
+      "cta1": "Intelligens igényfelmérés",
+      "cta2": "Szolgáltatásaink"
+    },
+    "slide2": {
+      "badge": "IT + Biztonságtechnika",
+      "title": "Informatika és biztonságtechnika egy kézből",
+      "subtitle": "A SIRONIC professzionális IT-megoldásokat nyújt, kiegészítve a SIRO-VÉD biztonságtechnikai szolgáltatásokkal – kamera-, riasztó- és tűzjelző-rendszerekkel.",
+      "cta1": "IT-szolgáltatásaink",
+      "cta2": "Biztonságtechnika (SIRO-VÉD)"
+    },
+    "slide3": {
+      "badge": "Digitális innováció",
+      "title": "Intelligens Űrlapok. Okos Hibabejelentés. Partnerportál.",
+      "subtitle": "Töltse ki intelligens igényfelmérő kérdőívünket, és már most kapjon hozzávetőleges üzemeltetési árat. Szerződéses ügyfeleink online hozzáférnek a partnerportálhoz.",
+      "cta1": "Próbálja ki az Intelligens Űrlapot",
+      "cta2": "Partnerportál"
+    }
+  },
+  "services": {
+    "sectionTitle": "Szolgáltatásaink",
+    "sectionSubtitle": "Átfogó IT- és technológiai megoldások kis- és középvállalkozások számára",
+    "itOps": {
+      "badge": "Rendszerüzemeltetés",
+      "title": "IT-üzemeltetés és karbantartás",
+      "subtitle": "Láthatatlan, hatékony háttértámogatás",
+      "description": "Vállalkozása IT-infrastruktúráját teljes egészében távolról üzemeltetjük. Nincsenek felesleges kiszállások, nincsenek váratlan meglepetések – csak folyamatos, megbízható működés a háttérben.",
+      "points": [
+        "Távolról elvégzett rendszerüzemeltetés",
+        "Mikrovállalkozásoktól kis gyártócégekig",
+        "Szerződéses és eseti megbízás egyaránt",
+        "Havi díj az infrastruktúra mérete szerint",
+        "Beavatkozáskor vagy fejlesztéskor merül fel pluszköltség"
+      ],
+      "cta1": "Intelligens igényfelmérés",
+      "cta2": "További információk"
+    },
+    "network": {
+      "badge": "Hálózatépítés",
+      "title": "Hálózatépítés és -fejlesztés",
+      "subtitle": "Stabil, biztonságos hálózati infrastruktúra",
+      "description": "Tervezzük, kiépítjük és korszerűsítjük vállalkozása hálózati infrastruktúráját. Legyen szó új telepítésről vagy a meglévő hálózat bővítéséről.",
+      "points": [
+        "Stabil és biztonságos hálózati megoldások",
+        "Új telepítés és meglévő hálózat fejlesztése",
+        "Üzleti ügyfeleink mellett magánszemélyeknek is"
+      ],
+      "cta": "Részletek"
+    },
+    "nis2": {
+      "badge": "Megfelelőség",
+      "title": "NIS2-kompatibilis IT-rendszerek",
+      "subtitle": "Auditfelkészítés és folyamatos operatív együttműködés",
+      "description": "A NIS2-irányelv szerinti kötelezettségeknek való megfelelés komplex feladat. A SIRONIC megbízott tanácsadó partnerével együtt megtervezi, implementálja és üzemelteti az előírásoknak megfelelő IT-rendszereket.",
+      "points": [
+        "NIS2-kompatibilis IT-rendszer tervezése",
+        "Implementáció és konfigurálás",
+        "Auditfelkészítés és dokumentáció",
+        "Audit utáni operatív együttműködés",
+        "Megbízott tanácsadó partnerrel közösen"
+      ],
+      "cta": "NIS2-tudástár"
+    },
+    "webDev": {
+      "badge": "Egyedi fejlesztés",
+      "title": "Weboldal- és rendszerfejlesztés",
+      "subtitle": "Sablon nélkül, az Ön igényeire szabva",
+      "description": "Nem sablonos CMS-platformokra alapozunk. Minden projektet az ügyfél márkája, stílusa és munkafolyamatai szerint tervezünk és fejlesztünk le – a legegyszerűbb bemutatkozó oldaltól a komplex belső üzleti rendszerekig.",
+      "points": [
+        "Teljesen egyedi design és fejlesztés",
+        "Bemutatkozó oldalak, webáruházak",
+        "Belső üzleti rendszerek és webalapú alkalmazások",
+        "Ügyfélspecifikus tipográfia és arculat"
+      ],
+      "cta": "Fejlesztési portfólió"
+    },
+    "security": {
+      "badge": "Biztonságtechnika",
+      "title": "Biztonságtechnika (SIRO-VÉD)",
+      "subtitle": "Kamera, riasztó, tűzjelzés",
+      "description": "A biztonságtechnikai szolgáltatásokat a SIRO-VÉD márkanév alatt nyújtjuk. IP és analóg kamerarendszerek, riasztórendszerek, hamarosan épületbe épített tűzjelző megoldások.",
+      "cta": "Látogassa meg a SIRO-VÉD weboldalt",
+      "ctaUrl": "https://siroved.hu"
+    },
+    "repair": {
+      "badge": "Szerviz",
+      "title": "Szerviz és javítás",
+      "subtitle": "Hardver és szoftver – laptop, PC",
+      "description": "A SIRONIC gyökerei a szerviz- és javítómunkában rejlenek. Igény esetén laptop- és PC-javítást, hardver- és szoftverhibák elhárítását vállalják.",
+      "cta": "Kapcsolatfelvétel"
+    }
+  },
+  "faq": {
+    "title": "Gyakori kérdések",
+    "subtitle": "Amit vállalkozók leggyakrabban kérdeznek",
+    "items": [
+      {
+        "q": "Hogyan működik a távolról végzett IT-üzemeltetés a gyakorlatban?",
+        "a": "Modern technológiák segítségével – biztonságos távoli hozzáférési eszközökkel – folyamatosan felügyelünk, karbantartunk és beavatkozunk. A legtöbb feladat kiszállás nélkül elvégezhető, így Önnek nem kell foglalkoznia az IT-rendszer napi működésével."
+      },
+      {
+        "q": "Milyen méretű vállalkozásoknak ajánlják a szolgáltatásaikat?",
+        "a": "Elsősorban mikrovállalkozásoktól a kisebb gyártócégekig nyújtunk rendszerüzemeltetési szolgáltatást. A pontos árazás az infrastruktúra méretétől függ, amelyet az intelligens igényfelmérő kérdőívünk segít feltérképezni."
+      },
+      {
+        "q": "Mi történik, ha egyszeri segítségre van szükségem, nem hosszú távú szerződésre?",
+        "a": "Eseti megkereséseket is szívesen fogadjuk. Fejlesztési, karbantartási vagy hibaelhárítási feladatokat szerződéskötés nélkül is elvégzünk."
+      },
+      {
+        "q": "Az intelligens igényfelmérő valódi árajánlatot ad?",
+        "a": "A kérdőív kitöltése után hozzávetőleges árbecslést kap az üzemeltetési díjról. Ez nem végleges ajánlat, de jó kiindulópontot nyújt a tárgyaláshoz, és segít mindkét félnek felkészülni."
+      },
+      {
+        "q": "Mi a különbség a SIRONIC és a SIRO-VÉD között?",
+        "a": "A SIRONIC az informatikai és technológiai szolgáltatások fő márkája. A SIRO-VÉD a biztonságtechnikai szolgáltatások (kamerarendszerek, riasztók, tűzjelzők) önálló online márkája, amelynek saját weboldala van a siroved.hu címen."
+      },
+      {
+        "q": "Hogyan segítenek a NIS2-megfelelésben?",
+        "a": "Megbízott tanácsadó partnerünkkel együtt megtervezzük és implementáljuk a NIS2-irányelv által elvárt IT-rendszert, felkészítünk az auditra, és az audit után is folyamatos operatív együttműködést nyújtunk."
+      },
+      {
+        "q": "Saját fejlesztésű weboldalt vagy CMS-alapút (pl. WordPress) készítenek?",
+        "a": "Kizárólag egyedi fejlesztésű megoldásokat készítünk. Nem használunk sablonos CMS-platformokat – minden projektet az ügyfél igényeire és arculatára szabunk, a designtól a háttérrendszerig."
+      },
+      {
+        "q": "Mennyi idő alatt lehet felvenni velük a kapcsolatot és elindítani egy projektet?",
+        "a": "Az intelligens kapcsolatfelvételi vagy igényfelmérő urlap kitöltése után általában 1 munkanapon belül visszajelzünk. Sürgős esetekre külön eseti hibabejelentő lapot biztosítunk."
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partnereink",
+    "subtitle": "Megbízható együttműködők, akikkel dolgozunk",
+    "ourPartners": "Partnereink",
+    "suppliers": "Beszállítóink",
+    "techPartners": "Technológiai partnereink",
+    "comingSoon": "Hamarosan – partnerlista frissítés alatt"
+  },
+  "references": {
+    "title": "Referenciák",
+    "subtitle": "Megvalósított projektek és rendszerek",
+    "filter": {
+      "all": "Mind",
+      "websites": "Weboldalak",
+      "systems": "Rendszerek",
+      "tools": "Egyedi eszközök"
+    },
+    "comingSoon": "Referencia-portfólió hamarosan – töltöttük fel a projektjeinket."
+  },
+  "about": {
+    "title": "Rólunk",
+    "subtitle": "A SIRONIC csapata és értékei",
+    "story": "Cég bemutató",
+    "storyContent": "A SIRONIC egy modern, megbízható technológiai partner, amely IT-üzemeltetéstől a hálózatépítésen át az egyedi fejlesztésig átfogó megoldásokat nyújt. Részletes cégtörténet és értékek hamarosan.",
+    "values": "Értékeink",
+    "valueItems": [
+      "Megbízhatóság és átláthatóság",
+      "Modern, hatékony technológiai megoldások",
+      "Hosszú távú partnerkapcsolat",
+      "Gyors reagálás és rugalmasság"
+    ]
+  },
+  "smartForm": {
+    "title": "Intelligens Űrlap",
+    "subtitle": "Válasszon az alábbi lehetőségek közül",
+    "tabs": {
+      "contact": "Kapcsolatfelvétel",
+      "assessment": "Igényfelmérés",
+      "incident": "Hibabejelentés"
+    },
+    "contact": {
+      "title": "Kapcsolatfelvételi Űrlap",
+      "subtitle": "Írjon nekünk – 1 munkanapon belül válaszolunk",
+      "name": "Neve",
+      "email": "E-mail cím",
+      "phone": "Telefonszám",
+      "company": "Cég neve (opcionális)",
+      "message": "Üzenet",
+      "submit": "Üzenet küldése",
+      "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot.",
+      "namePlaceholder": "Az Ön neve",
+      "emailPlaceholder": "pelda@ceg.hu",
+      "phonePlaceholder": "+36 30 000 0000",
+      "companyPlaceholder": "Cég Kft.",
+      "messagePlaceholder": "Miben segíthetünk?"
+    },
+    "assessment": {
+      "title": "Intelligens Igényfelmérő",
+      "subtitle": "Töltse ki a kérdőívet, és kapjon hozzávetőleges üzemeltetési árat",
+      "step": "Lépés",
+      "of": "/",
+      "next": "Tovább",
+      "back": "Vissza",
+      "submit": "Eredmény megtekintése",
+      "steps": {
+        "companySize": {
+          "question": "Hány felhasználó dolgozik a cégnél?",
+          "options": ["1–5 fő", "6–15 fő", "16–30 fő", "30+ fő"]
+        },
+        "devices": {
+          "question": "Hány eszköz (laptop, PC, szerver) van az infrastruktúrában?",
+          "options": ["1–10 eszköz", "11–25 eszköz", "26–50 eszköz", "50+ eszköz"]
+        },
+        "serverRoom": {
+          "question": "Van-e helyszíni szerver vagy szerverterem?",
+          "options": ["Igen, saját szerver van", "Felhőalapú megoldás", "Vegyes (helyszíni + felhő)", "Nem tudom"]
+        },
+        "priority": {
+          "question": "Mi a legfontosabb prioritása?",
+          "options": [
+            "Folyamatos, megbízható működés",
+            "IT-biztonság és adatvédelem",
+            "Gyors hibaelhárítás",
+            "NIS2-megfelelőség"
+          ]
+        },
+        "contact": {
+          "question": "Küldjük el az árbecslést?",
+          "name": "Neve",
+          "email": "E-mail cím",
+          "phone": "Telefonszám (opcionális)",
+          "namePlaceholder": "Az Ön neve",
+          "emailPlaceholder": "pelda@ceg.hu",
+          "phonePlaceholder": "+36 30 000 0000"
+        }
+      },
+      "result": {
+        "title": "Hozzávetőleges árbecslés",
+        "disclaimer": "Ez egy tájékoztató jellegű becslés. A végleges ár egyedi felmérés alapján kerül meghatározásra.",
+        "monthly": "Havi alap üzemeltetési díj (becsült)",
+        "contact": "Személyes ajánlatkérés",
+        "restart": "Új felmérés indítása"
+      }
+    },
+    "incident": {
+      "title": "Eseti Hibabejelentő",
+      "subtitle": "Eseti megkereséshez – szerződés nélkül is",
+      "name": "Neve",
+      "email": "E-mail cím",
+      "phone": "Telefonszám",
+      "company": "Cég neve (opcionális)",
+      "description": "Hiba leírása",
+      "urgency": "Sürgősség",
+      "urgencyOptions": {
+        "low": "Alacsony – néhány napon belül",
+        "medium": "Közepes – 24 órán belül",
+        "high": "Magas – azonnali beavatkozás szükséges"
+      },
+      "submit": "Bejelentés küldése",
+      "success": "Hibabejelentés megérkezett! Hamarosan felvesszük Önnel a kapcsolatot.",
+      "descriptionPlaceholder": "Írja le részletesen a hibát vagy problémát...",
+      "namePlaceholder": "Az Ön neve",
+      "emailPlaceholder": "pelda@ceg.hu",
+      "phonePlaceholder": "+36 30 000 0000",
+      "companyPlaceholder": "Cég Kft."
+    }
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "subtitle": "Vegye fel velünk a kapcsolatot",
+    "address": "Cím",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "formTitle": "Üzenet küldése",
+    "name": "Neve",
+    "emailField": "E-mail cím",
+    "phoneField": "Telefonszám (opcionális)",
+    "message": "Üzenet",
+    "submit": "Küldés",
+    "success": "Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.",
+    "namePlaceholder": "Az Ön neve",
+    "emailPlaceholder": "pelda@ceg.hu",
+    "phonePlaceholder": "+36 30 000 0000",
+    "messagePlaceholder": "Miben segíthetünk?"
+  },
+  "footer": {
+    "tagline": "IT-megoldások. Egyedi fejlesztés. Megbízható hálózat.",
+    "services": "Szolgáltatások",
+    "company": "Vállalat",
+    "legal": "Jogi információk",
+    "privacyPolicy": "Adatvédelmi tájékoztató",
+    "imprint": "Impresszum",
+    "sirovedLabel": "Biztonságtechnika:",
+    "sirovedLink": "SIRO-VÉD weboldal",
+    "copyright": "© 2024 SIRONIC. Minden jog fenntartva.",
+    "links": {
+      "services": "Szolgáltatások",
+      "partners": "Partnereink",
+      "references": "Referenciák",
+      "about": "Rólunk",
+      "smartForm": "Intelligens Űrlap",
+      "contact": "Kapcsolat"
+    }
+  },
+  "common": {
+    "learnMore": "További információk",
+    "contactUs": "Kapcsolatfelvétel",
+    "getQuote": "Ajánlatkérés",
+    "viewDetails": "Részletek megtekintése",
+    "smartFormCta": "Intelligens igényfelmérés",
+    "externalLink": "Külső oldal megnyitása"
+  }
+}

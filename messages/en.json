@@ -1,0 +1,334 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "partners": "Partners",
+    "references": "References",
+    "about": "About",
+    "smartForm": "Smart Form",
+    "contact": "Contact"
+  },
+  "meta": {
+    "siteName": "SIRONIC – IT Solutions and Technology Services",
+    "homeTitle": "SIRONIC | IT Operations, Development, Network Solutions",
+    "homeDescription": "SIRONIC provides modern IT solutions, custom software and web development, network infrastructure, NIS2-compatible system design, and security technology services for businesses.",
+    "servicesTitle": "Services | SIRONIC",
+    "servicesDescription": "Explore SIRONIC's full service portfolio: IT operations, network building, web development, NIS2 support, repair, and security technology.",
+    "partnersTitle": "Partners | SIRONIC",
+    "partnersDescription": "SIRONIC's partners, suppliers, and technology allies.",
+    "referencesTitle": "References | SIRONIC",
+    "referencesDescription": "SIRONIC completed projects: websites, internal systems, custom solutions.",
+    "aboutTitle": "About | SIRONIC",
+    "aboutDescription": "The SIRONIC company story, values, and team.",
+    "smartFormTitle": "Smart Form | SIRONIC",
+    "smartFormDescription": "Fill in our smart needs assessment form and get an approximate price estimate online.",
+    "contactTitle": "Contact | SIRONIC",
+    "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions."
+  },
+  "hero": {
+    "slide1": {
+      "badge": "Reliable IT Partner",
+      "title": "Technology That Works For You",
+      "subtitle": "IT operations, network building, custom development – in the background, efficiently. Trust us with your infrastructure and focus on your real work.",
+      "cta1": "Smart Needs Assessment",
+      "cta2": "Our Services"
+    },
+    "slide2": {
+      "badge": "IT + Security Technology",
+      "title": "IT and Security Technology From One Hand",
+      "subtitle": "SIRONIC provides professional IT solutions complemented by SIRO-VÉD security technology services – camera systems, alarm systems, and fire detection.",
+      "cta1": "Our IT Services",
+      "cta2": "Security Technology (SIRO-VÉD)"
+    },
+    "slide3": {
+      "badge": "Digital Innovation",
+      "title": "Smart Forms. Intelligent Issue Reporting. Partner Portal.",
+      "subtitle": "Fill in our smart needs assessment questionnaire and receive an approximate operations price right away. Contract clients have online access to the partner portal.",
+      "cta1": "Try the Smart Form",
+      "cta2": "Partner Portal"
+    }
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Comprehensive IT and technology solutions for small and medium businesses",
+    "itOps": {
+      "badge": "IT Operations",
+      "title": "IT Operations and Maintenance",
+      "subtitle": "Invisible, efficient background support",
+      "description": "We operate your company's entire IT infrastructure remotely. No unnecessary on-site visits, no unexpected surprises – just continuous, reliable operation in the background.",
+      "points": [
+        "Remote-first IT operations",
+        "From micro-businesses to small manufacturing companies",
+        "Both contract-based and ad hoc work available",
+        "Monthly fee based on infrastructure size",
+        "Additional cost only for interventions or development"
+      ],
+      "cta1": "Smart Needs Assessment",
+      "cta2": "More Information"
+    },
+    "network": {
+      "badge": "Networking",
+      "title": "Network Building and Development",
+      "subtitle": "Stable, secure network infrastructure",
+      "description": "We plan, build, and modernize your company's network infrastructure. Whether it's a new installation or expanding an existing network.",
+      "points": [
+        "Stable and secure network solutions",
+        "New installations and existing network upgrades",
+        "Available for businesses and private clients"
+      ],
+      "cta": "Details"
+    },
+    "nis2": {
+      "badge": "Compliance",
+      "title": "NIS2-Compatible IT Systems",
+      "subtitle": "Audit preparation and ongoing operational cooperation",
+      "description": "Compliance with NIS2 directive obligations is a complex task. SIRONIC, together with its trusted consulting partner, plans, implements, and operates IT systems that meet the requirements.",
+      "points": [
+        "NIS2-compatible IT system planning",
+        "Implementation and configuration",
+        "Audit preparation and documentation",
+        "Post-audit operational cooperation",
+        "Together with a trusted consulting partner"
+      ],
+      "cta": "NIS2 Knowledge Base"
+    },
+    "webDev": {
+      "badge": "Custom Development",
+      "title": "Website and System Development",
+      "subtitle": "Without templates, tailored to your needs",
+      "description": "We don't rely on template-based CMS platforms. Every project is designed and developed according to the client's brand, style, and workflow requirements – from simple presentation sites to complex internal business systems.",
+      "points": [
+        "Fully custom design and development",
+        "Presentation sites, webshops",
+        "Internal business systems and web-based applications",
+        "Client-specific typography and branding"
+      ],
+      "cta": "Development Portfolio"
+    },
+    "security": {
+      "badge": "Security Technology",
+      "title": "Security Technology (SIRO-VÉD)",
+      "subtitle": "Cameras, alarms, fire detection",
+      "description": "Security technology services are provided under the SIRO-VÉD brand. IP and analog camera systems, alarm systems, and soon built-in fire detection solutions.",
+      "cta": "Visit the SIRO-VÉD Website",
+      "ctaUrl": "https://siroved.hu"
+    },
+    "repair": {
+      "badge": "Repair",
+      "title": "Service and Repair",
+      "subtitle": "Hardware and software – laptops, PCs",
+      "description": "SIRONIC's roots are in service and repair work. When needed, we handle laptop and PC repair, hardware and software troubleshooting.",
+      "cta": "Contact Us"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "What business owners ask most often",
+    "items": [
+      {
+        "q": "How does remote IT operations work in practice?",
+        "a": "Using modern technologies – secure remote access tools – we continuously monitor, maintain, and intervene. Most tasks can be performed without an on-site visit, so you don't need to deal with the daily operation of your IT systems."
+      },
+      {
+        "q": "What size businesses do you work with?",
+        "a": "We primarily provide IT operations services for micro-businesses up to smaller manufacturing companies. Exact pricing depends on infrastructure size, which our smart needs assessment questionnaire helps determine."
+      },
+      {
+        "q": "What if I only need one-time help, not a long-term contract?",
+        "a": "We gladly accept one-time requests. Development, maintenance, or troubleshooting tasks can be performed without a contract."
+      },
+      {
+        "q": "Does the smart needs assessment give a real price quote?",
+        "a": "After completing the questionnaire, you'll receive an approximate operations fee estimate. This is not a final offer, but provides a good starting point for discussions."
+      },
+      {
+        "q": "What's the difference between SIRONIC and SIRO-VÉD?",
+        "a": "SIRONIC is the main brand for IT and technology services. SIRO-VÉD is the separate online brand for security technology services (camera systems, alarms, fire detection) with its own website at siroved.hu."
+      },
+      {
+        "q": "How do you help with NIS2 compliance?",
+        "a": "Together with our trusted consulting partner, we plan and implement the IT system expected by the NIS2 directive, prepare you for the audit, and provide ongoing operational cooperation after the audit."
+      },
+      {
+        "q": "Do you build custom websites or CMS-based ones (e.g. WordPress)?",
+        "a": "We exclusively build custom-developed solutions. We don't use template-based CMS platforms – every project is tailored to the client's needs and branding, from design to backend."
+      },
+      {
+        "q": "How quickly can I get in touch and start a project?",
+        "a": "After filling in the smart contact or needs assessment form, we typically respond within 1 business day. For urgent matters, we provide a separate one-time incident report form."
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partners",
+    "subtitle": "Trusted collaborators we work with",
+    "ourPartners": "Our Partners",
+    "suppliers": "Our Suppliers",
+    "techPartners": "Technology Partners",
+    "comingSoon": "Coming soon – partner list being updated"
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Completed projects and systems",
+    "filter": {
+      "all": "All",
+      "websites": "Websites",
+      "systems": "Systems",
+      "tools": "Custom Tools"
+    },
+    "comingSoon": "Reference portfolio coming soon – uploading our projects."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "The SIRONIC team and values",
+    "story": "Company Overview",
+    "storyContent": "SIRONIC is a modern, reliable technology partner providing comprehensive solutions from IT operations through network building to custom development. Full company story and values coming soon.",
+    "values": "Our Values",
+    "valueItems": [
+      "Reliability and transparency",
+      "Modern, efficient technology solutions",
+      "Long-term partnership",
+      "Fast response and flexibility"
+    ]
+  },
+  "smartForm": {
+    "title": "Smart Form",
+    "subtitle": "Choose from the options below",
+    "tabs": {
+      "contact": "Contact",
+      "assessment": "Needs Assessment",
+      "incident": "Incident Report"
+    },
+    "contact": {
+      "title": "Contact Form",
+      "subtitle": "Write to us – we'll reply within 1 business day",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name (optional)",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you! We'll be in touch shortly.",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "example@company.com",
+      "phonePlaceholder": "+36 30 000 0000",
+      "companyPlaceholder": "Company Ltd.",
+      "messagePlaceholder": "How can we help?"
+    },
+    "assessment": {
+      "title": "Smart Needs Assessment",
+      "subtitle": "Complete the questionnaire and get an approximate operations price",
+      "step": "Step",
+      "of": "of",
+      "next": "Next",
+      "back": "Back",
+      "submit": "View Results",
+      "steps": {
+        "companySize": {
+          "question": "How many users work at your company?",
+          "options": ["1–5 people", "6–15 people", "16–30 people", "30+ people"]
+        },
+        "devices": {
+          "question": "How many devices (laptops, PCs, servers) are in the infrastructure?",
+          "options": ["1–10 devices", "11–25 devices", "26–50 devices", "50+ devices"]
+        },
+        "serverRoom": {
+          "question": "Do you have an on-site server or server room?",
+          "options": ["Yes, own server", "Cloud-based solution", "Mixed (on-site + cloud)", "I don't know"]
+        },
+        "priority": {
+          "question": "What is your most important priority?",
+          "options": [
+            "Continuous, reliable operation",
+            "IT security and data protection",
+            "Fast troubleshooting",
+            "NIS2 compliance"
+          ]
+        },
+        "contact": {
+          "question": "Shall we send the price estimate?",
+          "name": "Your Name",
+          "email": "Email Address",
+          "phone": "Phone Number (optional)",
+          "namePlaceholder": "Your name",
+          "emailPlaceholder": "example@company.com",
+          "phonePlaceholder": "+36 30 000 0000"
+        }
+      },
+      "result": {
+        "title": "Approximate Price Estimate",
+        "disclaimer": "This is an indicative estimate. The final price is determined based on an individual assessment.",
+        "monthly": "Estimated monthly base operations fee",
+        "contact": "Request Personal Quote",
+        "restart": "Start New Assessment"
+      }
+    },
+    "incident": {
+      "title": "One-Time Incident Report",
+      "subtitle": "For one-time requests – without a contract",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name (optional)",
+      "description": "Problem Description",
+      "urgency": "Urgency",
+      "urgencyOptions": {
+        "low": "Low – within a few days",
+        "medium": "Medium – within 24 hours",
+        "high": "High – immediate intervention needed"
+      },
+      "submit": "Submit Report",
+      "success": "Incident report received! We'll contact you shortly.",
+      "descriptionPlaceholder": "Describe the issue or problem in detail...",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "example@company.com",
+      "phonePlaceholder": "+36 30 000 0000",
+      "companyPlaceholder": "Company Ltd."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "formTitle": "Send a Message",
+    "name": "Your Name",
+    "emailField": "Email Address",
+    "phoneField": "Phone Number (optional)",
+    "message": "Message",
+    "submit": "Send",
+    "success": "Thank you for your message! We'll get back to you shortly.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "example@company.com",
+    "phonePlaceholder": "+36 30 000 0000",
+    "messagePlaceholder": "How can we help?"
+  },
+  "footer": {
+    "tagline": "IT Solutions. Custom Development. Reliable Networks.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "imprint": "Imprint",
+    "sirovedLabel": "Security Technology:",
+    "sirovedLink": "SIRO-VÉD Website",
+    "copyright": "© 2024 SIRONIC. All rights reserved.",
+    "links": {
+      "services": "Services",
+      "partners": "Partners",
+      "references": "References",
+      "about": "About",
+      "smartForm": "Smart Form",
+      "contact": "Contact"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "getQuote": "Get a Quote",
+    "viewDetails": "View Details",
+    "smartFormCta": "Smart Needs Assessment",
+    "externalLink": "Open external page"
+  }
+}

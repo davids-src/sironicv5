@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--section-gap) + 2rem);
+}
+.heroTitle { margin-block: 1rem 1.25rem; }
+.heroGlow {
+  position: absolute;
+  top: 0; right: 0;
+  width: 500px; height: 400px;
+  background: radial-gradient(ellipse at top right, rgba(230,57,70,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.serviceCard {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+.reverse { direction: rtl; }
+.reverse > * { direction: ltr; }
+
+@media (max-width: 768px) {
+  .serviceCard { grid-template-columns: 1fr; gap: 1.5rem; }
+  .reverse { direction: ltr; }
+}
+
+.cardIcon {
+  width: 100px; height: 100px;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: border-color var(--transition-normal);
+}
+.serviceCard:hover .cardIcon { border-color: var(--primary); }
+
+.cardContent { display: flex; flex-direction: column; gap: 0.75rem; }
+.cardSubtitle { font-weight: 600; color: var(--primary); font-size: 1rem; }
+
+.points {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.points li {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  font-size: 0.9375rem; color: var(--text-muted);
+}
+.check { color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+
+.cardCtas {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
+  margin-top: 0.5rem;
+}

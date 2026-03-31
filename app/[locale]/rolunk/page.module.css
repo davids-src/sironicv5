@@ -1,0 +1,44 @@
+.hero { position: relative; overflow: hidden; padding-top: calc(var(--section-gap) + 2rem); }
+.heroTitle { margin-block: 1rem 1.25rem; }
+.heroGlow {
+  position: absolute; top: 0; right: 0; width: 500px; height: 400px;
+  background: radial-gradient(ellipse at top right, rgba(230,57,70,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: 1.5rem;
+}
+
+.placeholder {
+  margin-top: 1.5rem; padding: 1.5rem;
+  background: var(--surface-2); border-radius: var(--radius-md);
+  border: 1px dashed var(--border);
+  font-size: 0.875rem; color: var(--text-subtle);
+}
+
+.valueList {
+  list-style: none; display: flex; flex-direction: column;
+  gap: 0.875rem; margin-top: 1rem;
+}
+.valueList li { display: flex; align-items: center; gap: 0.625rem; font-size: 0.9375rem; color: var(--text-muted); }
+.check { color: var(--primary); flex-shrink: 0; }
+
+.teamGrid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem; margin-top: 2rem;
+}
+.teamCard {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1.5rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+.avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--surface-2); border: 2px dashed var(--border);
+}
+.teamInfo { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; width: 100%; }
+.namePlaceholder { height: 14px; width: 60%; background: var(--surface-2); border-radius: 4px; }
+.rolePlaceholder { height: 10px; width: 80%; background: var(--surface-2); border-radius: 4px; }
