@@ -226,15 +226,30 @@
       "steps": {
         "companySize": {
           "question": "Hány felhasználó dolgozik a cégnél?",
-          "options": ["1–5 fő", "6–15 fő", "16–30 fő", "30+ fő"]
+          "options": [
+            "1–5 fő",
+            "6–15 fő",
+            "16–30 fő",
+            "30+ fő"
+          ]
         },
         "devices": {
           "question": "Hány eszköz (laptop, PC, szerver) van az infrastruktúrában?",
-          "options": ["1–10 eszköz", "11–25 eszköz", "26–50 eszköz", "50+ eszköz"]
+          "options": [
+            "1–10 eszköz",
+            "11–25 eszköz",
+            "26–50 eszköz",
+            "50+ eszköz"
+          ]
         },
         "serverRoom": {
           "question": "Van-e helyszíni szerver vagy szerverterem?",
-          "options": ["Igen, saját szerver van", "Felhőalapú megoldás", "Vegyes (helyszíni + felhő)", "Nem tudom"]
+          "options": [
+            "Igen, saját szerver van",
+            "Felhőalapú megoldás",
+            "Vegyes (helyszíni + felhő)",
+            "Nem tudom"
+          ]
         },
         "priority": {
           "question": "Mi a legfontosabb prioritása?",
@@ -330,5 +345,359 @@
     "viewDetails": "Részletek megtekintése",
     "smartFormCta": "Intelligens igényfelmérés",
     "externalLink": "Külső oldal megnyitása"
+  },
+  "servicePages": {
+    "itOps": {
+      "metaTitle": "IT Rendszerüzemeltetés | SIRONIC",
+      "metaDescription": "Megbízható, távolról végzett IT-üzemeltetés mikrovállalkozásoktól kis gyártócégekig. Havi díjas szerződés, gyors reagálás, nincs meglepetés.",
+      "badge": "Rendszerüzemeltetés",
+      "heroTitle": "Rendszerüzemeltetés – megbízható IT-háttér, gondok nélkül",
+      "heroSubtitle": "Vállalkozása IT-infrastruktúráját teljes egészében távolról kezeljük. Nincs felesleges kiszállás, nincs váratlan leállás – csak folyamatos, megbízható működés nap mint nap.",
+      "introTitle": "Mit jelent ez a gyakorlatban?",
+      "introText": "Az IT-üzemeltetés az a munka, ami akkor is folyik, ha senki nem veszi észre – szoftverfrissítések, biztonsági mentések, jogosultságkezelés, hálózatfelügyelet. A SIRONIC ezt a teljes folyamatot átveszi, hogy Ön a vállalkozásával foglalkozhasson.",
+      "benefitsTitle": "Miért érdemes kiszervezni az IT-üzemeltetést?",
+      "benefits": [
+        {
+          "title": "Kiszámítható havi költség",
+          "text": "Nincs váratlan számla. Havi fix díj az infrastruktúra mérete alapján."
+        },
+        {
+          "title": "Proaktív szemlélet",
+          "text": "Nem csak hibákra reagálunk – megelőzzük őket, mielőtt Önnek gondot okoznának."
+        },
+        {
+          "title": "Gyors reagálás",
+          "text": "Probléma esetén nem kell hetekig várakozni. Gyorsan beavatkozunk."
+        },
+        {
+          "title": "Nincs szükség belső IT-csapatra",
+          "text": "Megtakarítja egy teljes munkaidős IT-szakember bérét, miközben profi háttértámogatást kap."
+        }
+      ],
+      "whoTitle": "Kiknek ajánljuk?",
+      "whoText": "Elsősorban azoknak a vállalkozásoknak, amelyek nem tudnak vagy nem akarnak belső IT-csapatot fenntartani, de megbízható, folyamatos háttértámogatást szeretnének.",
+      "whoItems": [
+        "Mikrovállalkozások (1–15 fő)",
+        "Kis- és közepes vállalkozások (15–50 fő)",
+        "Kis gyártócégek és irodák",
+        "Azok, akik már belefáradtak az eseti IT-problémákba"
+      ],
+      "processTitle": "Hogyan működik?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Felmérés",
+          "text": "Felmérjük az infrastruktúrát, az eszközöket és az igényeket – az intelligens kérdőív segítségével akár online is."
+        },
+        {
+          "step": "02",
+          "title": "Szerződéskötés és beállítás",
+          "text": "Meghatározzuk a havi díjat, beállítjuk a monitoringot és a távoli hozzáférési eszközöket."
+        },
+        {
+          "step": "03",
+          "title": "Folyamatos üzemeltetés",
+          "text": "A rendszerek felügyeletét mi végezzük. Ön munkaidőben dolgozik, mi biztosítjuk a hátterét."
+        }
+      ],
+      "whyTitle": "Miért a SIRONIC?",
+      "whyItems": [
+        "Átlátható kommunikáció és valós árak",
+        "Nem bonyolítunk ott, ahol nincs rá szükség",
+        "Eseti megbízásokat is elvállalunk – szerződés nélkül",
+        "Hazai viszonyokhoz igazodó, rugalmas megoldások"
+      ],
+      "ctaTitle": "Kérdezze meg, mennyibe kerül az üzemeltetés",
+      "ctaSubtitle": "Töltse ki intelligens igényfelmérőnket, és már most kap hozzávetőleges havi árat – kötelezettség nélkül.",
+      "ctaPrimary": "Intelligens igényfelmérés",
+      "ctaSecondary": "Kapcsolatfelvétel",
+      "faqTitle": "Gyakori kérdések az IT-üzemeltetésről",
+      "faqItems": [
+        {
+          "q": "Kell-e kiszállni a telephelyemre?",
+          "a": "A legtöbb feladatot távolról végezzük – biztonságos, titkosított kapcsolaton keresztül. Fizikai kiszállásra csak ritkán van szükség, például hardvercsere esetén."
+        },
+        {
+          "q": "Pontosan mi van benne a havi díjban?",
+          "a": "A havi alap üzemeltetési díj tartalmazza a rendszerfelügyeletet, a szoftverfrissítések kezelését, a biztonsági mentések ellenőrzését és az általános karbantartást. A fejlesztések és a fizikai beavatkozások külön kerülnek számlázásra."
+        },
+        {
+          "q": "Mi van, ha csak egyszer kell segítség, nem kell hosszú szerződés?",
+          "a": "Eseti megkereséseket is szívesen fogadjunk. Ha egyszer van szükség beavatkozásra, azt is elvégezzük – nincs kötelező szerződéskötés."
+        },
+        {
+          "q": "Milyen rendszereket tudnak üzemeltetni?",
+          "a": "Windows és Linux alapú szervereket, irodai munkaállomásokat, felhőalapú rendszereket (Microsoft 365, Google Workspace) és hálózati eszközöket egyaránt."
+        },
+        {
+          "q": "Mennyibe kerül körülbelül?",
+          "a": "Az ár az infrastruktúra méretétől függ. Pontos becsléshez töltse ki az intelligens igényfelmérő kérdőívünket – már az első lépésben kaphat hozzávetőleges számot."
+        }
+      ]
+    },
+    "network": {
+      "metaTitle": "Hálózatépítés és Hálózatfejlesztés | SIRONIC",
+      "metaDescription": "Stabil, biztonságos vállalati hálózat kiépítése és fejlesztése. Céges hálózattervezés, WiFi-rendszerek, VPN és strukturált hálózatépítés Magyarországon.",
+      "badge": "Hálózatépítés",
+      "heroTitle": "Hálózatépítés és hálózatfejlesztés – stabil alapok az üzletének",
+      "heroSubtitle": "Egy rosszul megtervezett hálózat naponta okoz gondot. A SIRONIC stabil, biztonságos és bővíthető hálózati infrastruktúrát épít és fejleszt.",
+      "introTitle": "Miért fontos egy jól megtervezett hálózat?",
+      "introText": "A vállalati hálózat az IT-rendszer alapja. Ha ez instabil, mindent befolyásol: lassú internet, kiesések, biztonsági kockázatok. Egy megfelelően tervezett és kiépített hálózat hosszú távon megtérül – kevesebb hiba, több hatékonyság.",
+      "benefitsTitle": "Mit csinálunk a hálózatépítés során?",
+      "benefits": [
+        {
+          "title": "Hálózattervezés",
+          "text": "Felmérjük az igényeket és a helyszínt, majd megtervezzük az optimális hálózati struktúrát."
+        },
+        {
+          "title": "Strukturált hálózatépítés",
+          "text": "Fizikai kábelhálózat, patch-panel, switch és route konfigurálás – rendesen, dokumentálva."
+        },
+        {
+          "title": "WiFi-rendszerek",
+          "text": "Megbízható vezeték nélküli lefedettség az egész irodában vagy telephelyen."
+        },
+        {
+          "title": "VPN és biztonságos csatlakozás",
+          "text": "Biztonságos remote hozzáférés a céges rendszerekhez, bárhonnan."
+        }
+      ],
+      "whoTitle": "Kiknek ajánljuk?",
+      "whoText": "Minden vállalkozásnak, ahol a hálózat aktuálisan problémás, elavult, vagy terjeszkedés miatt bővíteni kell – de magánszemélyeknek is szívesen segítünk.",
+      "whoItems": [
+        "Irodát nyitó vagy költöző cégek",
+        "Telephellyel rendelkező vállalkozások",
+        "Ahol a WiFi megbízhatatlan vagy lassú",
+        "Magánszemélyek otthoni hálózati problémákkal"
+      ],
+      "processTitle": "Hogyan zajlik a folyamat?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Helyszíni felmérés",
+          "text": "Megnézzük a helyszínt, a meglévő infrastruktúrát, és megbeszéljük az igényeket."
+        },
+        {
+          "step": "02",
+          "title": "Tervezés és ajánlat",
+          "text": "Elkészítjük a hálózati tervet és az árajánlatot – átláthatóan, tételesen."
+        },
+        {
+          "step": "03",
+          "title": "Kivitelezés",
+          "text": "Kiépítjük a hálózatot, konfiguráljuk az eszközöket és átadjuk dokumentáltan."
+        }
+      ],
+      "whyTitle": "Miért a SIRONIC?",
+      "whyItems": [
+        "Nem bonyolítjuk túl – csak annyit építünk, amennyire valóban szükség van",
+        "Átlátható, tételes árajánlat előre",
+        "A munka végén dokumentált, rendezett hálózatot ad át",
+        "Garanciát vállalunk a kiépített rendszerre"
+      ],
+      "ctaTitle": "Kérjen hálózati felmérést",
+      "ctaSubtitle": "Egy rövid egyeztetéssel kiderítjük, mi a legjobb megoldás az Ön helyzetére.",
+      "ctaPrimary": "Kapcsolatfelvétel",
+      "ctaSecondary": "Intelligens igényfelmérés",
+      "faqTitle": "Gyakori kérdések a hálózatépítésről",
+      "faqItems": [
+        {
+          "q": "Kell-e az egész hálózatot lecserélni, vagy csak a problémás részt?",
+          "a": "Nem feltétlenül kell mindent lecserélni. Felmérés után eldöntjük, mi az, ami jól működik, és csak ott avatkozunk be, ahol valóban szükséges."
+        },
+        {
+          "q": "Mennyire tart egy tipikus irodai hálózatépítés?",
+          "a": "Egy kisebb iroda (10–20 munkaállomás) esetén általában 1–2 nap a fizikai kiépítés. A pontos idő a helyszíntől és a komplexitástól függ."
+        },
+        {
+          "q": "Foglalkoznak WiFi-problémákkal is?",
+          "a": "Igen. Rosszul elhelyezett routerek, gyenge jel, interferencia – ezeket felmérjük és megoldjuk, akár access point hálózat kiépítésével."
+        },
+        {
+          "q": "Van lehetőség VPN-beállításra is?",
+          "a": "Igen, beállítjuk a biztonságos VPN-kapcsolatot, hogy a csapat otthonról is biztonságosan érhesse el a céges rendszereket."
+        },
+        {
+          "q": "Dolgoznak magánszemélyekkel is?",
+          "a": "Igen, magánszemélyeknek is szívesen segítünk otthoni hálózati problémák megoldásában."
+        }
+      ]
+    },
+    "nis2": {
+      "metaTitle": "NIS2 Megfelelőség és IT-rendszer kiépítése | SIRONIC",
+      "metaDescription": "NIS2-irányelv szerinti IT-rendszer tervezése, implementációja és üzemeltetése. Auditfelkészítés, dokumentáció és folyamatos operatív együttműködés.",
+      "badge": "NIS2 megfelelőség",
+      "heroTitle": "NIS2-kompatibilis IT-rendszer – megfelelőség, felesleges stressz nélkül",
+      "heroSubtitle": "A NIS2-irányelv új kötelezettségeket jelent sok magyarországi vállalkozás számára. A SIRONIC segít megfelelni – érthetően, lépésről lépésre.",
+      "introTitle": "Mi a NIS2, és kit érint?",
+      "introText": "A NIS2 (Network and Information Security Directive 2) az Európai Unió kiberbiztonsági irányelve, amely 2024-től fokozatosan kötelező Magyarországon. Elsősorban az érintett szektorokban működő közép- és nagyvállalkozásokat érinti, de hatása a kisebb cégekre is gyűrűzhet. Ha nem biztos benne, hogy Önre vonatkozik-e – kérdezze meg tőlünk.",
+      "benefitsTitle": "Mit csinál a SIRONIC a NIS2-folyamatban?",
+      "benefits": [
+        {
+          "title": "IT-rendszer tervezése",
+          "text": "Megtervezzük a NIS2-követelményeknek megfelelő IT-infrastruktúrát az Ön vállalkozásához."
+        },
+        {
+          "title": "Implementáció",
+          "text": "Konfiguráljuk és bevezetjük a szükséges rendszereket, folyamatokat és biztonsági intézkedéseket."
+        },
+        {
+          "title": "Auditfelkészítés",
+          "text": "Segítünk az audit dokumentációjában és a megfelelési elvárások teljesítésében."
+        },
+        {
+          "title": "Folyamatos operatív együttműködés",
+          "text": "Az audit után sem hagyjuk magára – folyamatos IT-üzemeltetéssel biztosítjuk a megfelelőség fenntartását."
+        }
+      ],
+      "whoTitle": "Kiknek szól ez a szolgáltatás?",
+      "whoText": "Azoknak a vállalkozásoknak, amelyekre a NIS2-irányelv kötelező, vagy amelyek szeretnék megelőzni a megfelelési kockázatokat.",
+      "whoItems": [
+        "Középvállalkozások érintett szektorokban",
+        "Cégek, amelyek ellátási láncban vesznek részt",
+        "Szervezetek, amelyek proaktívan akarnak megfelelni",
+        "Azok, akik már kaptak auditfelkészítési feladatot"
+      ],
+      "processTitle": "Hogyan dolgozunk együtt?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Helyzetelemzés",
+          "text": "Felmérjük a jelenlegi IT-rendszert és azonosítjuk a hiányosságokat a NIS2 követelményeihez képest."
+        },
+        {
+          "step": "02",
+          "title": "Tervkészítés és implementáció",
+          "text": "Megbízott tanácsadó partnerünkkel közösen kidolgozzuk és bevezetjük a szükséges változtatásokat."
+        },
+        {
+          "step": "03",
+          "title": "Auditfelkészítés és átadás",
+          "text": "Elkészítjük a dokumentációt, felkészítjük a folyamatokat az auditra és átadjuk az üzemeltetést."
+        }
+      ],
+      "whyTitle": "Miért a SIRONIC?",
+      "whyItems": [
+        "Megbízott NIS2-tanácsadó partnerrel dolgozunk",
+        "Nem csak tanácsot adunk – megvalósítjuk és üzemeltetjük is",
+        "Érthetően kommunikálunk, nem jogi zsargonban",
+        "Audit után is mellette maradunk"
+      ],
+      "ctaTitle": "Nem tudja, honnan kezdje a NIS2-megfelelést?",
+      "ctaSubtitle": "Vegyük fel a kapcsolatot – egy rövid egyeztetéssel tisztázzuk, milyen lépések szükségesek az Ön esetében.",
+      "ctaPrimary": "Kapcsolatfelvétel",
+      "ctaSecondary": "Intelligens igényfelmérés",
+      "faqTitle": "Gyakori kérdések a NIS2-ről",
+      "faqItems": [
+        {
+          "q": "Rám vonatkozik-e a NIS2?",
+          "a": "A NIS2 elsősorban az érintett szektorokban (energia, egészségügy, szállítás, digitális infrastruktúra stb.) működő közép- és nagyvállalkozásokra kötelező. Ha bizonytalan, kérdezzen minket – segítünk kideríteni."
+        },
+        {
+          "q": "Mi történik, ha nem felelek meg a NIS2-nek?",
+          "a": "Az irányelvnek való nem-megfelelés komoly szankciókkal járhat – beleértve a hatósági bírságokat és a reputációs kockázatokat. Ezért érdemes időben elkezdeni a felkészülést."
+        },
+        {
+          "q": "Mennyi időbe telik a NIS2-megfelelés?",
+          "a": "Ez az aktuális rendszer állapotától függ. Általában 3–6 hónapos folyamatról van szó – ettől rövidebb vagy hosszabb is lehet, attól függően, mennyit kell változtatni."
+        },
+        {
+          "q": "Önök maguk elvégzik az egész folyamatot?",
+          "a": "A technikai oldalt (IT-rendszer, implementáció, üzemeltetés) igen. A jogi és megfelelési tanácsadást megbízott partnercégünkkel közösen végezzük."
+        },
+        {
+          "q": "Mit kell hoznom az első egyeztetésre?",
+          "a": "Semmit különöset. Elegendő egy rövid leírás a vállalkozásról, az iparágról és az aktuális IT-infrastruktúráról. A többit mi intézzük."
+        }
+      ]
+    },
+    "webDev": {
+      "metaTitle": "Egyedi Weboldal- és Rendszerfejlesztés | SIRONIC",
+      "metaDescription": "Teljesen egyedi weboldal és üzleti rendszer fejlesztése. Sem WordPress, sem sablon – csak az Ön igényeire szabott megoldás, a designtól a háttérrendszerig.",
+      "badge": "Egyedi fejlesztés",
+      "heroTitle": "Egyedi webfejlesztés – sablon nélkül, az Ön igényeire",
+      "heroSubtitle": "Nem WordPress, nem Wix. Minden projekt az elejétől a végéig egyedileg tervezett és fejlesztett – az Ön márkájára, céljára és munkafolyamataira szabva.",
+      "introTitle": "Mi az egyedi fejlesztés, és miért jobb?",
+      "introText": "A sablonalapú rendszerek (WordPress, Wix, Shopify) gyorsak, de korlátosak. Ha pontosan azt akarja, amit el képzel – és nem azt, amit a sablon enged –, akkor egyedi fejlesztésre van szüksége. A SIRONIC minden projektet nulláról épít fel, a design-tól a háttérrendszerig.",
+      "benefitsTitle": "Mit fejlesztünk?",
+      "benefits": [
+        {
+          "title": "Bemutatkozó weboldalak",
+          "text": "Modern, gyors, SEO-barát bemutatkozó oldalak – egyedi design, egyedi tartalom."
+        },
+        {
+          "title": "Webáruházak",
+          "text": "Teljesen egyedi webshop megoldások, amelyek pontosan az Ön értékesítési folyamatához illeszkednek."
+        },
+        {
+          "title": "Belső üzleti rendszerek",
+          "text": "Egyedi CRM-ek, rendeléskezelők, belső portálok – bármilyen üzleti folyamat digitalizálható."
+        },
+        {
+          "title": "Webalapú alkalmazások",
+          "text": "Összetett, interaktív alkalmazások, amelyek böngészőben futnak – mobil- és asztali kompatibilitással."
+        }
+      ],
+      "whoTitle": "Kiknek ajánljuk?",
+      "whoText": "Azoknak, akiknek a sablonos megoldások nem elegek – mert különleges az igényük, vagy mert a márkájuk megkívánja az egyediséget.",
+      "whoItems": [
+        "Vállalkozások, akik kinőtték a WordPress-t",
+        "Cégek, akik egyedi munkafolyamatokat akarnak digitalizálni",
+        "Startupok, akik professzionális képet akarnak mutatni",
+        "Bárki, aki valóban saját weboldalt akar, nem sablont"
+      ],
+      "processTitle": "Hogyan dolgozunk?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Igényfelmérés és tervezés",
+          "text": "Megbeszéljük a célt, a célközönséget, a funkciókat és az arculatot. Ezt egy konkrét terv követi."
+        },
+        {
+          "step": "02",
+          "title": "Design és fejlesztés",
+          "text": "Elkészítjük a designt, majd az Ön jóváhagyása után nekiállunk a fejlesztésnek."
+        },
+        {
+          "step": "03",
+          "title": "Tesztelés és átadás",
+          "text": "Alaposan teszteljük, majd átadjuk – és segítünk a további fejlesztésben, ha kell."
+        }
+      ],
+      "whyTitle": "Miért a SIRONIC?",
+      "whyItems": [
+        "Sablonmentes fejlesztés – minden projekt egyedi",
+        "Átlátható folyamat és kommunikáció a fejlesztés során",
+        "Rugalmas méretezhetőség – a rendszer nő az üzlettel együtt",
+        "Referenciálható munkák – megnézheti korábbi projektjeinket"
+      ],
+      "ctaTitle": "Van egy ötlete? Valósítsuk meg együtt.",
+      "ctaSubtitle": "Vegyük fel a kapcsolatot – megbeszéljük az igényeit, és elkészítjük az ajánlatot.",
+      "ctaPrimary": "Referenciák megtekintése",
+      "ctaSecondary": "Kapcsolatfelvétel",
+      "faqTitle": "Gyakori kérdések a webfejlesztésről",
+      "faqItems": [
+        {
+          "q": "Miért ne használjak WordPress-t?",
+          "a": "A WordPress jó egyszerű blogokhoz és kisebb oldalakhoz. De ha egyedi funkciókat, specifikus designt vagy komplex üzleti logikát akar, az egyedi fejlesztés megbízhatóbb, gyorsabb és biztonságosabb megoldás hosszú távon."
+        },
+        {
+          "q": "Mennyi ideig tart egy weboldal elkészítése?",
+          "a": "Egy egyszerű bemutatkozó oldal általában 2–4 hét. Egy összetettebb rendszer vagy webáruház 6–12 hét. Pontos időt az igényfelmérés után tudunk mondani."
+        },
+        {
+          "q": "Mennyibe kerül egy egyedi weboldal?",
+          "a": "Az ár a komplexitástól és a funkcióktól függ. Egy bemutatkozó oldal és egy webáruház más kategória. Ajánlatkérés után pontos számot adunk."
+        },
+        {
+          "q": "Az elkészült oldalt Önök üzemeltetik?",
+          "a": "Igen, ha igényli. A fejlesztés után üzemeltetést, karbantartást és frissítést is vállalunk – akár havi díjas szerződéssel."
+        },
+        {
+          "q": "Én tudom majd szerkeszteni a tartalmat?",
+          "a": "Igen. Ha igényli, beépítünk egy admin felületet, amelyen keresztül Ön maga módosíthatja a szövegeket, képeket, termékeket – programozói tudás nélkül."
+        }
+      ]
+    }
   }
 }

@@ -226,15 +226,30 @@
       "steps": {
         "companySize": {
           "question": "How many users work at your company?",
-          "options": ["1–5 people", "6–15 people", "16–30 people", "30+ people"]
+          "options": [
+            "1–5 people",
+            "6–15 people",
+            "16–30 people",
+            "30+ people"
+          ]
         },
         "devices": {
           "question": "How many devices (laptops, PCs, servers) are in the infrastructure?",
-          "options": ["1–10 devices", "11–25 devices", "26–50 devices", "50+ devices"]
+          "options": [
+            "1–10 devices",
+            "11–25 devices",
+            "26–50 devices",
+            "50+ devices"
+          ]
         },
         "serverRoom": {
           "question": "Do you have an on-site server or server room?",
-          "options": ["Yes, own server", "Cloud-based solution", "Mixed (on-site + cloud)", "I don't know"]
+          "options": [
+            "Yes, own server",
+            "Cloud-based solution",
+            "Mixed (on-site + cloud)",
+            "I don't know"
+          ]
         },
         "priority": {
           "question": "What is your most important priority?",
@@ -330,5 +345,359 @@
     "viewDetails": "View Details",
     "smartFormCta": "Smart Needs Assessment",
     "externalLink": "Open external page"
+  },
+  "servicePages": {
+    "itOps": {
+      "metaTitle": "IT Systems Operations | SIRONIC",
+      "metaDescription": "Reliable remote IT operations for micro-businesses to small manufacturers. Monthly contract, fast response, no surprises.",
+      "badge": "IT Operations",
+      "heroTitle": "IT Systems Operations – reliable IT support, without the headaches",
+      "heroSubtitle": "We manage your entire IT infrastructure remotely. No unnecessary on-site visits, no unexpected downtime – just continuous, reliable operation day after day.",
+      "introTitle": "What does this mean in practice?",
+      "introText": "IT operations is the work that keeps running even when no one notices – software updates, backups, access management, network monitoring. SIRONIC takes over this entire process so you can focus on your business.",
+      "benefitsTitle": "Why outsource IT operations?",
+      "benefits": [
+        {
+          "title": "Predictable monthly cost",
+          "text": "No surprise invoices. Fixed monthly fee based on infrastructure size."
+        },
+        {
+          "title": "Proactive mindset",
+          "text": "We don't just react to problems – we prevent them before they cause issues."
+        },
+        {
+          "title": "Fast response",
+          "text": "When something goes wrong, you don't wait weeks. We intervene quickly."
+        },
+        {
+          "title": "No need for an in-house IT team",
+          "text": "Save on a full-time IT specialist while getting professional support."
+        }
+      ],
+      "whoTitle": "Who is this for?",
+      "whoText": "Primarily for businesses that cannot or do not want to maintain an internal IT team, but want reliable, continuous background support.",
+      "whoItems": [
+        "Micro-businesses (1–15 people)",
+        "Small and medium enterprises (15–50 people)",
+        "Small manufacturing companies and offices",
+        "Anyone tired of dealing with recurring IT issues"
+      ],
+      "processTitle": "How does it work?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Assessment",
+          "text": "We assess your infrastructure, devices and needs – online via our smart questionnaire."
+        },
+        {
+          "step": "02",
+          "title": "Contract and setup",
+          "text": "We set the monthly fee, configure monitoring and remote access tools."
+        },
+        {
+          "step": "03",
+          "title": "Ongoing operations",
+          "text": "We handle system monitoring. You work, we handle the IT background."
+        }
+      ],
+      "whyTitle": "Why SIRONIC?",
+      "whyItems": [
+        "Transparent communication and real pricing",
+        "We keep it simple – no unnecessary complexity",
+        "One-time requests welcome – no long-term contract required",
+        "Flexible solutions tailored to local business needs"
+      ],
+      "ctaTitle": "Find out what IT operations will cost you",
+      "ctaSubtitle": "Fill in our smart needs assessment and get an approximate monthly price – no obligation.",
+      "ctaPrimary": "Smart Needs Assessment",
+      "ctaSecondary": "Contact Us",
+      "faqTitle": "Frequently asked questions about IT operations",
+      "faqItems": [
+        {
+          "q": "Do you need to come on-site?",
+          "a": "Most tasks are performed remotely via secure, encrypted connections. Physical visits are rare – only necessary for hardware replacements."
+        },
+        {
+          "q": "What's exactly included in the monthly fee?",
+          "a": "The base monthly fee covers system monitoring, software update management, backup verification and general maintenance. Developments and physical interventions are billed separately."
+        },
+        {
+          "q": "What if I only need one-time help?",
+          "a": "We gladly accept one-time requests too. No mandatory contract required."
+        },
+        {
+          "q": "What systems can you operate?",
+          "a": "Windows and Linux servers, office workstations, cloud-based systems (Microsoft 365, Google Workspace) and network devices."
+        },
+        {
+          "q": "How much does it approximately cost?",
+          "a": "The price depends on your infrastructure size. Fill in our smart questionnaire for an approximate estimate."
+        }
+      ]
+    },
+    "network": {
+      "metaTitle": "Network Building and Development | SIRONIC",
+      "metaDescription": "Stable, secure corporate network installation and development. Business network planning, WiFi systems, VPN and structured cabling.",
+      "badge": "Network Building",
+      "heroTitle": "Network building and development – a solid foundation for your business",
+      "heroSubtitle": "A poorly designed network causes daily problems. SIRONIC builds and develops stable, secure and scalable network infrastructure.",
+      "introTitle": "Why does a well-designed network matter?",
+      "introText": "The corporate network is the foundation of your IT systems. If it's unstable, everything suffers: slow internet, outages, security risks. A well-planned network pays off long-term.",
+      "benefitsTitle": "What do we do during network installation?",
+      "benefits": [
+        {
+          "title": "Network planning",
+          "text": "We assess your needs and site, then design the optimal network structure."
+        },
+        {
+          "title": "Structured cabling",
+          "text": "Physical cable network, patch panels, switch and router configuration – clean and documented."
+        },
+        {
+          "title": "WiFi systems",
+          "text": "Reliable wireless coverage across your entire office or facility."
+        },
+        {
+          "title": "VPN and secure access",
+          "text": "Secure remote access to company systems, from anywhere."
+        }
+      ],
+      "whoTitle": "Who is this for?",
+      "whoText": "Any business where the network is currently problematic, outdated, or needs expansion – we also help private clients.",
+      "whoItems": [
+        "Companies opening or relocating offices",
+        "Businesses with physical premises",
+        "Where WiFi is unreliable or slow",
+        "Private clients with home network issues"
+      ],
+      "processTitle": "How does the process work?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "On-site assessment",
+          "text": "We visit the site, review existing infrastructure and discuss your needs."
+        },
+        {
+          "step": "02",
+          "title": "Planning and quote",
+          "text": "We prepare the network plan and itemized quote – transparently."
+        },
+        {
+          "step": "03",
+          "title": "Installation",
+          "text": "We build the network, configure devices and hand it over with documentation."
+        }
+      ],
+      "whyTitle": "Why SIRONIC?",
+      "whyItems": [
+        "We don't overcomplicate – we build only what's truly needed",
+        "Transparent, itemized quote upfront",
+        "Documented, organized network handed over at completion",
+        "We stand behind the installed system"
+      ],
+      "ctaTitle": "Request a network assessment",
+      "ctaSubtitle": "A brief consultation reveals the best solution for your situation.",
+      "ctaPrimary": "Contact Us",
+      "ctaSecondary": "Smart Needs Assessment",
+      "faqTitle": "Frequently asked questions about network building",
+      "faqItems": [
+        {
+          "q": "Does the entire network need to be replaced?",
+          "a": "Not necessarily. After assessment we decide what works well and only intervene where truly needed."
+        },
+        {
+          "q": "How long does a typical office network installation take?",
+          "a": "For a smaller office (10–20 workstations) physical installation typically takes 1–2 days."
+        },
+        {
+          "q": "Do you handle WiFi problems too?",
+          "a": "Yes. Poorly placed routers, weak signal, interference – we assess and solve these, including access point networks."
+        },
+        {
+          "q": "Can you set up VPN as well?",
+          "a": "Yes, we configure secure VPN connections so your team can securely access company systems remotely."
+        },
+        {
+          "q": "Do you work with private clients too?",
+          "a": "Yes, we're happy to help private clients with home network issues."
+        }
+      ]
+    },
+    "nis2": {
+      "metaTitle": "NIS2 Compliance and IT System Implementation | SIRONIC",
+      "metaDescription": "NIS2-compliant IT system planning, implementation and operation. Audit preparation, documentation and ongoing operational cooperation.",
+      "badge": "NIS2 Compliance",
+      "heroTitle": "NIS2-compliant IT system – compliance, without the unnecessary stress",
+      "heroSubtitle": "The NIS2 directive brings new obligations for many businesses. SIRONIC helps you comply – clearly, step by step.",
+      "introTitle": "What is NIS2, and who does it affect?",
+      "introText": "NIS2 (Network and Information Security Directive 2) is the EU's cybersecurity directive, becoming mandatory in Hungary from 2024. It primarily affects medium and large enterprises in certain sectors, but its effects can ripple to smaller companies too.",
+      "benefitsTitle": "What does SIRONIC do in the NIS2 process?",
+      "benefits": [
+        {
+          "title": "IT system planning",
+          "text": "We design NIS2-compliant IT infrastructure tailored to your business."
+        },
+        {
+          "title": "Implementation",
+          "text": "We configure and deploy necessary systems, processes and security measures."
+        },
+        {
+          "title": "Audit preparation",
+          "text": "We help with audit documentation and meeting compliance requirements."
+        },
+        {
+          "title": "Ongoing operational cooperation",
+          "text": "We don't leave you after the audit – continuous IT operations maintain compliance."
+        }
+      ],
+      "whoTitle": "Who is this service for?",
+      "whoText": "Businesses for which NIS2 is mandatory, or those who want to proactively manage compliance risks.",
+      "whoItems": [
+        "Medium enterprises in affected sectors",
+        "Companies participating in supply chains",
+        "Organizations wanting to proactively comply",
+        "Those who have already received audit preparation tasks"
+      ],
+      "processTitle": "How do we work together?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Situation analysis",
+          "text": "We assess your current IT system and identify gaps against NIS2 requirements."
+        },
+        {
+          "step": "02",
+          "title": "Planning and implementation",
+          "text": "Together with our trusted consulting partner, we develop and implement necessary changes."
+        },
+        {
+          "step": "03",
+          "title": "Audit preparation and handover",
+          "text": "We prepare documentation, ready processes for audit and hand over operations."
+        }
+      ],
+      "whyTitle": "Why SIRONIC?",
+      "whyItems": [
+        "We work with a trusted NIS2 consulting partner",
+        "We don't just advise – we implement and operate too",
+        "We communicate clearly, not in legal jargon",
+        "We stay with you after the audit too"
+      ],
+      "ctaTitle": "Not sure where to start with NIS2 compliance?",
+      "ctaSubtitle": "Let's connect – a brief consultation will clarify what steps are needed in your case.",
+      "ctaPrimary": "Contact Us",
+      "ctaSecondary": "Smart Needs Assessment",
+      "faqTitle": "Frequently asked questions about NIS2",
+      "faqItems": [
+        {
+          "q": "Does NIS2 apply to me?",
+          "a": "NIS2 is mandatory primarily for medium and large enterprises in affected sectors (energy, healthcare, transport, digital infrastructure, etc.). If unsure, ask us – we'll help figure it out."
+        },
+        {
+          "q": "What happens if I don't comply with NIS2?",
+          "a": "Non-compliance can carry serious penalties – including regulatory fines and reputational risks. Starting preparation early is advisable."
+        },
+        {
+          "q": "How long does NIS2 compliance take?",
+          "a": "It depends on the current state of your systems. Typically a 3–6 month process, though it can be shorter or longer depending on how much needs to change."
+        },
+        {
+          "q": "Do you handle the entire process yourselves?",
+          "a": "The technical side (IT system, implementation, operations) yes. Legal and compliance consulting is done together with our partner firm."
+        },
+        {
+          "q": "What should I bring to the first consultation?",
+          "a": "Nothing special. A brief description of your business, industry and current IT infrastructure is enough. We'll handle the rest."
+        }
+      ]
+    },
+    "webDev": {
+      "metaTitle": "Custom Website and System Development | SIRONIC",
+      "metaDescription": "Fully custom website and business system development. No WordPress, no templates – only solutions tailored to your needs, from design to backend.",
+      "badge": "Custom Development",
+      "heroTitle": "Custom web development – no templates, built for your needs",
+      "heroSubtitle": "Not WordPress, not Wix. Every project is uniquely designed and developed from start to finish – tailored to your brand, goals and workflows.",
+      "introTitle": "What is custom development, and why is it better?",
+      "introText": "Template-based systems (WordPress, Wix, Shopify) are fast but limited. If you want exactly what you envision – not just what the template allows – you need custom development. SIRONIC builds every project from scratch, from design to backend.",
+      "benefitsTitle": "What do we develop?",
+      "benefits": [
+        {
+          "title": "Presentation websites",
+          "text": "Modern, fast, SEO-friendly websites – unique design, unique content."
+        },
+        {
+          "title": "Webshops",
+          "text": "Fully custom e-commerce solutions that fit your exact sales process."
+        },
+        {
+          "title": "Internal business systems",
+          "text": "Custom CRMs, order managers, internal portals – any business process can be digitized."
+        },
+        {
+          "title": "Web-based applications",
+          "text": "Complex, interactive applications running in the browser – mobile and desktop compatible."
+        }
+      ],
+      "whoTitle": "Who is this for?",
+      "whoText": "Anyone for whom template solutions aren't enough – because their needs are unique or their brand demands it.",
+      "whoItems": [
+        "Businesses that have outgrown WordPress",
+        "Companies wanting to digitize unique workflows",
+        "Startups wanting a professional online presence",
+        "Anyone who wants a truly custom website, not a template"
+      ],
+      "processTitle": "How do we work?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Requirements and planning",
+          "text": "We discuss goals, target audience, features and branding. A concrete plan follows."
+        },
+        {
+          "step": "02",
+          "title": "Design and development",
+          "text": "We create the design, then after your approval we start development."
+        },
+        {
+          "step": "03",
+          "title": "Testing and handover",
+          "text": "We thoroughly test, then hand over – and help with further development if needed."
+        }
+      ],
+      "whyTitle": "Why SIRONIC?",
+      "whyItems": [
+        "Template-free development – every project is unique",
+        "Transparent process and communication throughout",
+        "Flexible scalability – the system grows with your business",
+        "Referenceable work – you can view our previous projects"
+      ],
+      "ctaTitle": "Got an idea? Let's build it together.",
+      "ctaSubtitle": "Get in touch – we'll discuss your needs and prepare a quote.",
+      "ctaPrimary": "View References",
+      "ctaSecondary": "Contact Us",
+      "faqTitle": "Frequently asked questions about web development",
+      "faqItems": [
+        {
+          "q": "Why not use WordPress?",
+          "a": "WordPress is good for simple blogs and smaller sites. But for custom features, specific design or complex business logic, custom development is more reliable, faster and safer long-term."
+        },
+        {
+          "q": "How long does a website take to build?",
+          "a": "A simple presentation site is typically 2–4 weeks. A more complex system or webshop is 6–12 weeks. Exact timeframes after requirements assessment."
+        },
+        {
+          "q": "How much does a custom website cost?",
+          "a": "The price depends on complexity and features. A presentation site and an e-commerce store are different categories. We'll give you an exact number after a quote request."
+        },
+        {
+          "q": "Can you operate the finished site?",
+          "a": "Yes, if you need it. We offer maintenance, operations and updates after development – even on a monthly contract."
+        },
+        {
+          "q": "Can I edit the content myself?",
+          "a": "Yes. If needed, we'll build an admin interface where you can modify texts, images and products yourself – without programming knowledge."
+        }
+      ]
+    }
   }
 }

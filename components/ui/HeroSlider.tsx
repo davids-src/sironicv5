@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 import styles from "./HeroSlider.module.css";
 
 export interface Slide {
@@ -22,6 +22,13 @@ interface Props {
 export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   const go = useCallback((next: number, dir: number) => {
     setDirection(dir);
@@ -139,6 +146,23 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
           <ChevronRight size={20} />
         </button>
       </div>
+
+      {/* Scroll indicator */}
+      <AnimatePresence>
+        {!scrolled && (
+          <motion.a
+            href="#main-content"
+            className={styles.scrollIndicator}
+            aria-label="Görgessen le a tartalomhoz"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ delay: 1.2, duration: 0.5 }}
+          >
+            <ChevronDown size={22} />
+          </motion.a>
+        )}
+      </AnimatePresence>
 
       {/* Bottom fade */}
       <div className={styles.bottomFade} aria-hidden />

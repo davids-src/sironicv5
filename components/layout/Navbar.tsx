@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { Sun, Moon, Menu, X, ExternalLink, Zap } from "lucide-react";
@@ -51,6 +52,14 @@ export default function Navbar() {
         <div className={`container ${styles.inner}`}>
           {/* Logo */}
           <Link href={`/${locale}`} className={styles.logo} aria-label="SIRONIC – Főoldal">
+            <Image
+              src="/sironic-logo.svg"
+              alt="SIRONIC logo"
+              width={28}
+              height={28}
+              className={styles.logoMark}
+              priority
+            />
             <span className={styles.logoText}>SIRONIC</span>
           </Link>
 
