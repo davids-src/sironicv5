@@ -19,8 +19,8 @@ export default function SectionReveal({ children, className = "", delay = 0, onc
     <motion.div
       ref={ref}
       className={className}
-      initial={{ opacity: 0, y: 32 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      initial={false}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay, ease: [0.4, 0, 0.2, 1] }}
     >
       {children}

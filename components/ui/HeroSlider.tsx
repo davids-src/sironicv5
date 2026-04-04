@@ -63,14 +63,14 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
             className={styles.slide}
             custom={direction}
             variants={variants}
-            initial="enter"
+            initial={false}
             animate="center"
             exit="exit"
             transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
           >
             <motion.span
               className="badge"
-              initial={{ opacity: 0, y: 12 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 }}
             >
@@ -79,7 +79,7 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
 
             <motion.h1
               className={`display-1 ${styles.title}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25 }}
             >
@@ -88,7 +88,7 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
 
             <motion.p
               className={`body-lg ${styles.subtitle}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35 }}
             >
@@ -97,7 +97,7 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
 
             <motion.div
               className={styles.ctas}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45 }}
             >
