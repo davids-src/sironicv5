@@ -13,7 +13,7 @@ interface Props {
 
 export default function SectionReveal({ children, className = "", delay = 0, once = true }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, margin: "-80px 0px" });
+  const isInView = useInView(ref, { once, amount: 0.1 });
 
   return (
     <motion.div
