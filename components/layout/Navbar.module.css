@@ -102,6 +102,12 @@
   margin-left: auto;
 }
 
+@media (max-width: 480px) {
+  .actions {
+    gap: 0.25rem;
+  }
+}
+
 /* Smart Form btn */
 .smartFormBtn {
   display: inline-flex;
@@ -118,6 +124,7 @@
   transition: all var(--transition-fast);
   box-shadow: 0 0 0 0 var(--primary-glow);
   animation: pulse-cta 3s ease-in-out infinite;
+  white-space: nowrap;
 }
 
 .smartFormBtn:hover {
@@ -125,6 +132,13 @@
   transform: translateY(-1px);
   box-shadow: 0 6px 20px var(--primary-glow);
   animation: none;
+}
+
+/* On smaller screens hide the long label text, show short version */
+@media (max-width: 1024px) {
+  .smartFormBtn {
+    display: none;
+  }
 }
 
 @keyframes pulse-cta {
@@ -179,16 +193,29 @@
   background: var(--surface);
 }
 
+/* Mobile Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
 /* Mobile Drawer */
 .mobileDrawer {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
+  z-index: 1000;
   padding: 1.5rem var(--container-pad);
+  padding-top: 5rem;
   box-shadow: var(--shadow-lg);
+  overflow-y: auto;
 }
 
 .mobileNav {
@@ -225,10 +252,42 @@
   gap: 0.5rem;
   background: var(--primary);
   color: #fff;
+  font-size: 1rem;
   font-weight: 700;
   padding: 1rem 1.25rem;
   border-radius: var(--radius-md);
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   text-decoration: none;
   justify-content: center;
+  min-height: 52px;
+  letter-spacing: 0.01em;
+  animation: pulse-cta 3s ease-in-out infinite;
+}
+
+.mobileSmartFormBtn:hover {
+  background: var(--primary-dark);
+  animation: none;
+}
+
+/* Close button in mobile drawer */
+.drawerClose {
+  position: absolute;
+  top: 1rem;
+  right: var(--container-pad);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.drawerClose:hover {
+  color: var(--text);
+  border-color: var(--border-hover);
 }

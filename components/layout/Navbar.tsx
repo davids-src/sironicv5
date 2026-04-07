@@ -114,25 +114,39 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Drawer */}
+        {/* Mobile Overlay + Drawer */}
         {mobileOpen && (
-          <div className={styles.mobileDrawer} role="dialog" aria-label="Mobilnavigáció">
-            <nav className={styles.mobileNav}>
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""}`}
-                >
-                  {link.label}
+          <>
+            <div
+              className={styles.overlay}
+              onClick={() => setMobileOpen(false)}
+              aria-hidden="true"
+            />
+            <div className={styles.mobileDrawer} role="dialog" aria-label="Mobilnavigáció">
+              <button
+                className={styles.drawerClose}
+                onClick={() => setMobileOpen(false)}
+                aria-label="Menü bezárása"
+              >
+                <X size={20} />
+              </button>
+              <nav className={styles.mobileNav}>
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link href={smartFormHref} className={styles.mobileSmartFormBtn}>
+                  <Zap size={18} />
+                  {t("smartForm")}
                 </Link>
-              ))}
-              <Link href={smartFormHref} className={styles.mobileSmartFormBtn}>
-                <Zap size={16} />
-                {t("smartForm")}
-              </Link>
-            </nav>
-          </div>
+              </nav>
+            </div>
+          </>
         )}
       </header>
     </>

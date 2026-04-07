@@ -13,6 +13,7 @@
 @media (max-width: 768px) {
   .inner { grid-template-columns: 1fr; gap: 2rem; }
   .reverse { direction: ltr; }
+  .iconBox { width: 80px; height: 80px; }
 }
 
 /* Icon panel */

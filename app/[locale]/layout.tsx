@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import MobileCtaBar from "@/components/layout/MobileCtaBar";
 import type { Metadata } from "next";
 
 type Props = {
@@ -59,6 +60,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             {children}
           </main>
           <Footer />
+          <MobileCtaBar />
         </div>
       </ThemeProvider>
     </NextIntlClientProvider>

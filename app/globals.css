@@ -258,6 +258,14 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .btn {
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 .btn-primary {
   background: var(--primary);
   color: #fff;
@@ -408,6 +416,15 @@ a {
   box-shadow: 0 0 0 3px var(--primary-glow);
 }
 
+/* iOS Safari zoom fix: ensure font-size is at least 16px on mobile */
+@media (max-width: 768px) {
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 16px;
+  }
+}
+
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: var(--text-subtle);
@@ -503,3 +520,64 @@ a {
   background: var(--primary-glow);
   color: var(--primary);
 }
+
+/* ─── STICKY MOBILE CTA BAR ──────────────────────────────────────────────── */
+.mobileCtaBar {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .mobileCtaBar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    padding: 0.75rem var(--container-pad);
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    gap: 0.75rem;
+    align-items: center;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+  }
+
+  .mobileCtaBar a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    min-height: 48px;
+  }
+
+  .mobileCtaBar .ctaPrimary {
+    background: var(--primary);
+    color: #fff;
+    animation: pulse-cta 3s ease-in-out infinite;
+  }
+
+  .mobileCtaBar .ctaSecondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+}
+
+@keyframes pulse-cta {
+  0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
+  50%       { box-shadow: 0 0 0 6px transparent; }
+}
+
+/* Extra bottom padding on pages that show the mobile CTA bar */
+@media (max-width: 1023px) {
+  .hasCtaBar {
+    padding-bottom: 90px;
+  }
+}

@@ -783,8 +783,7 @@ function AssessmentWizard() {
         )}
         <button
           type="button"
-          className="btn btn-primary"
-          style={{ marginLeft: "auto" }}
+          className={`btn btn-primary ${styles.stepNavNext}`}
           disabled={!canNext}
           onClick={handleNext}
         >
