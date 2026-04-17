@@ -74,10 +74,8 @@ export default async function ServicesPage({ params }: Props) {
                   ))}
                 </ul>
                 <div className={styles.cardCtas}>
-                  <Link href={smartFormHref} className="btn btn-primary">{t("itOps.cta1")} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/kapcsolat`} className="btn btn-outline">{t("itOps.cta2")} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/szolgaltatasok/rendszeruzemeltetés`} className="btn btn-ghost">
-                    {locale === "hu" ? "Részletes oldal" : "Full details"} <ArrowRight size={14} />
+                  <Link href={`/${locale}/szolgaltatasok/rendszeruzemeltetes`} className="btn btn-primary">
+                    {locale === "hu" ? "További információ" : "Learn more"} <ArrowRight size={15} />
                   </Link>
                 </div>
               </div>
@@ -105,9 +103,8 @@ export default async function ServicesPage({ params }: Props) {
                   ))}
                 </ul>
                 <div className={styles.cardCtas}>
-                  <Link href={`/${locale}/kapcsolat`} className="btn btn-primary">{t("network.cta")} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/szolgaltatasok/halozatepites`} className="btn btn-ghost">
-                    {locale === "hu" ? "Részletes oldal" : "Full details"} <ArrowRight size={14} />
+                  <Link href={`/${locale}/szolgaltatasok/halozatepites`} className="btn btn-primary">
+                    {locale === "hu" ? "További információ" : "Learn more"} <ArrowRight size={15} />
                   </Link>
                 </div>
               </div>
@@ -135,9 +132,8 @@ export default async function ServicesPage({ params }: Props) {
                   ))}
                 </ul>
                 <div className={styles.cardCtas}>
-                  <Link href={`/${locale}/kapcsolat`} className="btn btn-primary">{t("nis2.cta")} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/szolgaltatasok/nis2-tamogatas`} className="btn btn-ghost">
-                    {locale === "hu" ? "Részletes oldal" : "Full details"} <ArrowRight size={14} />
+                  <Link href={`/${locale}/szolgaltatasok/nis2-tamogatas`} className="btn btn-primary">
+                    {locale === "hu" ? "További információ" : "Learn more"} <ArrowRight size={15} />
                   </Link>
                 </div>
               </div>
@@ -165,10 +161,8 @@ export default async function ServicesPage({ params }: Props) {
                   ))}
                 </ul>
                 <div className={styles.cardCtas}>
-                  <Link href={`/${locale}/referenciak`} className="btn btn-primary">{t("webDev.cta")} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/kapcsolat`} className="btn btn-outline">{locale === "hu" ? "Ajánlatkérés" : "Get a Quote"} <ArrowRight size={15} /></Link>
-                  <Link href={`/${locale}/szolgaltatasok/webfejlesztes`} className="btn btn-ghost">
-                    {locale === "hu" ? "Részletes oldal" : "Full details"} <ArrowRight size={14} />
+                  <Link href={`/${locale}/szolgaltatasok/webfejlesztes`} className="btn btn-primary">
+                    {locale === "hu" ? "További információ" : "Learn more"} <ArrowRight size={15} />
                   </Link>
                 </div>
               </div>

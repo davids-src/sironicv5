@@ -5,10 +5,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sironic.eu"),
   icons: {
     icon: [
-      { url: "/sironic-logo.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/sironic_logo.png", type: "image/png", sizes: "512x512" },
+      { url: "/sironic_logo.png", type: "image/png", sizes: "192x192" },
     ],
-    apple: "/sironic-logo.svg",
+    shortcut: "/sironic_logo.png",
+    apple: "/sironic_logo.png",
   },
 };
 

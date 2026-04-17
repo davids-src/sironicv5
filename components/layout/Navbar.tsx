@@ -53,10 +53,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href={`/${locale}`} className={styles.logo} aria-label="SIRONIC – Főoldal">
             <Image
-              src="/sironic-logo.svg"
+              src="/sironic_logo.png"
               alt="SIRONIC logo"
-              width={28}
-              height={28}
+              width={34}
+              height={34}
               className={styles.logoMark}
               priority
             />

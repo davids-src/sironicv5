@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "", priority: 1.0 },
     { path: "/szolgaltatasok", priority: 0.9 },
-    { path: "/szolgaltatasok/rendszeruzemeltetés", priority: 0.85 },
+    { path: "/szolgaltatasok/rendszeruzemeltetes", priority: 0.85 },
     { path: "/szolgaltatasok/halozatepites", priority: 0.85 },
     { path: "/szolgaltatasok/nis2-tamogatas", priority: 0.85 },
     { path: "/szolgaltatasok/webfejlesztes", priority: 0.85 },

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { ExternalLink, Zap } from "lucide-react";
+import { ExternalLink, Zap, Mail, Phone, MapPin, Hash } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -22,6 +22,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={`container ${styles.inner}`}>
+
         {/* Brand column */}
         <div className={styles.brand}>
           <Link href={`/${locale}`} className={styles.logo}>SIRONIC</Link>
@@ -50,7 +51,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Company */}
+        {/* Company nav */}
         <div className={styles.col}>
           <h3 className={styles.colTitle}>{t("company")}</h3>
           <ul className={styles.linkList}>
@@ -62,7 +63,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Smart Form CTA column */}
+        {/* Smart Form CTA */}
         <div className={styles.col}>
           <h3 className={styles.colTitle}>{nav("smartForm")}</h3>
           <p className={styles.ctaText}>
@@ -78,6 +79,34 @@ export default function Footer() {
             {nav("smartForm")}
           </Link>
         </div>
+
+        {/* Company / Legal info */}
+        <div className={styles.col}>
+          <h3 className={styles.colTitle}>{locale === "hu" ? "Céginformáció" : "Company Info"}</h3>
+          <ul className={styles.infoList}>
+            <li>
+              <span className={styles.infoLabel}>Skoda Dávid András</span>
+              <span className={styles.infoValue}>{locale === "hu" ? "Egyéni Vállalkozó" : "Sole Trader"}</span>
+            </li>
+            <li className={styles.infoRow}>
+              <MapPin size={13} className={styles.infoIcon} />
+              <span className={styles.infoValue}>8000 Székesfehérvár,<br />Lövölde utca 24 4/15</span>
+            </li>
+            <li className={styles.infoRow}>
+              <Hash size={13} className={styles.infoIcon} />
+              <span className={styles.infoValue}>45755754-2-27</span>
+            </li>
+            <li className={styles.infoRow}>
+              <Mail size={13} className={styles.infoIcon} />
+              <a href="mailto:hello@sironic.hu" className={styles.infoLink}>hello@sironic.hu</a>
+            </li>
+            <li className={styles.infoRow}>
+              <Phone size={13} className={styles.infoIcon} />
+              <a href="tel:+36702735532" className={styles.infoLink}>+36 70 273 5532</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
       <div className={`container ${styles.bottom}`}>

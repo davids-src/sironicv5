@@ -43,9 +43,10 @@
 }
 
 .logoMark {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .logoText {

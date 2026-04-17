@@ -315,8 +315,8 @@
     "submit": "Send",
     "success": "Thank you for your message! We'll get back to you shortly.",
     "namePlaceholder": "Your name",
-    "emailPlaceholder": "example@company.com",
-    "phonePlaceholder": "+36 30 000 0000",
+    "emailPlaceholder": "hello@sironic.hu",
+    "phonePlaceholder": "+36 70 273 5532",
     "messagePlaceholder": "How can we help?"
   },
   "footer": {

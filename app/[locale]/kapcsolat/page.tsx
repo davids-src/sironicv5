@@ -53,21 +53,21 @@ export default async function ContactPage({ params }: Props) {
                     <div className="icon-box"><MapPin size={20} /></div>
                     <div>
                       <strong>{t("address")}</strong>
-                      <p>{locale === "hu" ? "Magyarország" : "Hungary"}</p>
+                      <p>8000 Székesfehérvár, Lövölde utca 24 4/15</p>
                     </div>
                   </li>
                   <li>
                     <div className="icon-box"><Mail size={20} /></div>
                     <div>
                       <strong>{t("email")}</strong>
-                      <a href="mailto:info@sironic.eu" className={styles.infoLink}>info@sironic.eu</a>
+                      <a href="mailto:hello@sironic.hu" className={styles.infoLink}>hello@sironic.hu</a>
                     </div>
                   </li>
                   <li>
                     <div className="icon-box"><Phone size={20} /></div>
                     <div>
                       <strong>{t("phone")}</strong>
-                      <p>{locale === "hu" ? "Hamarosan" : "Coming soon"}</p>
+                      <a href="tel:+36702735532" className={styles.infoLink}>+36 70 273 5532</a>
                     </div>
                   </li>
                 </ul>
