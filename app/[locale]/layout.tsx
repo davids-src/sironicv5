@@ -6,6 +6,9 @@ import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileCtaBar from "@/components/layout/MobileCtaBar";
+import CookieConsent from "@/components/layout/CookieConsent";
+import GoogleAnalyticsTracker from "@/components/layout/GoogleAnalyticsTracker";
+import StructuredData from "@/components/layout/StructuredData";
 import type { Metadata } from "next";
 
 type Props = {
@@ -61,6 +64,9 @@ export default async function LocaleLayout({ children, params }: Props) {
           </main>
           <Footer />
           <MobileCtaBar />
+          <CookieConsent />
+          <GoogleAnalyticsTracker gaId="G-PLACEHOLDER" />
+          <StructuredData />
         </div>
       </ThemeProvider>
     </NextIntlClientProvider>
