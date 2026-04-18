@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import SectionReveal from "@/components/ui/SectionReveal";
 import CtaBlock from "@/components/ui/CtaBlock";
+import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 
@@ -12,10 +13,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: t("partnersTitle"), description: t("partnersDescription") };
 }
 
+const actualPartners = [
+  { name: "Magyar Darts Szövetség", image: "/partners/MDSZ.png" },
+  { name: "Pervector Zrt.", image: "/partners/Pervector.png" },
+  { name: "BoatHungary", image: "/partners/boathungary.jpg" },
+  { name: "Bocskai Alba Flexum Kft.", image: "/partners/kai Alba Flexum.jpg" },
+  { name: "Kerámia Dental", image: "/partners/keramiadental-logo.png" },
+  { name: "SF Security", image: "/partners/sfsecurity.svg" },
+  { name: "Tűzhál Zrt.", image: "/partners/tuzhal.png" },
+];
+
+const techPartners = [
+  { name: "Dahua Technology", image: "/tech_partners/Dahua_Technology_logo.jpg" },
+  { name: "Dell", image: "/tech_partners/Dell_Logo-0.svg" },
+  { name: "Eaton", image: "/tech_partners/Eaton_Corporation_Logo.svg.png" },
+  { name: "Hikvision", image: "/tech_partners/Hikvision-Logo.wine.png" },
+  { name: "MikroTik", image: "/tech_partners/MikroTik_Logo_(2022).svg.png" },
+  { name: "nJoy", image: "/tech_partners/njoy.png" },
+  { name: "TP-Link", image: "/tech_partners/TPLINK_Logo_2.svg.png" },
+  { name: "ASUS", image: "/tech_partners/asus-logo.svg" },
+  { name: "Ubiquiti UniFi", image: "/tech_partners/unifi.svg" },
+];
+
 const partnerSections = [
-  { key: "ourPartners", count: 6 },
-  { key: "suppliers", count: 4 },
-  { key: "techPartners", count: 5 },
+  { key: "ourPartners", items: actualPartners },
+  { key: "techPartners", items: techPartners },
 ];
 
 export default async function PartnersPage({ params }: Props) {
@@ -36,21 +58,26 @@ export default async function PartnersPage({ params }: Props) {
       </section>
 
       {/* Partner sections */}
-      {partnerSections.map(({ key, count }, si) => (
+      {partnerSections.map(({ key, items }, si) => (
         <section key={key} className={`section ${si % 2 !== 0 ? "section-alt" : ""}`}>
           <div className="container">
             <SectionReveal>
               <h2 className={`heading-1 ${styles.sectionTitle}`}>
-                {key === "ourPartners" ? t("ourPartners") : key === "suppliers" ? t("suppliers") : t("techPartners")}
+                {key === "ourPartners" ? t("ourPartners") : t("techPartners")}
               </h2>
               <div className={styles.logoGrid}>
-                {Array.from({ length: count }).map((_, i) => (
-                  <div key={i} className={styles.logoSlot}>
-                    <span className={styles.logoPlaceholder}>{locale === "hu" ? "Partner logó" : "Partner logo"}</span>
+                {items.map((partner, i) => (
+                  <div key={i} className={`${styles.logoSlot} ${styles.hasImage}`}>
+                    <Image 
+                      src={partner.image} 
+                      alt={partner.name}
+                      fill
+                      className={styles.logoImg}
+                      sizes="(max-width: 768px) 50vw, 250px"
+                    />
                   </div>
                 ))}
               </div>
-              <p className={styles.comingSoon}>{t("comingSoon")}</p>
             </SectionReveal>
           </div>
         </section>

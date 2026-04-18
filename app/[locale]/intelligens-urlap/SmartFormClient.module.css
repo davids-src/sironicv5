@@ -112,7 +112,8 @@
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--text);
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .tabBadge {
@@ -405,7 +406,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  background: #FFF8E1;
+  background: rgba(255, 193, 7, 0.1);
   border: 1.5px solid #FFC107;
   border-radius: var(--radius-md);
   padding: 0.875rem 1rem;
@@ -415,7 +416,7 @@
 .warningBox p {
   margin: 2px 0;
   font-size: 0.875rem;
-  color: #7a5800;
+  color: var(--text);
 }
 
 .warningIcon {
@@ -426,6 +427,10 @@
 
 [data-theme="light"] .warningBox {
   background: #FFF8E1;
+}
+
+[data-theme="light"] .warningBox p {
+  color: #7a5800;
 }
 
 /* ─── COUNTER NOTE ───────────────────────────────────────────────────────── */
@@ -564,7 +569,7 @@
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
-  /* Tab bar: 2 cols on mobile, then 1 col on very small */
+  /* Tab bar: 2 cols on mobile */
   .tabBar {
     grid-template-columns: 1fr 1fr;
     gap: 0.625rem;
@@ -572,7 +577,12 @@
 
   .tab {
     min-width: unset;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.875rem;
+    gap: 0.5rem;
+  }
+
+  .tabDesc {
+    display: none;
   }
 
   /* Option grid: single column for comfortable tapping */
@@ -650,6 +660,43 @@
   .multiQtyCheckbox {
     width: 20px;
     height: 20px;
+  }
+
+  /* Panel mobile padding */
+  .panel {
+    padding: 1.25rem 1rem;
+  }
+
+  /* Feature cards stacked */
+  .featureCards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Helper text smaller */
+  .helperText {
+    font-size: 0.825rem;
+  }
+
+  /* Step title */
+  .stepTitle {
+    font-size: 1.1rem;
+  }
+
+  /* Multi qty price on its own line */
+  .multiQtyPrice {
+    white-space: normal;
+  }
+}
+
+/* Very small phones: tab bar goes single column */
+@media (max-width: 400px) {
+  .tabBar {
+    grid-template-columns: 1fr;
+  }
+
+  .tab {
+    flex-direction: row;
+    padding: 0.75rem 1rem;
   }
 }
 
@@ -741,7 +788,7 @@
 .urgency_green:hover,
 .urgency_green.urgencySelected {
   border-color: #16a34a;
-  background: #f0fdf4;
+  background: rgba(74, 222, 128, 0.08);
 }
 
 .urgency_amber {
@@ -751,7 +798,7 @@
 .urgency_amber:hover,
 .urgency_amber.urgencySelected {
   border-color: #d97706;
-  background: #fffbeb;
+  background: rgba(251, 191, 36, 0.08);
 }
 
 .urgency_red {
@@ -761,19 +808,19 @@
 .urgency_red:hover,
 .urgency_red.urgencySelected {
   border-color: #dc2626;
-  background: #fef2f2;
-}
-
-[data-theme="dark"] .urgency_green.urgencySelected {
-  background: rgba(74, 222, 128, 0.08);
-}
-
-[data-theme="dark"] .urgency_amber.urgencySelected {
-  background: rgba(251, 191, 36, 0.08);
-}
-
-[data-theme="dark"] .urgency_red.urgencySelected {
   background: rgba(248, 113, 113, 0.08);
+}
+
+[data-theme="light"] .urgency_green.urgencySelected {
+  background: #f0fdf4;
+}
+
+[data-theme="light"] .urgency_amber.urgencySelected {
+  background: #fffbeb;
+}
+
+[data-theme="light"] .urgency_red.urgencySelected {
+  background: #fef2f2;
 }
 
 .urgencyLabel {
@@ -817,19 +864,18 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: #fef2f2;
+  background: rgba(220, 38, 38, 0.12);
   border: 2px solid #dc2626;
   border-radius: var(--radius-md);
   padding: 0.875rem 1rem;
   font-size: 0.9rem;
-  color: #991b1b;
+  color: #f87171;
   margin-top: 0.625rem;
 }
 
-[data-theme="dark"] .criticalCallout {
-  background: rgba(220, 38, 38, 0.12);
-  color: #f87171;
-  border-color: #dc2626;
+[data-theme="light"] .criticalCallout {
+  background: #fef2f2;
+  color: #991b1b;
 }
 
 /* ─── FILE UPLOAD ZONE ───────────────────────────────────────────────────── */

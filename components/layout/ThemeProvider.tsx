@@ -13,33 +13,29 @@ const ThemeContext = createContext<{
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
-  const [mounted, setMounted] = useState(false);
+  // Read the theme set by the anti-flash inline script; fall back to "dark"
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window !== "undefined") {
+      const attr = document.documentElement.getAttribute("data-theme");
+      if (attr === "light" || attr === "dark") return attr;
+    }
+    return "dark";
+  });
 
   useEffect(() => {
+    // Sync any localStorage value on first mount
     const stored = localStorage.getItem("sironic-theme") as Theme | null;
     if (stored === "light" || stored === "dark") {
       setTheme(stored);
     }
-    setMounted(true);
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("sironic-theme", theme);
-  }, [theme, mounted]);
+  }, [theme]);
 
   const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-
-  // Prevent flash before mount
-  if (!mounted) {
-    return (
-      <div data-theme="dark" style={{ display: "contents" }}>
-        {children}
-      </div>
-    );
-  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

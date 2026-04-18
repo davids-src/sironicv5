@@ -20,9 +20,31 @@
   border-radius: var(--radius-md);
   height: 100px;
   display: flex; align-items: center; justify-content: center;
-  transition: border-color var(--transition-fast);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+.logoSlot.hasImage {
+  border-style: solid;
+  background: #ffffff; /* Explicit white background for logo visibility */
+  padding: 1.25rem;
 }
 .logoSlot:hover { border-color: var(--primary); }
+
+.logoImg {
+  object-fit: contain;
+  width: auto !important;
+  height: auto !important;
+  max-width: calc(100% - 2.5rem);
+  max-height: calc(100% - 2.5rem);
+  margin: auto;
+  filter: grayscale(100%);
+  transition: filter var(--transition-normal);
+}
+.logoSlot:hover .logoImg {
+  filter: grayscale(0%);
+}
+
 .logoPlaceholder { font-size: 0.75rem; color: var(--text-subtle); font-style: italic; }
 
 .comingSoon {
