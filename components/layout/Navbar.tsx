@@ -114,41 +114,42 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Overlay + Drawer */}
-        {mobileOpen && (
-          <>
-            <div
-              className={styles.overlay}
-              onClick={() => setMobileOpen(false)}
-              aria-hidden="true"
-            />
-            <div className={styles.mobileDrawer} role="dialog" aria-label="Mobilnavigáció">
-              <button
-                className={styles.drawerClose}
-                onClick={() => setMobileOpen(false)}
-                aria-label="Menü bezárása"
-              >
-                <X size={20} />
-              </button>
-              <nav className={styles.mobileNav}>
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""}`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <Link href={smartFormHref} className={styles.mobileSmartFormBtn}>
-                  <Zap size={18} />
-                  {t("smartForm")}
-                </Link>
-              </nav>
-            </div>
-          </>
-        )}
       </header>
+
+      {/* Mobile Overlay + Drawer (Moved OUTSIDE header to escape backdrop-filter containing block constraint) */}
+      {mobileOpen && (
+        <>
+          <div
+            className={styles.overlay}
+            onClick={() => setMobileOpen(false)}
+            aria-hidden="true"
+          />
+          <div className={styles.mobileDrawer} role="dialog" aria-label="Mobilnavigáció">
+            <button
+              className={styles.drawerClose}
+              onClick={() => setMobileOpen(false)}
+              aria-label="Menü bezárása"
+            >
+              <X size={20} />
+            </button>
+            <nav className={styles.mobileNav}>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""}`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Link href={smartFormHref} className={styles.mobileSmartFormBtn}>
+                <Zap size={18} />
+                {t("smartForm")}
+              </Link>
+            </nav>
+          </div>
+        </>
+      )}
     </>
   );
 }
