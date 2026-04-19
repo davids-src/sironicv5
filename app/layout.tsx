@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sironic.eu"),
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

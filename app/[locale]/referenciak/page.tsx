@@ -185,6 +185,48 @@ const references = [
       en: ["Built for Magyar Darts Szövetség", "League portal built on tDarts platform", "Automatic rankings and fairplay monitoring"],
     },
   },
+  {
+    id: 9,
+    category: "systems",
+    categoryLabel: { hu: "IT Support", en: "IT Support" },
+    icon: "server",
+    anonymous: false,
+    company: "Tűzhal Kft.",
+    industry: { hu: "Kereskedelmi üzlethálózat", en: "Retail network" },
+    location: "Magyarország",
+    since: "2024",
+    url: null,
+    screenshot: null,
+    desc: {
+      hu: "A Tűzhal Kft. számára kiszervezett rendszergazdai szolgáltatást nyújtunk. Stabil IT hátteret és folyamatos támogatást biztosítunk, beleértve a helyi hibaelhárítást a cég összes üzletében.",
+      en: "We provide outsourced system administration services for Tűzhal Kft. We ensure a stable IT background and continuous support, including local troubleshooting across all the company's stores.",
+    },
+    results: {
+      hu: ["Kiszervezett rendszergazdai szolgáltatás", "Helyi hibaelhárítás az összes üzletben", "Gyors reagálás, megbízható jelenlét"],
+      en: ["Outsourced system administration", "Local troubleshooting in all stores", "Fast response, reliable presence"],
+    },
+  },
+  {
+    id: 10,
+    category: "websites",
+    categoryLabel: { hu: "Webfejlesztés", en: "Web Development" },
+    icon: "globe",
+    anonymous: false,
+    company: "Regia Dental Kft.",
+    industry: { hu: "Fogászati magánrendelő", en: "Private dental clinic" },
+    location: "Székesfehérvár",
+    since: "2024",
+    url: "https://regiadental.hu",
+    screenshot: "/regiadental.png",
+    desc: {
+      hu: "A Regia Dental Kft. weboldalát mi terveztük és fejlesztettük. A cél egy modern, letisztult és mobilbarát fogászati weboldal létrehozása volt, amely pontosan tükrözi a klinika professzionalizmusát és bizalmat ébreszt a páciensekben.",
+      en: "We designed and developed the website for Regia Dental Kft. The goal was to create a modern, clean, and mobile-friendly dental website that accurately reflects the clinic's professionalism and inspires trust in patients.",
+    },
+    results: {
+      hu: ["Teljes körű weboldal tervezés és fejlesztés", "Modern, bizalomkeltő arculat", "Mobiloptimalizált kialakítás"],
+      en: ["Full-scale website design and development", "Modern, trust-inspiring identity", "Mobile-optimised layout"],
+    },
+  },
 ];
 
 const iconMap: Record<string, React.ReactNode> = {
