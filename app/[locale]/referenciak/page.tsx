@@ -227,6 +227,27 @@ const references = [
       en: ["Full-scale website design and development", "Modern, trust-inspiring identity", "Mobile-optimised layout"],
     },
   },
+  {
+    id: 11,
+    category: "websites",
+    categoryLabel: { hu: "Webfejlesztés", en: "Web Development" },
+    icon: "globe",
+    anonymous: false,
+    company: "Tulip Shop Hungary Kft.",
+    industry: { hu: "Bútorfogantyú webáruház", en: "Furniture handle webshop" },
+    location: "Magyarország",
+    since: "2024",
+    url: "https://tulip.hu",
+    screenshot: "/tulip.png",
+    desc: {
+      hu: "A Tulip Shop Hungary Kft. számára egy teljesen egyedi fejlesztésű webáruházat alkottunk meg prémium bútorfogantyúk értékesítésére. A design nagyon egyedi, a funkciók pedig teljes körűen, egyedi fejlesztéssel készültek a modern e-kereskedelmi igényeknek megfelelően.",
+      en: "We created a completely custom-built webshop for Tulip Shop Hungary Kft., specializing in premium furniture handles. The design is highly unique, with features fully custom-developed to meet modern e-commerce demands.",
+    },
+    results: {
+      hu: ["Teljesen egyedi e-kereskedelmi fejlesztés", "Letisztult, nagyon egyedi design", "Gyors és modern vásárlói élmény"],
+      en: ["Fully custom e-commerce development", "Clean and highly unique design", "Fast and modern shopping experience"],
+    },
+  },
 ];
 
 const iconMap: Record<string, React.ReactNode> = {

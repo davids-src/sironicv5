@@ -211,7 +211,7 @@
       "success": "Thank you! We'll be in touch shortly.",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "example@company.com",
-      "phonePlaceholder": "+36 30 000 0000",
+      "phonePlaceholder": "+36 70 273 5532",
       "companyPlaceholder": "Company Ltd.",
       "messagePlaceholder": "How can we help?"
     },
@@ -267,7 +267,7 @@
           "phone": "Phone Number (optional)",
           "namePlaceholder": "Your name",
           "emailPlaceholder": "example@company.com",
-          "phonePlaceholder": "+36 30 000 0000"
+          "phonePlaceholder": "+36 70 273 5532"
         }
       },
       "result": {
@@ -297,7 +297,7 @@
       "descriptionPlaceholder": "Describe the issue or problem in detail...",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "example@company.com",
-      "phonePlaceholder": "+36 30 000 0000",
+      "phonePlaceholder": "+36 70 273 5532",
       "companyPlaceholder": "Company Ltd."
     }
   },

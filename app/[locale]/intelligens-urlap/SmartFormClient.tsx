@@ -513,7 +513,7 @@ function AssessmentWizard() {
               <div className="form-group">
                 <label className="form-label">Telefonszám *</label>
                 <input type="tel" className="form-input" value={state.phone}
-                  onChange={e => update("phone", e.target.value)} placeholder="+36 30 000 0000" />
+                  onChange={e => update("phone", e.target.value)} placeholder="+36 70 273 5532" />
               </div>
               <div className="form-group">
                 <label className="form-label">Megye *</label>
@@ -800,6 +800,7 @@ function ContactForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState("");
 
   const validate = () => {
     const e: Record<string, string> = {};
@@ -814,9 +815,20 @@ function ContactForm() {
     ev.preventDefault();
     if (!validate()) return;
     setSending(true);
-    await new Promise(r => setTimeout(r, 800));
-    setSending(false);
-    setSent(true);
+    setSendError("");
+    try {
+      const res = await fetch("/api/send-contact-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Szerver hiba");
+      setSent(true);
+    } catch (e) {
+      setSendError("Hiba az e-mail küldésekor. Kérjük próbálja újra később.");
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) return (
@@ -845,7 +857,7 @@ function ContactForm() {
         <div className="form-group">
           <label className="form-label">Telefonszám</label>
           <input type="tel" className="form-input" value={form.phone}
-            onChange={e => setForm(p => ({ ...p, phone: e.target.value }))} placeholder="+36 30 000 0000" />
+            onChange={e => setForm(p => ({ ...p, phone: e.target.value }))} placeholder="+36 70 273 5532" />
         </div>
         <div className="form-group">
           <label className="form-label">Cég neve</label>
@@ -860,6 +872,7 @@ function ContactForm() {
           placeholder="Miben segíthetünk?" />
         {errors.message && <span className="form-error">{errors.message}</span>}
       </div>
+      {sendError && <div className="form-error" style={{textAlign: "center", marginTop: "1rem"}}>{sendError}</div>}
       <button type="submit" className="btn btn-primary" disabled={sending} style={{ marginTop: "0.5rem" }}>
         {sending ? "Küldés..." : "Üzenet küldése"} <Send size={14} />
       </button>
@@ -911,7 +924,7 @@ function IncidentForm() {
   const [sendError, setSendError] = useState("");
   const [ticketId, setTicketId] = useState("");
 
-  const sirobPhoneNum = process.env.NEXT_PUBLIC_SIRONIC_PHONE ?? "+36 XX XXX XXXX";
+  const sirobPhoneNum = process.env.NEXT_PUBLIC_SIRONIC_PHONE ?? "+36 70 273 5532";
 
   const upd = <K extends keyof IncidentState>(k: K, v: IncidentState[K]) =>
     setForm(p => ({ ...p, [k]: v }));
@@ -1034,7 +1047,7 @@ function IncidentForm() {
           </div>
           <div className="form-group">
             <label className="form-label">Telefonszám *</label>
-            <input type="tel" className="form-input" value={form.phone} placeholder="+36 30 123 4567"
+            <input type="tel" className="form-input" value={form.phone} placeholder="+36 70 273 5532"
               onChange={e => upd("phone", e.target.value)} />
             {errors.phone && <span className="form-error">{errors.phone}</span>}
           </div>

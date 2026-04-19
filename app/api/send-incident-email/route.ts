@@ -130,7 +130,7 @@ function buildAdminHtml(d: IncidentPayload, ticketId: string, submittedAt: strin
 function buildClientHtml(d: IncidentPayload, ticketId: string, submittedAt: string): string {
     const urgLabel = URGENCY_LABELS[d.urgency];
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sironic.eu";
-    const phone = process.env.NEXT_PUBLIC_SIRONIC_PHONE ?? "+36 XX XXX XXXX";
+    const phone = process.env.NEXT_PUBLIC_SIRONIC_PHONE ?? "+36 70 273 5532";
 
     return `<!DOCTYPE html>
 <html lang="hu">
@@ -174,7 +174,7 @@ function buildClientHtml(d: IncidentPayload, ticketId: string, submittedAt: stri
 
     <p style="font-size:13px;color:#555">Ha sürgős, hívjon minket:<br>
     📞 <strong>${phone}</strong><br>
-    📧 <a href="mailto:info@sironic.eu">info@sironic.eu</a></p>
+    📧 <a href="mailto:hello@sironic.hu">hello@sironic.hu</a></p>
   </div>
   <div class="footer">
     <strong>SIRONIC IT Megoldások</strong><br>

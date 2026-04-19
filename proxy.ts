@@ -9,7 +9,7 @@ export const config = {
     "/",
     // Set a cookie to remember the previous locale for all requests that have a locale prefix
     "/(hu|en)/:path*",
-    // Enable redirects that add missing locales (e.g. `/about` -> `/hu/about`)
-    "/((?!_next|_vercel|.*\\..*).*)",
+    // Enable redirects that add missing locales to pages, ignoring api routes, Next.js internals and static files
+    "/((?!api|_next|_vercel|.*\\..*).*)",
   ],
 };

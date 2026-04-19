@@ -16,13 +16,24 @@ type FormData = z.infer<typeof schema>;
 
 export default function ContactFormClient({ messages: m }: { messages: any }) {
   const [sent, setSent] = useState(false);
+  const [sendError, setSendError] = useState("");
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (_data: FormData) => {
-    await new Promise(r => setTimeout(r, 900));
-    setSent(true);
+  const onSubmit = async (data: FormData) => {
+    setSendError("");
+    try {
+      const res = await fetch("/api/send-contact-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("Szerver hiba");
+      setSent(true);
+    } catch (e) {
+      setSendError("Hiba az e-mail küldésekor. Kérjük próbálja újra, vagy keressen minket telefonon.");
+    }
   };
 
   if (sent) {
@@ -55,8 +66,9 @@ export default function ContactFormClient({ messages: m }: { messages: any }) {
         <textarea id="cn-msg" className="form-textarea" placeholder={m.messagePlaceholder} {...register("message")} />
         {errors.message && <span className="form-error">{errors.message.message}</span>}
       </div>
+      {sendError && <div className="form-error" style={{textAlign: "center"}}>{sendError}</div>}
       <button type="submit" className="btn btn-primary" disabled={isSubmitting} style={{ marginTop: "0.5rem" }}>
-        {isSubmitting ? "..." : m.submit} <Send size={15} />
+        {isSubmitting ? "Kérjük várjon..." : m.submit} <Send size={15} />
       </button>
     </form>
   );

@@ -313,7 +313,7 @@ function buildClientHtml(d: AssessmentData): string {
     </div>
 
     <p style="font-size:13px;color:#666">Kérdése van? Keressen minket:<br>
-    📧 <a href="mailto:info@sironic.eu">info@sironic.eu</a><br>
+    📧 <a href="mailto:hello@sironic.hu">hello@sironic.hu</a><br>
     🌐 <a href="${siteUrl}">${siteUrl}</a>
     </p>
   </div>

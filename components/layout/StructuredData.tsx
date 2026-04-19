@@ -10,7 +10,7 @@ export default function StructuredData() {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+36-70-123-4567", // Update with real phone number
+      "telephone": "+36-70-273-5532", // Update with real phone number
       "contactType": "customer service"
     }
   };

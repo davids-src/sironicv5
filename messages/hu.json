@@ -211,7 +211,7 @@
       "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot.",
       "namePlaceholder": "Az Ön neve",
       "emailPlaceholder": "pelda@ceg.hu",
-      "phonePlaceholder": "+36 30 000 0000",
+      "phonePlaceholder": "+36 70 273 5532",
       "companyPlaceholder": "Cég Kft.",
       "messagePlaceholder": "Miben segíthetünk?"
     },
@@ -267,7 +267,7 @@
           "phone": "Telefonszám (opcionális)",
           "namePlaceholder": "Az Ön neve",
           "emailPlaceholder": "pelda@ceg.hu",
-          "phonePlaceholder": "+36 30 000 0000"
+          "phonePlaceholder": "+36 70 273 5532"
         }
       },
       "result": {
@@ -297,7 +297,7 @@
       "descriptionPlaceholder": "Írja le részletesen a hibát vagy problémát...",
       "namePlaceholder": "Az Ön neve",
       "emailPlaceholder": "pelda@ceg.hu",
-      "phonePlaceholder": "+36 30 000 0000",
+      "phonePlaceholder": "+36 70 273 5532",
       "companyPlaceholder": "Cég Kft."
     }
   },
