@@ -42,9 +42,5 @@
   {
     "path": "/rolunk",
     "priority": 0.6
-  },
-  {
-    "path": "/szolgaltatasok/rendszeruzemeltetés",
-    "priority": 0.5
   }
 ]
