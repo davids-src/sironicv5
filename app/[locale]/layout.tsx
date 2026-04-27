@@ -66,7 +66,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Footer />
           <MobileCtaBar />
           <CookieConsent />
-          <GoogleAnalyticsTracker gaId="G-PLACEHOLDER" />
+          <GoogleAnalyticsTracker gaId={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
           <StructuredData />
         </div>
       </ThemeProvider>

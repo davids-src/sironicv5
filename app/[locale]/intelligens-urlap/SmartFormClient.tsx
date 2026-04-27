@@ -8,6 +8,15 @@ import {
   Monitor, FileText, TrendingUp
 } from "lucide-react";
 import styles from "./SmartFormClient.module.css";
+import {
+  trackTabSwitch,
+  trackFormStep,
+  trackAssessmentStart,
+  trackAssessmentResult,
+  trackAssessmentDecision,
+  trackFormSubmit,
+  trackFormError,
+} from "@/lib/analytics";
 
 // ─── COUNTIES ─────────────────────────────────────────────────────────────────
 const COUNTIES = [
@@ -306,8 +315,21 @@ function AssessmentWizard() {
   })();
 
   const handleNext = () => {
+    // Track step completion before advancing
+    const stepLabels: Record<number, string> = {
+      1: "Céges adatok", 2: "Tevékenységi kör", 3: "Dolgozók száma",
+      4: "Telephely jellege", 5: "Alapterület", 6: "Helyiségek száma",
+      7: "Szerverszoba", 8: "Szerverszoba tartalom", 9: "Munkaállomások",
+      10: "Hálózati eszközök", 11: "Operációs rendszerek", 12: "Internet típusa",
+      13: "Internet sebesség", 14: "IT problémák", 15: "Fejlesztési igények",
+    };
+    trackFormStep(currentStep, stepLabels[currentStep] ?? `Lépés ${currentStep}`);
     if (stepIdx < totalSteps - 1) setStepIdx(s => s + 1);
-    else setPhase("result");
+    else {
+      const { low, high } = calcPrice(state);
+      trackAssessmentResult(low, high);
+      setPhase("result");
+    }
   };
   const handleBack = () => {
     if (stepIdx > 0) setStepIdx(s => s - 1);
@@ -374,9 +396,13 @@ function AssessmentWizard() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Szerver hiba");
+      trackAssessmentDecision(acc, final);
+      trackFormSubmit("assessment");
       setSent(true);
     } catch (e) {
-      setSendError("Hiba az e-mail küldésekor. Kérjük, vegye fel velünk a kapcsolatot közvetlenül.");
+      const msg = "Hiba az e-mail küldésekor. Kérjük, vegye fel velünk a kapcsolatot közvetlenül.";
+      trackFormError("assessment", String(e));
+      setSendError(msg);
     } finally {
       setSending(false);
     }
@@ -1242,7 +1268,11 @@ export default function SmartFormClient() {
                 id={`tab-${tab.key}`}
                 aria-controls={`panel-${tab.key}`}
                 className={`${styles.tab} ${activeTab === tab.key ? styles.tabActive : ""}`}
-                onClick={() => setActiveTab(tab.key)}
+                onClick={() => {
+                  setActiveTab(tab.key);
+                  trackTabSwitch(tab.key);
+                  if (tab.key === "assessment") trackAssessmentStart();
+                }}
               >
                 <span className={styles.tabIcon}>{tab.icon}</span>
                 <span className={styles.tabContent}>
