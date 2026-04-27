@@ -1,11 +1,13 @@
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
+# Add alpine build tools just in case native deps need compilation
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=builder /app/.next/standalone ./

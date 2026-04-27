@@ -23,7 +23,22 @@
     "smartFormTitle": "Smart Form | SIRONIC",
     "smartFormDescription": "Fill in our smart needs assessment form and get an approximate price estimate online.",
     "contactTitle": "Contact | SIRONIC",
-    "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions."
+    "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions.",
+    "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, security technology installation, camera system installation, security technology, custom web development, website, development, React, corporate network building, corporate wifi network installation, NIS2 compliance IT, NIS2 audit help, NIS2 what to do, NIS2, corporate camera system installation, IP camera system, alarm system installation, fire alarm system installation, access control system installation, security technology small business, CCTV system installation, IT service provider Székesfehérvár, IT support Budapest, network building Central Hungary, web development Székesfehérvár, security technology Székesfehérvár"
+  },
+  "pricingHighlight": {
+    "badge": "Intelligent Price Calculator",
+    "headline": "How much does IT operations cost per month?",
+    "subheadline": "Fill it in within 3 minutes – get an approximate price estimate instantly. No commitment.",
+    "stepsTitle": "How does it work?",
+    "steps": [
+      { "step": 1, "text": "Complete the 15-question needs assessment" },
+      { "step": 2, "text": "The price adjusts to your company\u2019s size and device count" },
+      { "step": 3, "text": "Our colleague sends a detailed offer within 1 business day" }
+    ],
+    "ctaPrimary": "Smart Needs Assessment →",
+    "ctaSecondary": "Learn more →",
+    "trustNote": "No one else on the market offers this – find out what your IT operations could cost in seconds."
   },
   "hero": {
     "slide1": {
@@ -350,6 +365,7 @@
     "itOps": {
       "metaTitle": "IT Systems Operations | SIRONIC",
       "metaDescription": "Reliable remote IT operations for micro-businesses to small manufacturers. Monthly contract, fast response, no surprises.",
+      "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, outsourced IT operations, IT outsourcing for businesses, remote IT support, on-site IT support, monthly fee IT maintenance, computer maintenance company, server operations, corporate endpoint protection, fast IT troubleshooting, IT service provider small business, reliable IT partner, IT support contract, IT service provider Székesfehérvár, IT support Budapest",
       "badge": "IT Operations",
       "heroTitle": "IT Systems Operations – reliable IT support, without the headaches",
       "heroSubtitle": "We manage your entire IT infrastructure remotely. No unnecessary on-site visits, no unexpected downtime – just continuous, reliable operation day after day.",
@@ -438,6 +454,7 @@
     "network": {
       "metaTitle": "Network Building and Development | SIRONIC",
       "metaDescription": "Stable, secure corporate network installation and development. Business network planning, WiFi systems, VPN and structured cabling.",
+      "keywords": "corporate network building, corporate wifi network installation, informatics, IT, network development, corporate network building, office wifi network installation, network development for companies, structured cabling, network infrastructure planning, office network modernization, Mikrotik installation, TP-Link corporate network, network building Central Hungary",
       "badge": "Network Building",
       "heroTitle": "Network building and development – a solid foundation for your business",
       "heroSubtitle": "A poorly designed network causes daily problems. SIRONIC builds and develops stable, secure and scalable network infrastructure.",
@@ -526,6 +543,7 @@
     "nis2": {
       "metaTitle": "NIS2 Compliance and IT System Implementation | SIRONIC",
       "metaDescription": "NIS2-compliant IT system planning, implementation and operation. Audit preparation, documentation and ongoing operational cooperation.",
+      "keywords": "NIS2 compliance IT, NIS2 audit help, NIS2 what to do, NIS2, NIS2 compliance help, NIS2 audit preparation, NIS2 obligations for companies, NIS2 IT system planning, cybersecurity compliance, information security audit, NIS2 consultant partner, data protection IT system",
       "badge": "NIS2 Compliance",
       "heroTitle": "NIS2-compliant IT system – compliance, without the unnecessary stress",
       "heroSubtitle": "The NIS2 directive brings new obligations for many businesses. SIRONIC helps you comply – clearly, step by step.",
@@ -614,6 +632,7 @@
     "webDev": {
       "metaTitle": "Custom Website and System Development | SIRONIC",
       "metaDescription": "Fully custom website and business system development. No WordPress, no templates – only solutions tailored to your needs, from design to backend.",
+      "keywords": "custom web development, website, development, React, custom website development, custom webshop development, website creation without templates, internal business system development, web application development for companies, continuous website maintenance, corporate identity website, custom CMS development, web development Székesfehérvár",
       "badge": "Custom Development",
       "heroTitle": "Custom web development – no templates, built for your needs",
       "heroSubtitle": "Not WordPress, not Wix. Every project is uniquely designed and developed from start to finish – tailored to your brand, goals and workflows.",

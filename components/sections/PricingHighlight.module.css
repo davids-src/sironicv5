@@ -1,0 +1,151 @@
+/* ─── PRICING HIGHLIGHT SECTION ─────────────────────────────────────────── */
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg,
+    rgba(230, 57, 70, 0.10) 0%,
+    rgba(10, 10, 15, 0.0) 60%
+  ),
+  var(--surface);
+  border-top: 1px solid rgba(230, 57, 70, 0.22);
+  border-bottom: 1px solid rgba(230, 57, 70, 0.22);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+/* subtle animated glow blob in background */
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -10%;
+  width: 540px;
+  height: 540px;
+  background: radial-gradient(circle, rgba(230, 57, 70, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+  animation: blobPulse 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes blobPulse {
+  0%, 100% { transform: scale(1) translateY(0); opacity: 0.8; }
+  50%       { transform: scale(1.15) translateY(30px); opacity: 1; }
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+@media (max-width: 860px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ─── LEFT SIDE ──────────────────────────────────────────────────────────── */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.headline {
+  font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subheadline {
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 480px;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 2rem;
+}
+
+.trustNote {
+  margin-top: 1.375rem;
+  font-size: 0.82rem;
+  color: var(--text-subtle);
+  max-width: 420px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ─── RIGHT SIDE – STEPS ─────────────────────────────────────────────────── */
+
+.stepsBox {
+  background: var(--surface-2);
+  border: 1px solid rgba(230, 57, 70, 0.18);
+  border-radius: 20px;
+  padding: 2rem 2rem 1.75rem;
+}
+
+.stepsTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.stepNum {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.05rem;
+}
+
+.stepText {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.stepConnector {
+  width: 2px;
+  height: 1.125rem;
+  background: rgba(230, 57, 70, 0.25);
+  margin-left: calc(1rem + 0.9375rem); /* stepNum/2 offset */
+}

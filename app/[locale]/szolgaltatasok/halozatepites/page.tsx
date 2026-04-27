@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: t("metaTitle"),
         description: t("metaDescription"),
+        keywords: t.has("keywords") ? (t("keywords") as string).split(", ") : undefined,
         alternates: {
             canonical: `https://sironic.eu/${locale}/szolgaltatasok/halozatepites`,
         },

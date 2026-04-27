@@ -4,6 +4,7 @@ import HeroSlider from "@/components/ui/HeroSlider";
 import ServiceSection from "@/components/sections/ServiceSection";
 import FaqSection from "@/components/sections/FaqSection";
 import CtaBlock from "@/components/ui/CtaBlock";
+import PricingHighlight from "@/components/sections/PricingHighlight";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -25,6 +26,7 @@ export default async function HomePage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "hero" });
   const ts = await getTranslations({ locale, namespace: "services" });
   const tf = await getTranslations({ locale, namespace: "faq" });
+  const tp = await getTranslations({ locale, namespace: "pricingHighlight" });
 
   const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
   const servicesHref = `/${locale}/szolgaltatasok`;
@@ -81,7 +83,20 @@ export default async function HomePage({ params }: Props) {
       {/* 1. Hero Slider */}
       <HeroSlider slides={slides} />
 
-      {/* 2. IT Operations */}
+      {/* 2. Pricing Highlight – calculator teaser */}
+      <PricingHighlight
+        locale={locale}
+        badge={tp("badge")}
+        headline={tp("headline")}
+        subheadline={tp("subheadline")}
+        stepsTitle={tp("stepsTitle")}
+        steps={tp.raw("steps") as { step: number; text: string }[]}
+        ctaPrimaryLabel={tp("ctaPrimary")}
+        ctaPrimaryHref={smartFormHref}
+        trustNote={tp("trustNote")}
+      />
+
+      {/* 3. IT Operations */}
       <ServiceSection
         id="it-uzemeltetés"
         badge={ts("itOps.badge")}

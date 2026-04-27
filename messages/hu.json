@@ -23,7 +23,22 @@
     "smartFormTitle": "Intelligens Űrlap | SIRONIC",
     "smartFormDescription": "Töltse ki az intelligens igényfelmérő kérdőívet, és kapjon hozzávetőleges árajánlatot online.",
     "contactTitle": "Kapcsolat | SIRONIC",
-    "contactDescription": "Vegye fel velünk a kapcsolatot! SIRONIC – IT és technológiai megoldások."
+    "contactDescription": "Vegye fel velünk a kapcsolatot! SIRONIC – IT és technológiai megoldások.",
+    "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT support kis- és középvállalkozásoknak, rendszerüzemeltetés kiszervezés, IT outsourcing kis cég, külső rendszergazda, IT hibaelhárítás gyors reagálás, IT karbantartás szerződés, A te rendszergazdád, IT, informatika, Támogatás, Üzemeltetés, Support, Rendszergazda, biztonságtechnika telepítés, kamerarendszer telepítés, biztonságtechnika, weboldal fejlesztés egyedi, weboldal, development, React, hálózatépítés vállalati, vállalati wifi hálózat kiépítés, NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, kamerarendszer telepítés vállalati, IP kamera rendszer, riasztórendszer telepítés, tűzjelző rendszer telepítés, beléptetőrendszer telepítés, biztonságtechnika kis cég, CCTV rendszer kiépítés, IT szolgáltató Székesfehérvár, IT support Budapest, hálózatépítés Közép-Magyarország, webfejlesztés Székesfehérvár, biztonságtechnika Székesfehérvár"
+  },
+  "pricingHighlight": {
+    "badge": "Intelligens Díjkalkulátor",
+    "headline": "Mennyi az IT-üzemeltetés havi díja?",
+    "subheadline": "Töltsd ki 3 perc alatt – azonnal kapsz egy hozzávetőleges árbecslést. Kötelezettség nélkül.",
+    "stepsTitle": "Hogyan működik?",
+    "steps": [
+      { "step": 1, "text": "Töltsd ki a 15 kérdéses igényfelmérőt" },
+      { "step": 2, "text": "Az ár igazodik a céged méretéhez és eszközparkjához" },
+      { "step": 3, "text": "Kollégánk 1 munkanapon belül részletes ajánlatot küld" }
+    ],
+    "ctaPrimary": "Intelligens igényfelmérés →",
+    "ctaSecondary": "További információk →",
+    "trustNote": "Senki más nem kínál ilyet a piacon – másodpercek alatt megtudod, mennyibe kerülhet az IT-üzemeltetésed."
   },
   "hero": {
     "slide1": {
@@ -350,6 +365,7 @@
     "itOps": {
       "metaTitle": "IT Rendszerüzemeltetés | SIRONIC",
       "metaDescription": "Megbízható, távolról végzett IT-üzemeltetés mikrovállalkozásoktól kis gyártócégekig. Havi díjas szerződés, gyors reagálás, nincs meglepetés.",
+      "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT support kis- és középvállalkozásoknak, rendszerüzemeltetés kiszervezés, mennyibe kerül az IT üzemeltetés, IT outsourcing kis cég, IT karbantartás szerződés, IT hibaelhárítás gyors reagálás, külső rendszergazda, A te rendszergazdád, Üzemeltetés, IT üzemeltetés kiszervezés, IT outsourcing vállalkozásoknak, távoli IT support, helyszíni IT support, IT karbantartás havi díj, számítógép karbantartás cég, szerver üzemeltetés, végpontvédelem vállalati, IT hibaelhárítás gyors, IT szolgáltató kis cég, megbízható IT partner, IT support szerződés, IT szolgáltató Székesfehérvár, IT support Budapest",
       "badge": "Rendszerüzemeltetés",
       "heroTitle": "Rendszerüzemeltetés – megbízható IT-háttér, gondok nélkül",
       "heroSubtitle": "Vállalkozása IT-infrastruktúráját teljes egészében távolról kezeljük. Nincs felesleges kiszállás, nincs váratlan leállás – csak folyamatos, megbízható működés nap mint nap.",
@@ -438,6 +454,7 @@
     "network": {
       "metaTitle": "Hálózatépítés és Hálózatfejlesztés | SIRONIC",
       "metaDescription": "Stabil, biztonságos vállalati hálózat kiépítése és fejlesztése. Céges hálózattervezés, WiFi-rendszerek, VPN és strukturált hálózatépítés Magyarországon.",
+      "keywords": "hálózatépítés vállalati, vállalati wifi hálózat kiépítés, informatika, IT, hálózatfejlesztés, wifi hálózat telepítés iroda, hálózatfejlesztés cégeknek, strukturált kábelezés, hálózati infrastruktúra tervezés, irodai hálózat korszerűsítés, Mikrotik telepítés, TP-Link vállalati hálózat, hálózatépítés Közép-Magyarország",
       "badge": "Hálózatépítés",
       "heroTitle": "Hálózatépítés és hálózatfejlesztés – stabil alapok az üzletének",
       "heroSubtitle": "Egy rosszul megtervezett hálózat naponta okoz gondot. A SIRONIC stabil, biztonságos és bővíthető hálózati infrastruktúrát épít és fejleszt.",
@@ -526,6 +543,7 @@
     "nis2": {
       "metaTitle": "NIS2 Megfelelőség és IT-rendszer kiépítése | SIRONIC",
       "metaDescription": "NIS2-irányelv szerinti IT-rendszer tervezése, implementációja és üzemeltetése. Auditfelkészítés, dokumentáció és folyamatos operatív együttműködés.",
+      "keywords": "NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, NIS2 megfelelőség segítség, NIS2 audit felkészítés, NIS2 kötelezettségek cégeknek, NIS2 IT rendszer tervezés, kiberbiztonsági megfelelőség, információbiztonsági audit, NIS2 tanácsadó partner, adatvédelmi IT rendszer",
       "badge": "NIS2 megfelelőség",
       "heroTitle": "NIS2-kompatibilis IT-rendszer – megfelelőség, felesleges stressz nélkül",
       "heroSubtitle": "A NIS2-irányelv új kötelezettségeket jelent sok magyarországi vállalkozás számára. A SIRONIC segít megfelelni – érthetően, lépésről lépésre.",
@@ -614,6 +632,7 @@
     "webDev": {
       "metaTitle": "Egyedi Weboldal- és Rendszerfejlesztés | SIRONIC",
       "metaDescription": "Teljesen egyedi weboldal és üzleti rendszer fejlesztése. Sem WordPress, sem sablon – csak az Ön igényeire szabott megoldás, a designtól a háttérrendszerig.",
+      "keywords": "weboldal fejlesztés egyedi, weboldal, development, React, egyedi webáruház fejlesztés, weboldal készítés sablonok nélkül, belső üzleti rendszer fejlesztés, webalkalmazás fejlesztés cégeknek, weboldal karbantartás folyamatos, vállalati arculat weboldal, egyedi CMS fejlesztés, webfejlesztés Székesfehérvár",
       "badge": "Egyedi fejlesztés",
       "heroTitle": "Egyedi webfejlesztés – sablon nélkül, az Ön igényeire",
       "heroSubtitle": "Nem WordPress, nem Wix. Minden projekt az elejétől a végéig egyedileg tervezett és fejlesztett – az Ön márkájára, céljára és munkafolyamataira szabva.",

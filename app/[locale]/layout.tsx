@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       template: `%s | SIRONIC`,
     },
     description: t("homeDescription"),
+    keywords: t("keywords").split(", "),
     openGraph: {
       siteName: t("siteName"),
       locale: locale === "hu" ? "hu_HU" : "en_US",
