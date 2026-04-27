@@ -26,6 +26,20 @@
 .valueList li { display: flex; align-items: center; gap: 0.625rem; font-size: 0.9375rem; color: var(--text-muted); }
 .check { color: var(--primary); flex-shrink: 0; }
 
+/* Service items on About page */
+.serviceList {
+  display: flex; flex-direction: column;
+  gap: 1.25rem; margin-top: 1.5rem;
+}
+.serviceItem {
+  display: flex; align-items: flex-start; gap: 1rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1.25rem 1.5rem;
+  transition: border-color 0.2s;
+}
+.serviceItem:hover { border-color: var(--primary); }
+.serviceItem .check { margin-top: 0.15rem; }
+
 .teamGrid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem; margin-top: 2rem;
@@ -42,3 +56,4 @@
 .teamInfo { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; width: 100%; }
 .namePlaceholder { height: 14px; width: 60%; background: var(--surface-2); border-radius: 4px; }
 .rolePlaceholder { height: 10px; width: 80%; background: var(--surface-2); border-radius: 4px; }
+

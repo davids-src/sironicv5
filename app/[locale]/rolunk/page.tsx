@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
+import CtaBlock from "@/components/ui/CtaBlock";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 
@@ -18,6 +20,7 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <>
+      {/* Hero */}
       <section className={`section bg-grid ${styles.hero}`}>
         <div className="container">
           <SectionReveal>
@@ -29,16 +32,64 @@ export default async function AboutPage({ params }: Props) {
         <div className={styles.heroGlow} aria-hidden />
       </section>
 
+      {/* Company Intro */}
+      <section className="section">
+        <div className="container">
+          <SectionReveal>
+            <div className="card" style={{ maxWidth: 820 }}>
+              <span className="accent-line" />
+              <h2 className="heading-2">{t("story")}</h2>
+              <p className="body-lg" style={{ marginTop: "1rem", fontWeight: 500 }}>
+                {t("storyIntro")}
+              </p>
+              <p className="body-lg" style={{ marginTop: "0.75rem" }}>
+                {t("storyContent")}
+              </p>
+            </div>
+          </SectionReveal>
+        </div>
+      </section>
+
+      <div className="divider container" />
+
+      {/* Services Overview */}
+      <section className="section section-alt">
+        <div className="container">
+          <SectionReveal>
+            <h2 className="heading-1 section-title">{t("servicesTitle")}</h2>
+          </SectionReveal>
+          <div className={styles.serviceList}>
+            {(t.raw("serviceItems") as { title: string; text: string }[]).map((item, i) => (
+              <SectionReveal key={i} delay={i * 0.07}>
+                <div className={styles.serviceItem}>
+                  <CheckCircle2 size={22} className={styles.check} />
+                  <div>
+                    <h3 className="heading-3">{item.title}</h3>
+                    <p className="body-md" style={{ marginTop: "0.4rem" }}>{item.text}</p>
+                  </div>
+                </div>
+              </SectionReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="divider container" />
+
+      {/* Why us + Values */}
       <section className="section">
         <div className="container">
           <div className={styles.grid}>
             <SectionReveal>
               <div className="card">
                 <span className="accent-line" />
-                <h2 className="heading-2">{t("story")}</h2>
-                <p className="body-lg" style={{ marginTop: "1rem" }}>{t("storyContent")}</p>
-                <div className={styles.placeholder}>
-                  <p>{locale === "hu" ? "📝 Részletes cégtörténet hamarosan – az ügyfél által megadott tartalom alapján." : "📝 Detailed company story coming soon – based on client-provided content."}</p>
+                <h2 className="heading-2">{t("whyTitle")}</h2>
+                <p className="body-lg" style={{ marginTop: "1rem" }}>{t("whyContent")}</p>
+                <p className="body-lg" style={{ marginTop: "0.75rem", opacity: 0.8 }}>{t("closingContent")}</p>
+                <div style={{ marginTop: "1.5rem" }}>
+                  <Link href={`/${locale}/kapcsolat`} className="btn btn-primary">
+                    {locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us"} <ArrowRight size={15} />
+                  </Link>
                 </div>
               </div>
             </SectionReveal>
@@ -61,28 +112,13 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Team placeholder */}
-      <section className="section section-alt">
-        <div className="container">
-          <SectionReveal>
-            <h2 className="heading-1 section-title">{locale === "hu" ? "Csapatunk" : "Our Team"}</h2>
-            <p className="section-subtitle">
-              {locale === "hu" ? "Csapatbemutató hamarosan." : "Team introduction coming soon."}
-            </p>
-            <div className={styles.teamGrid}>
-              {[1, 2, 3].map((i) => (
-                <div key={i} className={styles.teamCard}>
-                  <div className={styles.avatar} />
-                  <div className={styles.teamInfo}>
-                    <div className={styles.namePlaceholder} />
-                    <div className={styles.rolePlaceholder} />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </SectionReveal>
-        </div>
-      </section>
+      <CtaBlock
+        title={locale === "hu" ? "Felmérnénk az igényeit?" : "Ready to get started?"}
+        subtitle={locale === "hu" ? "Vegyük fel a kapcsolatot – az első egyeztetés ingyenes és kötelezettségmentes." : "Get in touch – the first consultation is free and non-binding."}
+        cta1={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
+        cta2={{ label: locale === "hu" ? "Intelligens igényfelmérés" : "Smart Assessment", href: `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}` }}
+      />
     </>
   );
 }
+

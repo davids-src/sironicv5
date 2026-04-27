@@ -24,7 +24,7 @@
     "smartFormDescription": "Töltse ki az intelligens igényfelmérő kérdőívet, és kapjon hozzávetőleges árajánlatot online.",
     "contactTitle": "Kapcsolat | SIRONIC",
     "contactDescription": "Vegye fel velünk a kapcsolatot! SIRONIC – IT és technológiai megoldások.",
-    "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT support kis- és középvállalkozásoknak, rendszerüzemeltetés kiszervezés, IT outsourcing kis cég, külső rendszergazda, IT hibaelhárítás gyors reagálás, IT karbantartás szerződés, A te rendszergazdád, IT, informatika, Támogatás, Üzemeltetés, Support, Rendszergazda, biztonságtechnika telepítés, kamerarendszer telepítés, biztonságtechnika, weboldal fejlesztés egyedi, weboldal, development, React, hálózatépítés vállalati, vállalati wifi hálózat kiépítés, NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, kamerarendszer telepítés vállalati, IP kamera rendszer, riasztórendszer telepítés, tűzjelző rendszer telepítés, beléptetőrendszer telepítés, biztonságtechnika kis cég, CCTV rendszer kiépítés, IT szolgáltató Székesfehérvár, IT support Budapest, hálózatépítés Közép-Magyarország, webfejlesztés Székesfehérvár, biztonságtechnika Székesfehérvár"
+    "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT üzemeltetés Fejér megye, IT szolgáltató Székesfehérvár, IT support Budapest, IT support kis- és középvállalkozásoknak, rendszergazda Budapest, helyszíni IT támogatás Székesfehérvár, IT karbantartás Budapest, külső rendszergazda Fejér megye, IT helpdesk Székesfehérvár, rendszerüzemeltetés kiszervezés, IT outsourcing kis cég, külső rendszergazda, IT hibaelhárítás gyors reagálás, IT karbantartás szerződés, A te rendszergazdád, IT, informatika, Támogatás, Üzemeltetés, Support, Rendszergazda, managed IT szolgáltatás, havidíjas IT üzemeltetés, rendszergazda szolgáltatás kisvállalkozásoknak, IT infrastruktúra üzemeltetés, távoli rendszergazda, proaktív IT támogatás, IT helpdesk szolgáltatás, felhő alapú IT üzemeltetés, AI támogatott IT üzemeltetés, hibrid IT infrastruktúra kezelés, mennyibe kerül az IT üzemeltetés, IT karbantartás havi díj, számítógép karbantartás cég, IT support szerződés, havidíjas rendszergazda csomag, IT üzemeltetés árak 2026, külső IT support költsége, általánydíjas IT szolgáltatás, IT outsourcing árlista, szerver üzemeltetés, végpontvédelem vállalati, munkaállomás üzemeltetés, hálózat monitoring, infrastruktúra felügyelet, szerver karbantartás, adathelyreállítás, IT incidens kezelés, proaktív monitoring szolgáltatás, biztonságtechnika telepítés, kamerarendszer telepítés, kamerarendszer telepítés vállalati, IP kamera rendszer, riasztórendszer telepítés, tűzjelző rendszer telepítés, beléptetőrendszer telepítés, biztonságtechnika kis cég, CCTV rendszer kiépítés, biztonságtechnika Székesfehérvár, vállalati kamerarendszer, riasztó és kamera telepítés, biztonsági kamera rendszer kiépítés, távfelügyelet telepítés, okos riasztórendszer, beléptető kaputelefon rendszer, videomegfigyelő rendszer vállalati, Hikvision kamera telepítés, integrált biztonságtechnika, riasztórendszer karbantartás, kamerarendszer bővítés, IP kamerarendszer telepítés, tűz- és betörésjelző rendszer, okos beléptető rendszer, biztonságtechnika karbantartás, kamerarendszer távfelügyelettel, vállalati biztonságtechnikai audit, Dahua kamera telepítés, Uniview kamera telepítés, weboldal fejlesztés egyedi, weboldal, development, React, egyedi webáruház fejlesztés, weboldal készítés sablonok nélkül, belső üzleti rendszer fejlesztés, webalkalmazás fejlesztés cégeknek, vállalati arculat weboldal, weboldal karbantartás folyamatos, egyedi szoftverfejlesztés vállalkozásoknak, custom web development, egyedi CRM rendszer fejlesztés, egyedi intranet rendszer, üzleti folyamat automatizálás weben, egyedi API integráció, webfejlesztés Székesfehérvár, weboldal fejlesztés Budapest, webfejlesztés Fejér megye, hálózatépítés vállalati, vállalati wifi hálózat kiépítés, hálózatépítés Közép-Magyarország, irodai hálózat kiépítés, vállalati wifi telepítés Budapest, hálózatépítés Székesfehérvár, strukturált kábelezés, hálózati infrastruktúra tervezés, irodai hálózat korszerűsítés, Mikrotik telepítés, TP-Link vállalati hálózat, Cisco hálózat telepítés, Ubiquiti wifi hálózat, WiFi 6 vállalati hálózat, mesh wifi rendszer iroda, NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, NIS2 audit felkészítés, NIS2 kötelezettségek cégeknek, NIS2 IT rendszer tervezés, NIS2 hiányelemzés, NIS2 kockázatkezelés, NIS2 felkészülés 2026, NIS2 gap analysis, NIS2 megfelelőségi projekt, kiberbiztonsági megfelelőség, információbiztonsági audit, NIS2 tanácsadó partner, adatvédelmi IT rendszer, kiberbiztonsági kockázatkezelés, NIS2 bírság elkerülése, kiberbiztonsági politika kidolgozás, NIS2 regisztráció segítség"
   },
   "pricingHighlight": {
     "badge": "Intelligens Díjkalkulátor",
@@ -196,14 +196,43 @@
   "about": {
     "title": "Rólunk",
     "subtitle": "A SIRONIC csapata és értékei",
-    "story": "Cég bemutató",
-    "storyContent": "A SIRONIC egy modern, megbízható technológiai partner, amely IT-üzemeltetéstől a hálózatépítésen át az egyedi fejlesztésig átfogó megoldásokat nyújt. Részletes cégtörténet és értékek hamarosan.",
+    "story": "Cégbemutató",
+    "storyIntro": "Cégünk egy komplex IT- és biztonságtechnikai szolgáltató, amely kifejezetten kis- és középvállalkozásoknak nyújt professzionális támogatást a Közép-Magyarország, Székesfehérvár és Budapest térségében.",
+    "storyContent": "Segítünk azoknak a cégeknek, akik nem szeretnének saját, teljes állású IT csapatot fenntartani, mégis megbízható, gyors és magas színvonalú IT szolgáltatást szeretnének kapni. Egy kézből biztosítjuk mindazt, amire egy modern vállalkozásnak szüksége van a mindennapi működéshez és a hosszú távú biztonsághoz.",
+    "servicesTitle": "Fő szolgáltatásaink",
+    "serviceItems": [
+      {
+        "title": "IT üzemeltetés és külső rendszergazda szolgáltatás",
+        "text": "Havidíjas, kiszervezett IT támogatás távoli és helyszíni segítséggel egyaránt. Proaktív monitoring, gyors hibaelhárítás, teljes infrastruktúra üzemeltetés – legyen szó munkaállomásokról, szerverekről vagy végpontvédelemről."
+      },
+      {
+        "title": "Vállalati hálózatépítés és WiFi rendszerek",
+        "text": "Új irodák, telephelyek hálózatának teljes kiépítése, strukturált kábelezés, modern WiFi hálózatok (WiFi 6/7, mesh rendszerek) tervezése és optimalizálása. Különösen költözés vagy hálózatfejlesztés esetén segítünk."
+      },
+      {
+        "title": "Kiberbiztonság és NIS2 megfelelőség",
+        "text": "Segítjük ügyfeleinket a NIS2 irányelv követelményeinek teljesítésében: kockázatfelmérés, hiányelemzés, audit felkészítés és a szükséges biztonsági intézkedések bevezetése. Komplex kiberbiztonsági tanácsadással támogatjuk a cégeket a bírságok elkerülésében és az információbiztonság erősítésében."
+      },
+      {
+        "title": "Egyedi weboldal- és rendszerfejlesztés",
+        "text": "Nem sablonos, hanem valóban egyedi weboldalakat, webáruházakat és belső üzleti rendszereket fejlesztünk. Legyen szó vállalati arculatú honlapról, egyedi CRM-ről, intranet rendszerről vagy folyamat-automatizálásról – mindig az ügyfél egyedi igényei szerint dolgozunk."
+      },
+      {
+        "title": "Biztonságtechnika telepítése",
+        "text": "Kamerarendszerek, riasztórendszerek, tűzjelzők, beléptetőrendszerek és integrált biztonságtechnikai megoldások tervezése és kivitelezése. IT-biztonságot és fizikai védelmet is egy kézből biztosítunk."
+      }
+    ],
+    "whyTitle": "Miért minket válasszanak?",
+    "whyContent": "Mert nem csak egy szolgáltatást kínálunk, hanem valódi partnerséget. Gyors reakcióidő, érthető kommunikáció, havidíjas átlátható díjazás és az a tudás, amivel egy kisebb cég is ugyanolyan professzionális IT- és biztonsági környezetet kaphat, mint egy nagyvállalat.",
+    "closingContent": "Székesfehérváron és Budapesten is könnyen elérhetőek vagyunk, és szívesen segítünk akár az első konzultáció során is felmérni, milyen támogatást igényel a vállalkozása.",
     "values": "Értékeink",
     "valueItems": [
       "Megbízhatóság és átláthatóság",
       "Modern, hatékony technológiai megoldások",
       "Hosszú távú partnerkapcsolat",
-      "Gyors reagálás és rugalmasság"
+      "Gyors reagálás és rugalmasság",
+      "Havidíjas, kiszámítható díjazás",
+      "Egy kézből: IT + biztonságtechnika"
     ]
   },
   "smartForm": {
@@ -365,7 +394,7 @@
     "itOps": {
       "metaTitle": "IT Rendszerüzemeltetés | SIRONIC",
       "metaDescription": "Megbízható, távolról végzett IT-üzemeltetés mikrovállalkozásoktól kis gyártócégekig. Havi díjas szerződés, gyors reagálás, nincs meglepetés.",
-      "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT support kis- és középvállalkozásoknak, rendszerüzemeltetés kiszervezés, mennyibe kerül az IT üzemeltetés, IT outsourcing kis cég, IT karbantartás szerződés, IT hibaelhárítás gyors reagálás, külső rendszergazda, A te rendszergazdád, Üzemeltetés, IT üzemeltetés kiszervezés, IT outsourcing vállalkozásoknak, távoli IT support, helyszíni IT support, IT karbantartás havi díj, számítógép karbantartás cég, szerver üzemeltetés, végpontvédelem vállalati, IT hibaelhárítás gyors, IT szolgáltató kis cég, megbízható IT partner, IT support szerződés, IT szolgáltató Székesfehérvár, IT support Budapest",
+      "keywords": "IT üzemeltetés Budapest, IT üzemeltetés Székesfehérvár, IT üzemeltetés Fejér megye, IT support kis- és középvállalkozásoknak, rendszerüzemeltetés kiszervezés, mennyibe kerül az IT üzemeltetés, IT outsourcing kis cég, IT karbantartás szerződés, IT hibaelhárítás gyors reagálás, külső rendszergazda, A te rendszergazdád, Üzemeltetés, IT üzemeltetés kiszervezés, IT outsourcing vállalkozásoknak, távoli IT support, helyszíni IT support, IT karbantartás havi díj, számítógép karbantartás cég, szerver üzemeltetés, végpontvédelem vállalati, IT hibaelhárítás gyors, IT szolgáltató kis cég, megbízható IT partner, IT support szerződés, IT szolgáltató Székesfehérvár, IT support Budapest, rendszergazda Budapest, helyszíni IT támogatás Székesfehérvár, IT karbantartás Budapest, külső rendszergazda Fejér megye, IT helpdesk Székesfehérvár, managed IT szolgáltatás, havidíjas IT üzemeltetés, rendszergazda szolgáltatás kisvállalkozásoknak, IT infrastruktúra üzemeltetés, távoli rendszergazda, proaktív IT támogatás, IT helpdesk szolgáltatás, felhő alapú IT üzemeltetés, AI támogatott IT üzemeltetés, hibrid IT infrastruktúra kezelés, havidíjas rendszergazda csomag, IT üzemeltetés árak 2026, külső IT support költsége, általánydíjas IT szolgáltatás, mennyibe kerül a külső rendszergazda, IT outsourcing árlista, munkaállomás üzemeltetés, hálózat monitoring, infrastruktúra felügyelet, szerver karbantartás, adathelyreállítás, IT incidens kezelés, proaktív monitoring szolgáltatás, Mennyibe kerül az IT üzemeltetés havonta?, Kell-e belső rendszergazda egy kis cégnek?, Hogyan működik a kiszervezett IT üzemeltetés?, Mi az a managed IT service?, Mikor éri meg IT outsourcing?",
       "badge": "Rendszerüzemeltetés",
       "heroTitle": "Rendszerüzemeltetés – megbízható IT-háttér, gondok nélkül",
       "heroSubtitle": "Vállalkozása IT-infrastruktúráját teljes egészében távolról kezeljük. Nincs felesleges kiszállás, nincs váratlan leállás – csak folyamatos, megbízható működés nap mint nap.",
@@ -454,7 +483,7 @@
     "network": {
       "metaTitle": "Hálózatépítés és Hálózatfejlesztés | SIRONIC",
       "metaDescription": "Stabil, biztonságos vállalati hálózat kiépítése és fejlesztése. Céges hálózattervezés, WiFi-rendszerek, VPN és strukturált hálózatépítés Magyarországon.",
-      "keywords": "hálózatépítés vállalati, vállalati wifi hálózat kiépítés, informatika, IT, hálózatfejlesztés, wifi hálózat telepítés iroda, hálózatfejlesztés cégeknek, strukturált kábelezés, hálózati infrastruktúra tervezés, irodai hálózat korszerűsítés, Mikrotik telepítés, TP-Link vállalati hálózat, hálózatépítés Közép-Magyarország",
+      "keywords": "hálózatépítés vállalati, vállalati wifi hálózat kiépítés, informatika, IT, hálózatfejlesztés, wifi hálózat telepítés iroda, hálózatfejlesztés cégeknek, strukturált kábelezés, hálózati infrastruktúra tervezés, irodai hálózat korszerűsítés, Mikrotik telepítés, TP-Link vállalati hálózat, hálózatépítés Közép-Magyarország, irodai hálózat kiépítés, vállalati wifi telepítés Budapest, hálózatépítés Székesfehérvár, wifi lefedettség iroda, wifi hálózat kiépítése cégnek, hálózat korszerűsítés iroda költözéskor, Cisco hálózat telepítés, Ubiquiti wifi hálózat, hálózati switch telepítés, LAN hálózat kiépítés, vezeték nélküli hálózat vállalati, hálózati tervezés és kivitelezés, iroda wifi optimalizálás, hálózati biztonság kiépítés, WiFi 6 vállalati hálózat, mesh wifi rendszer iroda, hálózati audit és optimalizálás, hibrid hálózat kiépítés, Mennyibe kerül egy irodai hálózat kiépítése?, Mikor kell hálózatot bővíteni?, Hogyan javítható a gyenge irodai wifi?, Mi a különbség a LAN és a WiFi között?, Kell-e vállalati VPN?",
       "badge": "Hálózatépítés",
       "heroTitle": "Hálózatépítés és hálózatfejlesztés – stabil alapok az üzletének",
       "heroSubtitle": "Egy rosszul megtervezett hálózat naponta okoz gondot. A SIRONIC stabil, biztonságos és bővíthető hálózati infrastruktúrát épít és fejleszt.",
@@ -543,7 +572,7 @@
     "nis2": {
       "metaTitle": "NIS2 Megfelelőség és IT-rendszer kiépítése | SIRONIC",
       "metaDescription": "NIS2-irányelv szerinti IT-rendszer tervezése, implementációja és üzemeltetése. Auditfelkészítés, dokumentáció és folyamatos operatív együttműködés.",
-      "keywords": "NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, NIS2 megfelelőség segítség, NIS2 audit felkészítés, NIS2 kötelezettségek cégeknek, NIS2 IT rendszer tervezés, kiberbiztonsági megfelelőség, információbiztonsági audit, NIS2 tanácsadó partner, adatvédelmi IT rendszer",
+      "keywords": "NIS2 megfelelőség IT, NIS2 audit segítség, NIS2 mit kell tenni, NIS2, NIS2 megfelelőség segítség, NIS2 audit felkészítés, NIS2 kötelezettségek cégeknek, NIS2 IT rendszer tervezés, kiberbiztonsági megfelelőség, információbiztonsági audit, NIS2 tanácsadó partner, adatvédelmi IT rendszer, NIS2 hiányelemzés, NIS2 kockázatkezelés, NIS2 felkészülés cégeknek, NIS2 irányelv megfelelés, NIS2 gap analysis, NIS2 belső audit, NIS2 felkészülés 2026, NIS2 megfelelőségi projekt, kiberbiztonsági kockázatkezelés, NIS2 szabályozás vállalkozásoknak, NIS2 jelentéstétel, kiberbiztonsági irányelv felkészülés, ISO 27001 NIS2, kiberbiztonsági audit cég, NIS2 vezetői felelősség, kiberbiztonsági incidens jelentés, NIS2 bírság elkerülése, kiberbiztonsági politika kidolgozás, NIS2 regisztráció segítség, Vonatkozik rám a NIS2?, Mikor kell megfelelni a NIS2-nek?, Mi a teendő NIS2 audit előtt?, Mekkora bírság jár a NIS2 nem-megfelelésért?, Kell-e NIS2 regisztráció?",
       "badge": "NIS2 megfelelőség",
       "heroTitle": "NIS2-kompatibilis IT-rendszer – megfelelőség, felesleges stressz nélkül",
       "heroSubtitle": "A NIS2-irányelv új kötelezettségeket jelent sok magyarországi vállalkozás számára. A SIRONIC segít megfelelni – érthetően, lépésről lépésre.",
@@ -632,7 +661,7 @@
     "webDev": {
       "metaTitle": "Egyedi Weboldal- és Rendszerfejlesztés | SIRONIC",
       "metaDescription": "Teljesen egyedi weboldal és üzleti rendszer fejlesztése. Sem WordPress, sem sablon – csak az Ön igényeire szabott megoldás, a designtól a háttérrendszerig.",
-      "keywords": "weboldal fejlesztés egyedi, weboldal, development, React, egyedi webáruház fejlesztés, weboldal készítés sablonok nélkül, belső üzleti rendszer fejlesztés, webalkalmazás fejlesztés cégeknek, weboldal karbantartás folyamatos, vállalati arculat weboldal, egyedi CMS fejlesztés, webfejlesztés Székesfehérvár",
+      "keywords": "weboldal fejlesztés egyedi, weboldal, development, React, egyedi webáruház fejlesztés, weboldal készítés sablonok nélkül, belső üzleti rendszer fejlesztés, webalkalmazás fejlesztés cégeknek, weboldal karbantartás folyamatos, vállalati arculat weboldal, egyedi CMS fejlesztés, webfejlesztés Székesfehérvár, egyedi szoftverfejlesztés vállalkozásoknak, custom web development, egyedi CRM rendszer fejlesztés, webes alkalmazás fejlesztés, egyedi intranet rendszer, üzleti folyamat automatizálás weben, egyedi API integráció, weboldal fejlesztés Budapest, egyedi honlapkészítés, webshop fejlesztés egyedi, folyamatos weboldal karbantartás, üzleti rendszer digitalizálás, egyedi intranet fejlesztés, webalkalmazás karbantartás, egyedi weboldal árak, webfejlesztés Fejér megye, egyedi webes rendszer karbantartás havi díj, Miért nem WordPress?, Mennyibe kerül egy egyedi weboldal 2026-ban?, Mi a különbség a sablon és az egyedi weboldal között?, Meddig tart egy egyedi weboldal elkészítése?, Hogyan digitalizáljam az üzleti folyamataimat?",
       "badge": "Egyedi fejlesztés",
       "heroTitle": "Egyedi webfejlesztés – sablon nélkül, az Ön igényeire",
       "heroSubtitle": "Nem WordPress, nem Wix. Minden projekt az elejétől a végéig egyedileg tervezett és fejlesztett – az Ön márkájára, céljára és munkafolyamataira szabva.",
