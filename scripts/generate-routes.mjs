@@ -23,6 +23,11 @@ const priorityMap = {
 const urlMapping = {
   "/": { hu: "", en: "" },
   "/szolgaltatasok": { hu: "/szolgaltatasok", en: "/services" },
+  "/szolgaltatasok/rendszeruzemeltetes": { hu: "/szolgaltatasok/rendszeruzemeltetes", en: "/szolgaltatasok/rendszeruzemeltetes" },
+  "/szolgaltatasok/halozatepites": { hu: "/szolgaltatasok/halozatepites", en: "/szolgaltatasok/halozatepites" },
+  "/szolgaltatasok/nis2-tamogatas": { hu: "/szolgaltatasok/nis2-tamogatas", en: "/szolgaltatasok/nis2-tamogatas" },
+  "/szolgaltatasok/webfejlesztes": { hu: "/szolgaltatasok/webfejlesztes", en: "/szolgaltatasok/webfejlesztes" },
+  "/szolgaltatasok/rendszeruzemeltetés": { hu: "/szolgaltatasok/rendszeruzemeltetés", en: "/szolgaltatasok/rendszeruzemeltetés" },
   "/partnereink": { hu: "/partnereink", en: "/partners" },
   "/referenciak": { hu: "/referenciak", en: "/references" },
   "/rolunk": { hu: "/rolunk", en: "/about" },
@@ -32,12 +37,11 @@ const urlMapping = {
 
 function getLocalizedPath(routePath, locale) {
   if (routePath === '') return '';
+  // Return the mapped translation if explicitly mapped
   if (urlMapping[routePath]) return urlMapping[routePath][locale];
-  for (const [key, translations] of Object.entries(urlMapping)) {
-    if (key !== '/' && routePath.startsWith(key + '/')) {
-      return translations[locale] + routePath.slice(key.length);
-    }
-  }
+  
+  // Otherwise, default to the physical folder path, 
+  // because next-intl does not automatically rewrite nested prefixes!
   return routePath;
 }
 
