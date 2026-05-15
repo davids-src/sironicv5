@@ -85,8 +85,7 @@ export default function Footer() {
           <h3 className={styles.colTitle}>{locale === "hu" ? "Céginformáció" : "Company Info"}</h3>
           <ul className={styles.infoList}>
             <li>
-              <span className={styles.infoLabel}>Skoda Dávid András</span>
-              <span className={styles.infoValue}>{locale === "hu" ? "Egyéni Vállalkozó" : "Sole Trader"}</span>
+              <span className={styles.infoLabel}>SIROTECH Kft.</span>
             </li>
             <li className={styles.infoRow}>
               <MapPin size={13} className={styles.infoIcon} />
@@ -94,7 +93,7 @@ export default function Footer() {
             </li>
             <li className={styles.infoRow}>
               <Hash size={13} className={styles.infoIcon} />
-              <span className={styles.infoValue}>45755754-2-27</span>
+              <span className={styles.infoValue}>33056151-2-07</span>
             </li>
             <li className={styles.infoRow}>
               <Mail size={13} className={styles.infoIcon} />
