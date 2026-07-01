@@ -35,7 +35,22 @@ export default function PricingHighlight({
           {/* LEFT */}
           <SectionReveal>
             <div className={styles.left}>
-              <span className="badge">
+              <span style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.4rem",
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.75rem",
+                fontWeight: 600,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase" as const,
+                color: "var(--accent)",
+                border: "1px solid var(--accent-40)",
+                background: "var(--accent-12)",
+                borderRadius: "var(--r-tag)",
+                padding: "0.25rem 0.625rem",
+                marginBottom: "1.25rem",
+              }}>
                 <Zap size={13} />
                 {badge}
               </span>

@@ -13,29 +13,16 @@ const ThemeContext = createContext<{
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // Read the theme set by the anti-flash inline script; fall back to "dark"
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== "undefined") {
-      const attr = document.documentElement.getAttribute("data-theme");
-      if (attr === "light" || attr === "dark") return attr;
-    }
-    return "dark";
-  });
+  const [theme] = useState<Theme>("dark");
 
   useEffect(() => {
-    // Sync any localStorage value on first mount
-    const stored = localStorage.getItem("sironic-theme") as Theme | null;
-    if (stored === "light" || stored === "dark") {
-      setTheme(stored);
-    }
+    // SIROTECH design system: dark-only. Rögzítjük a dark módot.
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("sironic-theme", "dark");
   }, []);
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("sironic-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  // toggleTheme megtartva a kompatibilitás érdekében, de dark-only
+  const toggleTheme = () => {};
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

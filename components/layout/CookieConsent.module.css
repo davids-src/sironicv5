@@ -1,15 +1,17 @@
+/* ─── COOKIE CONSENT (design.md 5.2, panel) ─────────────────────────────── */
+
 .overlay {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   width: 100%;
-  max-width: 420px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-lg), var(--glow);
+  max-width: 400px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   z-index: 1000;
   padding: 1.75rem;
-  border-radius: var(--radius-lg);
+  border-radius: var(--r-card);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -20,25 +22,27 @@
   position: absolute;
   top: -20px;
   right: -20px;
-  width: 140px;
-  height: 140px;
-  background: var(--primary);
-  opacity: 0.15;
-  filter: blur(50px);
+  width: 120px;
+  height: 120px;
+  background: var(--accent);
+  opacity: 0.07;
+  filter: blur(40px);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink);
   margin: 0;
 }
 
 .desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--muted);
   line-height: 1.6;
   margin: 0;
 }
@@ -51,44 +55,44 @@
 
 .btnAccept {
   flex: 1;
-  background: var(--primary);
-  color: #fff;
+  background: var(--accent);
+  color: #F0F0F5;
   border: none;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
   padding: 0.75rem 1rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--r-btn);
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
 }
 
 .btnAccept:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px var(--primary-glow);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px -8px #E8271A;
 }
 
 .btnDecline {
   background: transparent;
-  color: var(--text-muted);
-  border: 1px solid var(--border);
-  font-size: 0.9rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
   font-weight: 600;
   padding: 0.75rem 1rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--r-btn);
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: color 150ms ease-out, border-color 150ms ease-out;
 }
 
 .btnDecline:hover {
-  background: var(--surface-2);
-  color: var(--text);
-  border-color: var(--primary);
+  color: var(--ink);
+  border-color: var(--silver);
 }
 
 @media (max-width: 1023px) {
   .overlay {
-    bottom: calc(100px + env(safe-area-inset-bottom)); /* above the sticky mobile CTA */
+    bottom: calc(100px + env(safe-area-inset-bottom));
     left: 1rem;
     right: 1rem;
     max-width: calc(100vw - 2rem);

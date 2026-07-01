@@ -9,6 +9,7 @@ import MobileCtaBar from "@/components/layout/MobileCtaBar";
 import CookieConsent from "@/components/layout/CookieConsent";
 import GoogleAnalyticsTracker from "@/components/layout/GoogleAnalyticsTracker";
 import StructuredData from "@/components/layout/StructuredData";
+import { MotionConfig } from "framer-motion";
 import type { Metadata } from "next";
 
 type Props = {
@@ -58,17 +59,19 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider messages={messages}>
       <ThemeProvider>
-        <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-          <Navbar />
-          <main id="main-content" style={{ flex: 1, paddingTop: "72px" }}>
-            {children}
-          </main>
-          <Footer />
-          <MobileCtaBar />
-          <CookieConsent />
-          <GoogleAnalyticsTracker gaId={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
-          <StructuredData />
-        </div>
+        <MotionConfig reducedMotion="user">
+          <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+            <Navbar />
+            <main id="main-content" style={{ flex: 1, paddingTop: "64px" }}>
+              {children}
+            </main>
+            <Footer />
+            <MobileCtaBar />
+            <CookieConsent />
+            <GoogleAnalyticsTracker gaId={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
+            <StructuredData />
+          </div>
+        </MotionConfig>
       </ThemeProvider>
     </NextIntlClientProvider>
   );

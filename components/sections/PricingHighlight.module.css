@@ -1,35 +1,26 @@
-/* ─── PRICING HIGHLIGHT SECTION ─────────────────────────────────────────── */
+/* ─── PRICING HIGHLIGHT (design.md 5.2, 4.2) ────────────────────────────── */
 
 .wrapper {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg,
-    rgba(230, 57, 70, 0.10) 0%,
-    rgba(10, 10, 15, 0.0) 60%
-  ),
-  var(--surface);
-  border-top: 1px solid rgba(230, 57, 70, 0.22);
-  border-bottom: 1px solid rgba(230, 57, 70, 0.22);
-  padding-block: clamp(3.5rem, 7vw, 6rem);
+  background: var(--surface);
+  border-top: 1px solid rgba(42, 42, 53, 0.5);
+  border-bottom: 1px solid rgba(42, 42, 53, 0.5);
+  padding-block: var(--section-py);
 }
 
-/* subtle animated glow blob in background */
+/* Ambient glow — opacity 0.07 (design.md 8.2) */
 .wrapper::before {
   content: '';
   position: absolute;
-  top: -40%;
-  left: -10%;
-  width: 540px;
-  height: 540px;
-  background: radial-gradient(circle, rgba(230, 57, 70, 0.18) 0%, transparent 70%);
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(232, 39, 26, 0.07) 0%, transparent 70%);
   pointer-events: none;
-  animation: blobPulse 8s ease-in-out infinite;
   z-index: 0;
-}
-
-@keyframes blobPulse {
-  0%, 100% { transform: scale(1) translateY(0); opacity: 0.8; }
-  50%       { transform: scale(1.15) translateY(30px); opacity: 1; }
 }
 
 .inner {
@@ -51,8 +42,7 @@
   }
 }
 
-/* ─── LEFT SIDE ──────────────────────────────────────────────────────────── */
-
+/* ── Left side ── */
 .left {
   display: flex;
   flex-direction: column;
@@ -60,19 +50,21 @@
 }
 
 .headline {
-  font-size: clamp(1.9rem, 3.5vw, 2.75rem);
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 600;
   line-height: 1.15;
-  letter-spacing: -0.025em;
-  color: var(--text);
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .subheadline {
-  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
   line-height: 1.7;
-  color: var(--text-muted);
+  color: var(--muted);
   max-width: 480px;
 }
 
@@ -84,29 +76,31 @@
 }
 
 .trustNote {
-  margin-top: 1.375rem;
-  font-size: 0.82rem;
-  color: var(--text-subtle);
+  margin-top: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
   max-width: 420px;
   line-height: 1.6;
-  font-style: italic;
+  opacity: 0.7;
 }
 
-/* ─── RIGHT SIDE – STEPS ─────────────────────────────────────────────────── */
-
+/* ── Right side — steps panel ── */
 .stepsBox {
-  background: var(--surface-2);
-  border: 1px solid rgba(230, 57, 70, 0.18);
-  border-radius: 20px;
-  padding: 2rem 2rem 1.75rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 2rem;
 }
 
+/* Label / mono uppercase title (design.md 3.2) */
 .stepsTitle {
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 1.5rem;
 }
 
@@ -124,28 +118,30 @@
 
 .stepNum {
   flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 700;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--r-full);
+  background: var(--accent);
+  color: #F0F0F5;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.05rem;
+  margin-top: 0.1rem;
 }
 
 .stepText {
+  font-family: var(--font-body);
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var(--muted);
 }
 
 .stepConnector {
   width: 2px;
-  height: 1.125rem;
-  background: rgba(230, 57, 70, 0.25);
-  margin-left: calc(1rem + 0.9375rem); /* stepNum/2 offset */
+  height: 1rem;
+  background: var(--accent-40);
+  margin-left: calc(0.875rem);
 }

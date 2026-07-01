@@ -5,13 +5,14 @@ import styles from "./ServiceSection.module.css";
 
 type IconName = "server" | "network" | "shield" | "code" | "camera" | "repair";
 
+// design.md 6. — size={84} strokeWidth={1.25} display panelben
 const icons: Record<IconName, React.ReactNode> = {
-  server:  <Server size={28} />,
-  network: <Network size={28} />,
-  shield:  <ShieldCheck size={28} />,
-  code:    <Code2 size={28} />,
-  camera:  <Camera size={28} />,
-  repair:  <Wrench size={28} />,
+  server:  <Server  size={84} strokeWidth={1.25} />,
+  network: <Network size={84} strokeWidth={1.25} />,
+  shield:  <ShieldCheck size={84} strokeWidth={1.25} />,
+  code:    <Code2   size={84} strokeWidth={1.25} />,
+  camera:  <Camera  size={84} strokeWidth={1.25} />,
+  repair:  <Wrench  size={84} strokeWidth={1.25} />,
 };
 
 interface Cta {
@@ -67,8 +68,9 @@ export default function ServiceSection({ id, badge, title, subtitle, description
 
         {/* Content */}
         <SectionReveal className={styles.content}>
-          <span className="badge">{badge}</span>
-          <h2 className={`heading-1 ${styles.title}`}>{title}</h2>
+          {/* Eyebrow chip — design.md 5.3, 9.2 */}
+          <span className={styles.eyebrow}>{badge}</span>
+          <h2 className={styles.title}>{title}</h2>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
           <p className={`body-lg ${styles.desc}`}>{description}</p>
 

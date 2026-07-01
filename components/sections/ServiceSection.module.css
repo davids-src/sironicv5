@@ -1,4 +1,8 @@
-.section { scroll-margin-top: 80px; }
+/* ─── SERVICE SECTION (design.md 4.2, 5.2, 6.) ───────────────────────────── */
+
+.section {
+  scroll-margin-top: 80px;
+}
 
 .inner {
   display: grid;
@@ -11,12 +15,14 @@
 .reverse > * { direction: ltr; }
 
 @media (max-width: 768px) {
-  .inner { grid-template-columns: 1fr; gap: 2rem; }
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
   .reverse { direction: ltr; }
-  .iconBox { width: 80px; height: 80px; }
 }
 
-/* Icon panel */
+/* ── Icon panel ── */
 .iconPanel { display: flex; justify-content: center; }
 
 .iconWrap {
@@ -27,49 +33,84 @@
 }
 
 .iconBox {
-  width: 120px;
-  height: 120px;
-  border-radius: var(--radius-xl);
+  width: 140px;
+  height: 140px;
+  border-radius: var(--r-card);
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-40);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: var(--accent);
   position: relative;
   z-index: 1;
-  transition: border-color var(--transition-normal), transform var(--transition-normal);
+  box-shadow: 0 0 28px -14px #E8271A;
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
 }
+
+@media (max-width: 768px) {
+  .iconBox { width: 90px; height: 90px; }
+}
+
 .iconWrap:hover .iconBox {
-  border-color: var(--primary);
-  transform: scale(1.05);
+  transform: scale(1.04);
+  box-shadow: 0 0 56px -10px #E8271A;
 }
 
 .iconGlow {
   position: absolute;
-  inset: -20px;
+  inset: -24px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(230,57,70,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232, 39, 26, 0.10) 0%, transparent 70%);
   pointer-events: none;
 }
 
-/* Content */
+/* ── Content ── */
 .content { display: flex; flex-direction: column; }
 
-.title { margin-bottom: 0.625rem; }
+/* Eyebrow chip */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-40);
+  background: var(--accent-12);
+  border-radius: var(--r-tag);
+  padding: 0.25rem 0.625rem;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
 
 .subtitle {
-  font-size: 1.05rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .desc {
   margin-bottom: 1.75rem;
 }
 
-/* Points */
+/* ── Points ── */
 .points {
   list-style: none;
   display: flex;
@@ -82,13 +123,19 @@
   display: flex;
   align-items: flex-start;
   gap: 0.625rem;
+  font-family: var(--font-body);
   font-size: 0.9375rem;
-  color: var(--text-muted);
+  color: var(--muted);
+  line-height: 1.6;
 }
 
-.check { color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+.check {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
-/* CTAs */
+/* ── CTAs ── */
 .ctas {
   display: flex;
   flex-wrap: wrap;

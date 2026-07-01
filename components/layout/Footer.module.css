@@ -1,6 +1,8 @@
+/* ─── FOOTER (design.md 5.6) ─────────────────────────────────────────────── */
+
 .footer {
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
+  background: rgba(17, 17, 22, 0.4);
+  border-top: 1px solid rgba(42, 42, 53, 0.5);
   margin-top: auto;
 }
 
@@ -33,55 +35,62 @@
   }
 }
 
-/* Brand */
+/* ── Brand column ── */
 .brand { display: flex; flex-direction: column; gap: 0.75rem; }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, var(--text) 40%, var(--primary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--ink);
   text-decoration: none;
   display: inline-block;
 }
 
 .tagline {
+  font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  max-width: 280px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 260px;
 }
 
 .sirovedLink {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: var(--text-muted);
+  color: var(--muted);
   text-decoration: none;
   margin-top: 0.5rem;
-  transition: color var(--transition-fast);
   padding: 0.5rem 0.75rem;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  border-radius: var(--r-btn);
   width: fit-content;
+  transition: color 150ms ease-out, border-color 150ms ease-out;
 }
-.sirovedLink strong { color: var(--primary); }
-.sirovedLink:hover { color: var(--text); border-color: var(--primary); }
 
-/* Columns */
+.sirovedLink strong { color: var(--accent); }
+
+.sirovedLink:hover {
+  color: var(--ink);
+  border-color: var(--silver);
+}
+
+/* ── Columns ── */
 .col { display: flex; flex-direction: column; gap: 0.75rem; }
 
+/* Mono uppercase column title (design.md 3.2 label) */
 .colTitle {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-subtle);
+  color: var(--muted);
   margin-bottom: 0.25rem;
 }
 
@@ -93,17 +102,20 @@
 }
 
 .footerLink {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--muted);
   text-decoration: none;
   padding: 0.25rem 0;
-  transition: color var(--transition-fast);
+  transition: color 150ms ease-out;
 }
-.footerLink:hover { color: var(--primary); }
+
+.footerLink:hover { color: var(--silver); }
 
 .ctaText {
+  font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: var(--muted);
   line-height: 1.5;
   margin-bottom: 0.25rem;
 }
@@ -112,24 +124,26 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 700;
-  padding: 0.625rem 1.125rem;
-  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: #F0F0F5;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.625rem 1rem;
+  border-radius: var(--r-btn);
   text-decoration: none;
   width: fit-content;
-  transition: all var(--transition-fast);
-}
-.footerCta:hover {
-  background: var(--primary-dark);
-  transform: translateY(-1px);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
 }
 
-/* Bottom bar */
+.footerCta:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px -8px #E8271A;
+}
+
+/* ── Bottom bar ── */
 .bottom {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(42, 42, 53, 0.5);
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   display: flex;
@@ -139,7 +153,13 @@
   flex-wrap: wrap;
 }
 
-.copyright { font-size: 0.8125rem; color: var(--text-subtle); }
+/* Legal / fine print — mono (design.md 3.2) */
+.copyright {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.7;
+}
 
 .legalLinks {
   display: flex;
@@ -147,17 +167,24 @@
   gap: 1rem;
 }
 
-.legal { font-size: 0.8125rem; color: var(--text-subtle); }
+.legal {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.6;
+}
 
 .legalLink {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: color 150ms ease-out;
 }
-.legalLink:hover { color: var(--primary); }
 
-/* Company info list */
+.legalLink:hover { color: var(--silver); }
+
+/* ── Company info list ── */
 .infoList {
   list-style: none;
   display: flex;
@@ -167,14 +194,16 @@
 
 .infoLabel {
   display: block;
+  font-family: var(--font-display);
   font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--text);
+  font-weight: 600;
+  color: var(--ink);
 }
 
 .infoValue {
+  font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: var(--text-muted);
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -185,15 +214,17 @@
 }
 
 .infoIcon {
-  color: var(--primary);
+  color: var(--accent);
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .infoLink {
+  font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: var(--text-muted);
+  color: var(--muted);
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: color 150ms ease-out;
 }
-.infoLink:hover { color: var(--primary); }
+
+.infoLink:hover { color: var(--silver); }

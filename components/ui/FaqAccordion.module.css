@@ -1,15 +1,18 @@
+/* ─── FAQ ACCORDION (design.md 5.2, 4.3) ────────────────────────────────── */
+
 .list {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
   overflow: hidden;
 }
 
 .item {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
 }
+
 .item:last-child { border-bottom: none; }
 
 .question {
@@ -21,30 +24,39 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text);
-  font-size: 1rem;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
   font-weight: 600;
   text-align: left;
-  padding: 1.5rem;
-  transition: background var(--transition-fast);
+  padding: 1.375rem 1.5rem;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
 }
+
 .question:hover { background: var(--surface); }
-.question.active { color: var(--primary); background: var(--surface); }
+
+.question.active {
+  color: var(--accent);
+  background: var(--surface);
+}
 
 .icon {
   display: inline-flex;
   flex-shrink: 0;
-  color: var(--text-muted);
+  color: var(--muted);
+  transition: color 150ms ease-out;
 }
-.active .icon { color: var(--primary); }
+
+.active .icon { color: var(--accent); }
 
 .answer {
   overflow: hidden;
 }
 
 .answerInner {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.375rem;
+  font-family: var(--font-body);
   font-size: 0.9375rem;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: var(--muted);
 }

@@ -5,15 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { Sun, Moon, Menu, X, ExternalLink, Zap } from "lucide-react";
-import { useTheme } from "@/components/layout/ThemeProvider";
+import { Menu, X, Zap } from "lucide-react";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const t = useTranslations("nav");
   const locale = useLocale();
   const pathname = usePathname();
-  const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -92,15 +90,6 @@ export default function Navbar() {
             >
               {otherLocale.toUpperCase()}
             </Link>
-
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className={styles.iconBtn}
-              aria-label={theme === "dark" ? "Világos mód" : "Sötét mód"}
-            >
-              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
 
             {/* Mobile Hamburger */}
             <button
