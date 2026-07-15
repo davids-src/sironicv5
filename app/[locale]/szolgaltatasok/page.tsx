@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import {
-  Server, Network, ShieldCheck, Code2, Camera, Wrench,
-  CheckCircle2, ExternalLink, ArrowRight
+  Server, Network, ShieldCheck, Wrench,
+  CheckCircle2, ArrowRight
 } from "lucide-react";
 import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
@@ -21,8 +21,6 @@ const serviceIcons = [
   { key: "itOps", icon: <Server size={32} /> },
   { key: "network", icon: <Network size={32} /> },
   { key: "nis2", icon: <ShieldCheck size={32} /> },
-  { key: "webDev", icon: <Code2 size={32} /> },
-  { key: "security", icon: <Camera size={32} /> },
   { key: "repair", icon: <Wrench size={32} /> },
 ];
 
@@ -36,8 +34,7 @@ export default async function ServicesPage({ params }: Props) {
     "@type": "ItemList",
     name: locale === "hu" ? "SIRONIC Szolgáltatások" : "SIRONIC Services",
     itemListElement: [
-      "IT Operations", "Network Building", "NIS2 Support",
-      "Web & System Development", "Security Technology", "Repair"
+      "IT Operations", "Network Building", "NIS2 Support", "Repair"
     ].map((name, i) => ({ "@type": "ListItem", position: i + 1, name })),
   };
 
@@ -141,61 +138,6 @@ export default async function ServicesPage({ params }: Props) {
           </SectionReveal>
         </div>
       </section>
-
-      <div className="divider container" />
-
-      {/* Web Dev */}
-      <section id="fejlesztes" className="section" style={{ scrollMarginTop: "80px" }}>
-        <div className="container">
-          <SectionReveal>
-            <div className={`${styles.serviceCard} ${styles.reverse}`}>
-              <div className={styles.cardIcon}><Code2 size={32} /></div>
-              <div className={styles.cardContent}>
-                <span className="badge">{t("webDev.badge")}</span>
-                <h2 className="heading-1">{t("webDev.title")}</h2>
-                <p className={styles.cardSubtitle}>{t("webDev.subtitle")}</p>
-                <p className="body-lg">{t("webDev.description")}</p>
-                <ul className={styles.points}>
-                  {(t.raw("webDev.points") as string[]).map((p, i) => (
-                    <li key={i}><CheckCircle2 size={16} className={styles.check} />{p}</li>
-                  ))}
-                </ul>
-                <div className={styles.cardCtas}>
-                  <Link href={`/${locale}/szolgaltatasok/webfejlesztes`} className="btn btn-primary">
-                    {locale === "hu" ? "További információ" : "Learn more"} <ArrowRight size={15} />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SectionReveal>
-        </div>
-      </section>
-
-      <div className="divider container" />
-
-      {/* Security */}
-      <section id="biztonságtechnika" className="section section-alt" style={{ scrollMarginTop: "80px" }}>
-        <div className="container">
-          <SectionReveal>
-            <div className={styles.serviceCard}>
-              <div className={styles.cardIcon}><Camera size={32} /></div>
-              <div className={styles.cardContent}>
-                <span className="badge">{t("security.badge")}</span>
-                <h2 className="heading-1">{t("security.title")}</h2>
-                <p className={styles.cardSubtitle}>{t("security.subtitle")}</p>
-                <p className="body-lg">{t("security.description")}</p>
-                <div className={styles.cardCtas}>
-                  <a href="https://siroved.hu" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    {t("security.cta")} <ExternalLink size={15} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </SectionReveal>
-        </div>
-      </section>
-
-      <div className="divider container" />
 
       {/* Repair */}
       <section id="szerviz" className="section" style={{ scrollMarginTop: "80px" }}>

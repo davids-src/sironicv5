@@ -9,11 +9,11 @@
     "contact": "Kapcsolat"
   },
   "meta": {
-    "siteName": "SIRONIC – IT Megoldások és Technológiai Szolgáltatások",
-    "homeTitle": "SIRONIC | IT Üzemeltetés, Fejlesztés, Hálózatépítés",
-    "homeDescription": "A SIRONIC modern IT-megoldásokat, egyedi szoftver- és webfejlesztést, hálózatépítést, NIS2-kompatibilis rendszertervezést és biztonságtechnikai szolgáltatásokat nyújt vállalkozások számára.",
+    "siteName": "SIRONIC – Rendszerüzemeltetés és Hálózatépítés",
+    "homeTitle": "SIRONIC | IT Rendszerüzemeltetés és Hálózatépítés",
+    "homeDescription": "A SIRONIC megbízható rendszerüzemeltetést, hálózatépítést és NIS2-kompatibilis IT-megoldásokat nyújt kis- és középvállalkozások számára.",
     "servicesTitle": "Szolgáltatások | SIRONIC",
-    "servicesDescription": "Ismerje meg a SIRONIC teljes szolgáltatásportfólióját: IT üzemeltetés, hálózatépítés, webfejlesztés, NIS2-támogatás, szerviz és biztonságtechnika.",
+    "servicesDescription": "Ismerje meg a SIRONIC szolgáltatásportfólióját: IT rendszerüzemeltetés, hálózatépítés, NIS2-támogatás és szerviz.",
     "partnersTitle": "Partnereink | SIRONIC",
     "partnersDescription": "A SIRONIC partnerei, beszállítói és technológiai szövetségesei.",
     "referencesTitle": "Referenciák | SIRONIC",
@@ -32,9 +32,18 @@
     "subheadline": "Töltsd ki 3 perc alatt – azonnal kapsz egy hozzávetőleges árbecslést. Kötelezettség nélkül.",
     "stepsTitle": "Hogyan működik?",
     "steps": [
-      { "step": 1, "text": "Töltsd ki a 15 kérdéses igényfelmérőt" },
-      { "step": 2, "text": "Az ár igazodik a céged méretéhez és eszközparkjához" },
-      { "step": 3, "text": "Kollégánk 1 munkanapon belül részletes ajánlatot küld" }
+      {
+        "step": 1,
+        "text": "Töltsd ki a 15 kérdéses igényfelmérőt"
+      },
+      {
+        "step": 2,
+        "text": "Az ár igazodik a céged méretéhez és eszközparkjához"
+      },
+      {
+        "step": 3,
+        "text": "Kollégánk 1 munkanapon belül részletes ajánlatot küld"
+      }
     ],
     "ctaPrimary": "Intelligens igényfelmérés →",
     "ctaSecondary": "További információk →",
@@ -49,23 +58,16 @@
       "cta2": "Szolgáltatásaink"
     },
     "slide2": {
-      "badge": "IT + Biztonságtechnika",
-      "title": "Informatika és biztonságtechnika egy kézből",
-      "subtitle": "A SIRONIC professzionális IT-megoldásokat nyújt, kiegészítve a SIRO-VÉD biztonságtechnikai szolgáltatásokkal – kamera-, riasztó- és tűzjelző-rendszerekkel.",
-      "cta1": "IT-szolgáltatásaink",
-      "cta2": "Biztonságtechnika (SIRO-VÉD)"
-    },
-    "slide3": {
       "badge": "Digitális innováció",
       "title": "Intelligens Űrlapok. Okos Hibabejelentés. Partnerportál.",
       "subtitle": "Töltse ki intelligens igényfelmérő kérdőívünket, és már most kapjon hozzávetőleges üzemeltetési árat. Szerződéses ügyfeleink online hozzáférnek a partnerportálhoz.",
       "cta1": "Próbálja ki az Intelligens Űrlapot",
-      "cta2": "Partnerportál"
+      "cta2": "Szolgáltatásaink"
     }
   },
   "services": {
     "sectionTitle": "Szolgáltatásaink",
-    "sectionSubtitle": "Átfogó IT- és technológiai megoldások kis- és középvállalkozások számára",
+    "sectionSubtitle": "Megbízható rendszerüzemeltetési és hálózatépítési megoldások kis- és középvállalkozások számára",
     "itOps": {
       "badge": "Rendszerüzemeltetés",
       "title": "IT-üzemeltetés és karbantartás",
@@ -107,27 +109,6 @@
       ],
       "cta": "NIS2-tudástár"
     },
-    "webDev": {
-      "badge": "Egyedi fejlesztés",
-      "title": "Weboldal- és rendszerfejlesztés",
-      "subtitle": "Sablon nélkül, az Ön igényeire szabva",
-      "description": "Nem sablonos CMS-platformokra alapozunk. Minden projektet az ügyfél márkája, stílusa és munkafolyamatai szerint tervezünk és fejlesztünk le – a legegyszerűbb bemutatkozó oldaltól a komplex belső üzleti rendszerekig.",
-      "points": [
-        "Teljesen egyedi design és fejlesztés",
-        "Bemutatkozó oldalak, webáruházak",
-        "Belső üzleti rendszerek és webalapú alkalmazások",
-        "Ügyfélspecifikus tipográfia és arculat"
-      ],
-      "cta": "Fejlesztési portfólió"
-    },
-    "security": {
-      "badge": "Biztonságtechnika",
-      "title": "Biztonságtechnika (SIRO-VÉD)",
-      "subtitle": "Kamera, riasztó, tűzjelzés",
-      "description": "A biztonságtechnikai szolgáltatásokat a SIRO-VÉD márkanév alatt nyújtjuk. IP és analóg kamerarendszerek, riasztórendszerek, hamarosan épületbe épített tűzjelző megoldások.",
-      "cta": "Látogassa meg a SIRO-VÉD weboldalt",
-      "ctaUrl": "https://siroved.hu"
-    },
     "repair": {
       "badge": "Szerviz",
       "title": "Szerviz és javítás",
@@ -150,23 +131,15 @@
       },
       {
         "q": "Mi történik, ha egyszeri segítségre van szükségem, nem hosszú távú szerződésre?",
-        "a": "Eseti megkereséseket is szívesen fogadjuk. Fejlesztési, karbantartási vagy hibaelhárítási feladatokat szerződéskötés nélkül is elvégzünk."
+        "a": "Eseti megkereséseket is szívesen fogadjuk. Karbantartási vagy hibaelhárítási feladatokat szerződéskötés nélkül is elvégzünk."
       },
       {
         "q": "Az intelligens igényfelmérő valódi árajánlatot ad?",
         "a": "A kérdőív kitöltése után hozzávetőleges árbecslést kap az üzemeltetési díjról. Ez nem végleges ajánlat, de jó kiindulópontot nyújt a tárgyaláshoz, és segít mindkét félnek felkészülni."
       },
       {
-        "q": "Mi a különbség a SIRONIC és a SIRO-VÉD között?",
-        "a": "A SIRONIC az informatikai és technológiai szolgáltatások fő márkája. A SIRO-VÉD a biztonságtechnikai szolgáltatások (kamerarendszerek, riasztók, tűzjelzők) önálló online márkája, amelynek saját weboldala van a siroved.hu címen."
-      },
-      {
         "q": "Hogyan segítenek a NIS2-megfelelésben?",
         "a": "Megbízott tanácsadó partnerünkkel együtt megtervezzük és implementáljuk a NIS2-irányelv által elvárt IT-rendszert, felkészítünk az auditra, és az audit után is folyamatos operatív együttműködést nyújtunk."
-      },
-      {
-        "q": "Saját fejlesztésű weboldalt vagy CMS-alapút (pl. WordPress) készítenek?",
-        "a": "Kizárólag egyedi fejlesztésű megoldásokat készítünk. Nem használunk sablonos CMS-platformokat – minden projektet az ügyfél igényeire és arculatára szabunk, a designtól a háttérrendszerig."
       },
       {
         "q": "Mennyi idő alatt lehet felvenni velük a kapcsolatot és elindítani egy projektet?",
@@ -197,8 +170,8 @@
     "title": "Rólunk",
     "subtitle": "A SIRONIC csapata és értékei",
     "story": "Cégbemutató",
-    "storyIntro": "Cégünk egy komplex IT- és biztonságtechnikai szolgáltató, amely kifejezetten kis- és középvállalkozásoknak nyújt professzionális támogatást a Közép-Magyarország, Székesfehérvár és Budapest térségében.",
-    "storyContent": "Segítünk azoknak a cégeknek, akik nem szeretnének saját, teljes állású IT csapatot fenntartani, mégis megbízható, gyors és magas színvonalú IT szolgáltatást szeretnének kapni. Egy kézből biztosítjuk mindazt, amire egy modern vállalkozásnak szüksége van a mindennapi működéshez és a hosszú távú biztonsághoz.",
+    "storyIntro": "Cégünk egy megbízható IT-szolgáltató, amely kifejezetten kis- és középvállalkozásoknak nyújt professzionális rendszerüzemeltetési és hálózatépítési támogatást a Közép-Magyarország, Székesfehérvár és Budapest térségében.",
+    "storyContent": "Segítünk azoknak a cégeknek, akik nem szeretnének saját, teljes állású IT csapatot fenntartani, mégis megbízható, gyors és magas színvonalú IT szolgáltatást szeretnének kapni. Egy kézből biztosítjuk mindazt, amire egy modern vállalkozásnak szüksége van a mindennapi működéshez.",
     "servicesTitle": "Fő szolgáltatásaink",
     "serviceItems": [
       {
@@ -210,20 +183,12 @@
         "text": "Új irodák, telephelyek hálózatának teljes kiépítése, strukturált kábelezés, modern WiFi hálózatok (WiFi 6/7, mesh rendszerek) tervezése és optimalizálása. Különösen költözés vagy hálózatfejlesztés esetén segítünk."
       },
       {
-        "title": "Kiberbiztonság és NIS2 megfelelőség",
-        "text": "Segítjük ügyfeleinket a NIS2 irányelv követelményeinek teljesítésében: kockázatfelmérés, hiányelemzés, audit felkészítés és a szükséges biztonsági intézkedések bevezetése. Komplex kiberbiztonsági tanácsadással támogatjuk a cégeket a bírságok elkerülésében és az információbiztonság erősítésében."
-      },
-      {
-        "title": "Egyedi weboldal- és rendszerfejlesztés",
-        "text": "Nem sablonos, hanem valóban egyedi weboldalakat, webáruházakat és belső üzleti rendszereket fejlesztünk. Legyen szó vállalati arculatú honlapról, egyedi CRM-ről, intranet rendszerről vagy folyamat-automatizálásról – mindig az ügyfél egyedi igényei szerint dolgozunk."
-      },
-      {
-        "title": "Biztonságtechnika telepítése",
-        "text": "Kamerarendszerek, riasztórendszerek, tűzjelzők, beléptetőrendszerek és integrált biztonságtechnikai megoldások tervezése és kivitelezése. IT-biztonságot és fizikai védelmet is egy kézből biztosítunk."
+        "title": "NIS2 megfelelőség és kiberbiztonság",
+        "text": "Segítjük ügyfeleinket a NIS2 irányelv követelményeinek teljesítésében: kockázatfelmérés, hiányelemzés, audit felkészítés és a szükséges biztonsági intézkedések bevezetése. Megbízott tanácsadó partnerünkkel közösen biztosítjuk a folyamatos megfelelőséget."
       }
     ],
     "whyTitle": "Miért minket válasszanak?",
-    "whyContent": "Mert nem csak egy szolgáltatást kínálunk, hanem valódi partnerséget. Gyors reakcióidő, érthető kommunikáció, havidíjas átlátható díjazás és az a tudás, amivel egy kisebb cég is ugyanolyan professzionális IT- és biztonsági környezetet kaphat, mint egy nagyvállalat.",
+    "whyContent": "Mert nem csak egy szolgáltatást kínálunk, hanem valódi partnerséget. Gyors reakcióidő, érthető kommunikáció, havidíjas átlátható díjazás és az a tudás, amivel egy kisebb cég is ugyanolyan professzionális IT-környezetet kaphat, mint egy nagyvállalat.",
     "closingContent": "Székesfehérváron és Budapesten is könnyen elérhetőek vagyunk, és szívesen segítünk akár az első konzultáció során is felmérni, milyen támogatást igényel a vállalkozása.",
     "values": "Értékeink",
     "valueItems": [
@@ -231,8 +196,7 @@
       "Modern, hatékony technológiai megoldások",
       "Hosszú távú partnerkapcsolat",
       "Gyors reagálás és rugalmasság",
-      "Havidíjas, kiszámítható díjazás",
-      "Egy kézből: IT + biztonságtechnika"
+      "Havidíjas, kiszámítható díjazás"
     ]
   },
   "smartForm": {
@@ -364,7 +328,7 @@
     "messagePlaceholder": "Miben segíthetünk?"
   },
   "footer": {
-    "tagline": "IT-megoldások. Egyedi fejlesztés. Megbízható hálózat.",
+    "tagline": "Rendszerüzemeltetés. Hálózatépítés. Megbízható IT-háttér.",
     "services": "Szolgáltatások",
     "company": "Vállalat",
     "legal": "Jogi információk",
@@ -655,95 +619,6 @@
         {
           "q": "Mit kell hoznom az első egyeztetésre?",
           "a": "Semmit különöset. Elegendő egy rövid leírás a vállalkozásról, az iparágról és az aktuális IT-infrastruktúráról. A többit mi intézzük."
-        }
-      ]
-    },
-    "webDev": {
-      "metaTitle": "Egyedi Weboldal- és Rendszerfejlesztés | SIRONIC",
-      "metaDescription": "Teljesen egyedi weboldal és üzleti rendszer fejlesztése. Sem WordPress, sem sablon – csak az Ön igényeire szabott megoldás, a designtól a háttérrendszerig.",
-      "keywords": "weboldal fejlesztés egyedi, weboldal, development, React, egyedi webáruház fejlesztés, weboldal készítés sablonok nélkül, belső üzleti rendszer fejlesztés, webalkalmazás fejlesztés cégeknek, weboldal karbantartás folyamatos, vállalati arculat weboldal, egyedi CMS fejlesztés, webfejlesztés Székesfehérvár, egyedi szoftverfejlesztés vállalkozásoknak, custom web development, egyedi CRM rendszer fejlesztés, webes alkalmazás fejlesztés, egyedi intranet rendszer, üzleti folyamat automatizálás weben, egyedi API integráció, weboldal fejlesztés Budapest, egyedi honlapkészítés, webshop fejlesztés egyedi, folyamatos weboldal karbantartás, üzleti rendszer digitalizálás, egyedi intranet fejlesztés, webalkalmazás karbantartás, egyedi weboldal árak, webfejlesztés Fejér megye, egyedi webes rendszer karbantartás havi díj, Miért nem WordPress?, Mennyibe kerül egy egyedi weboldal 2026-ban?, Mi a különbség a sablon és az egyedi weboldal között?, Meddig tart egy egyedi weboldal elkészítése?, Hogyan digitalizáljam az üzleti folyamataimat?, weboldal készítés, céges weboldal, üzleti rendszer fejlesztés, egyedi fejlesztés, belső rendszer fejlesztés, webalkalmazás fejlesztés, céges szoftver fejlesztés, egyedi CRM rendszer, egyedi weboldal készítés cégeknek, céges weboldal fejlesztés, webshop készítés vállalkozásoknak, belső üzleti rendszer fejlesztése, egyedi webes alkalmazás készítése, weboldal készítés ár, webshop készítés",
-      "badge": "Egyedi fejlesztés",
-      "heroTitle": "Egyedi webfejlesztés – sablon nélkül, az Ön igényeire",
-      "heroSubtitle": "Nem WordPress, nem Wix. Minden projekt az elejétől a végéig egyedileg tervezett és fejlesztett – az Ön márkájára, céljára és munkafolyamataira szabva.",
-      "introTitle": "Mi az egyedi fejlesztés, és miért jobb?",
-      "introText": "A sablonalapú rendszerek (WordPress, Wix, Shopify) gyorsak, de korlátosak. Ha pontosan azt akarja, amit el képzel – és nem azt, amit a sablon enged –, akkor egyedi fejlesztésre van szüksége. A SIRONIC minden projektet nulláról épít fel, a design-tól a háttérrendszerig.",
-      "benefitsTitle": "Mit fejlesztünk?",
-      "benefits": [
-        {
-          "title": "Bemutatkozó weboldalak",
-          "text": "Modern, gyors, SEO-barát bemutatkozó oldalak – egyedi design, egyedi tartalom."
-        },
-        {
-          "title": "Webáruházak",
-          "text": "Teljesen egyedi webshop megoldások, amelyek pontosan az Ön értékesítési folyamatához illeszkednek."
-        },
-        {
-          "title": "Belső üzleti rendszerek",
-          "text": "Egyedi CRM-ek, rendeléskezelők, belső portálok – bármilyen üzleti folyamat digitalizálható."
-        },
-        {
-          "title": "Webalapú alkalmazások",
-          "text": "Összetett, interaktív alkalmazások, amelyek böngészőben futnak – mobil- és asztali kompatibilitással."
-        }
-      ],
-      "whoTitle": "Kiknek ajánljuk?",
-      "whoText": "Azoknak, akiknek a sablonos megoldások nem elegek – mert különleges az igényük, vagy mert a márkájuk megkívánja az egyediséget.",
-      "whoItems": [
-        "Vállalkozások, akik kinőtték a WordPress-t",
-        "Cégek, akik egyedi munkafolyamatokat akarnak digitalizálni",
-        "Startupok, akik professzionális képet akarnak mutatni",
-        "Bárki, aki valóban saját weboldalt akar, nem sablont"
-      ],
-      "processTitle": "Hogyan dolgozunk?",
-      "processSteps": [
-        {
-          "step": "01",
-          "title": "Igényfelmérés és tervezés",
-          "text": "Megbeszéljük a célt, a célközönséget, a funkciókat és az arculatot. Ezt egy konkrét terv követi."
-        },
-        {
-          "step": "02",
-          "title": "Design és fejlesztés",
-          "text": "Elkészítjük a designt, majd az Ön jóváhagyása után nekiállunk a fejlesztésnek."
-        },
-        {
-          "step": "03",
-          "title": "Tesztelés és átadás",
-          "text": "Alaposan teszteljük, majd átadjuk – és segítünk a további fejlesztésben, ha kell."
-        }
-      ],
-      "whyTitle": "Miért a SIRONIC?",
-      "whyItems": [
-        "Sablonmentes fejlesztés – minden projekt egyedi",
-        "Átlátható folyamat és kommunikáció a fejlesztés során",
-        "Rugalmas méretezhetőség – a rendszer nő az üzlettel együtt",
-        "Referenciálható munkák – megnézheti korábbi projektjeinket"
-      ],
-      "ctaTitle": "Van egy ötlete? Valósítsuk meg együtt.",
-      "ctaSubtitle": "Vegyük fel a kapcsolatot – megbeszéljük az igényeit, és elkészítjük az ajánlatot.",
-      "ctaPrimary": "Referenciák megtekintése",
-      "ctaSecondary": "Kapcsolatfelvétel",
-      "faqTitle": "Gyakori kérdések a webfejlesztésről",
-      "faqItems": [
-        {
-          "q": "Miért ne használjak WordPress-t?",
-          "a": "A WordPress jó egyszerű blogokhoz és kisebb oldalakhoz. De ha egyedi funkciókat, specifikus designt vagy komplex üzleti logikát akar, az egyedi fejlesztés megbízhatóbb, gyorsabb és biztonságosabb megoldás hosszú távon."
-        },
-        {
-          "q": "Mennyi ideig tart egy weboldal elkészítése?",
-          "a": "Egy egyszerű bemutatkozó oldal általában 2–4 hét. Egy összetettebb rendszer vagy webáruház 6–12 hét. Pontos időt az igényfelmérés után tudunk mondani."
-        },
-        {
-          "q": "Mennyibe kerül egy egyedi weboldal?",
-          "a": "Az ár a komplexitástól és a funkcióktól függ. Egy bemutatkozó oldal és egy webáruház más kategória. Ajánlatkérés után pontos számot adunk."
-        },
-        {
-          "q": "Az elkészült oldalt Önök üzemeltetik?",
-          "a": "Igen, ha igényli. A fejlesztés után üzemeltetést, karbantartást és frissítést is vállalunk – akár havi díjas szerződéssel."
-        },
-        {
-          "q": "Én tudom majd szerkeszteni a tartalmat?",
-          "a": "Igen. Ha igényli, beépítünk egy admin felületet, amelyen keresztül Ön maga módosíthatja a szövegeket, képeket, termékeket – programozói tudás nélkül."
         }
       ]
     }

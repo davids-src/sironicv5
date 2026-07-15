@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { ExternalLink, Zap, Mail, Phone, MapPin, Hash } from "lucide-react";
+import { Zap, Mail, Phone, MapPin, Hash } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -27,16 +27,6 @@ export default function Footer() {
         <div className={styles.brand}>
           <Link href={`/${locale}`} className={styles.logo}>SIRONIC</Link>
           <p className={styles.tagline}>{t("tagline")}</p>
-          <a
-            href="https://siroved.hu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.sirovedLink}
-          >
-            <span>{t("sirovedLabel")}</span>
-            <strong>SIRO-VÉD</strong>
-            <ExternalLink size={13} />
-          </a>
         </div>
 
         {/* Services */}

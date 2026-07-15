@@ -43,15 +43,8 @@ export default async function HomePage({ params }: Props) {
       badge: t("slide2.badge"),
       title: t("slide2.title"),
       subtitle: t("slide2.subtitle"),
-      cta1: { label: t("slide2.cta1"), href: servicesHref },
-      cta2: { label: t("slide2.cta2"), href: "https://siroved.hu", external: true },
-    },
-    {
-      badge: t("slide3.badge"),
-      title: t("slide3.title"),
-      subtitle: t("slide3.subtitle"),
-      cta1: { label: t("slide3.cta1"), href: smartFormHref },
-      cta2: { label: t("slide3.cta2"), href: smartFormHref },
+      cta1: { label: t("slide2.cta1"), href: smartFormHref },
+      cta2: { label: t("slide2.cta2"), href: servicesHref },
     },
   ];
 
@@ -64,13 +57,12 @@ export default async function HomePage({ params }: Props) {
     url: "https://sironic.eu",
     logo: "https://sironic.eu/logo.png",
     description: locale === "hu"
-      ? "Modern IT-megoldások, egyedi fejlesztés, hálózatépítés és NIS2-támogatás vállalkozások számára."
-      : "Modern IT solutions, custom development, network infrastructure and NIS2 support for businesses.",
+      ? "Rendszerüzemeltetés, hálózatépítés és NIS2-támogatás vállalkozások számára."
+      : "IT systems operations, network building and NIS2 support for businesses.",
     address: {
       "@type": "PostalAddress",
       addressCountry: "HU",
     },
-    sameAs: ["https://siroved.hu"],
   };
 
   return (
@@ -135,31 +127,7 @@ export default async function HomePage({ params }: Props) {
         alt
       />
 
-      {/* 5. Web Development */}
-      <ServiceSection
-        id="fejlesztes"
-        badge={ts("webDev.badge")}
-        title={ts("webDev.title")}
-        subtitle={ts("webDev.subtitle")}
-        description={ts("webDev.description")}
-        points={ts.raw("webDev.points") as string[]}
-        cta2={{ label: ts("webDev.cta"), href: `/${locale}/referenciak` }}
-        icon="code"
-      />
-
-      {/* 6. Security Technology */}
-      <ServiceSection
-        id="biztonságtechnika"
-        badge={ts("security.badge")}
-        title={ts("security.title")}
-        subtitle={ts("security.subtitle")}
-        description={ts("security.description")}
-        cta1={{ label: ts("security.cta"), href: "https://siroved.hu", external: true }}
-        icon="camera"
-        alt
-      />
-
-      {/* 7. Mid-page CTA */}
+      {/* 5. Mid-page CTA */}
       <CtaBlock
         title={locale === "hu" ? "Tudja meg, mennyibe kerül az üzemeltetés" : "Find out what operations will cost"}
         subtitle={locale === "hu"

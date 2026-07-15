@@ -9,11 +9,11 @@
     "contact": "Contact"
   },
   "meta": {
-    "siteName": "SIRONIC – IT Solutions and Technology Services",
-    "homeTitle": "SIRONIC | IT Operations, Development, Network Solutions",
-    "homeDescription": "SIRONIC provides modern IT solutions, custom software and web development, network infrastructure, NIS2-compatible system design, and security technology services for businesses.",
+    "siteName": "SIRONIC – IT Systems Operations and Network Building",
+    "homeTitle": "SIRONIC | IT Systems Operations and Network Building",
+    "homeDescription": "SIRONIC provides reliable IT systems operations, network building and NIS2-compatible IT solutions for small and medium businesses.",
     "servicesTitle": "Services | SIRONIC",
-    "servicesDescription": "Explore SIRONIC's full service portfolio: IT operations, network building, web development, NIS2 support, repair, and security technology.",
+    "servicesDescription": "Explore SIRONIC's service portfolio: IT systems operations, network building, NIS2 support, and repair.",
     "partnersTitle": "Partners | SIRONIC",
     "partnersDescription": "SIRONIC's partners, suppliers, and technology allies.",
     "referencesTitle": "References | SIRONIC",
@@ -32,9 +32,18 @@
     "subheadline": "Fill it in within 3 minutes – get an approximate price estimate instantly. No commitment.",
     "stepsTitle": "How does it work?",
     "steps": [
-      { "step": 1, "text": "Complete the 15-question needs assessment" },
-      { "step": 2, "text": "The price adjusts to your company\u2019s size and device count" },
-      { "step": 3, "text": "Our colleague sends a detailed offer within 1 business day" }
+      {
+        "step": 1,
+        "text": "Complete the 15-question needs assessment"
+      },
+      {
+        "step": 2,
+        "text": "The price adjusts to your company’s size and device count"
+      },
+      {
+        "step": 3,
+        "text": "Our colleague sends a detailed offer within 1 business day"
+      }
     ],
     "ctaPrimary": "Smart Needs Assessment →",
     "ctaSecondary": "Learn more →",
@@ -49,23 +58,16 @@
       "cta2": "Our Services"
     },
     "slide2": {
-      "badge": "IT + Security Technology",
-      "title": "IT and Security Technology From One Hand",
-      "subtitle": "SIRONIC provides professional IT solutions complemented by SIRO-VÉD security technology services – camera systems, alarm systems, and fire detection.",
-      "cta1": "Our IT Services",
-      "cta2": "Security Technology (SIRO-VÉD)"
-    },
-    "slide3": {
       "badge": "Digital Innovation",
       "title": "Smart Forms. Intelligent Issue Reporting. Partner Portal.",
       "subtitle": "Fill in our smart needs assessment questionnaire and receive an approximate operations price right away. Contract clients have online access to the partner portal.",
       "cta1": "Try the Smart Form",
-      "cta2": "Partner Portal"
+      "cta2": "Our Services"
     }
   },
   "services": {
     "sectionTitle": "Our Services",
-    "sectionSubtitle": "Comprehensive IT and technology solutions for small and medium businesses",
+    "sectionSubtitle": "Reliable IT operations and network building solutions for small and medium businesses",
     "itOps": {
       "badge": "IT Operations",
       "title": "IT Operations and Maintenance",
@@ -107,27 +109,6 @@
       ],
       "cta": "NIS2 Knowledge Base"
     },
-    "webDev": {
-      "badge": "Custom Development",
-      "title": "Website and System Development",
-      "subtitle": "Without templates, tailored to your needs",
-      "description": "We don't rely on template-based CMS platforms. Every project is designed and developed according to the client's brand, style, and workflow requirements – from simple presentation sites to complex internal business systems.",
-      "points": [
-        "Fully custom design and development",
-        "Presentation sites, webshops",
-        "Internal business systems and web-based applications",
-        "Client-specific typography and branding"
-      ],
-      "cta": "Development Portfolio"
-    },
-    "security": {
-      "badge": "Security Technology",
-      "title": "Security Technology (SIRO-VÉD)",
-      "subtitle": "Cameras, alarms, fire detection",
-      "description": "Security technology services are provided under the SIRO-VÉD brand. IP and analog camera systems, alarm systems, and soon built-in fire detection solutions.",
-      "cta": "Visit the SIRO-VÉD Website",
-      "ctaUrl": "https://siroved.hu"
-    },
     "repair": {
       "badge": "Repair",
       "title": "Service and Repair",
@@ -150,23 +131,15 @@
       },
       {
         "q": "What if I only need one-time help, not a long-term contract?",
-        "a": "We gladly accept one-time requests. Development, maintenance, or troubleshooting tasks can be performed without a contract."
+        "a": "We gladly accept one-time requests. Maintenance or troubleshooting tasks can be performed without a contract."
       },
       {
         "q": "Does the smart needs assessment give a real price quote?",
         "a": "After completing the questionnaire, you'll receive an approximate operations fee estimate. This is not a final offer, but provides a good starting point for discussions."
       },
       {
-        "q": "What's the difference between SIRONIC and SIRO-VÉD?",
-        "a": "SIRONIC is the main brand for IT and technology services. SIRO-VÉD is the separate online brand for security technology services (camera systems, alarms, fire detection) with its own website at siroved.hu."
-      },
-      {
         "q": "How do you help with NIS2 compliance?",
         "a": "Together with our trusted consulting partner, we plan and implement the IT system expected by the NIS2 directive, prepare you for the audit, and provide ongoing operational cooperation after the audit."
-      },
-      {
-        "q": "Do you build custom websites or CMS-based ones (e.g. WordPress)?",
-        "a": "We exclusively build custom-developed solutions. We don't use template-based CMS platforms – every project is tailored to the client's needs and branding, from design to backend."
       },
       {
         "q": "How quickly can I get in touch and start a project?",
@@ -197,13 +170,33 @@
     "title": "About Us",
     "subtitle": "The SIRONIC team and values",
     "story": "Company Overview",
-    "storyContent": "SIRONIC is a modern, reliable technology partner providing comprehensive solutions from IT operations through network building to custom development. Full company story and values coming soon.",
+    "storyIntro": "We are a reliable IT service provider offering professional IT systems operations and network building support for small and medium businesses in the Central Hungary, Székesfehérvár and Budapest region.",
+    "storyContent": "SIRONIC is a modern, reliable technology partner providing comprehensive solutions from IT operations through network building. Full company story and values coming soon.",
+    "servicesTitle": "Our Main Services",
+    "serviceItems": [
+      {
+        "title": "IT Operations and External System Administrator Service",
+        "text": "Monthly, outsourced IT support with both remote and on-site assistance. Proactive monitoring, fast troubleshooting, full infrastructure management – for workstations, servers and endpoint protection."
+      },
+      {
+        "title": "Corporate Network Building and WiFi Systems",
+        "text": "Complete network installation for new offices and sites, structured cabling, modern WiFi networks (WiFi 6/7, mesh systems) planning and optimization. Especially helpful during relocation or network upgrades."
+      },
+      {
+        "title": "NIS2 Compliance and Cybersecurity",
+        "text": "We help clients meet NIS2 directive requirements: risk assessment, gap analysis, audit preparation and implementation of required security measures. Together with our trusted consulting partner, we ensure ongoing compliance."
+      }
+    ],
+    "whyTitle": "Why Choose Us?",
+    "whyContent": "Because we don't just offer a service – we offer a real partnership. Fast response times, clear communication, transparent monthly pricing, and the expertise to give a smaller company the same professional IT environment as a large enterprise.",
+    "closingContent": "We are easily accessible in both Székesfehérvár and Budapest, and are happy to help assess your business needs even during an initial consultation.",
     "values": "Our Values",
     "valueItems": [
       "Reliability and transparency",
       "Modern, efficient technology solutions",
       "Long-term partnership",
-      "Fast response and flexibility"
+      "Fast response and flexibility",
+      "Predictable monthly pricing"
     ]
   },
   "smartForm": {
@@ -335,7 +328,7 @@
     "messagePlaceholder": "How can we help?"
   },
   "footer": {
-    "tagline": "IT Solutions. Custom Development. Reliable Networks.",
+    "tagline": "IT Systems Operations. Network Building. Reliable IT Background.",
     "services": "Services",
     "company": "Company",
     "legal": "Legal",
@@ -626,95 +619,6 @@
         {
           "q": "What should I bring to the first consultation?",
           "a": "Nothing special. A brief description of your business, industry and current IT infrastructure is enough. We'll handle the rest."
-        }
-      ]
-    },
-    "webDev": {
-      "metaTitle": "Custom Website and System Development | SIRONIC",
-      "metaDescription": "Fully custom website and business system development. No WordPress, no templates – only solutions tailored to your needs, from design to backend.",
-      "keywords": "custom web development, website, development, React, custom website development, custom webshop development, website creation without templates, internal business system development, web application development for companies, continuous website maintenance, corporate identity website, custom CMS development, web development Székesfehérvár",
-      "badge": "Custom Development",
-      "heroTitle": "Custom web development – no templates, built for your needs",
-      "heroSubtitle": "Not WordPress, not Wix. Every project is uniquely designed and developed from start to finish – tailored to your brand, goals and workflows.",
-      "introTitle": "What is custom development, and why is it better?",
-      "introText": "Template-based systems (WordPress, Wix, Shopify) are fast but limited. If you want exactly what you envision – not just what the template allows – you need custom development. SIRONIC builds every project from scratch, from design to backend.",
-      "benefitsTitle": "What do we develop?",
-      "benefits": [
-        {
-          "title": "Presentation websites",
-          "text": "Modern, fast, SEO-friendly websites – unique design, unique content."
-        },
-        {
-          "title": "Webshops",
-          "text": "Fully custom e-commerce solutions that fit your exact sales process."
-        },
-        {
-          "title": "Internal business systems",
-          "text": "Custom CRMs, order managers, internal portals – any business process can be digitized."
-        },
-        {
-          "title": "Web-based applications",
-          "text": "Complex, interactive applications running in the browser – mobile and desktop compatible."
-        }
-      ],
-      "whoTitle": "Who is this for?",
-      "whoText": "Anyone for whom template solutions aren't enough – because their needs are unique or their brand demands it.",
-      "whoItems": [
-        "Businesses that have outgrown WordPress",
-        "Companies wanting to digitize unique workflows",
-        "Startups wanting a professional online presence",
-        "Anyone who wants a truly custom website, not a template"
-      ],
-      "processTitle": "How do we work?",
-      "processSteps": [
-        {
-          "step": "01",
-          "title": "Requirements and planning",
-          "text": "We discuss goals, target audience, features and branding. A concrete plan follows."
-        },
-        {
-          "step": "02",
-          "title": "Design and development",
-          "text": "We create the design, then after your approval we start development."
-        },
-        {
-          "step": "03",
-          "title": "Testing and handover",
-          "text": "We thoroughly test, then hand over – and help with further development if needed."
-        }
-      ],
-      "whyTitle": "Why SIRONIC?",
-      "whyItems": [
-        "Template-free development – every project is unique",
-        "Transparent process and communication throughout",
-        "Flexible scalability – the system grows with your business",
-        "Referenceable work – you can view our previous projects"
-      ],
-      "ctaTitle": "Got an idea? Let's build it together.",
-      "ctaSubtitle": "Get in touch – we'll discuss your needs and prepare a quote.",
-      "ctaPrimary": "View References",
-      "ctaSecondary": "Contact Us",
-      "faqTitle": "Frequently asked questions about web development",
-      "faqItems": [
-        {
-          "q": "Why not use WordPress?",
-          "a": "WordPress is good for simple blogs and smaller sites. But for custom features, specific design or complex business logic, custom development is more reliable, faster and safer long-term."
-        },
-        {
-          "q": "How long does a website take to build?",
-          "a": "A simple presentation site is typically 2–4 weeks. A more complex system or webshop is 6–12 weeks. Exact timeframes after requirements assessment."
-        },
-        {
-          "q": "How much does a custom website cost?",
-          "a": "The price depends on complexity and features. A presentation site and an e-commerce store are different categories. We'll give you an exact number after a quote request."
-        },
-        {
-          "q": "Can you operate the finished site?",
-          "a": "Yes, if you need it. We offer maintenance, operations and updates after development – even on a monthly contract."
-        },
-        {
-          "q": "Can I edit the content myself?",
-          "a": "Yes. If needed, we'll build an admin interface where you can modify texts, images and products yourself – without programming knowledge."
         }
       ]
     }
