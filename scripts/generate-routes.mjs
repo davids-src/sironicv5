@@ -1,14 +1,13 @@
 /**
  * generate-routes.mjs
- * Generates routes.json and public/sitemap.xml from the app/[locale] directory.
- * Mirrors the localized paths defined in i18n/routing.ts.
+ * Generates routes.json from the app/[locale] directory.
+ * NOTE: The sitemap is now dynamically served via app/sitemap.ts (Next.js native).
  * Run automatically as part of `prebuild` and `predev` scripts.
  */
 import fs from 'fs';
 import path from 'path';
 
 const basePath = path.join(process.cwd(), 'app', '[locale]');
-const BASE = 'https://sironic.eu';
 
 // Priority mapping for known routes
 const priorityMap = {
@@ -92,58 +91,11 @@ const uniqueRoutes = rawRoutes
   })
   .sort((a, b) => b.priority - a.priority);
 
-// ── 1. Write routes.json ──────────────────────────────────────────────────────
+// ── Write routes.json ─────────────────────────────────────────────────────────
 fs.writeFileSync(
   path.join(process.cwd(), 'app', 'routes.json'),
   JSON.stringify(uniqueRoutes, null, 2),
   'utf8'
 );
-console.log(`✅ Generated ${uniqueRoutes.length} route(s) for Sitemap in routes.json.`);
-
-// ── 2. Generate public/sitemap.xml ───────────────────────────────────────────
-const locales = ['hu', 'en'];
-const now = new Date().toISOString();
-
-const urlBlocks = [];
-
-for (const route of uniqueRoutes) {
-  for (const locale of locales) {
-    const localizedPath = getLocalizedPath(route.path, locale);
-    const loc         = `${BASE}/${locale}${localizedPath}`;
-    const huPath      = getLocalizedPath(route.path, 'hu');
-    const enPath      = getLocalizedPath(route.path, 'en');
-    const huCanon     = `${BASE}/hu${huPath}`;
-    const enCanon     = `${BASE}/en${enPath}`;
-
-    // Build the block with consistent LF-only newlines and no extra blank lines
-    const block = [
-      '  <url>',
-      `    <loc>${loc}</loc>`,
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${huCanon}"/>`,
-      `    <xhtml:link rel="alternate" hreflang="hu" href="${huCanon}"/>`,
-      `    <xhtml:link rel="alternate" hreflang="en" href="${enCanon}"/>`,
-      `    <lastmod>${now}</lastmod>`,
-      `    <changefreq>monthly</changefreq>`,
-      `    <priority>${route.priority}</priority>`,
-      '  </url>',
-    ].join('\n');
-
-    urlBlocks.push(block);
-  }
-}
-
-const xml = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset',
-  '  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
-  '  xmlns:xhtml="http://www.w3.org/1999/xhtml">',
-  urlBlocks.join('\n'),
-  '</urlset>',
-].join('\n');
-
-fs.writeFileSync(
-  path.join(process.cwd(), 'public', 'sitemap.xml'),
-  xml,
-  'utf8'
-);
-console.log(`✅ Generated static public/sitemap.xml with ${urlBlocks.length} URL entries.`);
+console.log(`✅ Generated ${uniqueRoutes.length} route(s) in routes.json.`);
+console.log(`ℹ️  Sitemap is now served dynamically via app/sitemap.ts (Next.js native).`);
