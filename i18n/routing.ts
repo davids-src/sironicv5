@@ -29,6 +29,14 @@ export const routing = defineRouting({
       hu: "/kapcsolat",
       en: "/contact",
     },
+    "/aszf": {
+      hu: "/aszf",
+      en: "/terms",
+    },
+    "/adatkezeles": {
+      hu: "/adatkezeles",
+      en: "/privacy",
+    },
   },
 });
 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocale } from "next-intl";
+import Link from "next/link";
 
 import styles from "./CookieConsent.module.css";
 
@@ -61,7 +62,7 @@ export default function CookieConsent() {
           
           <h3 className={styles.title}>{t.title}</h3>
           <p className={styles.desc}>
-            {t.desc} <br /><a href="/SIRONIC_Adatkezelesi_Tajekoztato.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "var(--text)" }}>{locale === "en" ? "Privacy Policy" : "Adatkezelési Tájékoztató"}</a>
+            {t.desc} <br /><Link href={`/${locale}/adatkezeles`} style={{ textDecoration: "underline", color: "var(--ink)" }}>{locale === "en" ? "Privacy Policy" : "Adatkezelési Tájékoztató"}</Link>
           </p>
           <div className={styles.buttons}>
             <button onClick={handleAccept} className={styles.btnAccept}>

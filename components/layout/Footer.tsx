@@ -102,8 +102,8 @@ export default function Footer() {
         <span className={styles.copyright}>{t("copyright")}</span>
         <div className={styles.legalLinks}>
           <span className={styles.legal}>{t("legal")}:</span>
-          <a href="/SIRONIC_Adatkezelesi_Tajekoztato.pdf" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>{t("privacyPolicy")}</a>
-          <Link href={`/${locale}/impresszum`} className={styles.legalLink}>{t("imprint")}</Link>
+          <Link href={`/${locale}/adatkezeles`} className={styles.legalLink}>{t("privacyPolicy")}</Link>
+          <Link href={`/${locale}/aszf`} className={styles.legalLink}>{t("terms")}</Link>
         </div>
       </div>
     </footer>

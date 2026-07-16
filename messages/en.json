@@ -24,6 +24,10 @@
     "smartFormDescription": "Fill in our smart needs assessment form and get an approximate price estimate online.",
     "contactTitle": "Contact | SIRONIC",
     "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions.",
+    "aszfTitle": "Terms & Conditions (ÁSZF) | SIRONIC",
+    "aszfDescription": "General Terms and Conditions of SIROTECH Kft. for IT services provided through sironic.eu.",
+    "privacyTitle": "Privacy Policy | SIRONIC",
+    "privacyDescription": "Privacy Policy of SIROTECH Kft. Learn how we handle and protect your personal data.",
     "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, security technology installation, camera system installation, security technology, custom web development, website, development, React, corporate network building, corporate wifi network installation, NIS2 compliance IT, NIS2 audit help, NIS2 what to do, NIS2, corporate camera system installation, IP camera system, alarm system installation, fire alarm system installation, access control system installation, security technology small business, CCTV system installation, IT service provider Székesfehérvár, IT support Budapest, network building Central Hungary, web development Székesfehérvár, security technology Székesfehérvár"
   },
   "pricingHighlight": {
@@ -333,7 +337,7 @@
     "company": "Company",
     "legal": "Legal",
     "privacyPolicy": "Privacy Policy",
-    "imprint": "Imprint",
+    "terms": "Terms & Conditions",
     "sirovedLabel": "Security Technology:",
     "sirovedLink": "SIRO-VÉD Website",
     "copyright": "© 2024 SIRONIC. All rights reserved.",
@@ -619,6 +623,95 @@
         {
           "q": "What should I bring to the first consultation?",
           "a": "Nothing special. A brief description of your business, industry and current IT infrastructure is enough. We'll handle the rest."
+        }
+      ]
+    },
+    "webDev": {
+      "metaTitle": "Custom Website and System Development | SIRONIC",
+      "metaDescription": "Custom, template-free websites and internal systems. Modern technology, fast pages, solutions tailored exactly to your needs.",
+      "keywords": "custom website development, custom web shop development, website without templates, internal business system development, web application development for companies, corporate identity website, ongoing website maintenance, custom software development for businesses, custom web development, web development Székesfehérvár, website development Budapest",
+      "badge": "Web Development",
+      "heroTitle": "Custom website and system development – template-free solutions",
+      "heroSubtitle": "Not ready-made templates, but real custom development: fast, secure, and tailored exactly to your business.",
+      "introTitle": "What does custom development mean?",
+      "introText": "A custom website or internal system is not a template modification, but a solution built from scratch that perfectly fits your processes, branding and goals.",
+      "benefitsTitle": "What do we develop?",
+      "benefits": [
+        {
+          "title": "Corporate websites",
+          "text": "Modern, fast, SEO-optimized presentation sites that actually convert."
+        },
+        {
+          "title": "Web shops",
+          "text": "Custom webshop development that doesn't limit you – every function tailored to your needs."
+        },
+        {
+          "title": "Internal systems",
+          "text": "Warehouse, CRM, intranet, booking system – if there's no ready software for your need, we write it."
+        },
+        {
+          "title": "Maintenance and updates",
+          "text": "Maintenance, modernization and security updates for existing websites."
+        }
+      ],
+      "whoTitle": "Who is this for?",
+      "whoText": "Businesses that have outgrown template-based solutions, or want to digitize unique processes for which no ready software exists.",
+      "whoItems": [
+        "Companies needing a unique look",
+        "Entrepreneurs wanting to open a web shop",
+        "Companies digitizing internal processes",
+        "Those with outdated or slow existing websites"
+      ],
+      "processTitle": "How do we work?",
+      "processSteps": [
+        {
+          "step": "01",
+          "title": "Needs assessment",
+          "text": "We learn about your needs, goals and existing systems – in person or online."
+        },
+        {
+          "step": "02",
+          "title": "Planning and development",
+          "text": "We prepare the plan, then develop the site or system – with continuous feedback."
+        },
+        {
+          "step": "03",
+          "title": "Handover and support",
+          "text": "We hand over the finished system, train your team and provide ongoing support as needed."
+        }
+      ],
+      "whyTitle": "Why SIRONIC?",
+      "whyItems": [
+        "No unnecessary complexity – only what's truly needed",
+        "Transparent pricing, fixed price or monthly maintenance",
+        "Modern technology: Next.js, React, TypeScript",
+        "With IT operations background: the website is not just beautiful, but secure too"
+      ],
+      "ctaTitle": "Do you need a website or custom system?",
+      "ctaSubtitle": "Check our references, or contact us for a free consultation.",
+      "ctaPrimary": "Our References",
+      "ctaSecondary": "Contact Us",
+      "faqTitle": "Frequently asked questions about web development",
+      "faqItems": [
+        {
+          "q": "How long does it take to build a website?",
+          "a": "A simpler presentation site takes 2–4 weeks, a more complex web shop or system takes 4–12 weeks, depending on the features."
+        },
+        {
+          "q": "Do you recommend WordPress or custom development?",
+          "a": "We generally recommend custom development – it's faster, more secure and tailored exactly to your needs. We only suggest WordPress if it's truly the optimal solution for a given case."
+        },
+        {
+          "q": "What if we already have a website that just needs modernizing?",
+          "a": "We can also update, speed up, mobile-optimize or add security updates to existing sites."
+        },
+        {
+          "q": "Do you provide ongoing maintenance?",
+          "a": "Yes – we also offer monthly maintenance packages covering security updates, content updates and technical monitoring."
+        },
+        {
+          "q": "How much does a website cost?",
+          "a": "The price depends on complexity. A simpler presentation site starts from net HUF 100,000–250,000, a web shop or custom system costs more. We can give an exact price after a needs assessment."
         }
       ]
     }

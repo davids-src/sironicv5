@@ -1,0 +1,191 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--section-gap, 100px) + 2rem);
+  padding-bottom: 3rem;
+}
+
+.heroTitle {
+  margin-block: 1rem 1.25rem;
+}
+
+.heroGlow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 500px;
+  background: radial-gradient(ellipse at top right, var(--accent-12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contentWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.disclaimerCard {
+  background-color: var(--accent-12);
+  border: 1px solid var(--accent-40);
+  border-radius: var(--r-card);
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--accent-glow);
+}
+
+.disclaimerCard strong {
+  color: var(--ink);
+}
+
+.legalBody {
+  padding: 2.5rem clamp(1.5rem, 5vw, 3.5rem);
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.legalBody p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.legalBody p strong {
+  color: var(--ink);
+}
+
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h2 {
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.section h3 {
+  color: var(--silver);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+}
+
+.subHeading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--r-card);
+  border: 1px solid var(--line);
+}
+
+.infoTable,
+.contentTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.infoTable th,
+.infoTable td,
+.contentTable th,
+.contentTable td {
+  padding: 1rem 1.25rem;
+  font-size: 0.9375rem;
+}
+
+/* Info Table (Key-Value style) */
+.infoTable th {
+  background-color: var(--panel);
+  color: var(--silver);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  width: 30%;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.infoTable td {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.infoTable tr:last-child th,
+.infoTable tr:last-child td {
+  border-bottom: none;
+}
+
+/* Content Table (Multi-column style) */
+.contentTable th {
+  background-color: var(--panel);
+  color: var(--silver);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-bottom: 2px solid var(--line);
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+}
+
+.contentTable td {
+  background-color: var(--surface);
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+
+.contentTable td strong {
+  color: var(--silver);
+}
+
+.contentTable tr:last-child td {
+  border-bottom: none;
+}
+
+.infoTable td a,
+.contentTable td a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity var(--t-fast);
+}
+
+.infoTable td a:hover,
+.contentTable td a:hover {
+  opacity: 0.8;
+}
+
+.bulletList,
+.numberedList {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.bulletList li,
+.numberedList li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.bulletList li::marker {
+  color: var(--accent);
+}
+
+.bulletList li strong {
+  color: var(--silver);
+}
+
+.subtext {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
