@@ -173,9 +173,26 @@
   "about": {
     "title": "Rólunk",
     "subtitle": "A SIRONIC csapata és értékei",
-    "story": "Cégbemutató",
-    "storyIntro": "Cégünk egy megbízható IT-szolgáltató, amely kifejezetten kis- és középvállalkozásoknak nyújt professzionális rendszerüzemeltetési és hálózatépítési támogatást a Közép-Magyarország, Székesfehérvár és Budapest térségében.",
-    "storyContent": "Segítünk azoknak a cégeknek, akik nem szeretnének saját, teljes állású IT csapatot fenntartani, mégis megbízható, gyors és magas színvonalú IT szolgáltatást szeretnének kapni. Egy kézből biztosítjuk mindazt, amire egy modern vállalkozásnak szüksége van a mindennapi működéshez.",
+    "historyTitle": "Cég története",
+    "historyP1": "Tomival egy munkahelyen dolgoztunk diákként, amikor felismertük, hogy az informatikai tudásunkra saját vállalkozásban is szükség van. Kezdetben egy gazdasági társaság IT-megbízottjaiként dolgoztunk, majd 17-18 évesen belevágtunk a saját vállalkozásunkba: laptopjavítással és egy számítógép-alkatrészeket, valamint kész gépeket kínáló webáruház üzemeltetésével indultunk.",
+    "historyP2": "Azóta sokat fejlődtünk. Ma már három üzletágban dolgozunk, hogy ügyfeleink informatikai és biztonságtechnikai igényeit egy kézből tudjuk kiszolgálni.",
+    "foundersTitle": "A csapatunk",
+    "founders": [
+      {
+        "name": "Skoda Dávid",
+        "role": "Biztonságtechnikai és rendszergazdai divízió vezető",
+        "image": "/team/david.png",
+        "bio": "A szakmai pályámat programozás oktatásával kezdtem. Még iskolás éveim alatt gyakornokként dolgoztam egy gyártó cégnél, majd vagyonvédelmi és biztonságtechnikai területen szereztem tapasztalatot. Ezt követően egy gyárban informatikai supportosként folytattam, majd egy multinacionális vállalatnál rendszerüzemeltető szakemberként dolgoztam, ahol a szakmai munkámat magas szinten elismerték. Ez az út vezetett el végül a vállalkozásig.",
+        "bio2": "Elektrotechnikusi és ipari informatikai technikusi végzettségem mellett tűzvédelmi ismereteket is szereztem, amelyeket a mai napig aktívan alkalmazok a munkám során. Ma a cégben a biztonságtechnikai és a rendszergazdai divíziót vezetem, tervezem és valósítom meg, emellett a pénzügyi és gazdasági folyamatokért is én felelek."
+      },
+      {
+        "name": "Tóth Tamás",
+        "role": "Szoftverfejlesztési divízió vezető",
+        "image": "/team/tomi.png",
+        "bio": "Nem sokkal a cég indulása után csatlakoztam Dávidhoz, és azóta a szoftverfejlesztési divíziónkat viszem. Full stack webes és rendszerfejlesztőként dolgozom, szoftverfejlesztő és tesztelő technikusi végzettséggel a hátam mögött. Több éves önálló programozási és tervezési tapasztalatot szereztem, korábbi munkahelyeimen a szakmai teljesítményemet is elismerték.",
+        "bio2": "Ma én felelek a szoftverfejlesztői divízió teljes körű irányításáért és megvalósításáért, emellett aktívan részt veszek a belső üzletviteli folyamataink kialakításában és digitalizálásában is. A tudásátadás régóta közel áll hozzám — korábban programozást is oktattam."
+      }
+    ],
     "servicesTitle": "Fő szolgáltatásaink",
     "serviceItems": [
       {

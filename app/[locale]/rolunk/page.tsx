@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import SectionReveal from "@/components/ui/SectionReveal";
 import CtaBlock from "@/components/ui/CtaBlock";
 import type { Metadata } from "next";
@@ -14,9 +15,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: t("aboutTitle"), description: t("aboutDescription") };
 }
 
+interface Founder {
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+  bio2: string;
+}
+
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
+
+  const founders = t.raw("founders") as Founder[];
 
   return (
     <>
@@ -32,21 +43,49 @@ export default async function AboutPage({ params }: Props) {
         <div className={styles.heroGlow} aria-hidden />
       </section>
 
-      {/* Company Intro */}
+      {/* Company History + Founders — egyetlen szekció */}
       <section className="section">
         <div className="container">
+          {/* Cég Történet */}
           <SectionReveal>
-            <div className="card" style={{ maxWidth: 820 }}>
+            <div className={styles.historyBlock}>
               <span className="accent-line" />
-              <h2 className="heading-2">{t("story")}</h2>
+              <h2 className="heading-2">{t("historyTitle")}</h2>
               <p className="body-lg" style={{ marginTop: "1rem", fontWeight: 500 }}>
-                {t("storyIntro")}
+                {t("historyP1")}
               </p>
               <p className="body-lg" style={{ marginTop: "0.75rem" }}>
-                {t("storyContent")}
+                {t("historyP2")}
               </p>
             </div>
           </SectionReveal>
+
+          {/* Founders grid */}
+          <div className={styles.foundersGrid}>
+            {founders.map((founder, i) => (
+              <SectionReveal key={founder.name} delay={i * 0.1}>
+                <article className={styles.founderCard}>
+                  <div className={styles.founderImageWrapper}>
+                    <Image
+                      src={founder.image}
+                      alt={founder.name}
+                      fill
+                      sizes="(max-width: 900px) 100vw, 50vw"
+                      className={styles.founderImage}
+                      priority={i === 0}
+                    />
+                  </div>
+                  <div className={styles.founderBody}>
+                    <p className={styles.founderRole}>{founder.role}</p>
+                    <h3 className={styles.founderName}>{founder.name}</h3>
+                    <p className={styles.founderCompany}>SIROTECH Kft.</p>
+                    <p className={styles.founderBio}>{founder.bio}</p>
+                    <p className={styles.founderBio}>{founder.bio2}</p>
+                  </div>
+                </article>
+              </SectionReveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -121,4 +160,3 @@ export default async function AboutPage({ params }: Props) {
     </>
   );
 }
-
