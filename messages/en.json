@@ -173,6 +173,26 @@
   "about": {
     "title": "About Us",
     "subtitle": "The SIRONIC team and values",
+    "historyTitle": "Company History",
+    "historyP1": "Tomi and I worked together as student interns when we realized that our IT expertise was needed in our own venture. Starting around age 17-18, we began by offering laptop repairs and operating an e-commerce store for computer hardware.",
+    "historyP2": "We have grown significantly since then. Today, we operate across dedicated divisions to provide our clients with comprehensive IT and technical operations under one roof.",
+    "foundersTitle": "Our Team",
+    "founders": [
+      {
+        "name": "Dávid Skoda",
+        "role": "Head of IT Operations & Technical Division",
+        "image": "/team/david.png",
+        "bio": "Started my career in programming education and gain extensive experience in IT support and systems operations across manufacturing and multinational enterprises before founding SIRONIC.",
+        "bio2": "Today I lead the IT operations division, designing and deploying robust infrastructure and managing business operations."
+      },
+      {
+        "name": "Tamás Tóth",
+        "role": "Head of Software Development Division",
+        "image": "/team/tomi.png",
+        "bio": "Joined Dávid shortly after the company was founded and has been leading our software development division ever since as a full-stack engineer and software architect.",
+        "bio2": "Responsible for software development, system architecture, and internal business process digitalization."
+      }
+    ],
     "story": "Company Overview",
     "storyIntro": "We are a reliable IT service provider offering professional IT systems operations and network building support for small and medium businesses in the Central Hungary, Székesfehérvár and Budapest region.",
     "storyContent": "SIRONIC is a modern, reliable technology partner providing comprehensive solutions from IT operations through network building. Full company story and values coming soon.",
@@ -329,7 +349,92 @@
     "namePlaceholder": "Your name",
     "emailPlaceholder": "hello@sironic.hu",
     "phonePlaceholder": "+36 70 273 5532",
-    "messagePlaceholder": "How can we help?"
+    "messagePlaceholder": "How can we help?",
+    "inquiryTypeLabel": "Type of Inquiry",
+    "inquiryTypeAssessment": "Free IT System Assessment (Recommended)",
+    "inquiryTypeGeneral": "General Contact / Quote Request",
+    "companySizeLabel": "Company Size (Number of Employees)",
+    "companySizePlaceholder": "Select size...",
+    "companySizeOptions": {
+      "size1": "1–5 employees",
+      "size2": "6–15 employees",
+      "size3": "16–30 employees",
+      "size4": "30+ employees"
+    },
+    "hasExternalITLabel": "Do you currently have an IT administrator?",
+    "hasExternalITPlaceholder": "Select option...",
+    "hasExternalITOptions": {
+      "internalOrExternal": "Yes, dedicated internal or external IT provider",
+      "adHoc": "No dedicated provider, only ad-hoc support",
+      "none": "No IT support currently"
+    },
+    "trustBadge": "No obligation. No sales pitch on site. Just a clear picture of your systems."
+  },
+  "freeAssessment": {
+    "badge": "Free Offer",
+    "full": {
+      "headline": "Do you know exactly what happens if your system fails tomorrow?",
+      "subheadline": "We provide a free, no-obligation IT assessment for your business — mapping your hardware inventory, software, network and IT security vulnerabilities, and NIS2 risks, complete with concrete improvement proposals and cost estimates.",
+      "bullets": [
+        "Complete hardware and software inventory",
+        "Identification of IT security vulnerabilities and risk factors",
+        "Assessment of NIS2 compliance readiness",
+        "Actionable improvement proposal with cost estimates",
+        "Protected by NDA — complete data confidentiality"
+      ],
+      "trustLine": "100+ completed projects for businesses, nationwide",
+      "ctaPrimary": "Request Free Assessment",
+      "howItWorksLink": "How does this work exactly? →",
+      "microcopy": "No obligation and no pushy sales pitch on site — a few days after the audit you receive a concrete proposal backed by numbers, which you freely decide whether to accept.",
+      "scarcityNote": "We accept a limited number of free assessments per month."
+    },
+    "compact": {
+      "headline": "Free IT System Assessment for Businesses",
+      "subheadline": "Find out what risks are hidden in your IT systems. Hardware inventory, software, network security vulnerabilities and NIS2 compliance mapping.",
+      "cta": "Request Free Assessment",
+      "microcopy": "No obligation and no hard sales on site."
+    },
+    "nis2": {
+      "headline": "Unsure if your IT system meets NIS2 requirements?",
+      "subheadline": "During our free assessment, we identify cybersecurity risks and necessary NIS2 system upgrades.",
+      "cta": "Request NIS2 Assessment",
+      "microcopy": "Protected by non-disclosure agreement."
+    },
+    "banner": {
+      "headline": "Free IT System Assessment",
+      "subheadline": "Request a free assessment for your business – completely risk-free!",
+      "cta": "Get Free Assessment"
+    }
+  },
+  "freeAssessmentLanding": {
+    "badge": "Free IT System Assessment",
+    "metaTitle": "Free IT System Assessment | SIRONIC IT",
+    "metaDescription": "Free IT system and security assessment for businesses nationwide, in Budapest and Székesfehérvár. Complete hardware, software, network vulnerability and NIS2 risk evaluation.",
+    "keywords": "free IT assessment, free IT system audit, free network audit, NIS2 free assessment, cybersecurity evaluation for SMBs, no-obligation IT audit, IT operations Hungary, IT support Budapest, IT system management Central Hungary",
+    "heroTitle": "Free IT System Assessment for Businesses",
+    "heroSubtitle": "Do you know exactly what happens if your system fails tomorrow? Comprehensive IT audit with hardware inventory, network, and NIS2 security analysis — without sales pressure.",
+    "processTitle": "How does this process work exactly?",
+    "processSubtitle": "Our transparent 4-step workflow guarantees clarity without any pushy sales pitch.",
+    "steps": [
+      {
+        "step": "1. Application",
+        "text": "Fill in the short form, and we will contact you within 1 business day to schedule an appointment."
+      },
+      {
+        "step": "2. Assessment",
+        "text": "We conduct an on-site assessment — analyzing hardware, software, network, and security status."
+      },
+      {
+        "step": "3. Evaluation",
+        "text": "Within a few days, we deliver a detailed report and actionable development proposal with estimated costs."
+      },
+      {
+        "step": "4. Your Decision",
+        "text": "You receive the results and proposal — you decide freely whether to work with us further. No pressure, no automatic contracts."
+      }
+    ],
+    "ctaTitle": "Request your free IT assessment today",
+    "ctaSubtitle": "We can accept a limited number of free assessments per month. Reserve your spot now!"
   },
   "footer": {
     "tagline": "IT Systems Operations. Network Building. Reliable IT Background.",

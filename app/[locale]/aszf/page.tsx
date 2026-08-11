@@ -148,12 +148,12 @@ export default async function AszfPage({ params }: Props) {
 
                     <h3 className="heading-3">3.2. Lépés – Kapcsolatfelvétel és egyeztetés</h3>
                     <p>
-                      Az ajánlatkérés beérkezését követően a Szolgáltató munkatársa a megadott elérhetőségeken felveszi a kapcsolatot a Megrendelővel az igények pontosítása, valamint az igényfelmérés (helyszíni vagy távoli) időpontjának egyeztetése céljából.
+                      Az ajánlatkérés beérkezését követően a Szolgáltató munkatársa a megadott elérhetőségeken felveszi a kapcsolatot a Megrendelővel az igények pontosítása, valamint a helyszíni igényfelmérés időpontjának egyeztetése céljából.
                     </p>
 
                     <h3 className="heading-3">3.3. Lépés – Igényfelmérés</h3>
                     <p>
-                      A végleges, kötelező erejű ajánlat kiadásának előfeltétele az igényfelmérés elvégzése, amelynek keretében a Szolgáltató szakembere – helyszíni bejárás vagy távoli (remote) felmérés útján – ellenőrzi és pontosítja a Megrendelő informatikai környezetét, a tervezett szolgáltatás műszaki paramétereit, valamint az esetleges kiegészítő igényeket (pl. hálózati infrastruktúra, szerverkapacitás, licencelési helyzet, biztonsági kockázatok).
+                      A végleges, kötelező erejű ajánlat kiadásának előfeltétele az igényfelmérés elvégzése, amelynek keretében a Szolgáltató szakembere – helyszíni bejárás útján – ellenőrzi és pontosítja a Megrendelő informatikai környezetét, a tervezett szolgáltatás műszaki paramétereit, valamint az esetleges kiegészítő igényeket (pl. hálózati infrastruktúra, szerverkapacitás, licencelési helyzet, biztonsági kockázatok).
                     </p>
                     <p>
                       Az igényfelmérés díjmentes, kivéve, ha a Szolgáltató és a Megrendelő ettől eltérően állapodnak meg (pl. összetett, több telephelyet érintő felmérés esetén).

@@ -13,6 +13,7 @@ const basePath = path.join(process.cwd(), 'app', '[locale]');
 const priorityMap = {
   "/":                                        1.0,
   "/szolgaltatasok":                          0.9,
+  "/ingyenes-felmeres":                       0.95,
   "/intelligens-urlap":                       0.9,
   "/kapcsolat":                               0.8,
   "/szolgaltatasok/rendszeruzemeltetes":       0.85,
@@ -40,6 +41,7 @@ const urlMapping = {
   "/kapcsolat":                               { hu: "/kapcsolat",                             en: "/contact" },
   "/aszf":                                    { hu: "/aszf",                                  en: "/terms" },
   "/adatkezeles":                             { hu: "/adatkezeles",                           en: "/privacy" },
+  "/ingyenes-felmeres":                       { hu: "/ingyenes-felmeres",                     en: "/free-assessment" },
   // Service sub-pages — no EN slug translation in routing.ts, use HU slug for both
   "/szolgaltatasok/rendszeruzemeltetes":       { hu: "/szolgaltatasok/rendszeruzemeltetes",    en: "/szolgaltatasok/rendszeruzemeltetes" },
   "/szolgaltatasok/halozatepites":            { hu: "/szolgaltatasok/halozatepites",          en: "/szolgaltatasok/halozatepites" },

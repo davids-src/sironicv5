@@ -346,7 +346,92 @@
     "namePlaceholder": "Az Ön neve",
     "emailPlaceholder": "hello@sironic.hu",
     "phonePlaceholder": "+36 70 273 5532",
-    "messagePlaceholder": "Miben segíthetünk?"
+    "messagePlaceholder": "Miben segíthetünk?",
+    "inquiryTypeLabel": "Megkeresés típusa",
+    "inquiryTypeAssessment": "Ingyenes IT Állapotfelmérés (Ajánlott)",
+    "inquiryTypeGeneral": "Általános kapcsolatfelvétel / Ajánlatkérés",
+    "companySizeLabel": "Vállalkozás mérete (munkatársak száma)",
+    "companySizePlaceholder": "Válasszon méretet...",
+    "companySizeOptions": {
+      "size1": "1–5 fő",
+      "size2": "6–15 fő",
+      "size3": "16–30 fő",
+      "size4": "30+ fő"
+    },
+    "hasExternalITLabel": "Jelenleg van-e külső vagy belső rendszergazdájuk?",
+    "hasExternalITPlaceholder": "Válasszon opciót...",
+    "hasExternalITOptions": {
+      "internalOrExternal": "Van állandó belső vagy külső rendszergazda",
+      "adHoc": "Nincs állandó, csak eseti segítségünk van",
+      "none": "Nincs informatikai támogatásunk"
+    },
+    "trustBadge": "Nincs kötelezettség. Nincs eladás a helyszínen. Csak tiszta kép a rendszeréről."
+  },
+  "freeAssessment": {
+    "badge": "Ingyenes Ajánlat",
+    "full": {
+      "headline": "Tudja pontosan, mi történik, ha holnap kiesik a rendszere?",
+      "subheadline": "Ingyenes, kötelezettségmentes informatikai állapotfelmérést készítünk vállalkozásának — eszközpark, szoftverek, hálózati és informatikai biztonsági rések és NIS2-kockázatok feltérképezése, konkrét fejlesztési javaslattal és becsült költséggel.",
+      "bullets": [
+        "Teljes eszköz- és szoftverleltár",
+        "Informatikai biztonsági rések és kockázati pontok azonosítása",
+        "NIS2-megfelelőségi állapot felmérése",
+        "Konkrét fejlesztési javaslat, becsült költséggel",
+        "Titoktartási nyilatkozattal dolgozunk — semmi nem szivárog ki"
+      ],
+      "trustLine": "100+ lezárt projekt vállalkozásoknak, országosan",
+      "ctaPrimary": "Kérem az ingyenes felmérést",
+      "howItWorksLink": "Hogyan zajlik ez pontosan? →",
+      "microcopy": "Nincs kötelezettség és nincs azonnali nyomulás a helyszínen — a felmérés után pár nappal konkrét, számokkal alátámasztott javaslatot kap, amit Ön szabadon eldönt, elfogad-e.",
+      "scarcityNote": "Havonta korlátozott számú ingyenes felmérést tudunk vállalni."
+    },
+    "compact": {
+      "headline": "Ingyenes Informatikai Állapotfelmérés Vállalkozásoknak",
+      "subheadline": "Tudja meg, milyen kockázati pontok rejtőznek IT rendszerében. Eszközleltár, szoftverek, hálózati biztonsági rések és NIS2-megfelelőség feltérképezése.",
+      "cta": "Kérem az ingyenes felmérést",
+      "microcopy": "Nincs kötelezettség és nincs nyomulás a helyszínen."
+    },
+    "nis2": {
+      "headline": "Nem biztos benne, hogy IT-rendszere megfelel a NIS2 elvárásoknak?",
+      "subheadline": "Az ingyenes informatikai állapotfelmérés során azonosítjuk a kiberbiztonsági kockázatokat és a szükséges NIS2-fejlesztéseket.",
+      "cta": "NIS2 állapotfelmérés igénylése",
+      "microcopy": "Titoktartási nyilatkozattal dolgozunk."
+    },
+    "banner": {
+      "headline": "Ingyenes Informatikai Állapotfelmérés",
+      "subheadline": "Kérjen díjmentes felmérést vállalkozásának – kötelezettségek nélkül!",
+      "cta": "Ingyenes felmérés igénylése"
+    }
+  },
+  "freeAssessmentLanding": {
+    "badge": "Ingyenes IT Állapotfelmérés",
+    "metaTitle": "Ingyenes Informatikai Állapotfelmérés | SIRONIC IT",
+    "metaDescription": "Díjmentes informatikai és biztonsági állapotfelmérés cégeknek országosan, Budapesten és Székesfehérváron. Hardver, szoftver, hálózati rések és NIS2 kockázatok feltérképezése.",
+    "keywords": "ingyenes IT felmérés, ingyenes informatikai állapotfelmérés, ingyenes rendszerfelmérés vállalkozásoknak, informatikai audit ingyenes, NIS2 ingyenes felmérés, IT biztonsági állapotfelmérés cégeknek, kötelezettségmentes IT felmérés, IT üzemeltetés Székesfehérvár, IT rendszergazda Budapest, rendszerüzemeltetés Pest megye, hálózatépítés Fejér megye, IT audit Győr, IT felmérés Debrecen, rendszerüzemeltető cég",
+    "heroTitle": "Ingyenes Informatikai Állapotfelmérés Vállalkozásoknak",
+    "heroSubtitle": "Tudja pontosan, mi történik, ha holnap kiesik a rendszere? Átfogó IT audit eszközleltárral, hálózati és NIS2 biztonsági elemzéssel — nyomulás nélkül.",
+    "processTitle": "Hogyan zajlik ez pontosan?",
+    "processSubtitle": "Átlátható, 4 lépéses folyamatunk garantálja a tisztánlátást nyomulás nélkül.",
+    "steps": [
+      {
+        "step": "1. Jelentkezés",
+        "text": "Kitölti a rövid űrlapot, mi 1 munkanapon belül jelentkezünk időpont-egyeztetésre."
+      },
+      {
+        "step": "2. Felmérés",
+        "text": "Helyszíni felmérést végzünk — eszközök, szoftverek, hálózat, biztonsági állapot."
+      },
+      {
+        "step": "3. Kiértékelés",
+        "text": "Pár napon belül elkészítjük az elemzést és a konkrét fejlesztési javaslatot, becsült költséggel."
+      },
+      {
+        "step": "4. Döntés Önnél",
+        "text": "Megkapja az eredményt és az ajánlatot — Ön dönti el, kér-e tőlünk további munkát. Nincs nyomás, nincs automatikus szerződés."
+      }
+    ],
+    "ctaTitle": "Kérje az ingyenes állapotfelmérést még ma",
+    "ctaSubtitle": "Havonta korlátozott számú ingyenes felmérést tudunk vállalni. Foglalja le időpontját most!"
   },
   "footer": {
     "tagline": "Rendszerüzemeltetés. Hálózatépítés. Megbízható IT-háttér.",

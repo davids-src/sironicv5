@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
-import CtaBlock from "@/components/ui/CtaBlock";
+import FreeAssessmentSection from "@/components/sections/FreeAssessmentSection";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import type { Metadata } from "next";
 import styles from "@/components/ui/ServiceSubpage.module.css";
@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Nis2TamogatasPage({ params }: Props) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "servicePages.nis2" });
+    const freeAssessmentHref = `/${locale}/kapcsolat?forras=ingyenes-felmeres`;
     const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
     const servicesHref = `/${locale}/szolgaltatasok`;
     const contactHref = `/${locale}/kapcsolat`;
@@ -63,11 +64,11 @@ export default async function Nis2TamogatasPage({ params }: Props) {
                         <h1 className={`display-2 ${styles.heroTitle}`}>{t("heroTitle")}</h1>
                         <p className="body-lg">{t("heroSubtitle")}</p>
                         <div style={{ display: "flex", gap: "1rem", marginTop: "2rem", flexWrap: "wrap" }}>
-                            <Link href={contactHref} className="btn btn-primary btn-lg">
-                                {t("ctaPrimary")} <ArrowRight size={16} />
+                            <Link href={freeAssessmentHref} className="btn btn-primary btn-lg">
+                                {locale === "hu" ? "NIS2 Állapotfelmérés" : "NIS2 Assessment"} <ArrowRight size={16} />
                             </Link>
-                            <Link href={smartFormHref} className="btn btn-outline btn-lg">
-                                {t("ctaSecondary")}
+                            <Link href={contactHref} className="btn btn-outline btn-lg">
+                                {t("ctaPrimary")}
                             </Link>
                         </div>
                     </SectionReveal>
@@ -172,13 +173,8 @@ export default async function Nis2TamogatasPage({ params }: Props) {
                 </div>
             </section>
 
-            {/* CTA */}
-            <CtaBlock
-                title={t("ctaTitle")}
-                subtitle={t("ctaSubtitle")}
-                cta1={{ label: t("ctaPrimary"), href: contactHref }}
-                cta2={{ label: t("ctaSecondary"), href: smartFormHref }}
-            />
+            {/* NIS2 Assessment Section */}
+            <FreeAssessmentSection locale={locale} variant="nis2" />
 
             {/* FAQ */}
             <section className="section">

@@ -4,6 +4,10 @@
     "priority": 1
   },
   {
+    "path": "/ingyenes-felmeres",
+    "priority": 0.95
+  },
+  {
     "path": "/intelligens-urlap",
     "priority": 0.9
   },

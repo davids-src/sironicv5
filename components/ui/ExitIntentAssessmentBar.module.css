@@ -1,0 +1,130 @@
+/* ─── EXIT INTENT / SLIDE-IN ASSESSMENT BAR ───────────────────────────── */
+
+.barWrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  max-width: 480px;
+  width: calc(100vw - 3rem);
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.barInner {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--accent-40);
+  border-radius: var(--r-card);
+  padding: 1.25rem 1.25rem 1.25rem 1rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 24px -8px rgba(232, 39, 26, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.closeBtn:hover {
+  color: var(--ink);
+}
+
+.iconBox {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--r-card-sm);
+  background: var(--accent-12);
+  border: 1px solid var(--accent-40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shieldIcon {
+  color: var(--accent);
+}
+
+.textGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.actionGroup {
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .barWrapper {
+    bottom: 4.5rem; /* Above MobileCtaBar on smartphones */
+    right: 0.75rem;
+    left: 0.75rem;
+    width: auto;
+  }
+
+  .barInner {
+    flex-wrap: wrap;
+  }
+
+  .actionGroup {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .actionGroup a {
+    width: 100%;
+    justify-content: center;
+  }
+}

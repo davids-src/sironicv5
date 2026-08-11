@@ -62,7 +62,7 @@ export default function PricingHighlight({
               <p className={styles.subheadline}>{subheadline}</p>
 
               <div className={styles.ctas}>
-                <Link href={ctaPrimaryHref} className="btn btn-primary btn-lg">
+                <Link href={ctaPrimaryHref} className="btn btn-secondary">
                   {ctaPrimaryLabel}
                 </Link>
               </div>

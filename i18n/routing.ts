@@ -37,6 +37,10 @@ export const routing = defineRouting({
       hu: "/adatkezeles",
       en: "/privacy",
     },
+    "/ingyenes-felmeres": {
+      hu: "/ingyenes-felmeres",
+      en: "/free-assessment",
+    },
   },
 });
 

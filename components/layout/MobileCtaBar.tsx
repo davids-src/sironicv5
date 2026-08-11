@@ -3,36 +3,33 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
-import { Zap, Phone } from "lucide-react";
+import { ShieldCheck, Phone } from "lucide-react";
 
 /**
  * Sticky bottom CTA bar – visible only on mobile (≤1023px via CSS).
- * Hidden on the smartForm page itself (no need to promote what you're already on).
+ * Promotes the primary lead generator: Free IT Assessment.
  */
 export default function MobileCtaBar() {
   const pathname = usePathname();
   const locale = useLocale();
 
-  const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
-  const contactHref = `/${locale}/${locale === "hu" ? "kapcsolat" : "contact"}`;
+  const assessmentHref = `/${locale}/kapcsolat?forras=ingyenes-felmeres`;
 
-  // Hide the bar when already on the smart form page
-  const isSmartForm =
-    pathname.includes("intelligens-urlap") ||
-    pathname.includes("intelligent-form");
+  // Hide the bar when already on the contact/assessment form page
+  const isContact = pathname.includes("kapcsolat") || pathname.includes("contact");
 
-  if (isSmartForm) return null;
+  if (isContact) return null;
 
   return (
     <div className="mobileCtaBar">
-      <Link href={smartFormHref} className="ctaPrimary">
-        <Zap size={16} />
-        {locale === "hu" ? "Díjkalkuláció" : "Get a Quote"}
+      <Link href={assessmentHref} className="ctaPrimary">
+        <ShieldCheck size={16} />
+        {locale === "hu" ? "Ingyenes Felmérés" : "Free Assessment"}
       </Link>
-      <Link href={contactHref} className="ctaSecondary">
+      <a href="tel:+36702735532" className="ctaSecondary">
         <Phone size={16} />
-        {locale === "hu" ? "Kapcsolat" : "Contact"}
-      </Link>
+        {locale === "hu" ? "Hívás" : "Call"}
+      </a>
     </div>
   );
 }

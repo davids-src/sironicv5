@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Server, CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
+import FreeAssessmentSection from "@/components/sections/FreeAssessmentSection";
 import CtaBlock from "@/components/ui/CtaBlock";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function RendszeruzemeltetesPage({ params }: Props) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "servicePages.itOps" });
+    const freeAssessmentHref = `/${locale}/kapcsolat?forras=ingyenes-felmeres`;
     const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
     const servicesHref = `/${locale}/szolgaltatasok`;
     const contactHref = `/${locale}/kapcsolat`;
@@ -64,11 +66,11 @@ export default async function RendszeruzemeltetesPage({ params }: Props) {
                         <h1 className={`display-2 ${styles.heroTitle}`}>{t("heroTitle")}</h1>
                         <p className="body-lg">{t("heroSubtitle")}</p>
                         <div style={{ display: "flex", gap: "1rem", marginTop: "2rem", flexWrap: "wrap" }}>
-                            <Link href={smartFormHref} className="btn btn-primary btn-lg">
-                                {t("ctaPrimary")} <ArrowRight size={16} />
+                            <Link href={freeAssessmentHref} className="btn btn-primary btn-lg">
+                                {locale === "hu" ? "Ingyenes Állapotfelmérés" : "Free Assessment"} <ArrowRight size={16} />
                             </Link>
-                            <Link href={contactHref} className="btn btn-outline btn-lg">
-                                {t("ctaSecondary")}
+                            <Link href={smartFormHref} className="btn btn-outline btn-lg">
+                                {t("ctaPrimary")}
                             </Link>
                         </div>
                     </SectionReveal>
@@ -173,13 +175,8 @@ export default async function RendszeruzemeltetesPage({ params }: Props) {
                 </div>
             </section>
 
-            {/* CTA */}
-            <CtaBlock
-                title={t("ctaTitle")}
-                subtitle={t("ctaSubtitle")}
-                cta1={{ label: t("ctaPrimary"), href: smartFormHref }}
-                cta2={{ label: t("ctaSecondary"), href: contactHref }}
-            />
+            {/* Contextual Compact Free Assessment Banner */}
+            <FreeAssessmentSection locale={locale} variant="compact" />
 
             {/* FAQ */}
             <section className="section">
