@@ -39,6 +39,18 @@ const routes: Array<{
     priority: 0.9,
     changefreq: "monthly",
   },
+  {
+    hu: "/ingyenes-felmeres",
+    en: "/free-assessment",
+    priority: 0.95,
+    changefreq: "weekly",
+  },
+  {
+    hu: "/blog",
+    en: "/blog",
+    priority: 0.8,
+    changefreq: "weekly",
+  },
   { hu: "/kapcsolat", en: "/contact", priority: 0.8, changefreq: "monthly" },
   { hu: "/referenciak", en: "/references", priority: 0.7, changefreq: "monthly" },
   { hu: "/partnereink", en: "/partners", priority: 0.6, changefreq: "monthly" },

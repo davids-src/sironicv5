@@ -36,6 +36,10 @@
     "priority": 0.8
   },
   {
+    "path": "/blog",
+    "priority": 0.75
+  },
+  {
     "path": "/referenciak",
     "priority": 0.7
   },

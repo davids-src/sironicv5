@@ -189,10 +189,10 @@ export default async function ReferencesPage({ params }: Props) {
       <CtaBlock
         title={locale === "hu" ? "Legyen a következő projekt az Öné" : "Let your project be next"}
         subtitle={locale === "hu"
-          ? "Vegye fel velünk a kapcsolatot – megbeszéljük, mire van szüksége, és egyedi megoldást adunk."
-          : "Get in touch – we'll discuss what you need and find the right solution."}
-        cta1={{ label: locale === "hu" ? "Ajánlatkérés" : "Get a Quote", href: `/${locale}/kapcsolat` }}
-        cta2={{ label: locale === "hu" ? "Díjkalkulátor" : "Price Calculator", href: `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}` }}
+          ? "Kezdjük egy ingyenes állapotfelméréssel – megbeszéljük, mire van szüksége, és egyedi megoldást adunk."
+          : "Let's start with a free assessment – we'll discuss what you need and find the right solution."}
+        cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}` }}
+        cta2={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
       />
     </>
   );

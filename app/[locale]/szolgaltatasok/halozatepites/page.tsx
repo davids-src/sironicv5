@@ -4,6 +4,7 @@ import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
 import FreeAssessmentSection from "@/components/sections/FreeAssessmentSection";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import CtaBlock from "@/components/ui/CtaBlock";
 import type { Metadata } from "next";
 import styles from "@/components/ui/ServiceSubpage.module.css";
 
@@ -173,6 +174,15 @@ export default async function HalozatepitesPage({ params }: Props) {
                     </div>
                 </div>
             </section>
+
+            <CtaBlock
+                title={locale === "hu" ? "Kezdjük egy ingyenes felméréssel" : "Let's start with a free assessment"}
+                subtitle={locale === "hu"
+                    ? "Helyszíni felmérésünk díjmentes és kötelezettségmentes. Egy héten belül írásos javaslatot adunk."
+                    : "Our on-site assessment is free and without obligation. Receive a written proposal within a week."}
+                cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}` }}
+                cta2={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: contactHref }}
+            />
         </>
     );
 }

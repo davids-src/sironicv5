@@ -5,6 +5,8 @@ import ServiceSection from "@/components/sections/ServiceSection";
 import FaqSection from "@/components/sections/FaqSection";
 import CtaBlock from "@/components/ui/CtaBlock";
 import PricingHighlight from "@/components/sections/PricingHighlight";
+import TrustMetricsBar from "@/components/sections/TrustMetricsBar";
+import ClientLogoWall from "@/components/sections/ClientLogoWall";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -37,8 +39,9 @@ export default async function HomePage({ params }: Props) {
       badge: t("slide1.badge"),
       title: t("slide1.title"),
       subtitle: t("slide1.subtitle"),
+      lead: t("slide1.lead"),
       cta1: {
-        label: locale === "hu" ? "Ingyenes Állapotfelmérés" : "Free IT Assessment",
+        label: t("slide1.cta1"),
         href: freeAssessmentHref,
       },
       cta2: { label: t("slide1.cta2"), href: servicesHref },
@@ -47,11 +50,12 @@ export default async function HomePage({ params }: Props) {
       badge: t("slide2.badge"),
       title: t("slide2.title"),
       subtitle: t("slide2.subtitle"),
+      lead: t("slide2.lead"),
       cta1: {
-        label: locale === "hu" ? "Ingyenes Állapotfelmérés" : "Free IT Assessment",
+        label: t("slide2.cta1"),
         href: freeAssessmentHref,
       },
-      cta2: { label: t("slide2.cta2"), href: servicesHref },
+      cta2: { label: t("slide2.cta2"), href: smartFormHref },
     },
   ];
 
@@ -107,7 +111,13 @@ export default async function HomePage({ params }: Props) {
       {/* 1. Hero Slider */}
       <HeroSlider slides={slides} />
 
-      {/* 2. Primary Offer: Free Assessment Section (Full Variant) */}
+      {/* 2. Trust Metrics Bar */}
+      <TrustMetricsBar locale={locale} />
+
+      {/* 3. Client Logo Wall */}
+      <ClientLogoWall locale={locale} />
+
+      {/* 4. Primary Offer: Free Assessment Section (Full Variant) */}
       <FreeAssessmentSection locale={locale} variant="full" />
 
       {/* 3. Secondary Tool: Pricing Highlight – Intelligent Calculator */}

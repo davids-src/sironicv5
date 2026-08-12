@@ -122,25 +122,6 @@ export default async function FreeAssessmentLandingPage({ params }: Props) {
               </SectionReveal>
             ))}
           </div>
-
-          {/* NDA Guarantee Highlight */}
-          <SectionReveal delay={0.3}>
-            <div className={styles.ndaCard}>
-              <div className={styles.ndaIconBox}>
-                <Lock size={28} />
-              </div>
-              <div className={styles.ndaContent}>
-                <h3 className={styles.ndaTitle}>
-                  {locale === "hu" ? "Hivatalos Titoktartási Nyilatkozat (NDA)" : "Official Non-Disclosure Agreement (NDA)"}
-                </h3>
-                <p className={styles.ndaText}>
-                  {locale === "hu"
-                    ? "Az audit során megismert üzleti és informatikai adatokat 100%-os bizalmassággal kezeljük. A felmérés megkezdése előtt kétoldalú titoktartási megállapodást (NDA) írunk alá."
-                    : "All business and IT data accessed during the audit is treated with 100% confidentiality. Before commencing the assessment, we sign a bilateral Non-Disclosure Agreement (NDA)."}
-                </p>
-              </div>
-            </div>
-          </SectionReveal>
         </div>
       </section>
 
@@ -148,7 +129,7 @@ export default async function FreeAssessmentLandingPage({ params }: Props) {
       <CtaBlock
         title={t("ctaTitle")}
         subtitle={t("ctaSubtitle")}
-        cta1={{ label: locale === "hu" ? "Ingyenes Felmérés Igénylése" : "Get Free Assessment", href: contactHref }}
+        cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: contactHref }}
       />
 
       {/* FAQ */}

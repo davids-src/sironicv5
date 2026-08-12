@@ -2,10 +2,13 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "freeAssessment": "Free Assessment",
     "partners": "Partners",
     "references": "References",
+    "blog": "Blog",
     "about": "About",
-    "smartForm": "Smart Form",
+    "calculator": "Price Calculator",
+    "smartForm": "Price Calculator",
     "contact": "Contact"
   },
   "meta": {
@@ -20,53 +23,55 @@
     "referencesDescription": "SIRONIC completed projects: websites, internal systems, custom solutions.",
     "aboutTitle": "About | SIRONIC",
     "aboutDescription": "The SIRONIC company story, values, and team.",
-    "smartFormTitle": "Smart Form | SIRONIC",
-    "smartFormDescription": "Fill in our smart needs assessment form and get an approximate price estimate online.",
+    "smartFormTitle": "Price Calculator | SIRONIC",
+    "smartFormDescription": "Fill in our price calculator form to receive an indicative estimate for IT operations.",
     "contactTitle": "Contact | SIRONIC",
     "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions.",
     "aszfTitle": "Terms & Conditions (ÁSZF) | SIRONIC",
     "aszfDescription": "General Terms and Conditions of SIROTECH Kft. for IT services provided through sironic.eu.",
     "privacyTitle": "Privacy Policy | SIRONIC",
     "privacyDescription": "Privacy Policy of SIROTECH Kft. Learn how we handle and protect your personal data.",
-    "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, security technology installation, camera system installation, security technology, custom web development, website, development, React, corporate network building, corporate wifi network installation, NIS2 compliance IT, NIS2 audit help, NIS2 what to do, NIS2, corporate camera system installation, IP camera system, alarm system installation, fire alarm system installation, access control system installation, security technology small business, CCTV system installation, IT service provider Székesfehérvár, IT support Budapest, network building Central Hungary, web development Székesfehérvár, security technology Székesfehérvár"
+    "keywords": "outsourced IT operations, managed IT services, MSP provider, external IT administrator, IT outsourcing for SMBs, corporate system administration, NIS2 compliance, NIS2 audit preparation, IT security audit, free IT assessment, corporate network building, structured cabling, server management, IT helpdesk, IT support for companies, IT operations Székesfehérvár, IT operations Budapest, IT administrator Fejér county, IT services Central Hungary, corporate IT provider"
   },
   "pricingHighlight": {
-    "badge": "Intelligent Price Calculator",
+    "badge": "INTELLIGENT PRICE CALCULATOR",
     "headline": "How much does IT operations cost per month?",
-    "subheadline": "Fill it in within 3 minutes – get an approximate price estimate instantly. No commitment.",
+    "subheadline": "Complete the 15-question assessment in about 3-5 minutes, and our team will send a detailed price estimate within 1 business day. No commitment.",
     "stepsTitle": "How does it work?",
     "steps": [
       {
         "step": 1,
-        "text": "Complete the 15-question needs assessment"
+        "text": "Fill in the 15-question needs assessment (approx. 3-5 mins)"
       },
       {
         "step": 2,
-        "text": "The price adjusts to your company’s size and device count"
+        "text": "The price adjusts to your company size and device count"
       },
       {
         "step": 3,
-        "text": "Our colleague sends a detailed offer within 1 business day"
+        "text": "We send a detailed proposal within 1 business day"
       }
     ],
-    "ctaPrimary": "Smart Needs Assessment →",
+    "ctaPrimary": "Start Assessment",
     "ctaSecondary": "Learn more →",
-    "trustNote": "No one else on the market offers this – find out what your IT operations could cost in seconds."
+    "trustNote": ""
   },
   "hero": {
     "slide1": {
-      "badge": "Reliable IT Partner",
-      "title": "Technology That Works For You",
-      "subtitle": "IT operations, network building, custom development – in the background, efficiently. Trust us with your infrastructure and focus on your real work.",
-      "cta1": "Smart Needs Assessment",
+      "badge": "RELIABLE IT PARTNER",
+      "title": "Outsourced IT Operations for Small and Medium Businesses",
+      "subtitle": "Your IT background, so you don't have to worry about it.",
+      "lead": "Full Managed IT Services (MSP): operations, network building, NIS2 compliance, and custom development. Daily operations are handled remotely — if an issue requires on-site resolution, we come to your location.",
+      "cta1": "Request Free Assessment",
       "cta2": "Our Services"
     },
     "slide2": {
-      "badge": "Digital Innovation",
-      "title": "Smart Forms. Intelligent Issue Reporting. Partner Portal.",
-      "subtitle": "Fill in our smart needs assessment questionnaire and receive an approximate operations price right away. Contract clients have online access to the partner portal.",
-      "cta1": "Try the Smart Form",
-      "cta2": "Our Services"
+      "badge": "DIGITAL TOOLS",
+      "title": "Intelligent Forms. Online Incident Reporting. Partner Portal.",
+      "subtitle": "Modern digital processes and transparent client service.",
+      "lead": "Contract clients gain online access to the partner portal to track tickets and ongoing work.",
+      "cta1": "Request Free Assessment",
+      "cta2": "Try the Price Calculator"
     }
   },
   "services": {
@@ -76,15 +81,15 @@
       "badge": "IT Operations",
       "title": "IT Operations and Maintenance",
       "subtitle": "Invisible, efficient background support",
-      "description": "We operate your company's entire IT infrastructure remotely. No unnecessary on-site visits, no unexpected surprises – just continuous, reliable operation in the background.",
+      "description": "We handle daily operations remotely — quickly, without unnecessary site visits. If an issue can only be resolved on site, we go out. The monthly fee is fixed; interventions or developments are done at pre-agreed rates.",
       "points": [
-        "Remote-first IT operations",
+        "Remote IT operations with on-site support",
         "From micro-businesses to small manufacturing companies",
-        "Both contract-based and ad hoc work available",
+        "Contract-based and ad hoc engagements",
         "Monthly fee based on infrastructure size",
-        "Additional cost only for interventions or development"
+        "Interventions or developments at pre-agreed prices"
       ],
-      "cta1": "Smart Needs Assessment",
+      "cta1": "Request Free Assessment",
       "cta2": "More Information"
     },
     "network": {
@@ -127,27 +132,27 @@
     "items": [
       {
         "q": "How does remote IT operations work in practice?",
-        "a": "Using modern technologies – secure remote access tools – we continuously monitor, maintain, and intervene. Most tasks can be performed without an on-site visit, so you don't need to deal with the daily operation of your IT systems."
+        "a": "Using modern technologies — secure remote access tools — we continuously monitor, maintain, and intervene. Most tasks are handled remotely, but if needed, we provide on-site support."
       },
       {
-        "q": "What size businesses do you work with?",
-        "a": "We primarily provide IT operations services for micro-businesses up to smaller manufacturing companies. Exact pricing depends on infrastructure size, which our smart needs assessment questionnaire helps determine."
+        "q": "What size businesses do you recommend your services for?",
+        "a": "We primarily provide IT operations services for micro-businesses up to smaller manufacturing companies. Exact pricing depends on infrastructure size."
       },
       {
-        "q": "What if I only need one-time help, not a long-term contract?",
-        "a": "We gladly accept one-time requests. Maintenance or troubleshooting tasks can be performed without a contract."
+        "q": "What if I need one-time help, not a long-term contract?",
+        "a": "We gladly accept ad-hoc inquiries. Maintenance or troubleshooting tasks can be performed without signing a contract."
       },
       {
-        "q": "Does the smart needs assessment give a real price quote?",
-        "a": "After completing the questionnaire, you'll receive an approximate operations fee estimate. This is not a final offer, but provides a good starting point for discussions."
+        "q": "How accurate is the online price estimate?",
+        "a": "After completing the questionnaire, you will receive an approximate operations fee estimate. This serves as a good starting point, and our team will send a detailed proposal within 1 business day."
       },
       {
         "q": "How do you help with NIS2 compliance?",
         "a": "Together with our trusted consulting partner, we plan and implement the IT system expected by the NIS2 directive, prepare you for the audit, and provide ongoing operational cooperation after the audit."
       },
       {
-        "q": "How quickly can I get in touch and start a project?",
-        "a": "After filling in the smart contact or needs assessment form, we typically respond within 1 business day. For urgent matters, we provide a separate one-time incident report form."
+        "q": "How quickly can we start a project?",
+        "a": "After completing the form, we respond within 1 business day. For contract clients, we provide a dedicated ticketing portal with immediate phone response for critical incidents."
       }
     ]
   },
@@ -212,15 +217,16 @@
       }
     ],
     "whyTitle": "Why Choose Us?",
-    "whyContent": "Because we don't just offer a service – we offer a real partnership. Fast response times, clear communication, transparent monthly pricing, and the expertise to give a smaller company the same professional IT environment as a large enterprise.",
-    "closingContent": "We are easily accessible in both Székesfehérvár and Budapest, and are happy to help assess your business needs even during an initial consultation.",
+    "whyContent": "Because we don't just offer a service – we offer a real partnership. Fast response, clear communication, predictable pricing, and strong technical expertise.",
+    "closingContent": "We provide on-site services in Székesfehérvár, Budapest, and Central Hungary, and are happy to help assess your business requirements starting from the initial consultation.",
     "values": "Our Values",
     "valueItems": [
-      "Reliability and transparency",
-      "Modern, efficient technology solutions",
-      "Long-term partnership",
-      "Fast response and flexibility",
-      "Predictable monthly pricing"
+      "In IT since 2021, with 25+ active clients",
+      "Response within 1 business day for all inquiries",
+      "Fixed monthly fee, pre-agreed intervention rates",
+      "Remote operations with on-site support",
+      "24/7 coverage and ticketing system for contract clients",
+      "Working with comprehensive liability insurance"
     ]
   },
   "smartForm": {
@@ -368,7 +374,7 @@
       "adHoc": "No dedicated provider, only ad-hoc support",
       "none": "No IT support currently"
     },
-    "trustBadge": "No obligation. No sales pitch on site. Just a clear picture of your systems."
+    "trustBadge": "No obligation and no sales pressure on site — within one week following the assessment, you will receive a written summary and priced proposal to review freely."
   },
   "freeAssessment": {
     "badge": "Free Offer",
@@ -377,16 +383,15 @@
       "subheadline": "We provide a free, no-obligation IT assessment for your business — mapping your hardware inventory, software, network and IT security vulnerabilities, and NIS2 risks, complete with concrete improvement proposals and cost estimates.",
       "bullets": [
         "Complete hardware and software inventory",
-        "Identification of IT security vulnerabilities and risk factors",
-        "Assessment of NIS2 compliance readiness",
-        "Actionable improvement proposal with cost estimates",
-        "Protected by NDA — complete data confidentiality"
+        "Identification of IT security vulnerabilities and risk points",
+        "Assessment of NIS2 compliance status",
+        "Written summary and priced development proposal"
       ],
-      "trustLine": "100+ completed projects for businesses, nationwide",
+      "trustLine": "50+ completed projects for businesses, nationwide",
       "ctaPrimary": "Request Free Assessment",
       "howItWorksLink": "How does this work exactly? →",
-      "microcopy": "No obligation and no pushy sales pitch on site — a few days after the audit you receive a concrete proposal backed by numbers, which you freely decide whether to accept.",
-      "scarcityNote": "We accept a limited number of free assessments per month."
+      "microcopy": "No obligation and no sales pressure on site — within one week following the assessment, you will receive a written summary and priced proposal to review freely.",
+      "scarcityNote": ""
     },
     "compact": {
       "headline": "Free IT System Assessment for Businesses",
@@ -398,7 +403,7 @@
       "headline": "Unsure if your IT system meets NIS2 requirements?",
       "subheadline": "During our free assessment, we identify cybersecurity risks and necessary NIS2 system upgrades.",
       "cta": "Request NIS2 Assessment",
-      "microcopy": "Protected by non-disclosure agreement."
+      "microcopy": "On-site assessment, without obligations."
     },
     "banner": {
       "headline": "Free IT System Assessment",
@@ -411,30 +416,30 @@
     "metaTitle": "Free IT System Assessment | SIRONIC IT",
     "metaDescription": "Free IT system and security assessment for businesses nationwide, in Budapest and Székesfehérvár. Complete hardware, software, network vulnerability and NIS2 risk evaluation.",
     "keywords": "free IT assessment, free IT system audit, free network audit, NIS2 free assessment, cybersecurity evaluation for SMBs, no-obligation IT audit, IT operations Hungary, IT support Budapest, IT system management Central Hungary",
-    "heroTitle": "Free IT System Assessment for Businesses",
-    "heroSubtitle": "Do you know exactly what happens if your system fails tomorrow? Comprehensive IT audit with hardware inventory, network, and NIS2 security analysis — without sales pressure.",
-    "processTitle": "How does this process work exactly?",
+    "heroTitle": "Free IT System Assessment",
+    "heroSubtitle": "Half-day on-site assessment of your business's entire IT system — hardware inventory, software, network, and NIS2 risks. The assessment is free and without obligation.",
+    "processTitle": "What does the assessment include?",
     "processSubtitle": "Our transparent 4-step workflow guarantees clarity without any pushy sales pitch.",
     "steps": [
       {
         "step": "1. Application",
-        "text": "Fill in the short form, and we will contact you within 1 business day to schedule an appointment."
+        "text": "Fill out the short form, and we will contact you within 1 business day to schedule an appointment."
       },
       {
-        "step": "2. Assessment",
-        "text": "We conduct an on-site assessment — analyzing hardware, software, network, and security status."
+        "step": "2. On-Site Assessment",
+        "text": "In about half a day, we inspect your device inventory, software, network, and security settings. All you need to do is assign someone to walk us through the systems."
       },
       {
         "step": "3. Evaluation",
-        "text": "Within a few days, we deliver a detailed report and actionable development proposal with estimated costs."
+        "text": "Within one week, we prepare a written summary, a list of identified risk points, and a development proposal with estimated costs."
       },
       {
         "step": "4. Your Decision",
-        "text": "You receive the results and proposal — you decide freely whether to work with us further. No pressure, no automatic contracts."
+        "text": "You receive the documentation and itemized quote. You decide whether you wish to proceed with us. No automatic contracts."
       }
     ],
     "ctaTitle": "Request your free IT assessment today",
-    "ctaSubtitle": "We can accept a limited number of free assessments per month. Reserve your spot now!"
+    "ctaSubtitle": ""
   },
   "footer": {
     "tagline": "IT Systems Operations. Network Building. Reliable IT Background.",
@@ -451,7 +456,7 @@
       "partners": "Partners",
       "references": "References",
       "about": "About",
-      "smartForm": "Smart Form",
+      "smartForm": "Price Calculator",
       "contact": "Contact"
     }
   },

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X, ShieldCheck } from "lucide-react";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -30,16 +30,20 @@ export default function Navbar() {
   // Swap the locale prefix in the pathname
   const otherLocalePath = pathname.replace(`/${locale}`, `/${otherLocale}`);
 
+  const freeAssessmentHref = `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}`;
+  const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
+
   const navLinks = [
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/szolgaltatasok`, label: t("services"), huPath: "/szolgaltatasok", enPath: "/services" },
+    { href: freeAssessmentHref, label: t("freeAssessment"), huPath: "/ingyenes-felmeres", enPath: "/free-assessment" },
     { href: `/${locale}/partnereink`, label: t("partners"), huPath: "/partnereink", enPath: "/partners" },
     { href: `/${locale}/referenciak`, label: t("references"), huPath: "/referenciak", enPath: "/references" },
+    { href: `/${locale}/blog`, label: t("blog"), huPath: "/blog", enPath: "/blog" },
     { href: `/${locale}/rolunk`, label: t("about"), huPath: "/rolunk", enPath: "/about" },
+    { href: smartFormHref, label: t("calculator"), huPath: "/intelligens-urlap", enPath: "/intelligent-form" },
     { href: `/${locale}/kapcsolat`, label: t("contact"), huPath: "/kapcsolat", enPath: "/contact" },
   ];
-
-  const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
 
   return (
     <>
@@ -76,10 +80,10 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className={styles.actions}>
-            {/* Smart Form CTA – highlighted */}
-            <Link href={smartFormHref} className={`${styles.smartFormBtn}`}>
-              <Zap size={15} />
-              {t("smartForm")}
+            {/* Free Assessment CTA – highlighted */}
+            <Link href={freeAssessmentHref} className={`${styles.smartFormBtn}`}>
+              <ShieldCheck size={15} />
+              {t("freeAssessment")}
             </Link>
 
             {/* Language Toggle */}
@@ -105,7 +109,7 @@ export default function Navbar() {
 
       </header>
 
-      {/* Mobile Overlay + Drawer (Moved OUTSIDE header to escape backdrop-filter containing block constraint) */}
+      {/* Mobile Overlay + Drawer */}
       {mobileOpen && (
         <>
           <div
@@ -131,9 +135,9 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link href={smartFormHref} className={styles.mobileSmartFormBtn}>
-                <Zap size={18} />
-                {t("smartForm")}
+              <Link href={freeAssessmentHref} className={styles.mobileSmartFormBtn}>
+                <ShieldCheck size={18} />
+                {t("freeAssessment")}
               </Link>
             </nav>
           </div>

@@ -17,7 +17,7 @@ const actualPartners = [
   { name: "Magyar Darts Szövetség", image: "/partners/MDSZ.png" },
   { name: "Pervector Zrt.", image: "/partners/Pervector.png" },
   { name: "BoatHungary", image: "/partners/boathungary.jpg" },
-  { name: "Bocskai Alba Flexum Kft.", image: "/partners/kai Alba Flexum.jpg" },
+  { name: "Bocskai Alba Flexum Kft.", image: "/partners/kai-alba-flexum.jpg" },
   { name: "Kerámia Dental", image: "/partners/keramiadental-logo.png" },
   // { name: "SF Security", image: "/partners/sfsecurity.svg" }, // ideiglenesen elrejtve
   { name: "Tűzhál Zrt.", image: "/partners/tuzhal.png" },

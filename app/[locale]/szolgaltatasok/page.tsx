@@ -27,7 +27,7 @@ const serviceIcons = [
 export default async function ServicesPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "services" });
-  const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
+  const freeAssessmentHref = `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -160,10 +160,12 @@ export default async function ServicesPage({ params }: Props) {
       </section>
 
       <CtaBlock
-        title={locale === "hu" ? "Nem találta amit keresett?" : "Didn't find what you need?"}
-        subtitle={locale === "hu" ? "Vegye fel velünk a kapcsolatot – szívesen segítünk." : "Get in touch – we're happy to help."}
-        cta1={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
-        cta2={{ label: locale === "hu" ? "Intelligens igényfelmérés" : "Smart Assessment", href: smartFormHref }}
+        title={locale === "hu" ? "Nem találta, amit keresett?" : "Didn't find what you need?"}
+        subtitle={locale === "hu"
+          ? "Kezdjük egy ingyenes felméréssel – utána pontosan tudjuk, mire van szüksége."
+          : "Let's start with a free assessment – then we'll know exactly what you need."}
+        cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: freeAssessmentHref }}
+        cta2={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
       />
     </>
   );

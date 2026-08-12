@@ -8,15 +8,19 @@ export default function Footer() {
   const nav = useTranslations("nav");
   const locale = useLocale();
 
+  const freeAssessmentHref = `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}`;
+
   const serviceLinks = [
     { label: nav("services"), href: `/${locale}/szolgaltatasok` },
+    { label: nav("freeAssessment"), href: freeAssessmentHref },
     { label: nav("partners"), href: `/${locale}/partnereink` },
     { label: nav("references"), href: `/${locale}/referenciak` },
   ];
   const companyLinks = [
+    { label: nav("blog"), href: `/${locale}/blog` },
     { label: nav("about"), href: `/${locale}/rolunk` },
     { label: nav("contact"), href: `/${locale}/kapcsolat` },
-    { label: nav("smartForm"), href: `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}` },
+    { label: nav("calculator"), href: `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}` },
   ];
 
   return (

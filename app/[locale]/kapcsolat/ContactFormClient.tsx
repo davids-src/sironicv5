@@ -15,6 +15,9 @@ const schema = z.object({
   companySize: z.string().optional(),
   hasExternalIT: z.string().optional(),
   message: z.string().min(10, "Kérjük írjon legalább 10 karaktert"),
+  gdprConsent: z.boolean().refine((val) => val === true, {
+    message: "Az Adatkezelési tájékoztató elfogadása kötelező.",
+  }),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -45,6 +48,7 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
       companySize: "",
       hasExternalIT: "",
       message: "",
+      gdprConsent: false,
     },
   });
 
@@ -227,6 +231,31 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
           {...register("message")}
         />
         {errors.message && <span className="form-error">{errors.message.message}</span>}
+      </div>
+
+      {/* GDPR Consent Checkbox */}
+      <div className="form-group" style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+        <label htmlFor="cn-gdpr" style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", fontSize: "0.875rem", cursor: "pointer", color: "var(--ink)" }}>
+          <input
+            id="cn-gdpr"
+            type="checkbox"
+            style={{ marginTop: "0.2rem", accentColor: "var(--accent)" }}
+            {...register("gdprConsent")}
+          />
+          <span>
+            Elfogadom az{" "}
+            <a
+              href="/adatkezeles"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--accent)", textDecoration: "underline" }}
+            >
+              Adatkezelési tájékoztatót
+            </a>
+            . *
+          </span>
+        </label>
+        {errors.gdprConsent && <span className="form-error">{errors.gdprConsent.message}</span>}
       </div>
 
       {sendError && <div className="form-error" style={{ textAlign: "center" }}>{sendError}</div>}

@@ -22,10 +22,10 @@ export default async function ContactPage({ params, searchParams }: Props) {
   const t = await getTranslations({ locale, namespace: "contact" });
 
   const initialInquiryType =
-    resolvedSearchParams?.forras === "ingyenes-felmeres" ||
-    resolvedSearchParams?.source === "free-assessment"
-      ? "free-assessment"
-      : "general";
+    resolvedSearchParams?.forras === "general" ||
+    resolvedSearchParams?.source === "general"
+      ? "general"
+      : "free-assessment";
 
   const messages = {
     formTitle: t("formTitle"),
@@ -112,12 +112,12 @@ export default async function ContactPage({ params, searchParams }: Props) {
                 }}>
                   <h4 style={{ fontFamily: "var(--font-display)", color: "var(--ink)", fontSize: "1rem", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                     <ShieldCheck size={18} color="var(--accent)" />
-                    {locale === "hu" ? "Ingyenes Állapotfelmérés Garancia" : "Free Assessment Guarantee"}
+                    {locale === "hu" ? "Az ingyenes állapotfelmérésről" : "About the Free Assessment"}
                   </h4>
                   <p style={{ fontFamily: "var(--font-body)", color: "var(--muted)", fontSize: "0.875rem", lineHeight: 1.5, margin: 0 }}>
                     {locale === "hu"
-                      ? "A felmérés 100%-ban kötelezettségmentes és díjmentes. Semmilyen eladási kényszer nincs a helyszínen, célunk a tisztánlátás biztosítása az Ön informatikai rendszeréről."
-                      : "Our IT assessment is 100% free and no-obligation. No sales pitch on site — our sole goal is providing clarity regarding your IT systems."}
+                      ? "A fél napos helyszíni felmérés díjmentes és kötelezettségmentes. Egy héten belül írásos összefoglalót, a feltárt kockázati pontok listáját és árazott javaslatot kap — a döntés ezután az Öné."
+                      : "The half-day on-site assessment is free and without obligation. Within one week you receive a written summary, a list of identified risks and a priced proposal — the decision is then yours."}
                   </p>
                 </div>
               </div>

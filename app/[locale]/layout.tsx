@@ -9,6 +9,7 @@ import MobileCtaBar from "@/components/layout/MobileCtaBar";
 import ExitIntentAssessmentBar from "@/components/ui/ExitIntentAssessmentBar";
 import CookieConsent from "@/components/layout/CookieConsent";
 import GoogleAnalyticsTracker from "@/components/layout/GoogleAnalyticsTracker";
+import FacebookPixel from "@/components/layout/FacebookPixel";
 import StructuredData from "@/components/layout/StructuredData";
 import { MotionConfig } from "framer-motion";
 import type { Metadata } from "next";
@@ -71,6 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <MobileCtaBar />
             <CookieConsent />
             <GoogleAnalyticsTracker gaId={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
+            <FacebookPixel />
             <StructuredData />
           </div>
         </MotionConfig>

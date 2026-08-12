@@ -41,6 +41,14 @@ export const routing = defineRouting({
       hu: "/ingyenes-felmeres",
       en: "/free-assessment",
     },
+    "/blog": {
+      hu: "/blog",
+      en: "/blog",
+    },
+    "/blog/[slug]": {
+      hu: "/blog/[slug]",
+      en: "/blog/[slug]",
+    },
   },
 });
 

@@ -189,6 +189,15 @@ export default async function RendszeruzemeltetesPage({ params }: Props) {
                     </div>
                 </div>
             </section>
+
+            <CtaBlock
+                title={locale === "hu" ? "Kezdjük egy ingyenes felméréssel" : "Let's start with a free assessment"}
+                subtitle={locale === "hu"
+                    ? "Helyszíni felmérésünk díjmentes és kötelezettségmentes. Egy héten belül írásos javaslatot adunk."
+                    : "Our on-site assessment is free and without obligation. Receive a written proposal within a week."}
+                cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}` }}
+                cta2={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: contactHref }}
+            />
         </>
     );
 }

@@ -1,0 +1,105 @@
+.hero {
+  padding: var(--space-3xl) 0 var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--ink);
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.metaBar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.articleSection {
+  padding: var(--space-2xl) 0;
+}
+
+.articleContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.content p {
+  margin-bottom: 1.25rem;
+}
+
+.content ul, .content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.backRow {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}

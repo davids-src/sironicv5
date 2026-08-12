@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  overflow: hidden;
+}
+
+.heroTitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heroGlow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(232, 39, 26, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  padding: 1.75rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-40);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.categoryBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  background: var(--accent-10);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.readTime {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.postTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.postTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.postTitle a:hover {
+  color: var(--accent);
+}
+
+.excerpt {
+  font-size: 0.925rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}

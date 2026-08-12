@@ -153,9 +153,11 @@ export default async function AboutPage({ params }: Props) {
 
       <CtaBlock
         title={locale === "hu" ? "Felmérnénk az igényeit?" : "Ready to get started?"}
-        subtitle={locale === "hu" ? "Vegyük fel a kapcsolatot – az első egyeztetés ingyenes és kötelezettségmentes." : "Get in touch – the first consultation is free and non-binding."}
-        cta1={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
-        cta2={{ label: locale === "hu" ? "Intelligens igényfelmérés" : "Smart Assessment", href: `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}` }}
+        subtitle={locale === "hu"
+          ? "Az első felmérés díjmentes és kötelezettségmentes."
+          : "The first assessment is free and without obligation."}
+        cta1={{ label: locale === "hu" ? "Kérem az ingyenes felmérést" : "Request Free Assessment", href: `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}` }}
+        cta2={{ label: locale === "hu" ? "Kapcsolatfelvétel" : "Contact Us", href: `/${locale}/kapcsolat` }}
       />
     </>
   );

@@ -10,6 +10,7 @@ export interface Slide {
   badge: string;
   title: string;
   subtitle: string;
+  lead?: string;
   cta1: { label: string; href: string };
   cta2?: { label: string; href: string; external?: boolean };
 }
@@ -19,7 +20,7 @@ interface Props {
   autoPlayMs?: number;
 }
 
-export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
+export default function HeroSlider({ slides, autoPlayMs = 0 }: Props) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [scrolled, setScrolled] = useState(false);
@@ -39,6 +40,7 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
   const next = () => go((current + 1) % slides.length, 1);
 
   useEffect(() => {
+    if (!autoPlayMs || autoPlayMs <= 0) return;
     const t = setInterval(() => go((current + 1) % slides.length, 1), autoPlayMs);
     return () => clearInterval(t);
   }, [current, go, slides.length, autoPlayMs]);
@@ -102,6 +104,18 @@ export default function HeroSlider({ slides, autoPlayMs = 6000 }: Props) {
               >
                 {slide.subtitle}
               </motion.p>
+
+              {slide.lead && (
+                <motion.p
+                  key={`lead-${current}`}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
+                  style={{ marginTop: "0.75rem", color: "var(--text-muted)", fontSize: "1rem", maxWidth: "680px" }}
+                >
+                  {slide.lead}
+                </motion.p>
+              )}
 
               <motion.div
                 className={styles.ctas}

@@ -110,12 +110,6 @@ export default function FreeAssessmentSection({ locale, variant = "full" }: Prop
               ))}
             </ul>
 
-            {/* Scarcity Note */}
-            <div className={styles.scarcityBox}>
-              <Clock size={15} className={styles.scarcityIcon} />
-              <span>{t("full.scarcityNote")}</span>
-            </div>
-
             {/* Primary Action Box */}
             <div className={styles.ctaBox}>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
@@ -152,12 +146,7 @@ export default function FreeAssessmentSection({ locale, variant = "full" }: Prop
               </div>
 
               <div className={styles.showcaseBody}>
-                <div className={styles.auditMetric}>
-                  <div className={styles.metricItem}>
-                    <span className={styles.metricValue}>100%</span>
-                    <span className={styles.metricLabel}>Feltérképezett eszközök</span>
-                  </div>
-                  <div className={styles.metricDivider} />
+                <div className={styles.auditMetric} style={{ justifyContent: "center" }}>
                   <div className={styles.metricItem}>
                     <span className={styles.metricValue}>0 Ft</span>
                     <span className={styles.metricLabel}>Díjmentes & kötelezettségmentes</span>
@@ -181,14 +170,10 @@ export default function FreeAssessmentSection({ locale, variant = "full" }: Prop
                     <span className={styles.statusDotActive} />
                     <span>NIS2 kiberbiztonsági hiányelemzés</span>
                   </div>
-                  <div className={styles.checkRow}>
-                    <span className={styles.statusDotHighlight} />
-                    <span>Hivatalos Titoktartási Nyilatkozat (NDA)</span>
-                  </div>
                 </div>
 
                 <div className={styles.cardFooterBanner}>
-                  <span>💡 Tiszta kép a rendszeréről — eladási kényszer nélkül.</span>
+                  <span>💡 Írásos összefoglaló és árazott javaslat egy héten belül.</span>
                 </div>
               </div>
             </div>
