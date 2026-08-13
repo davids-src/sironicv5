@@ -8,6 +8,7 @@ import { ArrowLeft, Calendar, User, Clock, ShieldCheck } from "lucide-react";
 import styles from "./page.module.css";
 
 export const revalidate = 3600;
+export const dynamicParams = true;
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
