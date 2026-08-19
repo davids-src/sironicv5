@@ -7,6 +7,8 @@ import CtaBlock from "@/components/ui/CtaBlock";
 import PricingHighlight from "@/components/sections/PricingHighlight";
 import TrustMetricsBar from "@/components/sections/TrustMetricsBar";
 import ClientLogoWall from "@/components/sections/ClientLogoWall";
+import CompanyGroupSection from "@/components/sections/CompanyGroupSection";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -73,7 +75,7 @@ export default async function HomePage({ params }: Props) {
         : "Free IT system assessment, IT operations, network building and NIS2 support for SMBs in Székesfehérvár, Fejér County and nationwide.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Lövölde utca 24 4/15",
+      streetAddress: "Lövölde utca 24. 4/15.",
       addressLocality: "Székesfehérvár",
       addressRegion: "Fejér megye",
       postalCode: "8000",
@@ -103,7 +105,8 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <script
+      <Script
+        id="home-json-ld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
@@ -189,7 +192,10 @@ export default async function HomePage({ params }: Props) {
         cta2={{ label: locale === "hu" ? "Intelligens Kalkulátor" : "Price Calculator", href: smartFormHref }}
       />
 
-      {/* 8. FAQ */}
+      {/* 8. Company Group Section */}
+      <CompanyGroupSection locale={locale} />
+
+      {/* 9. FAQ */}
       <FaqSection
         title={tf("title")}
         subtitle={tf("subtitle")}

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { Zap } from "lucide-react";
 import SectionReveal from "@/components/ui/SectionReveal";
@@ -77,15 +78,15 @@ export default function PricingHighlight({
               <p className={styles.stepsTitle}>{stepsTitle}</p>
               <div className={styles.steps}>
                 {steps.map((s, i) => (
-                  <>
-                    <div key={s.step} className={styles.step}>
+                  <Fragment key={s.step}>
+                    <div className={styles.step}>
                       <div className={styles.stepNum}>{s.step}</div>
                       <p className={styles.stepText}>{s.text}</p>
                     </div>
                     {i < steps.length - 1 && (
-                      <div key={`conn-${i}`} className={styles.stepConnector} />
+                      <div className={styles.stepConnector} />
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </div>
             </div>

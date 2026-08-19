@@ -75,7 +75,7 @@ export default async function AszfPage({ params }: Props) {
                           </tr>
                           <tr>
                             <th>Székhely</th>
-                            <td>8000 Székesfehérvár, Lövölde utca 24 4/15</td>
+                            <td>8000 Székesfehérvár, Lövölde utca 24. 4/15.</td>
                           </tr>
                           <tr>
                             <th>Adószám</th>
@@ -103,7 +103,7 @@ export default async function AszfPage({ params }: Props) {
                           </tr>
                           <tr>
                             <th>Tárhelyszolgáltató</th>
-                            <td>SIROTECH Kft. — 8000 Székesfehérvár, Lövölde utca 24 4/15</td>
+                            <td>SIROTECH Kft. — 8000 Székesfehérvár, Lövölde utca 24. 4/15.</td>
                           </tr>
                         </tbody>
                       </table>

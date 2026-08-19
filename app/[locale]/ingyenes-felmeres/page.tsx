@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import Script from "next/script";
 import Link from "next/link";
 import { ShieldCheck, ArrowRight, Lock } from "lucide-react";
 import SectionReveal from "@/components/ui/SectionReveal";
@@ -65,7 +66,8 @@ export default async function FreeAssessmentLandingPage({ params }: Props) {
 
   return (
     <>
-      <script
+      <Script
+        id="felmeres-json-ld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

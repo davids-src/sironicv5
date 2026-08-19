@@ -83,7 +83,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
                     <div>
                       <strong>SIROTECH Kft.</strong>
                       <p>{locale === "hu" ? "Adószám: 33056151-2-07" : "Tax number: 33056151-2-07"}</p>
-                      <p>8000 Székesfehérvár, Lövölde utca 24 4/15</p>
+                      <p>8000 Székesfehérvár, Lövölde utca 24. 4/15.</p>
                     </div>
                   </li>
                   <li>

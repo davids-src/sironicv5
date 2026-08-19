@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Script from "next/script";
 import {
   Server, Network, ShieldCheck, Wrench,
   CheckCircle2, ArrowRight
@@ -40,7 +41,7 @@ export default async function ServicesPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Script id="szolg-json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Page Header */}
       <section className={`section bg-grid ${styles.hero}`}>

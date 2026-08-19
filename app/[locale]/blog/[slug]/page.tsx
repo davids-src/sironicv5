@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { getPostBySlug, getPostSlugs } from "@/lib/blog";
 import SectionReveal from "@/components/ui/SectionReveal";
 import CtaBlock from "@/components/ui/CtaBlock";
@@ -124,7 +125,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <script
+      <Script
+        id="blog-json-ld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

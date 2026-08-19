@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function StructuredData() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -9,7 +11,7 @@ export default function StructuredData() {
     email: "hello@sironic.hu",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Lövölde utca 24 4/15",
+      streetAddress: "Lövölde utca 24. 4/15.",
       addressLocality: "Székesfehérvár",
       addressRegion: "Fejér megye",
       postalCode: "8000",
@@ -57,7 +59,8 @@ export default function StructuredData() {
   };
 
   return (
-    <script
+    <Script
+      id="structured-data"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />

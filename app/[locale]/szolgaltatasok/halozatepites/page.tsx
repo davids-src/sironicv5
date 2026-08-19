@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Script from "next/script";
 import { Network, CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import SectionReveal from "@/components/ui/SectionReveal";
@@ -48,7 +49,7 @@ export default async function HalozatepitesPage({ params }: Props) {
 
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <Script id="halo-json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             {/* Hero */}
             <section className={`${styles.hero} bg-grid`}>

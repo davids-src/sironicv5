@@ -72,7 +72,7 @@ export default async function AdatkezelesPage({ params }: Props) {
                           </tr>
                           <tr>
                             <th>Székhely</th>
-                            <td>8000 Székesfehérvár, Lövölde utca 24 4/15</td>
+                            <td>8000 Székesfehérvár, Lövölde utca 24. 4/15.</td>
                           </tr>
                           <tr>
                             <th>Adószám</th>
@@ -276,7 +276,7 @@ export default async function AdatkezelesPage({ params }: Props) {
                           <tr>
                             <td><strong>Tárhelyszolgáltatás, weboldal üzemeltetés</strong></td>
                             <td>SIROTECH Kft.</td>
-                            <td>8000 Székesfehérvár, Lövölde utca 24 4/15</td>
+                            <td>8000 Székesfehérvár, Lövölde utca 24. 4/15.</td>
                           </tr>
                           <tr>
                             <td><strong>Statisztikai szolgáltatás</strong></td>

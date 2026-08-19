@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Zap, Mail, Phone, MapPin, Hash } from "lucide-react";
@@ -57,6 +59,49 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* SIROTECH GROUP */}
+        <div className={styles.col}>
+          <h3 className={styles.colTitle}>SIROTECH GROUP</h3>
+          <ul className={styles.linkList}>
+            <li>
+              <a href="https://siroved.hu" target="_blank" rel="noopener noreferrer" className={styles.footerLink} onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).gtag) {
+                    (window as any).gtag("event", "outbound_click", { target_site: "siroved.hu", location: "footer" });
+                  }
+                }}>
+                <span style={{ color: "#1A6BE8" }}>●</span> SIRO-VÉD — {locale === "hu" ? "Kamera, riasztó, tűzjelző" : "Cameras, alarms, fire detection"}
+              </a>
+            </li>
+            <li>
+              <a href="https://sirosoft.hu" target="_blank" rel="noopener noreferrer" className={styles.footerLink} onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).gtag) {
+                    (window as any).gtag("event", "outbound_click", { target_site: "sirosoft.hu", location: "footer" });
+                  }
+                }}>
+                <span style={{ color: "#1AE87B" }}>●</span> SIROSOFT — {locale === "hu" ? "Egyedi szoftverfejlesztés" : "Custom software development"}
+              </a>
+            </li>
+            <li>
+              <a href="https://sirovill.hu" target="_blank" rel="noopener noreferrer" className={styles.footerLink} onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).gtag) {
+                    (window as any).gtag("event", "outbound_click", { target_site: "sirovill.hu", location: "footer" });
+                  }
+                }}>
+                <span style={{ color: "#F5B81C" }}>●</span> SIROVILL — {locale === "hu" ? "Villanyszerelés, kábelezés" : "Electrical work, cabling"} <span style={{ opacity: 0.5, fontSize: "0.85em" }}>({locale === "hu" ? "hamarosan" : "soon"})</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://sirotech.hu" target="_blank" rel="noopener noreferrer" className={styles.footerLink} onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).gtag) {
+                    (window as any).gtag("event", "outbound_click", { target_site: "sirotech.hu", location: "footer" });
+                  }
+                }}>
+                <span style={{ color: "#C0C0D0" }}>●</span> SIROTECH — {locale === "hu" ? "Központi oldal" : "Group website"}
+              </a>
+            </li>
+          </ul>
+        </div>
+
         {/* Smart Form CTA */}
         <div className={styles.col}>
           <h3 className={styles.colTitle}>{nav("smartForm")}</h3>
@@ -83,7 +128,7 @@ export default function Footer() {
             </li>
             <li className={styles.infoRow}>
               <MapPin size={13} className={styles.infoIcon} />
-              <span className={styles.infoValue}>8000 Székesfehérvár,<br />Lövölde utca 24 4/15</span>
+              <span className={styles.infoValue}>8000 Székesfehérvár,<br />Lövölde utca 24. 4/15.</span>
             </li>
             <li className={styles.infoRow}>
               <Hash size={13} className={styles.infoIcon} />
