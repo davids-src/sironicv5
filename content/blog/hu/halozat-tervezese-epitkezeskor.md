@@ -13,7 +13,7 @@ Az egyik a szolgáltató. A másik az, hogy hova megy a kábel a falban.
 
 Mindkettőnél igaz: ha lekéssük, az nem drágább lesz, hanem sokkal drágább.
 
-## 1. A szolgáltató kérdése — ezt kell először intézni
+<h2>1. A szolgáltató kérdése — ezt kell először intézni</h2>
 
 Ez a leggyakoribb, és a legkellemetlenebb meglepetés.
 
@@ -21,28 +21,28 @@ Beköltözés előtt két héttel felhívja az embert a szolgáltatót, hogy ké
 
 Addig marad a mobilinternet, ami egy irodának nem megoldás.
 
-**Mit tegyen:**
+<strong>Mit tegyen:</strong>
 
 Amint megvan a cím — akár még az építkezés elején —, nézesse meg, milyen szolgáltatás érhető el ott ténylegesen. Ne a lefedettségi térképnek higgyen, hanem kérjen konkrét visszajelzést az adott házszámra.
 
 Ha csak egy szolgáltató van, gondolja végig, mi történik, ha az kiesik. Egy céges telephelynél a második, független internetkapcsolat (akár egy másik szolgáltatótól, akár mobilhálózaton) sokszor megéri — de ezt is előre kell tervezni, mert a router és a tűzfal is kell hozzá tudjon.
 
-## 2. Hova kerül a hálózati szekrény?
+<h2>2. Hova kerül a hálózati szekrény?</h2>
 
 Ez az a döntés, amit a legtöbben átugranak — pedig ide fut be minden kábel, és utólag áthelyezni gyakorlatilag lehetetlen.
 
-**Amit figyelembe kell venni:**
+<strong>Amit figyelembe kell venni:</strong>
 
 - Ne a legmelegebb helyre kerüljön. A hálózati eszközök hőt termelnek, és nem szeretik a meleget. Padlástér nyáron, kazánház mellett, déli fal mögött — mind rossz ötlet.
 - Legyen mellette elég konnektor, lehetőleg saját áramkörön. Ha ugyanarra a körre kerül, mint a kávéfőző, egy áramszünet után minden újraindul.
 - Legyen hozzáférhető. Nem beépített szekrény mögé, nem a mosógép fölé. Egyszer biztosan hozzá kell nyúlni.
 - Lehetőleg középen legyen, ne a ház egyik végében — így rövidebbek lesznek a kábelfutások.
 
-## 3. Az access pointok — ez a leggyakoribb tervezési hiba
+<h2>3. Az access pointok — ez a leggyakoribb tervezési hiba</h2>
 
 Sokan úgy gondolják, a wifi az a doboz, amit a szolgáltató ad, és azt beteszik valahova. Aztán a hátsó szobában nincs jel.
 
-**Amit érdemes tudni:**
+<strong>Amit érdemes tudni:</strong>
 
 Az access point akkor működik jól, ha mennyezetre kerül, a tér közepére — nem a sarokba, nem a szekrény mögé, nem a padlóra. Ehhez viszont kábel kell a mennyezetbe, amit vakolás vagy gipszkartonozás előtt kell behúzni.
 
@@ -52,13 +52,13 @@ A vasbeton és a gipszkarton fémprofilja erősen csillapítja a jelet. Egy jól
 
 És egy praktikus tipp: az access point PoE-n (hálózati kábelen keresztül) is kap tápot, tehát nem kell mellé konnektor — de ehhez kell a hálózati kábel a mennyezetbe.
 
-## 4. Hány aljzat, és hova?
+<h2>4. Hány aljzat, és hova?</h2>
 
 A rövid válasz: több, mint amennyit gondol.
 
 Kábelt behúzni olcsó, amíg nincs vakolat a falon. Utólag egyetlen aljzat kiépítése többe kerülhet, mint a beépítéskor öt.
 
-**Ahova jellemzően kell:**
+<strong>Ahova jellemzően kell:</strong>
 
 - Minden munkaállomáshoz legalább kettő
 - A tévé mögé (smart TV, set-top box, konzol)
@@ -67,15 +67,15 @@ Kábelt behúzni olcsó, amíg nincs vakolat a falon. Utólag egyetlen aljzat ki
 - Kamerák helye (ha lesz — lásd a következő cikkünket)
 - A hálózati szekrénybe minden fenti kábel visszavezetve
 
-**Kábeltípus:** ma már Cat6 vagy Cat6A az ésszerű választás. A régebbi Cat5e működik, de a falban lévő kábelt 15-20 évig nem cseréli ki senki — érdemes olyat betenni, ami akkor is elég lesz.
+<strong>Kábeltípus:</strong> ma már Cat6 vagy Cat6A az ésszerű választás. A régebbi Cat5e működik, de a falban lévő kábelt 15-20 évig nem cseréli ki senki — érdemes olyat betenni, ami akkor is elég lesz.
 
-## 5. Az üres védőcső, amit később megköszön magának
+<h2>5. Az üres védőcső, amit később megköszön magának</h2>
 
 Ez a legjobb ár-érték arányú tanács, amit adhatunk.
 
 Húzasson be legalább egy üres védőcsövet a szekrénytől a főbb helyiségekig, és a padlástérig. Nem kerül szinte semmibe, amíg nyitva a fal — és ha három év múlva kiderül, hogy kellene még egy kábel valahová, akkor nem kell vésni.
 
-## Mikor szóljon?
+<h2>Mikor szóljon?</h2>
 
 A legjobb pillanat: szerkezetkész állapot után, vakolás előtt — amikor a villanyszerelő is dolgozik. Ekkor a nyomvonalak még nyitottak, és a hálózati kábelezés együtt haladhat az erősárammal.
 
@@ -83,7 +83,7 @@ A szolgáltató kérdésével viszont ennél korábban kell foglalkozni, mert az
 
 És ha már késő? Az sem tragédia. Falon kívüli kábelcsatornával, mesh-rendszerrel vagy a meglévő elektromos hálózaton működő megoldásokkal is lehet használható rendszert építeni — csak drágább, és nem lesz olyan szép.
 
-## Segítünk eldönteni
+<h2>Segítünk eldönteni</h2>
 
 Ha most épít vagy költözik, egy ingyenes helyszíni felmérésen végigvesszük az alaprajzot: hány access point kell és hova, merre menjenek a kábelek, mekkora szekrény kell, és mit érdemes már most beszerezni.
 

@@ -9,20 +9,20 @@ category: "IT Üzemeltetés"
 
 Az informatikai infrastruktúra stabil működése mára minden vállalkozás számára elengedhetetlenné vált. Azonban a kis- és középvállalkozások többsége számára a saját IT-főállású munkatárs alkalmazása komoly anyagi és szervezési terhet jelent.
 
-## A kiszervezett IT-üzemeltetés fő előnyei
+<h2>A kiszervezett IT-üzemeltetés fő előnyei</h2>
 
-### 1. Költséghatékonzág és kiszámíthatóság
+<h3>1. Költséghatékonzág és kiszámíthatóság</h3>
 Ahelyett, hogy magas fix bérköltségeket és továbbképzési díjakat fizetne, a kiszervezett IT üzemeltetéssel fix havi díjért kap teljes körű szakértői támogatást.
 
-### 2. Széles körű szakértelem egyetlen partnernél
+<h3>2. Széles körű szakértelem egyetlen partnernél</h3>
 Egyetlen belső IT-s ritkán ért egyszerre a hálózatépítéshez, a kiberbiztonsághoz, a szerverüzemeltetéshez és a NIS2-megfelelőséghez. Egy MSP csapatában minden területnek megvan a maga specialistája.
 
-### 3. Proaktív monitoring és hibaelhárítás
+<h3>3. Proaktív monitoring és hibaelhárítás</h3>
 Nem akkor cselekszünk, amikor már megállt a munka: az infrastruktúrát folyamatosan monitorozzuk, így a lehetséges hibákat még azok bekövetkezése előtt elhárítjuk.
 
-### 4. Garantált SLA és megbízható jelenlét
+<h3>4. Garantált SLA és megbízható jelenlét</h3>
 Szerződéses keretek között garantáljuk a reakcióidőket és a hibaelhárítás feltételeit.
 
-## Lépjen velünk kapcsolatba!
+<h2>Lépjen velünk kapcsolatba!</h2>
 
 Kíváncsi arra, milyen állapotban van jelenlegi IT-rendszere? Igényelje ingyenes helyszíni felmérésünket, és készítünk Önnek egy részletes helyzetértékelést!

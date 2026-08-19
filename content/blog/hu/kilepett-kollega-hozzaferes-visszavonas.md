@@ -11,26 +11,26 @@ Augusztus vége és szeptember eleje a munkahelyváltás csúcsidőszaka. A felm
 
 A belépéssel általában minden rendben megy: kap gépet, e-mail-címet, hozzáféréseket, bemutatják a csapatnak. A kilépés az, ami elmarad.
 
-## Mi szokott maradni?
+<h2>Mi szokott maradni?</h2>
 
 Amikor egy állapotfelmérésen végignézzük a jogosultságokat, jellemzően ezek kerülnek elő:
 
-- **E-mail-fiók**: Sokszor szándékosan marad meg, hogy „ne vesszen el a levelezés" — csak épp senki nem dokumentálja, meddig, és ki fér hozzá.
-- **Felhős tárhely**: A Google Drive vagy a OneDrive megosztásai. A kilépő kolléga személyes fiókjából megosztott mappák akkor is élnek, ha a céges fiókját törölték.
-- **Külső szolgáltatások**: Számlázó, CRM, közösségi média, tárhelyszolgáltató, domainkezelő. Ezek jellemzően külön fiókok, külön jelszóval — és a lista sehol nincs leírva.
-- **Megosztott jelszavak**: Ez a legkellemetlenebb. Ha volt egy közös admin-jelszó, amit hárman használtak, akkor a kilépéssel az a jelszó kompromittálódott — de általában senki nem cseréli le.
-- **Távoli hozzáférés**: VPN, távoli asztal, szerverhozzáférés.
-- **Fizikai eszközök**: Laptop, telefon, belépőkártya, kulcs — és ami rajtuk van.
+- <strong>E-mail-fiók</strong>: Sokszor szándékosan marad meg, hogy „ne vesszen el a levelezés" — csak épp senki nem dokumentálja, meddig, és ki fér hozzá.
+- <strong>Felhős tárhely</strong>: A Google Drive vagy a OneDrive megosztásai. A kilépő kolléga személyes fiókjából megosztott mappák akkor is élnek, ha a céges fiókját törölték.
+- <strong>Külső szolgáltatások</strong>: Számlázó, CRM, közösségi média, tárhelyszolgáltató, domainkezelő. Ezek jellemzően külön fiókok, külön jelszóval — és a lista sehol nincs leírva.
+- <strong>Megosztott jelszavak</strong>: Ez a legkellemetlenebb. Ha volt egy közös admin-jelszó, amit hárman használtak, akkor a kilépéssel az a jelszó kompromittálódott — de általában senki nem cseréli le.
+- <strong>Távoli hozzáférés</strong>: VPN, távoli asztal, szerverhozzáférés.
+- <strong>Fizikai eszközök</strong>: Laptop, telefon, belépőkártya, kulcs — és ami rajtuk van.
 
-## Miért nem szokták visszavonni?
+<h2>Miért nem szokták visszavonni?</h2>
 
 Nem hanyagságból. Három tipikus ok:
 
-1. **Senki nem tudja, mi mindenhez volt hozzáférése.** Nincs lista. Kilépéskor összeszedik, ami eszükbe jut — a többi marad.
-2. **Nem világos, kinek a feladata.** A HR azt hiszi, az IT megoldja. Az IT azt hiszi, szólnak neki, ha kell valamit. Végül senki nem csinálja.
-3. **Félnek, hogy elveszik valami.** „Hagyjuk még meg egy hónapig, hátha kell valami a levelezéséből." Aztán elfelejtődik.
+1. <strong>Senki nem tudja, mi mindenhez volt hozzáférése.</strong> Nincs lista. Kilépéskor összeszedik, ami eszükbe jut — a többi marad.
+2. <strong>Nem világos, kinek a feladata.</strong> A HR azt hiszi, az IT megoldja. Az IT azt hiszi, szólnak neki, ha kell valamit. Végül senki nem csinálja.
+3. <strong>Félnek, hogy elveszik valami.</strong> „Hagyjuk még meg egy hónapig, hátha kell valami a levelezéséből." Aztán elfelejtődik.
 
-## Miért számít ez?
+<h2>Miért számít ez?</h2>
 
 A legtöbb kilépés békés, és a volt kolléga soha nem is nyúlna semmihez. A kockázat nem is elsősorban ő.
 
@@ -38,7 +38,7 @@ Ha egy fiók él, de senki nem használja és nem figyeli, az a legvonzóbb cél
 
 Emellett ez az egyik olyan pont, ami bármilyen információbiztonsági megfelelésnél előkerül — a jogosultságkezelés minden szabályrendszerben alapkövetelmény.
 
-## Amit ma megtehet
+<h2>Amit ma megtehet</h2>
 
 Nem kell hozzá szolgáltató. Egy délelőtt alatt végigvehető:
 
@@ -48,7 +48,7 @@ Nem kell hozzá szolgáltató. Egy délelőtt alatt végigvehető:
 4. Ha volt megosztott jelszó, cserélje le. Ha egy jelszót többen ismertek, azt kilépéskor mindig cserélni kell.
 5. Készítsen egy egyszerű listát arról, egy átlagos munkakörben mihez kell hozzáférés. Ez lesz a kilépési ellenőrzőlista alapja is.
 
-## És ami ennél is fontosabb
+<h2>És ami ennél is fontosabb</h2>
 
 A visszavonás egyszeri feladat. A lista, ami alapján csinálják, tartós érték.
 

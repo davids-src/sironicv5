@@ -13,7 +13,7 @@ A legtöbb cégvezető nagyjából ezen a ponton hagyja abba a témával való f
 
 A gond csak az, hogy ez a feltételezés sok esetben téves — és általában akkor derül ki, amikor már szűk az idő.
 
-## Miről szól valójában
+<h2>Miről szól valójában</h2>
 
 A NIS2 lényege egy mondatban: bizonyos ágazatokban működő cégeknek bizonyítható módon foglalkozniuk kell a saját informatikai biztonságukkal.
 
@@ -21,7 +21,7 @@ Nem arról van szó, hogy valaki előír egy konkrét tűzfalat vagy víruskeres
 
 Ez utóbbi a kulcs. Nem elég, ha jól működik minden — dokumentálni is kell tudni.
 
-## Kiket érint?
+<h2>Kiket érint?</h2>
 
 Az érintettség két dolog együttállásán múlik: milyen ágazatban működik a cég, és mekkora.
 
@@ -31,7 +31,7 @@ A méret jellemzően a foglalkoztatotti létszám és az árbevétel alapján sz
 
 Van egy harmadik eset is, amiről kevesebb szó esik: ha Ön beszállítója egy érintett cégnek, előfordulhat, hogy a megrendelő szerződésben várja el ugyanezeket a követelményeket. Ilyenkor nem a jogszabály kötelezi, hanem az üzleti partner — de a végeredmény ugyanaz.
 
-## Hogyan derítse ki?
+<h2>Hogyan derítse ki?</h2>
 
 Három lépés, amit egy délelőtt alatt meg lehet tenni:
 
@@ -39,7 +39,7 @@ Három lépés, amit egy délelőtt alatt meg lehet tenni:
 2. Vegye elő a létszám- és árbevétel-adatokat. Az érintettséget általában az előző lezárt üzleti év alapján állapítják meg.
 3. Nézze át a nagyobb megrendelői szerződéseit. Ha van bennük információbiztonsági követelmény, az önmagában is elég ok a felkészülésre.
 
-## És ha érintett?
+<h2>És ha érintett?</h2>
 
 Akkor van tennivaló — de nem feltétlenül annyi, mint amitől tart.
 
@@ -55,7 +55,7 @@ A leggyakoribb hiányosságok, amikkel találkozunk:
 
 Ezek egyike sem igényel nagy beruházást. Időt és rendszerezést igényel.
 
-## Mi az első lépés?
+<h2>Mi az első lépés?</h2>
 
 Bármilyen megfelelési munka ott kezdődik, hogy felmérjük, mi van most. Enélkül nem lehet megmondani, mekkora a távolság, és mennyibe kerül áthidalni.
 
