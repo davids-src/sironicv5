@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, BookOpen } from "lucide-react";
 import styles from "./page.module.css";
 
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = true; // cache invalidation
 
 type Props = { params: Promise<{ locale: string }> };
 
