@@ -6,6 +6,10 @@ import SectionReveal from "@/components/ui/SectionReveal";
 import FreeAssessmentSection from "@/components/sections/FreeAssessmentSection";
 import CtaBlock from "@/components/ui/CtaBlock";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import SectionTracker from "@/components/ui/SectionTracker";
+import TrackedLink from "@/components/ui/TrackedLink";
+import IdovonalHaromHonap from "@/components/graphics/IdovonalHaromHonap";
+import KopoalkatreszPolc from "@/components/graphics/KopoalkatreszPolc";
 import type { Metadata } from "next";
 import styles from "@/components/ui/ServiceSubpage.module.css";
 
@@ -36,7 +40,13 @@ export default async function RendszeruzemeltetesPage({ params }: Props) {
     const whoItems = t.raw("whoItems") as string[];
     const processSteps = t.raw("processSteps") as Array<{ step: string; title: string; text: string }>;
     const whyItems = t.raw("whyItems") as string[];
-    const faqItems = t.raw("faqItems") as Array<{ q: string; a: string }>;
+    const faqItems = t.raw("faqItems") as Array<{ q: string; a: string; id?: string }>;
+    const processLead = t("processLead");
+    const inventoryPanel = t.raw("inventoryPanel") as { eyebrow: string; title: string; text: string; footer: string };
+    const durationSection = t.raw("durationSection") as {
+        eyebrow: string; title: string; lead: string; footer: string;
+        cards: Array<{ title: string; subtitle: string; text: string; priceLabel: string; featured?: boolean }>
+    };
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -139,24 +149,115 @@ export default async function RendszeruzemeltetesPage({ params }: Props) {
             </section>
 
             {/* How it works */}
-            <section className="section section-alt">
-                <div className="container">
-                    <SectionReveal>
-                        <h2 className="heading-1 section-title">{t("processTitle")}</h2>
-                    </SectionReveal>
-                    <div className={styles.processGrid} style={{ marginTop: "2.5rem" }}>
-                        {processSteps.map((s, i) => (
-                            <SectionReveal key={i}>
-                                <div className={styles.processStep}>
-                                    <div className={styles.stepNumber}>{s.step}</div>
-                                    <p className={styles.stepTitle}>{s.title}</p>
-                                    <p className={styles.stepText}>{s.text}</p>
-                                </div>
-                            </SectionReveal>
-                        ))}
+            <SectionTracker id="lepcsozetes_modell" page="rendszeruzemeltetes">
+                <section className="section section-alt">
+                    <div className="container">
+                        <SectionReveal>
+                            <h2 className="heading-1 section-title">{t("processTitle")}</h2>
+                            <p className="body-lg" style={{ maxWidth: 800, margin: "1rem auto 2.5rem auto", textAlign: "center" }}>
+                                {processLead}
+                            </p>
+                        </SectionReveal>
+                        
+                        <SectionReveal>
+                            <IdovonalHaromHonap className="mb-12" style={{ marginBottom: "3rem" }} />
+                        </SectionReveal>
+
+                        <div className={styles.processGrid}>
+                            {processSteps.map((s, i) => (
+                                <SectionReveal key={i}>
+                                    <div className={styles.processStep}>
+                                        <div className={styles.stepNumber}>{s.step}</div>
+                                        <p className={styles.stepTitle}>{s.title}</p>
+                                        <p className={styles.stepText}>{s.text}</p>
+                                    </div>
+                                </SectionReveal>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                
+                {/* Inventory Panel */}
+                <section className="section">
+                    <div className="container">
+                        <SectionReveal>
+                            <div className="card" style={{ background: "var(--surface-2)", borderLeft: "4px solid var(--accent)", padding: "2.5rem" }}>
+                                <div className="grid-2" style={{ alignItems: "center", gap: "3rem" }}>
+                                    <div>
+                                        <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "var(--primary)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>
+                                            {inventoryPanel.eyebrow}
+                                        </p>
+                                        <h3 className="heading-2">{inventoryPanel.title}</h3>
+                                        <p className="body-lg" style={{ marginTop: "1rem", marginBottom: "1.5rem" }}>
+                                            {inventoryPanel.text}
+                                        </p>
+                                        <div style={{ padding: "1rem", background: "var(--surface)", borderRadius: "var(--r-card)", border: "1px solid var(--line)" }}>
+                                            <p style={{ margin: 0, fontSize: "0.9375rem", fontWeight: 500 }}>{inventoryPanel.footer}</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <KopoalkatreszPolc />
+                                    </div>
+                                </div>
+                            </div>
+                        </SectionReveal>
+                    </div>
+                </section>
+            </SectionTracker>
+
+            {/* Duration Section */}
+            <SectionTracker id="futamido" page="rendszeruzemeltetes">
+                <section className="section section-alt">
+                    <div className="container">
+                        <SectionReveal>
+                            <div style={{ textAlign: "center", maxWidth: 800, margin: "0 auto 3rem auto" }}>
+                                <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "var(--primary)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>
+                                    {durationSection.eyebrow}
+                                </p>
+                                <h2 className="heading-1">{durationSection.title}</h2>
+                                <p className="body-lg" style={{ marginTop: "1rem" }}>{durationSection.lead}</p>
+                            </div>
+                        </SectionReveal>
+
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem", marginBottom: "2rem" }}>
+                            {durationSection.cards.map((card, i) => (
+                                <SectionReveal key={i}>
+                                    <div className="card" style={{ 
+                                        height: "100%", 
+                                        display: "flex", 
+                                        flexDirection: "column",
+                                        borderColor: card.featured ? "var(--primary)" : "var(--line)",
+                                        boxShadow: card.featured ? "0 8px 30px rgba(232, 39, 26, 0.08)" : "none",
+                                        position: "relative"
+                                    }}>
+                                        {card.featured && (
+                                            <div style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", background: "var(--primary)", color: "#fff", padding: "4px 12px", borderRadius: "100px", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em" }}>
+                                                {locale === "hu" ? "LEGNÉPSZERŰBB" : "MOST POPULAR"}
+                                            </div>
+                                        )}
+                                        <div style={{ height: "4px", background: card.featured ? "var(--primary)" : "var(--line)", width: i === 0 ? "30%" : i === 1 ? "60%" : "100%", marginBottom: "1.5rem", borderRadius: "2px" }} />
+                                        
+                                        <h3 style={{ fontSize: "1.5rem", fontFamily: "var(--font-display)", fontWeight: 700, marginBottom: "0.5rem" }}>{card.title}</h3>
+                                        <p style={{ color: "var(--muted)", fontSize: "0.875rem", fontWeight: 500, marginBottom: "1.5rem" }}>{card.subtitle}</p>
+                                        
+                                        <p style={{ color: "var(--ink)", lineHeight: 1.6, flexGrow: 1 }}>{card.text}</p>
+                                        
+                                        <div style={{ marginTop: "2rem", paddingTop: "1.5rem", borderTop: "1px solid var(--line)" }}>
+                                            <p style={{ margin: 0, fontWeight: 700, color: card.featured ? "var(--primary)" : "var(--ink)" }}>{card.priceLabel}</p>
+                                        </div>
+                                    </div>
+                                </SectionReveal>
+                            ))}
+                        </div>
+                        
+                        <SectionReveal>
+                            <p style={{ textAlign: "center", color: "var(--muted)", fontSize: "0.9375rem" }}>
+                                {durationSection.footer}
+                            </p>
+                        </SectionReveal>
+                    </div>
+                </section>
+            </SectionTracker>
 
             {/* Why SIRONIC */}
             <section className="section">

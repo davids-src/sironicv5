@@ -8,6 +8,7 @@ import PricingHighlight from "@/components/sections/PricingHighlight";
 import TrustMetricsBar from "@/components/sections/TrustMetricsBar";
 import ClientLogoWall from "@/components/sections/ClientLogoWall";
 import CompanyGroupSection from "@/components/sections/CompanyGroupSection";
+import HomeTrialSection from "@/components/sections/HomeTrialSection";
 import Script from "next/script";
 import type { Metadata } from "next";
 
@@ -123,7 +124,10 @@ export default async function HomePage({ params }: Props) {
       {/* 4. Primary Offer: Free Assessment Section (Full Variant) */}
       <FreeAssessmentSection locale={locale} variant="full" />
 
-      {/* 3. Secondary Tool: Pricing Highlight – Intelligent Calculator */}
+      {/* 5. Home Trial Teaser */}
+      <HomeTrialSection locale={locale} />
+
+      {/* 6. Secondary Tool: Pricing Highlight – Intelligent Calculator */}
       <PricingHighlight
         locale={locale}
         badge={tp("badge")}
@@ -145,7 +149,7 @@ export default async function HomePage({ params }: Props) {
         description={ts("itOps.description")}
         points={ts.raw("itOps.points") as string[]}
         cta1={{ label: locale === "hu" ? "Ingyenes Állapotfelmérés" : "Free Assessment", href: freeAssessmentHref }}
-        cta2={{ label: ts("itOps.cta2"), href: `/${locale}/szolgaltatasok#it-uzemeltetes` }}
+        cta2={{ label: ts("itOps.cta2"), href: `/${locale}/szolgaltatasok/rendszeruzemeltetes` }}
         icon="server"
         alt
       />
@@ -159,7 +163,7 @@ export default async function HomePage({ params }: Props) {
         description={ts("network.description")}
         points={ts.raw("network.points") as string[]}
         cta1={{ label: locale === "hu" ? "Ingyenes Állapotfelmérés" : "Free Assessment", href: freeAssessmentHref }}
-        cta2={{ label: ts("network.cta"), href: `/${locale}/szolgaltatasok#halozatepites` }}
+        cta2={{ label: ts("network.cta"), href: `/${locale}/szolgaltatasok/halozatepites` }}
         icon="network"
       />
 
@@ -172,7 +176,7 @@ export default async function HomePage({ params }: Props) {
         description={ts("nis2.description")}
         points={ts.raw("nis2.points") as string[]}
         cta1={{ label: locale === "hu" ? "NIS2 Állapotfelmérés" : "NIS2 Assessment", href: freeAssessmentHref }}
-        cta2={{ label: ts("nis2.cta"), href: `/${locale}/szolgaltatasok#nis2` }}
+        cta2={{ label: ts("nis2.cta"), href: `/${locale}/szolgaltatasok/nis2-tamogatas` }}
         icon="shield"
         alt
       />

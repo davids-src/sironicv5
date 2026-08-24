@@ -87,7 +87,8 @@
         "From micro-businesses to small manufacturing companies",
         "Contract-based and ad hoc engagements",
         "Monthly fee based on infrastructure size",
-        "Interventions or developments at pre-agreed prices"
+        "Interventions or developments at pre-agreed prices",
+        "Three-month trial period without long-term commitment"
       ],
       "cta1": "Request Free Assessment",
       "cta2": "More Information"
@@ -470,12 +471,12 @@
   },
   "servicePages": {
     "itOps": {
-      "metaTitle": "IT Systems Operations | SIRONIC",
-      "metaDescription": "Reliable remote IT operations for micro-businesses to small manufacturers. Monthly contract, fast response, no surprises.",
-      "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, outsourced IT operations, IT outsourcing for businesses, remote IT support, on-site IT support, monthly fee IT maintenance, computer maintenance company, server operations, corporate endpoint protection, fast IT troubleshooting, IT service provider small business, reliable IT partner, IT support contract, IT service provider Székesfehérvár, IT support Budapest",
+      "metaTitle": "IT Systems Operations — 3-month trial period | SIRONIC",
+      "metaDescription": "Outsourced IT operations with a three-month trial period. Entry fee credited upon contracting, custom wear parts inventory, and three optional contract durations.",
+      "keywords": "IT operations Budapest, IT operations Székesfehérvár, IT support for small and medium businesses, outsourced IT operations, IT outsourcing small business, external system administrator, fast IT troubleshooting, IT maintenance contract, your system administrator, IT, informatics, Support, Operations, Administrator, outsourced IT operations, IT outsourcing for businesses, remote IT support, on-site IT support, monthly fee IT maintenance, computer maintenance company, server operations, corporate endpoint protection, fast IT troubleshooting, IT service provider small business, reliable IT partner, IT support contract, IT service provider Székesfehérvár, IT support Budapest, IT operations trial, outsourced system administrator contract, IT operations monthly fee, system administrator service duration",
       "badge": "IT Operations",
       "heroTitle": "IT Systems Operations – reliable IT support, without the headaches",
-      "heroSubtitle": "We manage your entire IT infrastructure remotely. No unnecessary on-site visits, no unexpected downtime – just continuous, reliable operation day after day.",
+      "heroSubtitle": "We handle daily operations remotely — quickly, without unnecessary site visits. If an issue requires on-site attention, we'll be there. You can try us for three months without any long-term commitment.",
       "introTitle": "What does this mean in practice?",
       "introText": "IT operations is the work that keeps running even when no one notices – software updates, backups, access management, network monitoring. SIRONIC takes over this entire process so you can focus on your business.",
       "benefitsTitle": "Why outsource IT operations?",
@@ -505,22 +506,27 @@
         "Small manufacturing companies and offices",
         "Anyone tired of dealing with recurring IT issues"
       ],
-      "processTitle": "How does it work?",
+      "processTitle": "How we start working together",
       "processSteps": [
         {
           "step": "01",
-          "title": "Assessment",
-          "text": "We assess your infrastructure, devices and needs – online via our smart questionnaire."
+          "title": "Assessment and documentation",
+          "text": "We map out your entire system: what devices you have, what connects where, and who has access to what. We create the documentation that has been missing until now — hardware inventory, network diagram, access registry."
         },
         {
           "step": "02",
-          "title": "Contract and setup",
-          "text": "We set the monthly fee, configure monitoring and remote access tools."
+          "title": "Wear parts inventory",
+          "text": "We identify what is most likely to fail in your system eventually: power supplies, storage drives, memory, UPS batteries. We keep a stock of these so you won't have to wait for delivery when a failure occurs."
         },
         {
           "step": "03",
-          "title": "Ongoing operations",
-          "text": "We handle system monitoring. You work, we handle the IT background."
+          "title": "Operations during trial period",
+          "text": "For three months, we only invoice the monthly operations flat fee. Nothing else. The inventory stocking costs you nothing during this time."
+        },
+        {
+          "step": "04",
+          "title": "Decision at the end of the third month",
+          "text": "If you sign a long-term contract, the entry fee is credited in full. If not, we still hand over the complete documentation — our work remains yours."
         }
       ],
       "whyTitle": "Why SIRONIC?",
@@ -555,8 +561,62 @@
         {
           "q": "How much does it approximately cost?",
           "a": "The price depends on your infrastructure size. Fill in our smart questionnaire for an approximate estimate."
+        },
+        {
+          "id": "belepesi_dij",
+          "q": "What is the entry fee and what does it cover?",
+          "a": "The entry fee covers the system assessment, the preparation of comprehensive documentation (hardware inventory, network diagram, access registry), and the assessment of wear parts needs. The amount is fixed in advance, determined after the initial survey. If you sign a long-term contract at the end of the trial period, it will be credited in full."
+        },
+        {
+          "id": "probaido_vege",
+          "q": "What happens if we don't contract after the trial period?",
+          "a": "The entry fee becomes final, and we will jointly decide on the custom parts procured for your system. In return, we hand over the complete documentation: the hardware inventory, network diagram, and access registry remain yours, even if you continue working with another provider."
+        },
+        {
+          "id": "meglevo_hibak",
+          "q": "Are repairs of existing issues included in the monthly fee?",
+          "a": "No. During the assessment, we specifically note what needs repair or development, and provide a separate quote for that. This way, we don't have to build the backlog of previous years into the flat fee — and you don't pay for things you don't need."
+        },
+        {
+          "id": "keszletezes",
+          "q": "Do I have to pay for the stocked parts?",
+          "a": "Stocking is free of charge, the parts remain our property. Invoicing only occurs if a part is actually used in your system."
         }
-      ]
+      ],
+      "processLead": "No need for an immediate long-term commitment. You can try us for three months and decide freely at the end — and if you choose not to proceed, the assessment and documentation remain yours.",
+      "inventoryPanel": {
+        "eyebrow": "WHAT SETS US APART",
+        "title": "If it breaks, we don't order. We take one off the shelf.",
+        "text": "During the assessment, we list the components most likely to fail in your specific system, and we keep them in stock. A failed power supply or storage drive won't cause days of downtime — because we don't have to order it, it's already here.",
+        "footer": "Stocking is free of charge. We only invoice you if we actually use the part."
+      },
+      "durationSection": {
+        "eyebrow": "DURATION",
+        "title": "You decide how much to commit",
+        "lead": "Choose from three contract durations. The longer the term, the more favorable the monthly fee — but the shortest is a real, equal option.",
+        "cards": [
+          {
+            "title": "Indefinite term",
+            "subtitle": "30-day notice period",
+            "text": "Total flexibility. A good choice if you aren't ready to commit yet.",
+            "priceLabel": "Base fee"
+          },
+          {
+            "title": "1-year",
+            "subtitle": "Fixed term",
+            "text": "Predictable operations, favorable monthly fee. Our most frequently chosen setup.",
+            "priceLabel": "Discounted fee",
+            "featured": true
+          },
+          {
+            "title": "2-year",
+            "subtitle": "Fixed term",
+            "text": "The most favorable monthly fee. Upon renewal, the fee is determined by the chosen new duration.",
+            "priceLabel": "Most favorable fee"
+          }
+        ],
+        "footer": "The exact fee is determined after the assessment, based on the size and complexity of your system."
+      }
     },
     "network": {
       "metaTitle": "Network Building and Development | SIRONIC",
@@ -825,5 +885,28 @@
         }
       ]
     }
+  },
+  "homeTrialModel": {
+    "eyebrow": "HOW WE WORK TOGETHER",
+    "h2": "Three months. Then you decide.",
+    "lead": "No long-term commitment upfront. We map your systems, create the documentation you never had, and stock the parts most likely to fail — all within a three-month trial period.",
+    "pillars": [
+      {
+        "icon": "FileText",
+        "title": "Documentation you never had",
+        "text": "Asset inventory, network diagram, access records."
+      },
+      {
+        "icon": "PackageCheck",
+        "title": "Parts on the shelf",
+        "text": "When something fails, we don't order — we replace."
+      },
+      {
+        "icon": "RotateCcw",
+        "title": "Entry fee credited back",
+        "text": "If you stay. If not, the documentation is still yours."
+      }
+    ],
+    "cta": "See how it works"
   }
 }

@@ -6,6 +6,7 @@ import { getPostBySlug, getPostSlugs } from "@/lib/blog";
 import SectionReveal from "@/components/ui/SectionReveal";
 import CtaBlock from "@/components/ui/CtaBlock";
 import { ArrowLeft, Calendar, User, Clock, ShieldCheck } from "lucide-react";
+import IdovonalHaromHonap from "@/components/graphics/IdovonalHaromHonap";
 import styles from "./page.module.css";
 
 export const revalidate = 3600;
@@ -171,10 +172,17 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container">
           <div className={styles.articleContainer}>
             <SectionReveal>
-              <div
-                className={styles.content}
-                dangerouslySetInnerHTML={{ __html: contentHtml }}
-              />
+              <div className={styles.content}>
+                {contentHtml.split("[COMPONENT:IdovonalHaromHonap]").length === 1 ? (
+                  <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                ) : (
+                  <>
+                    <div dangerouslySetInnerHTML={{ __html: contentHtml.split("[COMPONENT:IdovonalHaromHonap]")[0] }} />
+                    <IdovonalHaromHonap className="my-8" style={{ margin: "2rem 0" }} />
+                    <div dangerouslySetInnerHTML={{ __html: contentHtml.split("[COMPONENT:IdovonalHaromHonap]")[1] }} />
+                  </>
+                )}
+              </div>
             </SectionReveal>
 
             <div className={styles.backRow}>

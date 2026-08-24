@@ -4,10 +4,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import styles from "./FaqAccordion.module.css";
+import { trackEvent } from "@/lib/analytics";
 
 export interface FaqItem {
   q: string;
   a: string;
+  id?: string;
 }
 
 export default function FaqAccordion({ items }: { items: FaqItem[] }) {
@@ -19,7 +21,13 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
         <div key={i} className={styles.item} role="listitem">
           <button
             className={`${styles.question} ${open === i ? styles.active : ""}`}
-            onClick={() => setOpen(open === i ? null : i)}
+            onClick={() => {
+              const isNowOpen = open !== i;
+              setOpen(isNowOpen ? i : null);
+              if (isNowOpen && item.id) {
+                trackEvent("faq_open", { question: item.id });
+              }
+            }}
             aria-expanded={open === i}
             id={`faq-q-${i}`}
             aria-controls={`faq-a-${i}`}
