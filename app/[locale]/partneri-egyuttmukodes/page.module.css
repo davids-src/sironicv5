@@ -1,0 +1,500 @@
+/* ─── HERO ─────────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--section-gap, 100px) + 2rem);
+  padding-bottom: 3rem;
+}
+
+.heroTitle {
+  margin-block: 1rem 1.5rem;
+  max-width: 760px;
+}
+
+.heroLead {
+  max-width: 640px;
+  color: var(--silver);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--r-btn);
+  transition: opacity var(--t-fast), box-shadow var(--t-fast);
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  opacity: 0.88;
+  box-shadow: var(--accent-glow-hover);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--silver);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--r-btn);
+  border: 1px solid var(--line);
+  transition: border-color var(--t-fast), color var(--t-fast);
+  text-decoration: none;
+}
+
+.btnSecondary:hover {
+  border-color: var(--accent-40);
+  color: var(--ink);
+}
+
+.heroGlow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 500px;
+  background: radial-gradient(ellipse at top right, var(--accent-12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── STAT BAR ─────────────────────────────────────────────────────────────── */
+.statBar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* ─── SECTION HEADERS ─────────────────────────────────────────────────────── */
+.sectionHeader {
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.sectionLead {
+  color: var(--silver);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* ─── TARGET GROUP CARDS ─────────────────────────────────────────────────── */
+.cardGrid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.targetCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.75rem;
+  transition: border-color var(--t-fast);
+}
+
+.targetCard:hover {
+  border-color: var(--accent-40);
+}
+
+.targetCardTitle {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.targetCardText {
+  color: var(--silver);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* ─── SERVICE GROUPS ─────────────────────────────────────────────────────── */
+.serviceGroups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.serviceGroup {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.75rem;
+  transition: border-color var(--t-fast);
+}
+
+.serviceGroup:hover {
+  border-color: var(--accent-40);
+}
+
+.serviceGroupFeatured {
+  border-color: var(--accent-40);
+  background: var(--panel);
+  box-shadow: var(--accent-glow);
+}
+
+.serviceGroupTitle {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featuredBadge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-12);
+  color: var(--accent);
+  border: 1px solid var(--accent-40);
+  border-radius: var(--r-tag);
+  padding: 0.15rem 0.4rem;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.serviceList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: var(--silver);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.serviceList li::before {
+  content: "›";
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
+
+/* ─── HIGHLIGHT PANEL ─────────────────────────────────────────────────────── */
+.highlightPanel {
+  background: var(--panel);
+  border: 1px solid var(--accent-40);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-card);
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 0;
+  color: var(--silver);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.highlightPanel strong {
+  color: var(--ink);
+  font-style: normal;
+}
+
+/* ─── POINT GRID ─────────────────────────────────────────────────────────── */
+.pointGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.pointCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.5rem;
+}
+
+.pointCardTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.pointCardText {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* ─── THREE DIVISIONS ─────────────────────────────────────────────────────── */
+.divisionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.divisionCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.5rem;
+  transition: border-color var(--t-fast);
+  text-decoration: none;
+}
+
+.divisionCard:hover {
+  border-color: var(--accent-40);
+}
+
+.divisionName {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.divisionArea {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.divisionDesc {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.divisionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--silver);
+  font-family: var(--font-mono);
+}
+
+/* ─── COVERAGE ─────────────────────────────────────────────────────────────── */
+.coverageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .coverageGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coverageCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.5rem;
+}
+
+.coverageTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.coverageText {
+  color: var(--silver);
+  font-size: 0.9375rem;
+}
+
+.coverageNote {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ─── FAQ ──────────────────────────────────────────────────────────────────── */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem;
+  background: var(--surface);
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQ {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.faqA {
+  color: var(--silver);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* ─── CONTACT / CLOSING CTA ───────────────────────────────────────────────── */
+.closingSection {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.closingTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.closingLead {
+  color: var(--silver);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.privacyNote {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.contactBlock {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1.0625rem;
+}
+
+.contactRole {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--silver);
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.contactRow:hover {
+  color: var(--accent);
+}
+
+.contactIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+}

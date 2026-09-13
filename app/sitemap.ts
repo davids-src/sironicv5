@@ -53,6 +53,7 @@ const routes: Array<{
   },
   { hu: "/kapcsolat", en: "/contact", priority: 0.8, changefreq: "monthly" },
   { hu: "/referenciak", en: "/references", priority: 0.7, changefreq: "monthly" },
+  { hu: "/partneri-egyuttmukodes", en: "/partnership", priority: 0.8, changefreq: "monthly" },
   { hu: "/partnereink", en: "/partners", priority: 0.6, changefreq: "monthly" },
   { hu: "/rolunk", en: "/about", priority: 0.6, changefreq: "monthly" },
 

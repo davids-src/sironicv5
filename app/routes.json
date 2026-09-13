@@ -58,5 +58,13 @@
   {
     "path": "/aszf",
     "priority": 0.5
+  },
+  {
+    "path": "/partneri-egyuttmukodes",
+    "priority": 0.5
+  },
+  {
+    "path": "/partnership",
+    "priority": 0.5
   }
 ]

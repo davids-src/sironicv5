@@ -49,6 +49,10 @@ export const routing = defineRouting({
       hu: "/blog/[slug]",
       en: "/blog/[slug]",
     },
+    "/partneri-egyuttmukodes": {
+      hu: "/partneri-egyuttmukodes",
+      en: "/partnership",
+    },
   },
 });
 

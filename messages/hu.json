@@ -9,7 +9,8 @@
     "about": "Rólunk",
     "calculator": "Díjkalkulátor",
     "smartForm": "Díjkalkulátor",
-    "contact": "Kapcsolat"
+    "contact": "Kapcsolat",
+    "b2bPartner": "B2B partner"
   },
   "meta": {
     "siteName": "SIRONIC – Rendszerüzemeltetés és Hálózatépítés",
@@ -29,6 +30,8 @@
     "contactDescription": "Vegye fel velünk a kapcsolatot! SIRONIC – IT és technológiai megoldások.",
     "aszfTitle": "Általános Szerződési Feltételek (ÁSZF) | SIRONIC",
     "aszfDescription": "A SIROTECH Kft. Általános Szerződési Feltételei (ÁSZF) a sironic.eu weboldalon keresztül nyújtott informatikai szolgáltatásokhoz.",
+    "partnerPageTitle": "IT alvállalkozó és kapacitásbővítés | B2B partner — SIRONIC",
+    "partnerPageDescription": "IT-kapacitás meglévő csapatok mellé: Microsoft-környezet (Windows Server, Azure, Microsoft 365), VMware, Linux, hálózatépítés. Alvállalkozói együttműködés MSP-knek, rendszerintegrátoroknak és saját IT-csapattal működő cégeknek.",
     "privacyTitle": "Adatkezelési Tájékoztató | SIRONIC",
     "privacyDescription": "A SIROTECH Kft. Adatkezelési Tájékoztatója. Ismerje meg, hogyan kezeljük és védjük személyes adatait.",
     "keywords": "kiszervezett IT üzemeltetés, menedzselt IT szolgáltatás, MSP szolgáltató, külsős rendszergazda, IT outsourcing kkv, céges rendszergazda szolgáltatás, NIS2 megfelelőség, NIS2 felkészítés, informatikai audit, ingyenes IT felmérés, hálózatépítés vállalatoknak, strukturált kábelezés, szerverüzemeltetés, IT helpdesk, informatikai támogatás cégeknek, IT üzemeltetés Székesfehérvár, IT üzemeltetés Budapest, rendszergazda Fejér megye, informatikai szolgáltatás Közép-Dunántúl, céges IT szolgáltató"
@@ -181,7 +184,7 @@
     "subtitle": "A SIRONIC csapata és értékei",
     "historyTitle": "Cég története",
     "historyP1": "Tomival egy munkahelyen dolgoztunk diákként, amikor felismertük, hogy az informatikai tudásunkra saját vállalkozásban is szükség van. Kezdetben egy gazdasági társaság IT-megbízottjaiként dolgoztunk, majd 17-18 évesen belevágtunk a saját vállalkozásunkba: laptopjavítással és egy számítógép-alkatrészeket, valamint kész gépeket kínáló webáruház üzemeltetésével indultunk.",
-    "historyP2": "Azóta sokat fejlődtünk. Ma már három üzletágban dolgozunk, hogy ügyfeleink informatikai és biztonságtechnikai igényeit egy kézből tudjuk kiszolgálni.",
+    "historyP2": "Azóta sokat fejlődtünk. Ma már négy üzletágban dolgozunk, hogy ügyfeleink informatikai és biztonságtechnikai igényeit egy kézből tudjuk kiszolgálni.",
     "foundersTitle": "A csapatunk",
     "founders": [
       {

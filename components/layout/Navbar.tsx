@@ -27,8 +27,24 @@ export default function Navbar() {
   }, [pathname]);
 
   const otherLocale = locale === "hu" ? "en" : "hu";
-  // Swap the locale prefix in the pathname
-  const otherLocalePath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  // Localized path mapping for routes that differ between locales
+  const localizedPathMap: Record<string, { hu: string; en: string }> = {
+    "/partneri-egyuttmukodes": { hu: "/partneri-egyuttmukodes", en: "/partnership" },
+    "/partnership": { hu: "/partneri-egyuttmukodes", en: "/partnership" },
+  };
+
+  // Swap the locale prefix in the pathname, respecting localized path slugs
+  const getOtherLocalePath = () => {
+    const withoutLocale = pathname.replace(`/${locale}`, "");
+    // Check if this path segment has a localized mapping
+    for (const [, map] of Object.entries(localizedPathMap)) {
+      if (withoutLocale === map[locale as "hu" | "en"]) {
+        return `/${otherLocale}${map[otherLocale as "hu" | "en"]}`;
+      }
+    }
+    return pathname.replace(`/${locale}`, `/${otherLocale}`);
+  };
+  const otherLocalePath = getOtherLocalePath();
 
   const freeAssessmentHref = `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}`;
   const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
@@ -36,7 +52,12 @@ export default function Navbar() {
   const navLinks = [
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/szolgaltatasok`, label: t("services"), huPath: "/szolgaltatasok", enPath: "/services" },
-    { href: freeAssessmentHref, label: t("freeAssessment"), huPath: "/ingyenes-felmeres", enPath: "/free-assessment" },
+    {
+      href: locale === "hu" ? `/${locale}/partneri-egyuttmukodes` : `/${locale}/partnership`,
+      label: t("b2bPartner"),
+      huPath: "/partneri-egyuttmukodes",
+      enPath: "/partnership",
+    },
     { href: `/${locale}/partnereink`, label: t("partners"), huPath: "/partnereink", enPath: "/partners" },
     { href: `/${locale}/referenciak`, label: t("references"), huPath: "/referenciak", enPath: "/references" },
     { href: `/${locale}/blog`, label: t("blog"), huPath: "/blog", enPath: "/blog" },

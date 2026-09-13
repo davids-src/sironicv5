@@ -15,6 +15,7 @@ export default function Footer() {
   const serviceLinks = [
     { label: nav("services"), href: `/${locale}/szolgaltatasok` },
     { label: nav("freeAssessment"), href: freeAssessmentHref },
+    { label: nav("b2bPartner"), href: locale === "hu" ? `/${locale}/partneri-egyuttmukodes` : `/${locale}/partnership` },
     { label: nav("partners"), href: `/${locale}/partnereink` },
     { label: nav("references"), href: `/${locale}/referenciak` },
   ];
@@ -87,7 +88,7 @@ export default function Footer() {
                     (window as any).gtag("event", "outbound_click", { target_site: "sirovill.hu", location: "footer" });
                   }
                 }}>
-                <span style={{ color: "#F5B81C" }}>●</span> SIROVILL — {locale === "hu" ? "Villanyszerelés, kábelezés" : "Electrical work, cabling"} <span style={{ opacity: 0.5, fontSize: "0.85em" }}>({locale === "hu" ? "hamarosan" : "soon"})</span>
+                <span style={{ color: "#F5B81C" }}>●</span> SIROVILL — {locale === "hu" ? "Villanyszerelés, kábelezés" : "Electrical work, cabling"}
               </a>
             </li>
             <li>

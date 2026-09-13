@@ -199,6 +199,27 @@ export default async function HomePage({ params }: Props) {
       {/* 8. Company Group Section */}
       <CompanyGroupSection locale={locale} />
 
+      {/* B2B utalás — egysoros, visszafogott */}
+      <div style={{ textAlign: "center", padding: "0 1rem 3rem", color: "var(--muted)", fontSize: "0.9375rem" }}>
+        {locale === "hu" ? (
+          <>
+            IT-szolgáltató vagy saját csapattal működő cég?{" "}
+            <a href="/hu/partneri-egyuttmukodes" style={{ color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              Alvállalkozóként is dolgozunk — részletek a B2B együttműködésről
+            </a>
+            .
+          </>
+        ) : (
+          <>
+            An IT provider or a company with an in-house team?{" "}
+            <a href="/en/partnership" style={{ color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              We also work as a subcontractor — details on B2B cooperation
+            </a>
+            .
+          </>
+        )}
+      </div>
+
       {/* 9. FAQ */}
       <FaqSection
         title={tf("title")}

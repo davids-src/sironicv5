@@ -252,7 +252,26 @@ export default async function AszfPage({ params }: Props) {
                   </section>
 
                   <section className={styles.section}>
-                    <h2 className="heading-2">13. Vegyes és záró rendelkezések</h2>
+                    <h2 className="heading-2">13. Alvállalkozói és partneri együttműködés</h2>
+                    <p>
+                      A Szolgáltató vállalkozási vagy megbízási szerződés keretében alvállalkozóként is végez informatikai üzemeltetési, rendszerintegrációs és kivitelezési tevékenységet más gazdasági társaságok megbízásából. Ilyen esetben a Szolgáltató a Megrendelővel kötött külön szerződés szerint jár el; a végfelhasználóval fennálló jogviszony a Megrendelő és a végfelhasználó között áll fenn.
+                    </p>
+                    <p>
+                      A Szolgáltató a Megrendelő végfelhasználói felé önálló üzleti ajánlattétellel nem él, és velük a Megrendelő megkerülésével szerződéses kapcsolatot nem létesít.
+                    </p>
+                    <p>
+                      A Szolgáltató vállalja, hogy a Megrendelő kérésére a tevékenységet a Megrendelő arculatában végzi.
+                    </p>
+                    <p>
+                      A Szolgáltató a vállalt határidők tartása érdekében szükség esetén további közreműködőket von be, akiknek tevékenységéért úgy felel, mintha maga járt volna el.
+                    </p>
+                    <p>
+                      Alvállalkozói együttműködés esetén a Szolgáltató a Megrendelő rendszereihez és adataihoz való hozzáférést kizárólag a szerződésben meghatározott célra használja, és a tudomására jutott üzleti információkat bizalmasan kezeli.
+                    </p>
+                  </section>
+
+                  <section className={styles.section}>
+                    <h2 className="heading-2">14. Vegyes és záró rendelkezések</h2>
                     <ol className={styles.numberedList}>
                       <li>Jelen ÁSZF-ben nem szabályozott kérdésekben a magyar jog, így különösen a Polgári Törvénykönyvről szóló 2013. évi V. törvény, a fogyasztóvédelemről szóló 1997. évi CLV. törvény, valamint az elektronikus kereskedelmi szolgáltatásokról szóló 2001. évi CVIII. törvény rendelkezései az irányadóak.</li>
                       <li>A Szolgáltató fenntartja a jogot jelen ÁSZF egyoldalú módosítására. A módosított ÁSZF a Weboldalon történő közzétételtől hatályos, és a közzétételt megelőzően létrejött szerződéses jogviszonyokat nem érinti.</li>

@@ -1,0 +1,40 @@
+# SIRONIC — IT-üzemeltetés és hálózat
+
+A SIRONIC a SIROTECH Informatikai és Biztonságtechnikai
+Kft. informatikai divíziója. Székhely: 8000
+Székesfehérvár, Lövölde utca 24. 4/15.
+
+## Szolgáltatások
+Kiszervezett IT-üzemeltetés (rendszergazda szolgáltatás),
+hálózatépítés és strukturált kábelezés, szerverüzemeltetés,
+NIS2 megfelelőségi felkészítés.
+
+## Technológiai fókusz
+Microsoft-környezet: Windows Server, Active Directory,
+Entra ID, Microsoft 365, Azure, Hyper-V — on-premise és
+felhős környezetben. Emellett VMware és Linux szerverek
+üzemeltetése.
+
+## B2B alvállalkozói együttműködés
+IT-kapacitást biztosítunk meglévő IT-csapatok mellé:
+IT-szolgáltatóknak, MSP-knek, rendszerintegrátoroknak és
+saját IT-részleggel működő cégeknek. Delegálható
+szakterület, helyszíni kéz távoli ügyfélnél, vagy plusz
+kapacitás projekt idejére. Havi óra-keretben vagy
+projektalapon.
+Részletek: https://sironic.eu/hu/partneri-egyuttmukodes
+
+## Működési terület
+Helyszíni kivitelezés: Fejér megye, Budapest,
+Közép-Dunántúl. Távoli üzemeltetés: országosan.
+
+## Kapcsolat
+Skoda Dávid ügyvezető
+skoda.david@sironic.hu
++36 70 273 5532
+
+## Kapcsolódó divíziók
+- SIRO-VÉD (biztonságtechnika): https://siroved.hu
+- SIROVILL (villanyszerelés): https://sirovill.hu
+- SIROSOFT (szoftverfejlesztés): https://sirosoft.hu
+- SIROTECH (cégcsoport): https://sirotech.hu

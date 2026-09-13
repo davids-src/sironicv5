@@ -9,7 +9,8 @@
     "about": "About",
     "calculator": "Price Calculator",
     "smartForm": "Price Calculator",
-    "contact": "Contact"
+    "contact": "Contact",
+    "b2bPartner": "B2B Partner"
   },
   "meta": {
     "siteName": "SIRONIC – IT Systems Operations and Network Building",
@@ -29,6 +30,8 @@
     "contactDescription": "Get in touch with us! SIRONIC – IT and technology solutions.",
     "aszfTitle": "Terms & Conditions (ÁSZF) | SIRONIC",
     "aszfDescription": "General Terms and Conditions of SIROTECH Kft. for IT services provided through sironic.eu.",
+    "partnerPageTitle": "IT Subcontractor and Capacity Augmentation | B2B Partner — SIRONIC",
+    "partnerPageDescription": "IT capacity alongside existing teams: Microsoft environment (Windows Server, Azure, Microsoft 365), VMware, Linux, network building. Subcontractor cooperation for MSPs, system integrators and companies with in-house IT teams.",
     "privacyTitle": "Privacy Policy | SIRONIC",
     "privacyDescription": "Privacy Policy of SIROTECH Kft. Learn how we handle and protect your personal data.",
     "keywords": "outsourced IT operations, managed IT services, MSP provider, external IT administrator, IT outsourcing for SMBs, corporate system administration, NIS2 compliance, NIS2 audit preparation, IT security audit, free IT assessment, corporate network building, structured cabling, server management, IT helpdesk, IT support for companies, IT operations Székesfehérvár, IT operations Budapest, IT administrator Fejér county, IT services Central Hungary, corporate IT provider"

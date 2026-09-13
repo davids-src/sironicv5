@@ -12,10 +12,10 @@ export default function CompanyGroupSection({ locale }: Props) {
 
   const content = {
     eyebrow: "SIROTECH GROUP",
-    h2: "Egy fal, három szakma",
+    h2: isHu ? "Egy fal, négy szakma" : "One wall, four trades",
     lead: isHu
-      ? "Egy irodafelújításon ma három szakember dolgozik ugyanabba a falba: villanyszerelő, hálózatépítő, biztonságtechnikus. Ugyanaz a nyomvonal, három külön időpont — és a koordináció az ügyfélé."
-      : "On a typical office renovation three specialists work into the same wall: an electrician, a network installer and a security technician. Same conduit run, three separate appointments — and the coordination falls to the client.",
+      ? "Egy irodafelújításon ma négy szakember dolgozik ugyanabba a falba: villanyszerelő, hálózatépítő, biztonságtechnikus, szoftverfejlesztő. Ugyanaz a nyomvonal, négy külön időpont — és a koordináció az ügyfélé."
+      : "On a typical office renovation four specialists work into the same wall: an electrician, a network installer, a security technician and a software developer. Same conduit run, four separate appointments — and the coordination falls to the client.",
     panel: isHu
       ? "Nálunk ez egy csapat, egy ütemezés. Ha valami nem stimmel, nincs kinek mutogatni."
       : "With us it is one team and one schedule. If something goes wrong, there is nobody to point fingers at.",
@@ -43,7 +43,6 @@ export default function CompanyGroupSection({ locale }: Props) {
         href: "https://sirovill.hu",
         color: "#F5B81C",
         linkText: isHu ? "Megnyitás" : "Open",
-        soon: isHu ? "hamarosan" : "soon",
       },
     ],
   };
@@ -81,7 +80,6 @@ export default function CompanyGroupSection({ locale }: Props) {
               <div className={styles.cardHeader}>
                 <div className={styles.dot} style={{ backgroundColor: card.color }}></div>
                 <h3 className={styles.cardTitle}>{card.name}</h3>
-                {card.soon && <span className={styles.soon}>({card.soon})</span>}
               </div>
               <p className={styles.cardDesc}>{card.desc}</p>
               <div className={styles.cardFooter}>
