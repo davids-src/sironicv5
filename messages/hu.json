@@ -2,6 +2,7 @@
   "nav": {
     "home": "Kezdőlap",
     "services": "Szolgáltatások",
+    "solutions": "Megoldások",
     "freeAssessment": "Ingyenes felmérés",
     "partners": "Partnereink",
     "references": "Referenciák",
@@ -908,5 +909,190 @@
       }
     ],
     "cta": "Hogyan működik pontosan?"
+  },
+  "homeSolutionsSection": {
+    "title": "Új rendszer, bővítés vagy folyamatos üzemeltetés?",
+    "subtitle": "Akár teljesen új irodát épít ki, akár meglévő hálózatát bővíti vagy folyamatos üzemeltetőt keres — az Ön élethelyzetére szabjuk az IT megközelítést.",
+    "cards": [
+      {
+        "id": "new-it",
+        "title": "Új IT infrastruktúra",
+        "text": "Hálózat, Wi‑Fi, rack, firewall és munkaállomások új irodához vagy telephelyhez.",
+        "cta": "Új kiépítés részletei →"
+      },
+      {
+        "id": "expansion",
+        "title": "Meglévő rendszer bővítése",
+        "text": "Kapacitás, Wi‑Fi, hálózat és szerveroldali fejlesztések működő környezetben.",
+        "cta": "Bővítési opciók →"
+      },
+      {
+        "id": "ops",
+        "title": "IT üzemeltetés",
+        "text": "Proaktív felügyelet és hosszú távú támogatás.",
+        "cta": "Üzemeltetési árak →"
+      },
+      {
+        "id": "issue",
+        "title": "Hiba / bizonytalanság",
+        "text": "Felmérés és konkrét fejlesztési javaslat a jelenlegi környezetre.",
+        "cta": "Ingyenes felmérés →"
+      }
+    ]
+  },
+  "solutionsHub": {
+    "metaTitle": "IT Megoldások Élethelyzet Szerint | SIRONIC",
+    "metaDescription": "Nem csak szolgáltatást választ. Mondja el, mi változik a cégénél: új helyszín, bővítés, költözés vagy modernizáció — ehhez tervezzük az IT környezetet.",
+    "badge": "PROJEKT & INFRASTRUKTÚRA MEGOLDÁSOK",
+    "h1": "IT megoldások élethelyzet szerint",
+    "intro": "Nem csak szolgáltatást választ. Mondja el, mi változik a cégénél: új helyszín, bővítés, költözés vagy modernizáció — ehhez tervezzük az IT környezetet.",
+    "opsBridgeTitle": "Inkább a meglévő rendszert szeretné stabilizálni vagy üzemeltetni?",
+    "opsBridgeText": "Infrastruktúra-projektjeink mellett meglévő rendszerek proaktív felügyeletével, hibaelhárításával és ingyenes állapotfelmérésével is támogatjuk a cégeket.",
+    "opsCta": "IT üzemeltetési szolgáltatások",
+    "assessmentCta": "Ingyenes IT felmérés kérése",
+    "primaryCta": "Egyeztessünk a projektről",
+    "secondaryCta": "Meglévő rendszer felmérése"
+  },
+  "solutionPages": {
+    "ujIrodaIt": {
+      "metaTitle": "Új iroda IT infrastruktúrája az első munkanapra készen | SIRONIC",
+      "metaDescription": "Strukturált hálózat, üzleti Wi‑Fi, firewall, rack, eszközök és Microsoft környezet összehangolt kialakítása az első munkanapra készen.",
+      "h1": "Új iroda IT infrastruktúrája az első munkanapra készen",
+      "intro": "Strukturált hálózat, üzleti Wi‑Fi, firewall, rack, eszközök és Microsoft környezet összehangolt kialakítása.",
+      "badge": "ÚJ IRODA KIÉPÍTÉS",
+      "scopeTitle": "Mi tartozik a kulcsrakész új irodai IT kiépítésbe?",
+      "scopeSubtitle": "A fizikai strukturált kábelezéstől a felhős Microsoft 365 identitáskezelésig minden elemet egy kézben tartunk.",
+      "scopePoints": [
+        "Rack szekrény méretezés, rendezés, szünetmentes tápegység (UPS) beállítás",
+        "Cat6/Cat6A Cat7 strukturált hálózatépítés és mérés",
+        "Üzleti fokozatú Wi‑Fi (UniFi / Aruba / Cisco) lefedettség-tervezéssel",
+        "Tűzfal (Fortinet / Sophos / Mikrotik), VPN és szegmentált VLAN-ok",
+        "Munkaállomások, monitorok, perifériák beszerzése és konfigurálása",
+        "Microsoft 365, Entra ID, Intune és védelmi szabályzatok beállítása"
+      ],
+      "processTitle": "Hogyan tesszük készzé az irodát az 1. munkanapra?",
+      "processSubtitle": "Strukturált 5 lépéses mérnöki projektvezetés, hogy ne az átadás napján derüljenek ki a hibák.",
+      "processSteps": [
+        { "step": "01", "title": "Alaprajz & Igényfelmérés", "text": "Helyszíni felmérés, munkaállomások számának és sávszélesség-igényének pontos meghatározása." },
+        { "step": "02", "title": "Infrastruktúra Tervezés", "text": "Hálózati topológia, rack kiosztás és eszközlista összeállítása rögzített árajánlattal." },
+        { "step": "03", "title": "Kábelezés & Eszköz Staging", "text": "Fizikai kiépítés, kapcsolók és AP-k előre konfigurálása laboratóriumi környezetben." },
+        { "step": "04", "title": "Tesztelés & Stresszteszt", "text": "Hálózati mérések, Wi-Fi hőtérkép validáció és végpontok próbaüzeme." },
+        { "step": "05", "title": "Átadás & Első munkanap jelenlét", "text": "Kollégáink a helyszínen segítik az alkalmazottak zökkenőmentes munkakezdését." }
+      ],
+      "bridgeTitle": "Mi történik a sikeres átadás után?",
+      "bridgeText": "Az átadott rendszert nem hagyjuk magára. A projekt végeztével igény szerint proaktív IT üzemeltetéssel vagy rendszeres karbantartással gondoskodunk a hosszú távú üzembiztonságról."
+    },
+    "ujTelephelyIt": {
+      "metaTitle": "Új telephelyhez stabil IT-alapok | SIRONIC",
+      "metaDescription": "A WAN kapcsolattól a végpontokig megtervezzük és kiépítjük a működéshez szükséges informatikai infrastruktúrát új telephelyén.",
+      "h1": "Új telephelyhez stabil IT-alapok",
+      "intro": "A WAN kapcsolattól a végpontokig megtervezzük és kiépítjük a működéshez szükséges informatikai infrastruktúrát.",
+      "badge": "TELEPHELYI IT KIÉPÍTÉS",
+      "scopeTitle": "Robusztus telephelyi IT architektúra megvalósítása",
+      "scopeSubtitle": "Telephelyközi biztonságos kapcsolat, redundáns internet és üzembiztos helyi hálózat.",
+      "scopePoints": [
+        "Telephelyközi biztonságos Site-to-Site IPsec VPN alagút kiépítése",
+        "Redundáns WAN kapcsolat (Fiber + 5G failover) automatikus váltással",
+        "Ipari és irodai hálózati szegregáció (IoT, kamerarendszer, iroda VLAN)",
+        "Központi vezérlő és rack infrastruktúra telepítése",
+        "Helyi szerverek, NAS tárhelyek és mentési stratégiák",
+        "Zónás üzleti Wi-Fi lefedettség raktár- és irodaterületekre"
+      ],
+      "processTitle": "Telephelyi kiépítés lépésről lépésre",
+      "processSubtitle": "Megbízható projektmenedzsment a helyszíni felméréstől a központi rendszerintegrációig.",
+      "processSteps": [
+        { "step": "01", "title": "Telephelyi audit", "text": "Építészeti adottságok, szolgáltatói WAN csatlakozási pontok feltérképezése." },
+        { "step": "02", "title": "Hálózati architektúra", "text": "Címtartományok, VPN kapcsolatok és tűzfal szabályrendszer megtervezése." },
+        { "step": "03", "title": "Telepítés & Kábelezés", "text": "Központi switch-ek, Access Pointok és rack elemek szakszerű szerelése." },
+        { "step": "04", "title": "Integráció & VPN teszt", "text": "Összekapcsolás a központi irodával, adatátviteli sebesség és failover tesztek." },
+        { "step": "05", "title": "Dokumentált átadás", "text": "Átadási dokumentáció, hálózati topológiai rajz és oktatás." }
+      ],
+      "bridgeTitle": "Több telephelyes üzemeltetés és hibaelhárítás",
+      "bridgeText": "Központi felügyeleti rendszerünkkel távolról figyeljük az összes telephely hálózati stabilitását, így a problémákat még azelőtt elhárítjuk, mielőtt fennakadást okoznának."
+    },
+    "halozatbovites": {
+      "metaTitle": "Kinőtte a jelenlegi hálózatot? Bővítsük úgy, hogy közben működjön. | SIRONIC",
+      "metaDescription": "Új végpontok, AP-k, VLAN-ok, switch-kapacitás és telephelyi bővítés kontrolláltan, dokumentáltan, állásidő nélkül.",
+      "h1": "Kinőtte a jelenlegi hálózatot? Bővítsük úgy, hogy közben működjön.",
+      "intro": "Új végpontok, AP-k, VLAN-ok, switch-kapacitás és telephelyi bővítés kontrolláltan, dokumentáltan.",
+      "badge": "HÁLÓZATBŐVÍTÉS & MODERNIZÁCIÓ",
+      "scopeTitle": "Hálózatbővítési és kapacitás-növelési megoldásaink",
+      "scopeSubtitle": "A meglévő infrastruktúra megtartásával, szűk keresztmetszetek megszüntetésével bővítünk.",
+      "scopePoints": [
+        "Új PoE switch kapacitás beállítása meglévő rack szekrénybe",
+        "További munkaállomási végpontok strukturált kábelezése és bekötése",
+        "Wi-Fi lefedettség bővítése új Access Pointokkal és roaming hangolással",
+        "Sávszélesség-szűk keresztmetszetek és hálózati hurok hibák felszámolása",
+        "VLAN szegmentáció frissítése a növekvő eszközszám védelmében",
+        "Részletes hálózati topológiai dokumentáció frissítése"
+      ],
+      "processTitle": "Bővítési folyamat munkaidő-kiesés nélkül",
+      "processSubtitle": "Előre ütemezett, tesztelt módosítások, akár munkaidőn kívüli átállással.",
+      "processSteps": [
+        { "step": "01", "title": "Kapacitási audit", "text": "A jelenlegi hálózat terheltségének és szabad portjainak felmérése." },
+        { "step": "02", "title": "Bővítési terv", "text": "Eszközszükséglet és átállási ütemterv rögzítése nulla leállási cél mellett." },
+        { "step": "03", "title": "Előkészítés & Kábelezés", "text": "Fizikai nyomvonalak kiépítése a működő hálózat zavarása nélkül." },
+        { "step": "04", "title": "Szegmens integráció", "text": "Új switchek és AP-k beillesztése a meglévő VLAN struktúrába." },
+        { "step": "05", "title": "Validáció & Átadás", "text": "Sebességmérés, roaming teszt és frissített hálózati térkép." }
+      ],
+      "bridgeTitle": "Nem biztos benne, hol van a szűk keresztmetszet?",
+      "bridgeText": "Ingyenes informatikai állapotfelmérésünk során műszeres és szoftveres mérésekkel mutatjuk meg, hol lassul a hálózat és hol érdemes beavatkozni."
+    },
+    "irodakoltozes": {
+      "metaTitle": "Irodaköltözés minimális IT-kieséssel | SIRONIC",
+      "metaDescription": "Felmérés, új helyszín terve, eszköz- és szolgáltatásköltöztetés, tesztelés és átadás egyetlen kézben tartott ütemezésben.",
+      "h1": "Irodaköltözés minimális IT-kieséssel",
+      "intro": "Felmérés, új helyszín terve, eszköz- és szolgáltatásköltöztetés, tesztelés és átadás egy ütemezésben.",
+      "badge": "IT KÖLTÖZTETÉSI PROJEKT",
+      "scopeTitle": "Biztonságos költöztetési projektmenedzsment",
+      "scopeSubtitle": "Az internetelőfizetés átlépésétől a szerverek fizikai szállítmányozásáig és visszakötéséig.",
+      "scopePoints": [
+        "Új helyszíni IT infrastrukturális audit és előkészítés",
+        "Internetszolgáltatói átállás (ISP) és IP-cím költöztetés koordinációja",
+        "Szerverek, rack szekrények, hálózati eszközök szakszerű szét- és összeszerelése",
+        "Munkaállomások, nyomtatók és tárgyalói eszközök címkézett költöztetése",
+        "Hálózati átállási forgatókönyv és hétvégi cutover támogatás",
+        "Azonnali próbaüzem és helyszíni ügyfélszolgálat az új címen"
+      ],
+      "processTitle": "Négyfázisú költöztetési ütemezés",
+      "processSubtitle": "Percről percre tervezett átállási forgatókönyv, hogy hétfőn reggel mindenki dolgozhasson.",
+      "processSteps": [
+        { "step": "01", "title": "Régi & új helyszín audit", "text": "Hálózati kiépítés ellenőrzése az új irodában hettekkel a költözés előtt." },
+        { "step": "02", "title": "Költözési forgatókönyv", "text": "Eszközleltár, szállítási sorrend és szolgáltatói időablakok rögzítése." },
+        { "step": "03", "title": "Hétvégi átállás & Szállítás", "text": "Leállítás, antisztatikus csomagolás, biztonságos szállítás és szerelés." },
+        { "step": "04", "title": "Tesztelés & Hétfői támogatás", "text": "Rendszertesztek vasárnap, helyszíni mérnöki jelenlét hétfő reggel." }
+      ],
+      "bridgeTitle": "Új helyszín frissítésre vagy átvizsgálásra szorul?",
+      "bridgeText": "A költözés a legjobb pillanat az IT adósságok felszámolására. Felmérjük az új iroda állapotát és javaslatot teszünk a hatékonyabb működésre."
+    },
+    "itModernizacio": {
+      "metaTitle": "Meglévő IT környezet modernizálása | SIRONIC",
+      "metaDescription": "Ami működik, azt megtartjuk; ami kockázat vagy szűk keresztmetszet, azt terv szerint cseréljük vagy korszerűsítjük.",
+      "h1": "Meglévő IT környezet modernizálása",
+      "intro": "Ami működik, azt megtartjuk; ami kockázat vagy szűk keresztmetszet, azt terv szerint cseréljük vagy korszerűsítjük.",
+      "badge": "IT MODERNIZÁCIÓ & AUDIT",
+      "scopeTitle": "Célzott IT korszerűsítés felesleges költségek nélkül",
+      "scopeSubtitle": "Rendszerérettségi audit alapján osztjuk fel az elemeket: megtartandó, fejlesztendő és cserélendő kategóriákba.",
+      "scopePoints": [
+        "Elavult, nem támogatott operációs rendszerek és szerverek migrálása",
+        "Biztonsági hiányosságok, nyitott portok és vírusvédelmi rések bezárása",
+        "Helyi levelezők és fájlszerverek felhős Microsoft 365 / SharePoint migrációja",
+        "Lassú HDD-s gépek SSD korszerűsítése vagy gazdaságos cseréje",
+        "Biztonsági mentési stratégia (Backup & Disaster Recovery) bevezetése",
+        "NIS2 informatikai biztonsági követelményeknek való megfeleltetés"
+      ],
+      "processTitle": "A modernizációs projekt mérföldkövei",
+      "processSubtitle": "Adatvesztés és leállás nélküli szintlépés a cég informatikájában.",
+      "processSteps": [
+        { "step": "01", "title": "Rendszer audit", "text": "Hardver-szoftver leltár és kockázati mátrix felállítása." },
+        { "step": "02", "title": "Modernizációs terv", "text": "Prioritási sorrend felállítása: mi marad, mi frissül, mi cserélődik." },
+        { "step": "03", "title": "Adatmentés & Staging", "text": "Biztonsági mentések rögzítése, új platformok párhuzamos építése." },
+        { "step": "04", "title": "Fokozatos migráció", "text": "Adatok és fiókok átköltöztetése lépésről lépésre, kontrolláltan." },
+        { "step": "05", "title": "Oktatás & Felügyelet", "text": "Felhasználói fejtágítás és folyamatos felügyeletre való átállás." }
+      ],
+      "bridgeTitle": "Szeretné tudni, milyen állapotban van jelenlegi rendszere?",
+      "bridgeText": "Igényeljen ingyenes IT állapotfelmérést! Személyesen vagy távolról átvizsgáljuk meglévő rendszerét és írásos értékelést adunk."
+    }
   }
 }
+

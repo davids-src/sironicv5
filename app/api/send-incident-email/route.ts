@@ -3,6 +3,8 @@ import nodemailer from "nodemailer";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface IncidentPayload {
+    customerType?: string;
+    requestType?: string;
     // Contact
     name: string;
     company: string;
@@ -20,6 +22,10 @@ interface IncidentPayload {
     fileName?: string;
     fileType?: string;
     fileData?: string; // base64 encoded
+    attribution?: {
+        first_touch?: Record<string, string>;
+        last_touch?: Record<string, string>;
+    };
 }
 
 // ─── Ticket ID ────────────────────────────────────────────────────────────────

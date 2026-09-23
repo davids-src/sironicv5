@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "solutions": "Solutions",
     "freeAssessment": "Free Assessment",
     "partners": "Partners",
     "references": "References",
@@ -911,5 +912,190 @@
       }
     ],
     "cta": "See how it works"
+  },
+  "homeSolutionsSection": {
+    "title": "New infrastructure, expansion or ongoing operations?",
+    "subtitle": "Whether building a brand-new office, expanding your existing network, or looking for continuous IT maintenance — we tailor our IT approach to your situation.",
+    "cards": [
+      {
+        "id": "new-it",
+        "title": "New IT infrastructure",
+        "text": "Network, Wi‑Fi, rack, firewall and endpoints for a new office or site.",
+        "cta": "New build details →"
+      },
+      {
+        "id": "expansion",
+        "title": "Expanding existing system",
+        "text": "Capacity, Wi‑Fi, network and server-side upgrades in a working environment.",
+        "cta": "Expansion options →"
+      },
+      {
+        "id": "ops",
+        "title": "IT operations",
+        "text": "Proactive monitoring and long-term support.",
+        "cta": "Operation plans →"
+      },
+      {
+        "id": "issue",
+        "title": "Issue / uncertainty",
+        "text": "Assessment and concrete improvement recommendations for your current environment.",
+        "cta": "Free assessment →"
+      }
+    ]
+  },
+  "solutionsHub": {
+    "metaTitle": "IT Solutions by Business Situation | SIRONIC",
+    "metaDescription": "Start with what is changing in your business: a new location, expansion, relocation or modernization. We design the IT environment around that situation.",
+    "badge": "PROJECT & INFRASTRUCTURE SOLUTIONS",
+    "h1": "IT solutions by business situation",
+    "intro": "Start with what is changing in your business: a new location, expansion, relocation or modernization. We design the IT environment around that situation.",
+    "opsBridgeTitle": "Prefer to audit or stabilize an existing IT setup?",
+    "opsBridgeText": "Alongside infrastructure projects, we support businesses with proactive IT management, troubleshooting, and zero-cost audits.",
+    "opsCta": "IT managed operations",
+    "assessmentCta": "Request free IT assessment",
+    "primaryCta": "Discuss the project",
+    "secondaryCta": "Assess an existing system"
+  },
+  "solutionPages": {
+    "ujIrodaIt": {
+      "metaTitle": "New office IT infrastructure ready for day one | SIRONIC",
+      "metaDescription": "Structured cabling, business Wi‑Fi, firewall, rack, endpoints and Microsoft environment designed as one system, ready for day one.",
+      "h1": "New office IT infrastructure ready for day one",
+      "intro": "Structured cabling, business Wi‑Fi, firewall, rack, endpoints and Microsoft environment designed as one system.",
+      "badge": "NEW OFFICE BUILD",
+      "scopeTitle": "What's included in turn-key office IT deployment?",
+      "scopeSubtitle": "From physical structured cabling to cloud Microsoft 365 identity management, handled by one engineering team.",
+      "scopePoints": [
+        "Rack cabinet sizing, patch management, and Uninterruptible Power Supply (UPS) setup",
+        "Cat6/Cat6A Cat7 structured cabling, testing and certification",
+        "Enterprise Wi‑Fi (UniFi / Aruba / Cisco) with coverage heatmapping",
+        "Firewall (Fortinet / Sophos / Mikrotik), VPN and segmented VLAN configuration",
+        "Procurement and staging of workstations, monitors, and peripherals",
+        "Microsoft 365, Entra ID, Intune and endpoint security policy deployment"
+      ],
+      "processTitle": "How we make the office ready for Day One",
+      "processSubtitle": "A structured 5-step engineering process eliminating unexpected surprises on launch day.",
+      "processSteps": [
+        { "step": "01", "title": "Floorplan & Audit", "text": "On-site audit to calculate workstation density and bandwidth requirements." },
+        { "step": "02", "title": "Architecture Design", "text": "Network topology, rack layout and bill of materials with fixed pricing." },
+        { "step": "03", "title": "Cabling & Equipment Staging", "text": "Physical cabling installation and lab pre-configuration of switches and APs." },
+        { "step": "04", "title": "Testing & Stress-Testing", "text": "Cable throughput testing, Wi-Fi heatmap validation, and endpoint testing." },
+        { "step": "05", "title": "Handover & Day-1 Support", "text": "On-site engineers assist employees for a flawless first day of work." }
+      ],
+      "bridgeTitle": "What happens after successful handover?",
+      "bridgeText": "We don't abandon your new environment. Post-launch, we offer proactive IT operations and SLA maintenance to guarantee uninterrupted operations."
+    },
+    "ujTelephelyIt": {
+      "metaTitle": "Stable IT foundations for a new site | SIRONIC",
+      "metaDescription": "From WAN connectivity to endpoints, we design and build the IT infrastructure required for daily operations at your new site.",
+      "h1": "Stable IT foundations for a new site",
+      "intro": "From WAN connectivity to endpoints, we design and build the IT infrastructure required for daily operations.",
+      "badge": "NEW SITE IT INFRASTRUCTURE",
+      "scopeTitle": "Building robust multi-site IT foundations",
+      "scopeSubtitle": "Secure site-to-site connectivity, redundant internet connections, and resilient local networks.",
+      "scopePoints": [
+        "Secure Site-to-Site IPsec VPN tunnel setup between company locations",
+        "Redundancy with automatic WAN failover (Fiber + 5G backup)",
+        "Industrial and office network segregation (IoT, CCTV, office VLANs)",
+        "Central rack and network core installation",
+        "On-site servers, NAS storage, and local backup policies",
+        "Zoned business Wi-Fi coverage for warehouses and office spaces"
+      ],
+      "processTitle": "New site deployment step by step",
+      "processSubtitle": "Reliable project management from initial site inspection to central system integration.",
+      "processSteps": [
+        { "step": "01", "title": "Site Inspection", "text": "Mapping physical building layout and ISP WAN drop points." },
+        { "step": "02", "title": "Network Architecture", "text": "Designing IP ranges, VPN tunnels, and firewall security rules." },
+        { "step": "03", "title": "Installation & Wiring", "text": "Mounting core switches, Access Points, and rack components." },
+        { "step": "04", "title": "Integration & Failover Test", "text": "Connecting to central headquarters, testing throughput and WAN failover." },
+        { "step": "05", "title": "Documented Handover", "text": "Delivering topology diagrams, access credentials, and staff training." }
+      ],
+      "bridgeTitle": "Multi-site IT operations and support",
+      "bridgeText": "With our central monitoring platform, we oversee network health across all sites remotely, resolving issues before they impact business productivity."
+    },
+    "halozatbovites": {
+      "metaTitle": "Outgrown your current network? Expand it without losing control. | SIRONIC",
+      "metaDescription": "Add endpoints, access points, VLANs and switching capacity with a documented migration path and zero downtime.",
+      "h1": "Outgrown your current network? Expand it without losing control.",
+      "intro": "Add endpoints, access points, VLANs and switching capacity with a documented migration path.",
+      "badge": "NETWORK EXPANSION",
+      "scopeTitle": "Network expansion and capacity solutions",
+      "scopeSubtitle": "Preserving existing hardware investment while eliminating bandwidth bottlenecks.",
+      "scopePoints": [
+        "Adding high-density PoE switch capacity to existing rack cabinets",
+        "Structured cabling and drops for additional workstation desks",
+        "Expanding Wi-Fi footprint with additional APs and seamless roaming tuning",
+        "Eliminating network bottlenecks, loops, and latency issues",
+        "Updating VLAN segmentation to isolate guest, office, and management traffic",
+        "Updating detailed network topology documentation"
+      ],
+      "processTitle": "Expansion process with zero downtime",
+      "processSubtitle": "Scheduled, fully-tested updates engineered for off-hours cutover if required.",
+      "processSteps": [
+        { "step": "01", "title": "Capacity Audit", "text": "Assessing current switch utilization, port availability, and bandwidth headroom." },
+        { "step": "02", "title": "Expansion Plan", "text": "Creating equipment list and execution schedule targeted for zero downtime." },
+        { "step": "03", "title": "Staging & Cabling", "text": "Installing cable pathways without disturbing current operations." },
+        { "step": "04", "title": "Segment Integration", "text": "Integrating new switches and APs into existing VLAN hierarchy." },
+        { "step": "05", "title": "Validation & Handover", "text": "Speed tests, roaming validation, and updated topology diagrams." }
+      ],
+      "bridgeTitle": "Not sure where the bottleneck is?",
+      "bridgeText": "Our free IT assessment pinpoints exact network bottlenecks and security vulnerabilities with diagnostic measurement tools."
+    },
+    "irodakoltozes": {
+      "metaTitle": "Office relocation with minimal IT downtime | SIRONIC",
+      "metaDescription": "Assessment, new-site design, service and equipment migration, testing and handover in one coordinated migration plan.",
+      "h1": "Office relocation with minimal IT downtime",
+      "intro": "Assessment, new-site design, service and equipment migration, testing and handover in one plan.",
+      "badge": "IT RELOCATION PROJECT",
+      "scopeTitle": "Secure IT relocation project management",
+      "scopeSubtitle": "From ISP circuit transfer to physical server rack dismantling, transport, and re-commissioning.",
+      "scopePoints": [
+        "New site IT infrastructure inspection and pre-cabling audit",
+        "ISP internet circuit transfer and static IP migration management",
+        "Professional rack, server, and core network dismantling and reassembly",
+        "Labeled packaging and transport of workstations, printers, and conference AV",
+        "Network cutover runbook and weekend migration execution",
+        "Immediate testing and on-site day-one engineer support at the new location"
+      ],
+      "processTitle": "Four-phase relocation roadmap",
+      "processSubtitle": "Minute-by-minute cutover runbook ensuring everyone is productive on Monday morning.",
+      "processSteps": [
+        { "step": "01", "title": "Old & New Site Audit", "text": "Inspecting network wiring at the target site weeks prior to move." },
+        { "step": "02", "title": "Cutover Runbook", "text": "Documenting asset inventory, transport sequence, and ISP maintenance windows." },
+        { "step": "03", "title": "Weekend Move & Transport", "text": "Shutting down, anti-static packing, secure transport, and rack mounting." },
+        { "step": "04", "title": "Testing & Monday Support", "text": "System testing on Sunday, on-site engineer support Monday morning." }
+      ],
+      "bridgeTitle": "Need to upgrade or inspect the new site?",
+      "bridgeText": "Moving offices is the single best moment to clean up tech debt. We inspect the new office layout and propose optimization opportunities."
+    },
+    "itModernizacio": {
+      "metaTitle": "Modernize an existing IT environment | SIRONIC",
+      "metaDescription": "Keep what works and replace or modernize what creates risk or capacity limits according to a clear plan.",
+      "h1": "Modernize an existing IT environment",
+      "intro": "Keep what works and replace or modernize what creates risk or capacity limits according to a clear plan.",
+      "badge": "IT MODERNIZATION & AUDIT",
+      "scopeTitle": "Targeted IT modernization without wasted spend",
+      "scopeSubtitle": "Based on a system maturity audit, we categorize assets into Keep, Improve, and Replace layers.",
+      "scopePoints": [
+        "Migrating legacy end-of-life operating systems and servers",
+        "Closing open firewall ports, security gaps, and antivirus vulnerabilities",
+        "Migrating on-premise email and file servers to cloud Microsoft 365 / SharePoint",
+        "Upgrading slow HDD workstations with SSDs or cost-effective replacements",
+        "Implementing automated Backup & Disaster Recovery policies",
+        "Aligning IT infrastructure with NIS2 cybersecurity compliance standards"
+      ],
+      "processTitle": "Modernization project milestones",
+      "processSubtitle": "Upgrading your IT infrastructure with zero data loss or operational disruption.",
+      "processSteps": [
+        { "step": "01", "title": "System Audit", "text": "Creating hardware/software inventory and risk assessment matrix." },
+        { "step": "02", "title": "Modernization Plan", "text": "Prioritizing items: what to keep, what to upgrade, what to replace." },
+        { "step": "03", "title": "Backup & Staging", "text": "Executing full backups and staging new cloud/hardware environments." },
+        { "step": "04", "title": "Phased Migration", "text": "Migrating data, mailboxes, and accounts in controlled phases." },
+        { "step": "05", "title": "Training & Handover", "text": "User onboarding and transitioning to ongoing proactive maintenance." }
+      ],
+      "bridgeTitle": "Want to know the health of your current setup?",
+      "bridgeText": "Request a free IT system assessment! We evaluate your existing setup remotely or on-site and provide an actionable written report."
+    }
   }
 }
+

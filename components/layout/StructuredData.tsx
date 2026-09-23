@@ -54,6 +54,22 @@ export default function StructuredData() {
             description: "Teljes körű kiszervezett IT üzemeltetés és rendszerfelügyelet KKV-knak.",
           },
         },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Új Iroda & Telephely IT Kiépítés",
+            description: "Kulcsrakész informatikai infrastruktúra kiépítése, hálózat, Wi-Fi, tűzfal és Microsoft 365 környezet.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Hálózatbővítés & IT Modernizáció",
+            description: "Kapacitásbővítés, elavult rendszerek cseréje és zökkenőmentes költöztetés állásidő nélkül.",
+          },
+        },
       ],
     },
   };

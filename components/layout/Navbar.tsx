@@ -27,10 +27,21 @@ export default function Navbar() {
   }, [pathname]);
 
   const otherLocale = locale === "hu" ? "en" : "hu";
-  // Localized path mapping for routes that differ between locales
   const localizedPathMap: Record<string, { hu: string; en: string }> = {
     "/partneri-egyuttmukodes": { hu: "/partneri-egyuttmukodes", en: "/partnership" },
     "/partnership": { hu: "/partneri-egyuttmukodes", en: "/partnership" },
+    "/megoldasok": { hu: "/megoldasok", en: "/solutions" },
+    "/solutions": { hu: "/megoldasok", en: "/solutions" },
+    "/megoldasok/uj-iroda-it": { hu: "/megoldasok/uj-iroda-it", en: "/solutions/new-office-it" },
+    "/solutions/new-office-it": { hu: "/megoldasok/uj-iroda-it", en: "/solutions/new-office-it" },
+    "/megoldasok/uj-telephely-it": { hu: "/megoldasok/uj-telephely-it", en: "/solutions/new-site-it" },
+    "/solutions/new-site-it": { hu: "/megoldasok/uj-telephely-it", en: "/solutions/new-site-it" },
+    "/megoldasok/halozatbovites": { hu: "/megoldasok/halozatbovites", en: "/solutions/network-expansion" },
+    "/solutions/network-expansion": { hu: "/megoldasok/halozatbovites", en: "/solutions/network-expansion" },
+    "/megoldasok/irodakoltozes": { hu: "/megoldasok/irodakoltozes", en: "/solutions/office-relocation" },
+    "/solutions/office-relocation": { hu: "/megoldasok/irodakoltozes", en: "/solutions/office-relocation" },
+    "/megoldasok/it-modernizacio": { hu: "/megoldasok/it-modernizacio", en: "/solutions/it-modernization" },
+    "/solutions/it-modernization": { hu: "/megoldasok/it-modernizacio", en: "/solutions/it-modernization" },
   };
 
   // Swap the locale prefix in the pathname, respecting localized path slugs
@@ -48,10 +59,12 @@ export default function Navbar() {
 
   const freeAssessmentHref = `/${locale}/${locale === "hu" ? "ingyenes-felmeres" : "free-assessment"}`;
   const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
+  const solutionsHref = `/${locale}/${locale === "hu" ? "megoldasok" : "solutions"}`;
 
   const navLinks = [
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/szolgaltatasok`, label: t("services"), huPath: "/szolgaltatasok", enPath: "/services" },
+    { href: solutionsHref, label: t("solutions"), huPath: "/megoldasok", enPath: "/solutions" },
     {
       href: locale === "hu" ? `/${locale}/partneri-egyuttmukodes` : `/${locale}/partnership`,
       label: t("b2bPartner"),

@@ -12,8 +12,32 @@
     "priority": 0.9
   },
   {
+    "path": "/megoldasok",
+    "priority": 0.9
+  },
+  {
     "path": "/szolgaltatasok",
     "priority": 0.9
+  },
+  {
+    "path": "/megoldasok/halozatbovites",
+    "priority": 0.88
+  },
+  {
+    "path": "/megoldasok/irodakoltozes",
+    "priority": 0.88
+  },
+  {
+    "path": "/megoldasok/it-modernizacio",
+    "priority": 0.88
+  },
+  {
+    "path": "/megoldasok/uj-iroda-it",
+    "priority": 0.88
+  },
+  {
+    "path": "/megoldasok/uj-telephely-it",
+    "priority": 0.88
   },
   {
     "path": "/szolgaltatasok/halozatepites",

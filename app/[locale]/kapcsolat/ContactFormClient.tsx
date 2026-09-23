@@ -7,8 +7,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Send, CheckCircle2, ShieldCheck, HelpCircle } from "lucide-react";
 
+import { getAttributionData, trackLeadGenerated, trackFormStart, trackCustomerTypeSelect, trackRequestTypeSelect } from "@/lib/analytics";
+
 const schema = z.object({
   inquiryType: z.enum(["free-assessment", "general"]),
+  customerType: z.enum(["b2b", "b2c"]),
+  requestType: z.string().optional(),
   name: z.string().min(2, "A név kitöltése kötelező (min. 2 karakter)"),
   email: z.string().email("Érvényes e-mail címet adjon meg"),
   phone: z.string().optional(),
@@ -31,6 +35,7 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
   const searchParams = useSearchParams();
   const [sent, setSent] = useState(false);
   const [sendError, setSendError] = useState("");
+  const [hasStarted, setHasStarted] = useState(false);
 
   const {
     register,
@@ -42,6 +47,8 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
     resolver: zodResolver(schema),
     defaultValues: {
       inquiryType: initialInquiryType,
+      customerType: "b2b",
+      requestType: "new_it",
       name: "",
       email: "",
       phone: "",
@@ -53,6 +60,15 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
   });
 
   const inquiryType = watch("inquiryType");
+  const customerType = watch("customerType");
+  const requestType = watch("requestType");
+
+  const handleFormInteraction = () => {
+    if (!hasStarted) {
+      setHasStarted(true);
+      trackFormStart("contact");
+    }
+  };
 
   // Handle URL query parameter ?forras=ingyenes-felmeres dynamically
   useEffect(() => {
@@ -65,12 +81,23 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
   const onSubmit = async (data: FormData) => {
     setSendError("");
     try {
+      const attribution = getAttributionData();
+      const payload = { ...data, attribution };
       const res = await fetch("/api/send-contact-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Szerver hiba");
+      
+      // GA4 conversion event
+      trackLeadGenerated({
+        form_type: data.inquiryType === "free-assessment" ? "assessment" : "contact",
+        customer_type: data.customerType,
+        request_type: data.requestType || "general",
+        cta_location: "contact_form",
+      });
+
       setSent(true);
     } catch (e) {
       setSendError("Hiba az e-mail küldésekor. Kérjük próbálja újra, vagy keressen minket telefonon.");
@@ -148,6 +175,73 @@ export default function ContactFormClient({ messages: m, initialInquiryType = "g
             <span>{m.inquiryTypeGeneral || "Általános Üzenet"}</span>
           </button>
         </div>
+      </div>
+
+      {/* Customer Type Selector (B2B default, B2C supported) */}
+      <div className="form-group" onFocus={handleFormInteraction}>
+        <label className="form-label">Ügyféltípus</label>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>
+          <button
+            type="button"
+            onClick={() => {
+              setValue("customerType", "b2b");
+              trackCustomerTypeSelect("b2b");
+            }}
+            style={{
+              padding: "0.6rem 0.5rem",
+              borderRadius: "var(--r-button)",
+              fontFamily: "var(--font-mono)",
+              fontSize: "0.78125rem",
+              fontWeight: 600,
+              cursor: "pointer",
+              border: customerType === "b2b" ? "1px solid var(--accent)" : "1px solid var(--line)",
+              background: customerType === "b2b" ? "var(--accent-12)" : "var(--surface)",
+              color: customerType === "b2b" ? "var(--ink)" : "var(--muted)",
+            }}
+          >
+            🏢 Céges / Üzleti (B2B)
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setValue("customerType", "b2c");
+              trackCustomerTypeSelect("b2c");
+            }}
+            style={{
+              padding: "0.6rem 0.5rem",
+              borderRadius: "var(--r-button)",
+              fontFamily: "var(--font-mono)",
+              fontSize: "0.78125rem",
+              fontWeight: 600,
+              cursor: "pointer",
+              border: customerType === "b2c" ? "1px solid var(--accent)" : "1px solid var(--line)",
+              background: customerType === "b2c" ? "var(--accent-12)" : "var(--surface)",
+              color: customerType === "b2c" ? "var(--ink)" : "var(--muted)",
+            }}
+          >
+            👤 Magánszemély / Egyéni
+          </button>
+        </div>
+      </div>
+
+      {/* Request Type Selector */}
+      <div className="form-group" onFocus={handleFormInteraction}>
+        <label className="form-label">Elsődleges feladat / Igény kategóriája</label>
+        <select
+          className="form-input"
+          value={requestType}
+          onChange={(e) => {
+            setValue("requestType", e.target.value);
+            trackRequestTypeSelect(e.target.value);
+          }}
+        >
+          <option value="new_it">Új IT infrastruktúra / kiépítés (új iroda, új telephely)</option>
+          <option value="expansion">Meglévő rendszer bővítése (Wi-Fi, hálózat, kapacitás)</option>
+          <option value="relocation">Irodaköltözés / IT átköltöztetés</option>
+          <option value="modernization">Rendszer modernizáció / audit / felhősítés</option>
+          <option value="ops">Folyamatos IT üzemeltetés / kiszervezés</option>
+          <option value="issue">Hálózati hiba / felmérés / egyéb</option>
+        </select>
       </div>
 
       {/* Trust Badge Bar for Free Assessment */}

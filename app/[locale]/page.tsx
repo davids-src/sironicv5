@@ -9,6 +9,7 @@ import TrustMetricsBar from "@/components/sections/TrustMetricsBar";
 import ClientLogoWall from "@/components/sections/ClientLogoWall";
 import CompanyGroupSection from "@/components/sections/CompanyGroupSection";
 import HomeTrialSection from "@/components/sections/HomeTrialSection";
+import HomeSolutionsSection from "@/components/sections/HomeSolutionsSection";
 import Script from "next/script";
 import type { Metadata } from "next";
 
@@ -32,6 +33,7 @@ export default async function HomePage({ params }: Props) {
   const ts = await getTranslations({ locale, namespace: "services" });
   const tf = await getTranslations({ locale, namespace: "faq" });
   const tp = await getTranslations({ locale, namespace: "pricingHighlight" });
+  const tsol = await getTranslations({ locale, namespace: "homeSolutionsSection" });
 
   const freeAssessmentHref = `/${locale}/kapcsolat?forras=ingyenes-felmeres`;
   const smartFormHref = `/${locale}/${locale === "hu" ? "intelligens-urlap" : "intelligent-form"}`;
@@ -179,6 +181,14 @@ export default async function HomePage({ params }: Props) {
         cta2={{ label: ts("nis2.cta"), href: `/${locale}/szolgaltatasok/nis2-tamogatas` }}
         icon="shield"
         alt
+      />
+
+      {/* 6.5. Solutions Decision Section: New IT vs Expansion vs Ops vs Issue */}
+      <HomeSolutionsSection
+        locale={locale}
+        title={tsol("title")}
+        subtitle={tsol("subtitle")}
+        cards={tsol.raw("cards") as any[]}
       />
 
       {/* NIS2 Specific Assessment Banner */}

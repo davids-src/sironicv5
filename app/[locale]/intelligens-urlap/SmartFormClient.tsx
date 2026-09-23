@@ -16,6 +16,8 @@ import {
   trackAssessmentDecision,
   trackFormSubmit,
   trackFormError,
+  getAttributionData,
+  trackLeadGenerated,
 } from "@/lib/analytics";
 
 // ─── COUNTIES ─────────────────────────────────────────────────────────────────
@@ -390,14 +392,22 @@ function AssessmentWizard() {
     }, []);
 
     try {
+      const attribution = getAttributionData();
+      const fullPayload = { ...payload, attribution, customerType: "b2b", requestType: "assessment" };
       const res = await fetch("/api/send-assessment-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(fullPayload),
       });
       if (!res.ok) throw new Error("Szerver hiba");
       trackAssessmentDecision(acc, final);
       trackFormSubmit("assessment");
+      trackLeadGenerated({
+        form_type: "assessment",
+        customer_type: "b2b",
+        request_type: "assessment",
+        cta_location: "smart_calculator",
+      });
       setSent(true);
     } catch (e) {
       const msg = "Hiba az e-mail küldésekor. Kérjük, vegye fel velünk a kapcsolatot közvetlenül.";

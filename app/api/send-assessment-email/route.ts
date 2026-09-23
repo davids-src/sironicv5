@@ -24,6 +24,12 @@ interface OsItem {
     warning?: string;
 }
 interface AssessmentData {
+    customerType?: string;
+    requestType?: string;
+    attribution?: {
+        first_touch?: Record<string, string>;
+        last_touch?: Record<string, string>;
+    };
     // Q1
     companyName: string;
     contactName: string;
@@ -161,8 +167,10 @@ function buildAdminHtml(d: AssessmentData): string {
   </div>
   <div class="body">
 
-    <h2>Céges adatok</h2>
+    <h2>Céges / Igénylői adatok</h2>
     <table>
+      ${d.customerType ? `<tr><th>Ügyféltípus</th><td><strong>${d.customerType === "b2c" ? "Magánszemély / B2C" : "Üzleti / B2B"}</strong></td></tr>` : ""}
+      ${d.requestType ? `<tr><th>Igény típusa</th><td><strong>${d.requestType}</strong></td></tr>` : ""}
       <tr><th>Cégnév</th><td>${d.companyName}</td></tr>
       <tr><th>Kapcsolattartó</th><td>${d.contactName}</td></tr>
       <tr><th>E-mail</th><td><a href="mailto:${d.email}">${d.email}</a></td></tr>

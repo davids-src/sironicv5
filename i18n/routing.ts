@@ -53,6 +53,30 @@ export const routing = defineRouting({
       hu: "/partneri-egyuttmukodes",
       en: "/partnership",
     },
+    "/megoldasok": {
+      hu: "/megoldasok",
+      en: "/solutions",
+    },
+    "/megoldasok/uj-iroda-it": {
+      hu: "/megoldasok/uj-iroda-it",
+      en: "/solutions/new-office-it",
+    },
+    "/megoldasok/uj-telephely-it": {
+      hu: "/megoldasok/uj-telephely-it",
+      en: "/solutions/new-site-it",
+    },
+    "/megoldasok/halozatbovites": {
+      hu: "/megoldasok/halozatbovites",
+      en: "/solutions/network-expansion",
+    },
+    "/megoldasok/irodakoltozes": {
+      hu: "/megoldasok/irodakoltozes",
+      en: "/solutions/office-relocation",
+    },
+    "/megoldasok/it-modernizacio": {
+      hu: "/megoldasok/it-modernizacio",
+      en: "/solutions/it-modernization",
+    },
   },
 });
 

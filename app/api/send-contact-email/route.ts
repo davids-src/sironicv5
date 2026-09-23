@@ -4,12 +4,18 @@ import nodemailer from "nodemailer";
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface ContactPayload {
     inquiryType?: "free-assessment" | "general" | string;
+    customerType?: "b2b" | "b2c" | string;
+    requestType?: string;
     name: string;
     email: string;
     phone?: string;
     companySize?: string;
     hasExternalIT?: string;
     message: string;
+    attribution?: {
+        first_touch?: Record<string, string>;
+        last_touch?: Record<string, string>;
+    };
 }
 
 // ─── Mailer ───────────────────────────────────────────────────────────────────
@@ -30,6 +36,10 @@ function buildAdminHtml(d: ContactPayload, submittedAt: string): string {
         ? "🎯 ÚJ INGYENES IT ÁLLAPOTFELMÉRÉS IGÉNYLÉS"
         : "Új üzenet weboldalról";
 
+    const customerLabel = d.customerType === "b2c" ? "Magánszemély / B2C" : "Üzleti / B2B";
+    const attrFirst = d.attribution?.first_touch;
+    const attrLast = d.attribution?.last_touch;
+
     return `<!DOCTYPE html>
 <html lang="hu">
 <head><meta charset="UTF-8"><style>
@@ -46,6 +56,7 @@ function buildAdminHtml(d: ContactPayload, submittedAt: string): string {
   .desc{background:#f8f8f8;border:1px solid #e0e0e0;border-radius:4px;padding:12px;font-size:13px;white-space:pre-wrap;margin:6px 0}
   .footer{background:#f8f8f8;padding:14px 28px;font-size:12px;color:#888;border-top:1px solid #e0e0e0}
   .badge{display:inline-block;padding:3px 8px;background:${isAssessment ? "#fff" : "#eff6ff"};color:${isAssessment ? "#E8271A" : "#1e3a8a"};font-weight:bold;border-radius:3px;font-size:12px}
+  .attr-box{background:#f8fafc;border:1px solid #cbd5e1;padding:10px;border-radius:4px;font-size:12px;color:#475569;margin-top:10px}
 </style></head>
 <body>
 <div class="wrap">
@@ -57,6 +68,8 @@ function buildAdminHtml(d: ContactPayload, submittedAt: string): string {
     <h2>Megkeresés részletei</h2>
     <table>
       <tr><th>Megkeresés típusa</th><td><span class="badge">${isAssessment ? "INGYENES IT ÁLLAPOTFELMÉRÉS" : "Általános üzenet"}</span></td></tr>
+      <tr><th>Ügyféltípus</th><td><strong>${customerLabel}</strong></td></tr>
+      ${d.requestType ? `<tr><th>Igény típusa</th><td><strong>${d.requestType}</strong></td></tr>` : ""}
       <tr><th>Név</th><td>${d.name}</td></tr>
       <tr><th>E-mail cím</th><td><a href="mailto:${d.email}">${d.email}</a></td></tr>
       <tr><th>Telefonszám</th><td>${d.phone || "Nem megadott"}</td></tr>
@@ -66,6 +79,16 @@ function buildAdminHtml(d: ContactPayload, submittedAt: string): string {
 
     <h2>${isAssessment ? "Megjegyzés / Tevékenység" : "Üzenet"}</h2>
     <div class="desc">${d.message}</div>
+
+    ${attrLast ? `
+    <h2>Attribuciós adatok (Marketing tracking)</h2>
+    <div class="attr-box">
+      <strong>Last-touch Landing:</strong> ${attrLast.landing_page || "-"}<br>
+      <strong>Referrer:</strong> ${attrLast.referrer || "-"}<br>
+      ${attrLast.utm_source ? `<strong>UTM Source:</strong> ${attrLast.utm_source} | <strong>Medium:</strong> ${attrLast.utm_medium || "-"} | <strong>Campaign:</strong> ${attrLast.utm_campaign || "-"}<br>` : ""}
+      ${attrLast.gclid ? `<strong>GCLID:</strong> ${attrLast.gclid}<br>` : ""}
+      ${attrFirst ? `<small>First touch: ${attrFirst.landing_page} (${attrFirst.timestamp})</small>` : ""}
+    </div>` : ""}
   </div>
   <div class="footer">SIRONIC Kapcsolat &nbsp;|&nbsp; ${submittedAt}</div>
 </div>
